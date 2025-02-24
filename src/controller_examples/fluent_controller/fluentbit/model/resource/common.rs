@@ -12,6 +12,10 @@ use vstd::prelude::*;
 use vstd::string::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub open spec fn make_base_labels(fb: FluentBitView) -> Map<StringView, StringView> { map!["app"@ => fb.metadata.name.get_Some_0()] }
 

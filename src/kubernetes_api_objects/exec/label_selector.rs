@@ -6,6 +6,10 @@ use crate::vstd_ext::string_map::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // LabelSelector is used to select objects that are relevant by matching the labels.
 // Labels are key/value pairs that are attached to objects such as Pods.

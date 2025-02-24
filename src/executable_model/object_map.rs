@@ -8,6 +8,10 @@ use vstd::prelude::*;
 use vstd::string::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // This is the exec version of the map used in crate::kubernetes_cluster::spec::api_server::types::ApiServerState
 // for storing the cluster state (i.e., the k8s objects).
