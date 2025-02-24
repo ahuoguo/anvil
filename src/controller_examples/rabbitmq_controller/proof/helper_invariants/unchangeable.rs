@@ -26,6 +26,10 @@ use crate::vstd_ext::{multiset_lib, seq_lib, string_view::*};
 use vstd::{multiset::*, prelude::*, string::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // This module is to prove that for every subresource object, it satisfies some properties as long as it exists in etcd
 // regardless of when it was created or how many times it has been updated or what its owner references point to.

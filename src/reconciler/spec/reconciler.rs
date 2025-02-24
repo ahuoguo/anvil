@@ -8,6 +8,10 @@ use crate::reconciler::spec::io::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // Reconciler is the key data structure we use to pack up all the custom controller-specific logic
 // and install it to the Kubernetes cluster state machine

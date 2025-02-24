@@ -22,6 +22,10 @@ use crate::vstd_ext::{map_lib::*, string_view::*};
 use vstd::{prelude::*, string::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub proof fn lemma_from_after_get_daemon_set_step_to_daemon_set_matches(spec: TempPred<FBCluster>, fb: FluentBitView)
     requires

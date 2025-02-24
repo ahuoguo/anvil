@@ -9,6 +9,10 @@ use crate::kubernetes_api_objects::spec::{resource::*, stateful_set::*};
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // StatefulSet is a type of API object used for managing stateful applications,
 // mainly a group of Pods and PersistentVolumeClaims attached to the Pods.

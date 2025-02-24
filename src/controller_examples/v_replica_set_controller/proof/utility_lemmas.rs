@@ -22,6 +22,10 @@ use crate::v_replica_set_controller::proof::{
 use vstd::{prelude::*, math::abs};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 #[verifier(external_body)]
 pub proof fn lemma_filtered_pods_set_equals_matching_pods(

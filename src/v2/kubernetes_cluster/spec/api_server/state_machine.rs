@@ -7,6 +7,10 @@ use crate::vstd_ext::{map_lib::*, string_view::*};
 use vstd::{multiset::*, prelude::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // This state machine describes the behavior of the API server and its back-end datastore (e.g., etcd).
 // More concretely, it models how the datastore stores state objects, and how the API server handles

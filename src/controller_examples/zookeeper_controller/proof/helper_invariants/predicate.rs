@@ -23,6 +23,10 @@ use crate::zookeeper_controller::{
 use vstd::{multiset::*, prelude::*, string::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub open spec fn zookeeper_is_well_formed(zookeeper: ZookeeperClusterView) -> StatePred<ZKCluster> {
     |s: ZKCluster| zookeeper.well_formed()

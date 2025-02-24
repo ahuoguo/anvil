@@ -35,6 +35,10 @@ use crate::vstd_ext::{map_lib::*, string_view::*};
 use vstd::{prelude::*, string::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // We prove init /\ []next /\ []wf |= []desired_state_is(fb) ~> []current_state_matches(fb) holds for each fb.
 proof fn liveness_proof_forall_fb()

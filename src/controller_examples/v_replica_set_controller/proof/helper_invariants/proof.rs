@@ -24,6 +24,10 @@ use vstd::{multiset::*, prelude::*, string::*};
 use crate::kubernetes_cluster::spec::api_server::state_machine::handle_create_request;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub proof fn lemma_eventually_always_no_pending_update_or_update_status_request_on_pods(
     spec: TempPred<VRSCluster>

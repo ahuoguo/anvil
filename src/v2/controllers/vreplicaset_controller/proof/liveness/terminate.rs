@@ -17,6 +17,10 @@ use crate::vreplicaset_controller::{
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub proof fn reconcile_eventually_terminates(
     spec: TempPred<ClusterState>, cluster: Cluster, controller_id: int
