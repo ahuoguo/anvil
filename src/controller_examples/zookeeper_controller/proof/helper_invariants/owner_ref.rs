@@ -26,6 +26,10 @@ use crate::zookeeper_controller::{
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // Valid owner_references field satisfies that every owner reference in it valid uid, i.e., it points to some existing objects.
 // We don't test custom resource object here because we don't care about whether it's owner_references is valid.

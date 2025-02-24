@@ -15,6 +15,10 @@ use crate::vreplicaset_controller::{
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // General helper predicates
 pub open spec fn lifted_vrs_non_interference_property(cluster: Cluster, controller_id: int) -> TempPred<ClusterState> {

@@ -36,6 +36,10 @@ use crate::zookeeper_controller::{
 use vstd::{prelude::*, string::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // We prove init /\ []next /\ []wf |= []ZKCluster::desired_state_is(zookeeper) ~> []current_state_matches(zookeeper) holds for each zookeeper.
 proof fn liveness_proof_forall_zookeeper()

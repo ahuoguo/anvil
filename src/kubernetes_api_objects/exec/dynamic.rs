@@ -5,6 +5,10 @@ use crate::kubernetes_api_objects::spec::dynamic::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // DynamicObject is mainly used to pass requests/response between reconcile_core and the shim layer.
 // We use DynamicObject in KubeAPIRequest and KubeAPIResponse so that they can carry the requests and responses

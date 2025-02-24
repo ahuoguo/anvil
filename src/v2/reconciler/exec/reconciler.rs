@@ -5,6 +5,10 @@ use crate::vstd_ext::option_lib::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // Reconciler is used to implement the custom controller as a state machine
 // that interacts with Kubernetes API server via the shim_layer::controller_runtime.

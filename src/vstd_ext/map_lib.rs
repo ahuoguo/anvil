@@ -4,6 +4,10 @@
 use vstd::{map_lib::*, prelude::*, seq_lib::*, set::*, set_lib::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // Return all the values in m, which satisfy f, as a seq
 pub open spec fn map_to_seq<K, V>(m: Map<K, V>, f: spec_fn(V) -> bool) -> Seq<V> {

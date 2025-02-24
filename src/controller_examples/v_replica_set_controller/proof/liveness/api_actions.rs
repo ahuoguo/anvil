@@ -23,6 +23,10 @@ use crate::v_replica_set_controller::{
 use vstd::{prelude::*, string::*, map::*, map_lib::*, math::abs};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub proof fn lemma_api_request_outside_create_or_delete_loop_maintains_matching_pods(
     s: VRSCluster, s_prime: VRSCluster, vrs: VReplicaSetView, diff: int, msg: VRSMessage,

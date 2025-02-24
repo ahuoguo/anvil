@@ -16,6 +16,10 @@ use crate::reconciler::spec::reconciler::Reconciler;
 use vstd::{multiset::*, prelude::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // The Cluster struct is an abstraction of the compound state machine of the kubernetes cluster. It contains a number of
 // fields for describing the state of those components as well as all the methods of the specifications and lemmas of the

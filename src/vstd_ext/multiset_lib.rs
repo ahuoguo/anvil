@@ -4,6 +4,10 @@
 use vstd::{multiset::*, prelude::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub proof fn len_is_zero_means_count_for_each_value_is_zero<V>(m: Multiset<V>)
     ensures (forall |v| m.count(v) == 0) == (m.len() == 0),

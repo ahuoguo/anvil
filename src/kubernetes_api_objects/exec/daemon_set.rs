@@ -9,6 +9,10 @@ use crate::kubernetes_api_objects::spec::{daemon_set::*, resource::*};
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // DaemonSet is a type of API object used for managing daemon applications,
 // mainly a group of Pods and PersistentVolumeClaims attached to the Pods.
