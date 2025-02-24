@@ -23,6 +23,10 @@ use crate::vstd_ext::{map_lib::*, seq_lib::*, set_lib::*, string_view::*};
 use vstd::{map::*, map_lib::*, math::abs, prelude::*, seq::*, seq_lib::*, set_lib::*, string::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub proof fn lemma_from_diff_and_init_to_current_state_matches(
     spec: TempPred<VRSCluster>, vrs: VReplicaSetView, diff: int,

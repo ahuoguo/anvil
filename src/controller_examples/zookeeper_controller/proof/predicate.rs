@@ -20,6 +20,10 @@ use crate::zookeeper_controller::trusted::{
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub open spec fn sub_resource_state_matches(sub_resource: SubResource, zk: ZookeeperClusterView) -> StatePred<ZKCluster> {
     |s: ZKCluster| {

@@ -8,6 +8,10 @@ use crate::v_replica_set_controller::trusted::{spec_types::*, step::*};
 use vstd::{prelude::*, string::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 impl Reconciler<VReplicaSetView, EmptyAPI> for VReplicaSetReconciler {
     type T = VReplicaSetReconcileState;

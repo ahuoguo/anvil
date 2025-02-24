@@ -8,6 +8,10 @@ use crate::kubernetes_api_objects::spec::{resource::*, service_account::*};
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // A service account is a type of non-human account that, in Kubernetes, provides a distinct identity in a Kubernetes cluster.
 // Application Pods, system components, and entities inside and outside the cluster can use a specific ServiceAccount's credentials to identify as that ServiceAccount.

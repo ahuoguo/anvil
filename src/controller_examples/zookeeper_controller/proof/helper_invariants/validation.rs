@@ -27,6 +27,10 @@ use crate::zookeeper_controller::{
 use vstd::{multiset::*, prelude::*, string::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // We need such a spec for stateful set because certain fields are determined by the spec of custom resource object and won't
 // be updated. So we need the transition validation of custom resource (zookeeper) to show some fields of zookeeper won't change

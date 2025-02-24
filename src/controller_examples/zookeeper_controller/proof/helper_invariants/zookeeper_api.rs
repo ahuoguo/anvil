@@ -26,6 +26,10 @@ use crate::zookeeper_controller::{
 use vstd::{multiset::*, prelude::*, string::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub open spec fn every_zk_set_data_request_implies_at_after_update_zk_node_step(zookeeper: ZookeeperClusterView) -> StatePred<ZKCluster> {
     |s: ZKCluster| {

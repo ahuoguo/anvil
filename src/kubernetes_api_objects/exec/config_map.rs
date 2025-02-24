@@ -9,6 +9,10 @@ use crate::vstd_ext::string_map::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // ConfigMap is a type of API object used to store non-confidential data in key-value pairs.
 // A ConfigMap object can be used to set environment variables or configuration files

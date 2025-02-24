@@ -17,6 +17,10 @@ use crate::vstd_ext::seq_lib::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub proof fn vrs_non_interference_property_equivalent_to_lifted_vrs_non_interference_property(
     spec: TempPred<ClusterState>, cluster: Cluster, controller_id: int,

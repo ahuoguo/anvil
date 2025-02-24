@@ -5,6 +5,10 @@ use crate::kubernetes_api_objects::spec::{common::*, dynamic::*, object_meta::*,
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // ServiceAccountView is the ghost type of ServiceAccount.
 

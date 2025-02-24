@@ -5,6 +5,10 @@ use crate::vreplicaset_controller::trusted::spec_types::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub open spec fn vrs_eventually_stable_reconciliation() -> TempPred<ClusterState> {
     Cluster::eventually_stable_reconciliation(|vrs| current_state_matches(vrs))

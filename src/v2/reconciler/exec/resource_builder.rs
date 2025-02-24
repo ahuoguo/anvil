@@ -3,6 +3,10 @@ use crate::reconciler::spec::resource_builder;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub trait ResourceBuilder<K: View, T: View, SpecBuilder: resource_builder::ResourceBuilder<K::V, T::V>>
 {
