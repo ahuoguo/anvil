@@ -694,7 +694,7 @@ pub proof fn lemma_always_key_of_object_in_matched_ok_update_resp_message_is_sam
                 },
                 Step::ExternalAPIStep(input) => {
 //                    assert(input.get_Some_0() != msg);
-                    assert(s.in_flight().contains(msg));
+//                    assert(s.in_flight().contains(msg));
                 },
                 _ => {
                     assert(s.in_flight().contains(msg));

@@ -1,0 +1,666 @@
+warning: unused variable: `tokens`
+    --> tools/minimize/src/main.rs:1511:55
+     |
+1511 |             Meta::List(MetaList { path, delimiter: _, tokens }) => {
+     |                                                       ^^^^^^ help: try ignoring the field: `tokens: _`
+     |
+     = note: `#[warn(unused_variables)]` on by default
+
+warning: `minimize` (bin "minimize") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 1.26s
+     Running `/local/abai/verus/source/target/release/minimize -d ./anvil-min-brd /local/abai/anvil/src/anvil.d`
+verus succeeded with time: 34170ms
+minimization of ./anvil-min-brd/0/anvil.rs is completed
+minimization of ./anvil-min-brd/1/executable_model/mod.rs is completed
+minimization of ./anvil-min-brd/3/executable_model/api_server_state.rs is completed
+minimization of ./anvil-min-brd/2/executable_model/api_server.rs is completed
+minimization of ./anvil-min-brd/5/executable_model/object_map.rs is completed
+commenting out line Lines { lines: 490..=490 } in "./anvil-min-brd/4/executable_model/common.rs"
+minimization of ./anvil-min-brd/6/executable_model/object_ref_set.rs is completed
+minimization of ./anvil-min-brd/7/executable_model/prelude.rs is completed
+minimization of ./anvil-min-brd/9/external_api/mod.rs is completed
+minimization of ./anvil-min-brd/8/executable_model/string_set.rs is completed
+minimization of ./anvil-min-brd/10/external_api/exec.rs is completed
+minimization of ./anvil-min-brd/11/external_api/spec.rs is completed
+minimization of ./anvil-min-brd/12/kubernetes_api_objects/mod.rs is completed
+minimization of ./anvil-min-brd/15/kubernetes_api_objects/exec/affinity.rs is completed
+minimization of ./anvil-min-brd/17/kubernetes_api_objects/exec/api_resource.rs is completed
+minimization of ./anvil-min-brd/18/kubernetes_api_objects/exec/common.rs is completed
+minimization of ./anvil-min-brd/13/kubernetes_api_objects/error.rs is completed
+minimization of ./anvil-min-brd/14/kubernetes_api_objects/exec/mod.rs is completed
+minimization of ./anvil-min-brd/16/kubernetes_api_objects/exec/api_method.rs is completed
+minimization of ./anvil-min-brd/19/kubernetes_api_objects/exec/config_map.rs is completed
+minimization of ./anvil-min-brd/20/kubernetes_api_objects/exec/container.rs is completed
+minimization of ./anvil-min-brd/21/kubernetes_api_objects/exec/daemon_set.rs is completed
+minimization of ./anvil-min-brd/22/kubernetes_api_objects/exec/dynamic.rs is completed
+minimization of ./anvil-min-brd/23/kubernetes_api_objects/exec/label_selector.rs is completed
+minimization of ./anvil-min-brd/24/kubernetes_api_objects/exec/object_meta.rs is completed
+minimization of ./anvil-min-brd/25/kubernetes_api_objects/exec/owner_reference.rs is completed
+minimization of ./anvil-min-brd/26/kubernetes_api_objects/exec/persistent_volume_claim.rs is completed
+minimization of ./anvil-min-brd/27/kubernetes_api_objects/exec/pod.rs is completed
+minimization of ./anvil-min-brd/28/kubernetes_api_objects/exec/pod_template_spec.rs is completed
+minimization of ./anvil-min-brd/29/kubernetes_api_objects/exec/preconditions.rs is completed
+minimization of ./anvil-min-brd/30/kubernetes_api_objects/exec/prelude.rs is completed
+minimization of ./anvil-min-brd/32/kubernetes_api_objects/exec/resource_requirements.rs is completed
+minimization of ./anvil-min-brd/31/kubernetes_api_objects/exec/resource.rs is completed
+minimization of ./anvil-min-brd/33/kubernetes_api_objects/exec/role.rs is completed
+minimization of ./anvil-min-brd/34/kubernetes_api_objects/exec/role_binding.rs is completed
+minimization of ./anvil-min-brd/35/kubernetes_api_objects/exec/secret.rs is completed
+minimization of ./anvil-min-brd/36/kubernetes_api_objects/exec/service.rs is completed
+minimization of ./anvil-min-brd/37/kubernetes_api_objects/exec/service_account.rs is completed
+minimization of ./anvil-min-brd/38/kubernetes_api_objects/exec/stateful_set.rs is completed
+minimization of ./anvil-min-brd/39/kubernetes_api_objects/exec/toleration.rs is completed
+minimization of ./anvil-min-brd/40/kubernetes_api_objects/exec/volume.rs is completed
+verus failed, reverting
+minimization of ./anvil-min-brd/4/executable_model/common.rs is completed
+minimization of ./anvil-min-brd/41/kubernetes_api_objects/exec/volume_resource_requirements.rs is completed
+minimization of ./anvil-min-brd/42/kubernetes_api_objects/spec/mod.rs is completed
+minimization of ./anvil-min-brd/43/kubernetes_api_objects/spec/affinity.rs is completed
+minimization of ./anvil-min-brd/44/kubernetes_api_objects/spec/api_method.rs is completed
+minimization of ./anvil-min-brd/45/kubernetes_api_objects/spec/api_resource.rs is completed
+minimization of ./anvil-min-brd/46/kubernetes_api_objects/spec/common.rs is completed
+minimization of ./anvil-min-brd/47/kubernetes_api_objects/spec/config_map.rs is completed
+minimization of ./anvil-min-brd/48/kubernetes_api_objects/spec/container.rs is completed
+minimization of ./anvil-min-brd/49/kubernetes_api_objects/spec/daemon_set.rs is completed
+minimization of ./anvil-min-brd/50/kubernetes_api_objects/spec/dynamic.rs is completed
+minimization of ./anvil-min-brd/51/kubernetes_api_objects/spec/label_selector.rs is completed
+minimization of ./anvil-min-brd/52/kubernetes_api_objects/spec/object_meta.rs is completed
+minimization of ./anvil-min-brd/53/kubernetes_api_objects/spec/owner_reference.rs is completed
+minimization of ./anvil-min-brd/54/kubernetes_api_objects/spec/persistent_volume_claim.rs is completed
+minimization of ./anvil-min-brd/55/kubernetes_api_objects/spec/pod.rs is completed
+minimization of ./anvil-min-brd/56/kubernetes_api_objects/spec/pod_template_spec.rs is completed
+minimization of ./anvil-min-brd/57/kubernetes_api_objects/spec/preconditions.rs is completed
+minimization of ./anvil-min-brd/58/kubernetes_api_objects/spec/prelude.rs is completed
+minimization of ./anvil-min-brd/59/kubernetes_api_objects/spec/resource.rs is completed
+minimization of ./anvil-min-brd/60/kubernetes_api_objects/spec/resource_requirements.rs is completed
+minimization of ./anvil-min-brd/61/kubernetes_api_objects/spec/role.rs is completed
+minimization of ./anvil-min-brd/62/kubernetes_api_objects/spec/role_binding.rs is completed
+minimization of ./anvil-min-brd/63/kubernetes_api_objects/spec/secret.rs is completed
+minimization of ./anvil-min-brd/64/kubernetes_api_objects/spec/service.rs is completed
+minimization of ./anvil-min-brd/65/kubernetes_api_objects/spec/service_account.rs is completed
+minimization of ./anvil-min-brd/66/kubernetes_api_objects/spec/stateful_set.rs is completed
+minimization of ./anvil-min-brd/67/kubernetes_api_objects/spec/toleration.rs is completed
+minimization of ./anvil-min-brd/68/kubernetes_api_objects/spec/volume.rs is completed
+minimization of ./anvil-min-brd/69/kubernetes_api_objects/spec/volume_resource_requirements.rs is completed
+minimization of ./anvil-min-brd/70/kubernetes_cluster/mod.rs is completed
+minimization of ./anvil-min-brd/71/kubernetes_cluster/proof/mod.rs is completed
+commenting out line Lines { lines: 139..=143 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+minimization of ./anvil-min-brd/73/kubernetes_cluster/proof/api_server_safety.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 152..=152 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+commenting out line Lines { lines: 175..=175 } in "./anvil-min-brd/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 173..=176 } in "./anvil-min-brd/74/kubernetes_cluster/proof/builtin_controllers.rs"
+minimization of ./anvil-min-brd/75/kubernetes_cluster/proof/cluster.rs is completed
+commenting out line Lines { lines: 78..=107 } in "./anvil-min-brd/76/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 149..=153 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 220..=231 } in "./anvil-min-brd/74/kubernetes_cluster/proof/builtin_controllers.rs"
+minimization of ./anvil-min-brd/77/kubernetes_cluster/proof/controller_runtime.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 76..=108 } in "./anvil-min-brd/76/kubernetes_cluster/proof/cluster_safety.rs"
+minimization of ./anvil-min-brd/78/kubernetes_cluster/proof/controller_runtime_eventual_safety.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 294..=296 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 259..=280 } in "./anvil-min-brd/74/kubernetes_cluster/proof/builtin_controllers.rs"
+commenting out line Lines { lines: 350..=375 } in "./anvil-min-brd/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 159..=178 } in "./anvil-min-brd/76/kubernetes_cluster/proof/cluster_safety.rs"
+commenting out line Lines { lines: 47..=50 } in "./anvil-min-brd/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 292..=297 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 291..=291 } in "./anvil-min-brd/74/kubernetes_cluster/proof/builtin_controllers.rs"
+commenting out line Lines { lines: 119..=139 } in "./anvil-min-brd/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 387..=387 } in "./anvil-min-brd/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+minimization of ./anvil-min-brd/82/kubernetes_cluster/proof/external_api_liveness.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 157..=179 } in "./anvil-min-brd/76/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 317..=321 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+commenting out line Lines { lines: 40..=61 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+minimization of ./anvil-min-brd/80/kubernetes_cluster/proof/controller_runtime_safety.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 285..=292 } in "./anvil-min-brd/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 173..=179 } in "./anvil-min-brd/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+commenting out line Lines { lines: 168..=188 } in "./anvil-min-brd/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 380..=388 } in "./anvil-min-brd/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+minimization of ./anvil-min-brd/76/kubernetes_cluster/proof/cluster_safety.rs is completed
+commenting out line Lines { lines: 125..=128 } in "./anvil-min-brd/85/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+verus failed, reverting
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 39..=62 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/74/kubernetes_cluster/proof/builtin_controllers.rs is completed
+commenting out line Lines { lines: 331..=331 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+commenting out line Lines { lines: 185..=185 } in "./anvil-min-brd/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 461..=464 } in "./anvil-min-brd/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 223..=229 } in "./anvil-min-brd/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+commenting out line Lines { lines: 34..=39 } in "./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 112..=154 } in "./anvil-min-brd/85/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 328..=332 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 182..=186 } in "./anvil-min-brd/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 235..=235 } in "./anvil-min-brd/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 185..=209 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+commenting out line Lines { lines: 48..=48 } in "./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 458..=465 } in "./anvil-min-brd/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 229..=232 } in "./anvil-min-brd/85/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 227..=227 } in "./anvil-min-brd/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 359..=359 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 55..=60 } in "./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs"
+commenting out line Lines { lines: 181..=211 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 232..=236 } in "./anvil-min-brd/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 489..=492 } in "./anvil-min-brd/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 212..=273 } in "./anvil-min-brd/85/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 226..=228 } in "./anvil-min-brd/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 358..=360 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 69..=69 } in "./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 298..=311 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 278..=278 } in "./anvil-min-brd/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 486..=493 } in "./anvil-min-brd/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+minimization of ./anvil-min-brd/85/kubernetes_cluster/proof/validation_rule.rs is completed
+minimization of ./anvil-min-brd/87/kubernetes_cluster/spec/mod.rs is completed
+minimization of ./anvil-min-brd/88/kubernetes_cluster/spec/api_server/mod.rs is completed
+minimization of ./anvil-min-brd/89/kubernetes_cluster/spec/api_server/state_machine.rs is completed
+minimization of ./anvil-min-brd/90/kubernetes_cluster/spec/api_server/types.rs is completed
+minimization of ./anvil-min-brd/91/kubernetes_cluster/spec/builtin_controllers/mod.rs is completed
+minimization of ./anvil-min-brd/92/kubernetes_cluster/spec/builtin_controllers/daemon_set_controller.rs is completed
+minimization of ./anvil-min-brd/93/kubernetes_cluster/spec/builtin_controllers/garbage_collector.rs is completed
+minimization of ./anvil-min-brd/94/kubernetes_cluster/spec/builtin_controllers/stabilizer.rs is completed
+minimization of ./anvil-min-brd/95/kubernetes_cluster/spec/builtin_controllers/state_machine.rs is completed
+minimization of ./anvil-min-brd/96/kubernetes_cluster/spec/builtin_controllers/stateful_set_controller.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 225..=229 } in "./anvil-min-brd/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 357..=361 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 76..=83 } in "./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 277..=279 } in "./anvil-min-brd/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+minimization of ./anvil-min-brd/97/kubernetes_cluster/spec/builtin_controllers/types.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 437..=513 } in "./anvil-min-brd/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 259..=312 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/98/kubernetes_cluster/spec/client/mod.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 277..=280 } in "./anvil-min-brd/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 387..=392 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+minimization of ./anvil-min-brd/99/kubernetes_cluster/spec/client/types.rs is completed
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 276..=280 } in "./anvil-min-brd/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+commenting out line Lines { lines: 94..=94 } in "./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 526..=526 } in "./anvil-min-brd/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 258..=313 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/100/kubernetes_cluster/spec/client/state_machine.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 287..=287 } in "./anvil-min-brd/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+minimization of ./anvil-min-brd/101/kubernetes_cluster/spec/cluster.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 402..=402 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 334..=337 } in "./anvil-min-brd/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 343..=343 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 97..=97 } in "./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 523..=527 } in "./anvil-min-brd/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+verus failed, reverting
+verus failed, reverting
+verus failed, reverting
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 353..=353 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/79/kubernetes_cluster/proof/controller_runtime_liveness.rs is completed
+commenting out line Lines { lines: 100..=100 } in "./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs"
+commenting out line Lines { lines: 398..=403 } in "./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs"
+commenting out line Lines { lines: 344..=344 } in "./anvil-min-brd/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+commenting out line Lines { lines: 283..=288 } in "./anvil-min-brd/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+minimization of ./anvil-min-brd/102/kubernetes_cluster/spec/cluster_state_machine.rs is completed
+verus failed, reverting
+minimization of ./anvil-min-brd/103/kubernetes_cluster/spec/controller/mod.rs is completed
+minimization of ./anvil-min-brd/104/kubernetes_cluster/spec/controller/controller_runtime.rs is completed
+commenting out line Lines { lines: 489..=489 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/105/kubernetes_cluster/spec/controller/state_machine.rs is completed
+verus failed, reverting
+minimization of ./anvil-min-brd/106/kubernetes_cluster/spec/controller/types.rs is completed
+commenting out line Lines { lines: 108..=115 } in "./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+minimization of ./anvil-min-brd/72/kubernetes_cluster/proof/api_server_liveness.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 340..=345 } in "./anvil-min-brd/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+minimization of ./anvil-min-brd/81/kubernetes_cluster/proof/daemon_set_controller.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 487..=513 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 126..=126 } in "./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+minimization of ./anvil-min-brd/84/kubernetes_cluster/proof/stateful_set_controller.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 486..=514 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/107/kubernetes_cluster/spec/external_api/mod.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 129..=129 } in "./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs"
+minimization of ./anvil-min-brd/108/kubernetes_cluster/spec/external_api/state_machine.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 567..=567 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/109/kubernetes_cluster/spec/external_api/types.rs is completed
+minimization of ./anvil-min-brd/110/kubernetes_cluster/spec/message.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 132..=132 } in "./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 601..=601 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 135..=135 } in "./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs"
+minimization of ./anvil-min-brd/111/kubernetes_cluster/spec/network/mod.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 604..=604 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+minimization of ./anvil-min-brd/86/kubernetes_cluster/proof/wf1_assistant.rs is completed
+minimization of ./anvil-min-brd/112/kubernetes_cluster/spec/network/types.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 559..=608 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/113/kubernetes_cluster/spec/network/state_machine.rs is completed
+minimization of ./anvil-min-brd/114/kubernetes_cluster/spec/pod_event/mod.rs is completed
+minimization of ./anvil-min-brd/115/kubernetes_cluster/spec/pod_event/types.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 558..=609 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 662..=662 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/116/kubernetes_cluster/spec/pod_event/state_machine.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 696..=696 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/117/reconciler/mod.rs is completed
+minimization of ./anvil-min-brd/118/reconciler/exec/mod.rs is completed
+verus succeeded with time: 35088ms
+commenting out line Lines { lines: 699..=699 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/119/reconciler/exec/io.rs is completed
+minimization of ./anvil-min-brd/120/reconciler/exec/reconciler.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 654..=703 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/121/reconciler/exec/resource_builder.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 653..=704 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/122/reconciler/spec/mod.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 763..=763 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 753..=807 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/123/reconciler/spec/io.rs is completed
+minimization of ./anvil-min-brd/124/reconciler/spec/reconciler.rs is completed
+minimization of ./anvil-min-brd/125/reconciler/spec/resource_builder.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 751..=808 } in "./anvil-min-brd/83/kubernetes_cluster/proof/message.rs"
+minimization of ./anvil-min-brd/126/shim_layer/mod.rs is completed
+minimization of ./anvil-min-brd/127/shim_layer/controller_runtime.rs is completed
+verus failed, reverting
+minimization of ./anvil-min-brd/83/kubernetes_cluster/proof/message.rs is completed
+minimization of ./anvil-min-brd/128/shim_layer/fault_injection.rs is completed
+minimization of ./anvil-min-brd/129/state_machine/mod.rs is completed
+minimization of ./anvil-min-brd/130/state_machine/state_machine.rs is completed
+minimization of ./anvil-min-brd/131/state_machine/action.rs is completed
+minimization of ./anvil-min-brd/132/temporal_logic/mod.rs is completed
+minimization of ./anvil-min-brd/133/temporal_logic/defs.rs is completed
+commenting out line Lines { lines: 140..=142 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 150..=152 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+minimization of ./anvil-min-brd/135/vstd_ext/mod.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 203..=205 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+commenting out line Lines { lines: 23..=23 } in "./anvil-min-brd/136/vstd_ext/map_lib.rs"
+commenting out line Lines { lines: 15..=15 } in "./anvil-min-brd/137/vstd_ext/multiset_lib.rs"
+minimization of ./anvil-min-brd/138/vstd_ext/option_lib.rs is completed
+commenting out line Lines { lines: 17..=17 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 251..=263 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+commenting out line Lines { lines: 18..=20 } in "./anvil-min-brd/140/vstd_ext/set_lib.rs"
+verus failed, reverting
+minimization of ./anvil-min-brd/136/vstd_ext/map_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 23..=27 } in "./anvil-min-brd/137/vstd_ext/multiset_lib.rs"
+minimization of ./anvil-min-brd/141/vstd_ext/string_map.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 20..=20 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+minimization of ./anvil-min-brd/142/vstd_ext/string_view.rs is completed
+commenting out line Lines { lines: 267..=269 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 21..=23 } in "./anvil-min-brd/140/vstd_ext/set_lib.rs"
+commenting out line Lines { lines: 32..=35 } in "./anvil-min-brd/143/vstd_ext/vec_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 33..=33 } in "./anvil-min-brd/137/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 22..=22 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 246..=271 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+verus failed, reverting
+minimization of ./anvil-min-brd/143/vstd_ext/vec_lib.rs is completed
+commenting out line Lines { lines: 49..=49 } in "./anvil-min-brd/140/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 50..=50 } in "./anvil-min-brd/137/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 51..=51 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 321..=325 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 50..=50 } in "./anvil-min-brd/140/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 65..=65 } in "./anvil-min-brd/137/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 55..=55 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 317..=326 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus succeeded with time: 44887ms
+commenting out line Lines { lines: 53..=53 } in "./anvil-min-brd/140/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 66..=66 } in "./anvil-min-brd/137/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 53..=56 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 333..=333 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 63..=69 } in "./anvil-min-brd/137/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 44428ms
+minimization of ./anvil-min-brd/140/vstd_ext/set_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 57..=57 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 343..=349 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 61..=70 } in "./anvil-min-brd/137/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 88..=88 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 350..=350 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 80..=80 } in "./anvil-min-brd/137/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 93..=93 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 360..=362 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 82..=82 } in "./anvil-min-brd/137/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 358..=363 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 91..=94 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 78..=84 } in "./anvil-min-brd/137/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 372..=375 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 95..=95 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+minimization of ./anvil-min-brd/137/vstd_ext/multiset_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 371..=376 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 104..=106 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 370..=377 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 113..=119 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 378..=381 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 120..=125 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 389..=391 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 140..=140 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 393..=395 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+commenting out line Lines { lines: 139..=141 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 145..=145 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+commenting out line Lines { lines: 388..=397 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 425..=427 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+commenting out line Lines { lines: 144..=146 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 143..=147 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 435..=437 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 162..=168 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 438..=438 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 454..=454 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+commenting out line Lines { lines: 159..=169 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 170..=173 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+commenting out line Lines { lines: 450..=455 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 176..=176 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+commenting out line Lines { lines: 473..=473 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 177..=177 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+commenting out line Lines { lines: 471..=475 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 470..=476 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+commenting out line Lines { lines: 175..=179 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 215..=215 } in "./anvil-min-brd/139/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 468..=477 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./anvil-min-brd/139/vstd_ext/seq_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 482..=485 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 481..=486 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 479..=487 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 509..=509 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 507..=510 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 505..=511 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 527..=527 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 526..=528 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 530..=530 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 520..=531 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 561..=561 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 560..=562 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 556..=564 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 573..=577 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 592..=592 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 586..=594 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 656..=658 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 655..=659 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 668..=671 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 680..=683 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 691..=694 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 704..=707 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 703..=708 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 720..=723 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 738..=741 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 949..=952 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 962..=964 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 961..=965 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 993..=993 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 994..=994 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 991..=998 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 989..=999 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 988..=1000 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1015..=1018 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1089..=1095 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1088..=1096 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1108..=1115 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1129..=1132 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1156..=1158 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1151..=1159 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1199..=1220 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1198..=1221 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1243..=1251 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1242..=1252 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1268..=1271 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1298..=1301 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1297..=1302 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1318..=1321 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1335..=1343 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1334..=1344 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1333..=1345 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1370..=1373 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1363..=1375 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1362..=1376 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1391..=1397 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1414..=1429 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1412..=1430 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1487..=1492 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1486..=1493 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1614..=1616 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1617..=1619 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1626..=1626 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1637..=1637 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1644..=1644 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1645..=1645 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus succeeded with time: 35924ms
+commenting out line Lines { lines: 1647..=1647 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1643..=1651 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1613..=1653 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1612..=1654 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1672..=1691 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1671..=1692 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1726..=1731 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1725..=1733 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1711..=1736 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1710..=1737 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1750..=1762 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1749..=1763 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1797..=1799 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1830..=1832 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1872..=1872 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1867..=1876 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1866..=1877 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1894..=1897 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1893..=1898 } in "./anvil-min-brd/134/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./anvil-min-brd/134/temporal_logic/rules.rs is completed
