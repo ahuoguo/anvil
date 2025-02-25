@@ -15,6 +15,10 @@ use crate::temporal_logic::rules::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 impl <K: CustomResourceView, E: ExternalAPI, R: Reconciler<K, E>> Cluster<K, E, R> {
 
@@ -690,7 +694,7 @@ pub proof fn lemma_always_key_of_object_in_matched_ok_update_resp_message_is_sam
                 },
                 Step::ExternalAPIStep(input) => {
 //                    assert(input.get_Some_0() != msg);
-                    assert(s.in_flight().contains(msg));
+//                    assert(s.in_flight().contains(msg));
                 },
                 _ => {
                     assert(s.in_flight().contains(msg));

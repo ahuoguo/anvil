@@ -6,6 +6,10 @@ use vstd::map_lib::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 proof fn later_unfold<T>(ex: Execution<T>, p: TempPred<T>)
     requires later(p).satisfied_by(ex),
@@ -1638,7 +1642,7 @@ pub proof fn leads_to_always_tla_forall<T, A>(spec: TempPred<T>, p: TempPred<T>,
             values.lemma_maximal_equivalent_greatest(r, max_witness);
 
             assert forall |a: A| always(#[trigger] a_to_p(a)).satisfied_by(ex.suffix(i).suffix(max_witness)) by {
-//                assert(domain.contains(a));
+                assert(domain.contains(a));
 //                assert(vstd::relations::is_greatest(r, max_witness, values));
                 let witness = a_to_witness[a];
                 assert(r(witness, max_witness));

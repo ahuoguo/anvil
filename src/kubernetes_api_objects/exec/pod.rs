@@ -10,6 +10,10 @@ use crate::vstd_ext::string_map::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // Pod is a type of API object used for grouping one or more containers that share storage and network resources.
 // This is the smallest deployable unit in Kubernetes.

@@ -22,6 +22,10 @@ use crate::vstd_ext::{multiset_lib, seq_lib, string_view::*};
 use vstd::{multiset::*, prelude::*, string::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub open spec fn fb_is_well_formed(fb: FluentBitView) -> StatePred<FBCluster> {
     |s: FBCluster| fb.well_formed()

@@ -5,6 +5,10 @@ use crate::kubernetes_api_objects::spec::api_resource::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // ApiResource is used for creating API handles for DynamicObject.
 //

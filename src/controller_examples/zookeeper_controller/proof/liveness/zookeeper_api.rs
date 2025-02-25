@@ -22,6 +22,10 @@ use crate::zookeeper_controller::{
 use vstd::{prelude::*, string::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub proof fn lemma_from_after_exists_stateful_set_step_to_after_get_stateful_set_step(spec: TempPred<ZKCluster>, zookeeper: ZookeeperClusterView)
     requires

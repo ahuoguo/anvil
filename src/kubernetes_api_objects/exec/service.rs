@@ -9,6 +9,10 @@ use crate::vstd_ext::string_map::StringMap;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // Service is a type of API object used for exposing a network application
 // that is running as one or more Pods in your cluster.

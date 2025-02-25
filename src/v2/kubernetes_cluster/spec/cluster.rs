@@ -12,6 +12,10 @@ use crate::temporal_logic::defs::*;
 use vstd::{multiset::*, prelude::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // The ClusterState includes the state of the api_server (including the key-value store),
 // the states of each controller running in the cluster (and the associated external system if exists),
