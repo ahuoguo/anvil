@@ -219,14 +219,14 @@ pub proof fn object_in_every_update_request_msg_satisfies_unchangeable_induction
         if s.in_flight().contains(msg) {
             if s.resources().contains_key(resource_key) {
                 if s.resources()[resource_key].metadata.resource_version == msg.content.get_update_request().obj.metadata.resource_version {
-                    assert(unchangeable(sub_resource, msg.content.get_update_request().obj, rabbitmq));
+//                    assert(unchangeable(sub_resource, msg.content.get_update_request().obj, rabbitmq));
                 } else {
-                    assert(s_prime.resources()[resource_key].metadata.resource_version.get_Some_0() == s.kubernetes_api_state.resource_version_counter);
+//                    assert(s_prime.resources()[resource_key].metadata.resource_version.get_Some_0() == s.kubernetes_api_state.resource_version_counter);
                 }
             } else {
-                assert(s_prime.resources()[resource_key].metadata.resource_version.get_Some_0() == s.kubernetes_api_state.resource_version_counter);
+//                assert(s_prime.resources()[resource_key].metadata.resource_version.get_Some_0() == s.kubernetes_api_state.resource_version_counter);
             }
-            assert(unchangeable(sub_resource, msg.content.get_update_request().obj, rabbitmq));
+//            assert(unchangeable(sub_resource, msg.content.get_update_request().obj, rabbitmq));
         } else {
             let step = choose |step| RMQCluster::next_step(s, s_prime, step);
             lemma_resource_update_request_msg_implies_key_in_reconcile_equals(sub_resource, rabbitmq, s, s_prime, msg, step);

@@ -99,7 +99,7 @@ proof fn lemma_true_leads_to_always_current_state_matches(rabbitmq: RabbitmqClus
         assert forall |res: SubResource| #[trigger] resource_state_matches::<RabbitmqMaker>(res, rabbitmq, s.resources()) by {
             tla_forall_apply(a_to_p, res);
             assert(a_to_p(res).satisfied_by(ex));
-            assert(sub_resource_state_matches(res, rabbitmq)(s));
+//            assert(sub_resource_state_matches(res, rabbitmq)(s));
         }
     }
     temp_pred_equality(tla_forall(|res: SubResource| lift_state(sub_resource_state_matches(res, rabbitmq))), lift_state(current_state_matches::<RabbitmqMaker>(rabbitmq)));
@@ -122,9 +122,9 @@ proof fn lemma_true_leads_to_always_state_matches_for_all_but_stateful_set(rabbi
 {
     let spec = assumption_and_invariants_of_all_phases(rabbitmq);
 
-    assert forall |action: ActionKind, sub_resource: SubResource| #![auto] spec.entails(always(lift_state(RMQCluster::pending_req_in_flight_or_resp_in_flight_at_reconcile_state(rabbitmq.object_ref(), at_step_closure(RabbitmqReconcileStep::AfterKRequestStep(action, sub_resource)))))) by {
-        always_tla_forall_apply(spec, |step: (ActionKind, SubResource)| lift_state(RMQCluster::pending_req_in_flight_or_resp_in_flight_at_reconcile_state(rabbitmq.object_ref(), at_step_closure(RabbitmqReconcileStep::AfterKRequestStep(step.0, step.1)))), (action, sub_resource));
-    }
+//    assert forall |action: ActionKind, sub_resource: SubResource| #![auto] spec.entails(always(lift_state(RMQCluster::pending_req_in_flight_or_resp_in_flight_at_reconcile_state(rabbitmq.object_ref(), at_step_closure(RabbitmqReconcileStep::AfterKRequestStep(action, sub_resource)))))) by {
+//        always_tla_forall_apply(spec, |step: (ActionKind, SubResource)| lift_state(RMQCluster::pending_req_in_flight_or_resp_in_flight_at_reconcile_state(rabbitmq.object_ref(), at_step_closure(RabbitmqReconcileStep::AfterKRequestStep(step.0, step.1)))), (action, sub_resource));
+//    }
 
     // The use of termination property ensures spec |= true ~> reconcile_idle.
     terminate::reconcile_eventually_terminates(spec, rabbitmq);
@@ -378,21 +378,21 @@ proof fn lemma_from_init_step_to_after_create_headless_service_step(spec: TempPr
     combine_spec_entails_always_n!(
         spec, lift_action(stronger_next), lift_action(RMQCluster::next()), lift_state(RMQCluster::crash_disabled())
     );
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || post(s_prime) by {
-        let step = choose |step| RMQCluster::next_step(s, s_prime, step);
-        match step {
-            Step::ControllerStep(input) => {
-                if input.1.get_Some_0() != rabbitmq.object_ref() {
-                    assert(pre(s_prime));
-                } else {
-                    assert(post(s_prime));
-                }
-            },
-            _ => {
-                assert(pre(s_prime));
-            }
-        }
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || post(s_prime) by {
+//        let step = choose |step| RMQCluster::next_step(s, s_prime, step);
+//        match step {
+//            Step::ControllerStep(input) => {
+//                if input.1.get_Some_0() != rabbitmq.object_ref() {
+////                    assert(pre(s_prime));
+//                } else {
+////                    assert(post(s_prime));
+//                }
+//            },
+//            _ => {
+////                assert(pre(s_prime));
+//            }
+//        }
+//    }
     RMQCluster::lemma_pre_leads_to_post_by_controller(spec, input, stronger_next, RMQCluster::continue_reconcile(), pre, post);
 }
 

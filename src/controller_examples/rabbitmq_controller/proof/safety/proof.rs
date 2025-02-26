@@ -59,23 +59,23 @@ proof fn lemma_stateful_set_never_scaled_down_for_rabbitmq(spec: TempPred<RMQClu
     lemma_always_object_in_resource_update_request_msg_has_smaller_rv_than_etcd(spec, SubResource::StatefulSet, rabbitmq);
     RMQCluster::lemma_always_each_object_in_etcd_is_well_formed(spec);
     always_to_always_later(spec, lift_state(RMQCluster::each_object_in_etcd_is_well_formed()));
-    assert forall |s, s_prime| #[trigger] next(s, s_prime) implies stateful_set_not_scaled_down::<RabbitmqMaker>(rabbitmq)(s, s_prime) by {
-        let sts_key = make_stateful_set_key(rabbitmq);
-        if s.resources().contains_key(sts_key) && s_prime.resources().contains_key(sts_key) {
-            if s.resources()[sts_key].spec != s_prime.resources()[sts_key].spec {
-                let step = choose |step| RMQCluster::next_step(s, s_prime, step);
-                let input = step.get_ApiServerStep_0().get_Some_0();
-                if input.content.is_delete_request() {
-                    assert(StatefulSetView::unmarshal(s.resources()[sts_key]).get_Ok_0().spec == StatefulSetView::unmarshal(s_prime.resources()[sts_key]).get_Ok_0().spec);
-                } else {
-                    if resource_update_request_msg(sts_key)(input) {} else {}
-                    assert(s.resources()[sts_key].metadata.resource_version.get_Some_0() == input.content.get_update_request().obj.metadata.resource_version.get_Some_0());
-                    assert(replicas_of_stateful_set(s_prime.resources()[sts_key]) == replicas_of_stateful_set(input.content.get_update_request().obj));
-                    assert(replicas_of_stateful_set(s_prime.resources()[sts_key]) >= replicas_of_stateful_set(s.resources()[sts_key]));
-                }
-            }
-        }
-    }
+//    assert forall |s, s_prime| #[trigger] next(s, s_prime) implies stateful_set_not_scaled_down::<RabbitmqMaker>(rabbitmq)(s, s_prime) by {
+//        let sts_key = make_stateful_set_key(rabbitmq);
+//        if s.resources().contains_key(sts_key) && s_prime.resources().contains_key(sts_key) {
+//            if s.resources()[sts_key].spec != s_prime.resources()[sts_key].spec {
+//                let step = choose |step| RMQCluster::next_step(s, s_prime, step);
+//                let input = step.get_ApiServerStep_0().get_Some_0();
+//                if input.content.is_delete_request() {
+////                    assert(StatefulSetView::unmarshal(s.resources()[sts_key]).get_Ok_0().spec == StatefulSetView::unmarshal(s_prime.resources()[sts_key]).get_Ok_0().spec);
+//                } else {
+//                    if resource_update_request_msg(sts_key)(input) {} else {}
+////                    assert(s.resources()[sts_key].metadata.resource_version.get_Some_0() == input.content.get_update_request().obj.metadata.resource_version.get_Some_0());
+////                    assert(replicas_of_stateful_set(s_prime.resources()[sts_key]) == replicas_of_stateful_set(input.content.get_update_request().obj));
+////                    assert(replicas_of_stateful_set(s_prime.resources()[sts_key]) >= replicas_of_stateful_set(s.resources()[sts_key]));
+//                }
+//            }
+//        }
+//    }
     invariant_n!(
         spec, lift_action(next), lift_action(inv),
         lift_action(RMQCluster::next()), lift_state(replicas_of_stateful_set_update_request_msg_is_no_smaller_than_etcd(rabbitmq)),
@@ -140,11 +140,11 @@ proof fn lemma_always_replicas_of_stateful_set_update_request_msg_is_no_smaller_
             let step = choose |step| RMQCluster::next_step(s, s_prime, step);
             if s.in_flight().contains(msg) {
                 if !s.resources().contains_key(sts_key) || s.resources()[sts_key] != s_prime.resources()[sts_key] {
-                    assert(s_prime.resources()[sts_key].metadata.resource_version.get_Some_0() == s.kubernetes_api_state.resource_version_counter);
-                    assert(msg.content.get_update_request().obj.metadata.resource_version.get_Some_0() < s.kubernetes_api_state.resource_version_counter);
-                    assert(false);
+//                    assert(s_prime.resources()[sts_key].metadata.resource_version.get_Some_0() == s.kubernetes_api_state.resource_version_counter);
+//                    assert(msg.content.get_update_request().obj.metadata.resource_version.get_Some_0() < s.kubernetes_api_state.resource_version_counter);
+//                    assert(false);
                 } else {
-                    assert(StatefulSetView::unmarshal(s_prime.resources()[sts_key]).get_Ok_0().spec.get_Some_0().replicas.get_Some_0() <= replicas_of_stateful_set(msg.content.get_update_request().obj));
+//                    assert(StatefulSetView::unmarshal(s_prime.resources()[sts_key]).get_Ok_0().spec.get_Some_0().replicas.get_Some_0() <= replicas_of_stateful_set(msg.content.get_update_request().obj));
                 }
             } else {
                 StatefulSetView::marshal_preserves_integrity();
@@ -231,14 +231,14 @@ proof fn lemma_always_replicas_of_etcd_stateful_set_satisfies_order(spec: TempPr
             if s.resources().contains_key(sts_key) && s.resources()[sts_key] == s_prime.resources()[sts_key] {
                 if s_prime.resources().contains_key(key) {
                     if !s.resources().contains_key(key) {
-                        assert(s_prime.resources()[key].metadata.uid.get_Some_0() == s.kubernetes_api_state.uid_counter);
+//                        assert(s_prime.resources()[key].metadata.uid.get_Some_0() == s.kubernetes_api_state.uid_counter);
                         let owner_refs = s.resources()[sts_key].metadata.owner_references;
-                        assert(owner_refs.get_Some_0()[0].uid != s.kubernetes_api_state.uid_counter);
-                        assert(owner_refs.get_Some_0()[0] != RabbitmqClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
+//                        assert(owner_refs.get_Some_0()[0].uid != s.kubernetes_api_state.uid_counter);
+//                        assert(owner_refs.get_Some_0()[0] != RabbitmqClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
                     } else if s.resources()[key] != s_prime.resources()[key] {
-                        assert(s.resources()[key].metadata.uid == s_prime.resources()[key].metadata.uid);
-                        assert(RabbitmqClusterView::unmarshal(s.resources()[key]).get_Ok_0().controller_owner_ref() == RabbitmqClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
-                        assert(replicas_of_rabbitmq(s.resources()[key]) <= replicas_of_rabbitmq(s_prime.resources()[key]));
+//                        assert(s.resources()[key].metadata.uid == s_prime.resources()[key].metadata.uid);
+//                        assert(RabbitmqClusterView::unmarshal(s.resources()[key]).get_Ok_0().controller_owner_ref() == RabbitmqClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
+//                        assert(replicas_of_rabbitmq(s.resources()[key]) <= replicas_of_rabbitmq(s_prime.resources()[key]));
                     }
                 }
             } else {
@@ -336,17 +336,17 @@ proof fn replicas_of_stateful_set_create_request_msg_satisfies_order_induction(
     let sts_key = make_stateful_set_key(rabbitmq);
     match step {
         Step::ApiServerStep(input) => {
-            assert(s.controller_state == s_prime.controller_state);
+//            assert(s.controller_state == s_prime.controller_state);
             assert(s.in_flight().contains(msg));
             if s_prime.resources().contains_key(key) {
                 if s.resources().contains_key(key) {
-                    assert(replicas_of_rabbitmq(s.resources()[key]) <= replicas_of_rabbitmq(s_prime.resources()[key]));
+//                    assert(replicas_of_rabbitmq(s.resources()[key]) <= replicas_of_rabbitmq(s_prime.resources()[key]));
                 } else {
                     let owner_refs = msg.content.get_create_request().obj.metadata.owner_references;
-                    assert(owner_refs.is_Some() && owner_refs.get_Some_0().len() == 1);
-                    assert(owner_refs.get_Some_0()[0].uid < s.kubernetes_api_state.uid_counter);
-                    assert(owner_refs.get_Some_0()[0] != RabbitmqClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
-                    assert(!msg.content.get_create_request().obj.metadata.owner_references_only_contains(RabbitmqClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref()));
+//                    assert(owner_refs.is_Some() && owner_refs.get_Some_0().len() == 1);
+//                    assert(owner_refs.get_Some_0()[0].uid < s.kubernetes_api_state.uid_counter);
+//                    assert(owner_refs.get_Some_0()[0] != RabbitmqClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
+//                    assert(!msg.content.get_create_request().obj.metadata.owner_references_only_contains(RabbitmqClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref()));
                 }
             }
         },
@@ -359,9 +359,9 @@ proof fn replicas_of_stateful_set_create_request_msg_satisfies_order_induction(
         },
         _ => {
             assert(s.in_flight().contains(msg));
-            assert(s.resources().contains_key(key) == s_prime.resources().contains_key(key));
+//            assert(s.resources().contains_key(key) == s_prime.resources().contains_key(key));
             if s.resources().contains_key(key) {
-                assert(s.resources()[key] == s_prime.resources()[key]);
+//                assert(s.resources()[key] == s_prime.resources()[key]);
             }
         },
     }
@@ -389,16 +389,16 @@ proof fn replicas_of_stateful_set_update_request_msg_satisfies_order_induction(
     match step {
         Step::ApiServerStep(input) => {
             assert(s.in_flight().contains(msg));
-            assert(s.controller_state == s_prime.controller_state);
+//            assert(s.controller_state == s_prime.controller_state);
             if s_prime.resources().contains_key(key) {
                 if s.resources().contains_key(key) {
-                    assert(replicas_of_rabbitmq(s.resources()[key]) <= replicas_of_rabbitmq(s_prime.resources()[key]));
+//                    assert(replicas_of_rabbitmq(s.resources()[key]) <= replicas_of_rabbitmq(s_prime.resources()[key]));
                 } else {
                     let owner_refs = msg.content.get_update_request().obj.metadata.owner_references;
-                    assert(owner_refs.is_Some() && owner_refs.get_Some_0().len() == 1);
-                    assert(owner_refs.get_Some_0()[0].uid < s.kubernetes_api_state.uid_counter);
-                    assert(owner_refs.get_Some_0()[0] != RabbitmqClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
-                    assert(!msg.content.get_update_request().obj.metadata.owner_references_only_contains(RabbitmqClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref()));
+//                    assert(owner_refs.is_Some() && owner_refs.get_Some_0().len() == 1);
+//                    assert(owner_refs.get_Some_0()[0].uid < s.kubernetes_api_state.uid_counter);
+//                    assert(owner_refs.get_Some_0()[0] != RabbitmqClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
+//                    assert(!msg.content.get_update_request().obj.metadata.owner_references_only_contains(RabbitmqClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref()));
                 }
             }
         },
@@ -411,9 +411,9 @@ proof fn replicas_of_stateful_set_update_request_msg_satisfies_order_induction(
         },
         _ => {
             assert(s.in_flight().contains(msg));
-            assert(s.resources().contains_key(key) == s_prime.resources().contains_key(key));
+//            assert(s.resources().contains_key(key) == s_prime.resources().contains_key(key));
             if s.resources().contains_key(key) {
-                assert(s.resources()[key] == s_prime.resources()[key]);
+//                assert(s.resources()[key] == s_prime.resources()[key]);
             }
         },
     }

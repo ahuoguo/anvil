@@ -1,0 +1,2005 @@
+warning: unused variable: `tokens`
+    --> tools/minimize/src/main.rs:1511:55
+     |
+1511 |             Meta::List(MetaList { path, delimiter: _, tokens }) => {
+     |                                                       ^^^^^^ help: try ignoring the field: `tokens: _`
+     |
+     = note: `#[warn(unused_variables)]` on by default
+
+warning: `minimize` (bin "minimize") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 2.22s
+     Running `/local/abai/verus/source/target/release/minimize -d ./rabbitmq-tmp2 /local/abai/anvil/src/rabbitmq_controller.d`
+verus succeeded with time: 142082ms
+minimization of ./rabbitmq-tmp2/1/external_api/mod.rs is completed
+minimization of ./rabbitmq-tmp2/0/rabbitmq_controller.rs is completed
+minimization of ./rabbitmq-tmp2/6/kubernetes_api_objects/exec/mod.rs is completed
+minimization of ./rabbitmq-tmp2/2/external_api/exec.rs is completed
+minimization of ./rabbitmq-tmp2/4/kubernetes_api_objects/mod.rs is completed
+minimization of ./rabbitmq-tmp2/3/external_api/spec.rs is completed
+minimization of ./rabbitmq-tmp2/5/kubernetes_api_objects/error.rs is completed
+minimization of ./rabbitmq-tmp2/7/kubernetes_api_objects/exec/affinity.rs is completed
+minimization of ./rabbitmq-tmp2/8/kubernetes_api_objects/exec/api_method.rs is completed
+minimization of ./rabbitmq-tmp2/12/kubernetes_api_objects/exec/container.rs is completed
+minimization of ./rabbitmq-tmp2/10/kubernetes_api_objects/exec/common.rs is completed
+minimization of ./rabbitmq-tmp2/11/kubernetes_api_objects/exec/config_map.rs is completed
+minimization of ./rabbitmq-tmp2/13/kubernetes_api_objects/exec/daemon_set.rs is completed
+minimization of ./rabbitmq-tmp2/9/kubernetes_api_objects/exec/api_resource.rs is completed
+minimization of ./rabbitmq-tmp2/14/kubernetes_api_objects/exec/dynamic.rs is completed
+minimization of ./rabbitmq-tmp2/15/kubernetes_api_objects/exec/label_selector.rs is completed
+minimization of ./rabbitmq-tmp2/16/kubernetes_api_objects/exec/object_meta.rs is completed
+minimization of ./rabbitmq-tmp2/18/kubernetes_api_objects/exec/persistent_volume_claim.rs is completed
+minimization of ./rabbitmq-tmp2/17/kubernetes_api_objects/exec/owner_reference.rs is completed
+minimization of ./rabbitmq-tmp2/20/kubernetes_api_objects/exec/pod_template_spec.rs is completed
+minimization of ./rabbitmq-tmp2/19/kubernetes_api_objects/exec/pod.rs is completed
+minimization of ./rabbitmq-tmp2/21/kubernetes_api_objects/exec/preconditions.rs is completed
+minimization of ./rabbitmq-tmp2/22/kubernetes_api_objects/exec/prelude.rs is completed
+minimization of ./rabbitmq-tmp2/23/kubernetes_api_objects/exec/resource.rs is completed
+minimization of ./rabbitmq-tmp2/24/kubernetes_api_objects/exec/resource_requirements.rs is completed
+minimization of ./rabbitmq-tmp2/25/kubernetes_api_objects/exec/role.rs is completed
+minimization of ./rabbitmq-tmp2/26/kubernetes_api_objects/exec/role_binding.rs is completed
+minimization of ./rabbitmq-tmp2/27/kubernetes_api_objects/exec/secret.rs is completed
+minimization of ./rabbitmq-tmp2/28/kubernetes_api_objects/exec/service.rs is completed
+minimization of ./rabbitmq-tmp2/29/kubernetes_api_objects/exec/service_account.rs is completed
+minimization of ./rabbitmq-tmp2/30/kubernetes_api_objects/exec/stateful_set.rs is completed
+minimization of ./rabbitmq-tmp2/31/kubernetes_api_objects/exec/toleration.rs is completed
+minimization of ./rabbitmq-tmp2/32/kubernetes_api_objects/exec/volume.rs is completed
+minimization of ./rabbitmq-tmp2/33/kubernetes_api_objects/exec/volume_resource_requirements.rs is completed
+minimization of ./rabbitmq-tmp2/34/kubernetes_api_objects/spec/mod.rs is completed
+minimization of ./rabbitmq-tmp2/35/kubernetes_api_objects/spec/affinity.rs is completed
+minimization of ./rabbitmq-tmp2/36/kubernetes_api_objects/spec/api_method.rs is completed
+minimization of ./rabbitmq-tmp2/37/kubernetes_api_objects/spec/api_resource.rs is completed
+minimization of ./rabbitmq-tmp2/38/kubernetes_api_objects/spec/common.rs is completed
+minimization of ./rabbitmq-tmp2/39/kubernetes_api_objects/spec/config_map.rs is completed
+minimization of ./rabbitmq-tmp2/40/kubernetes_api_objects/spec/container.rs is completed
+minimization of ./rabbitmq-tmp2/41/kubernetes_api_objects/spec/daemon_set.rs is completed
+minimization of ./rabbitmq-tmp2/42/kubernetes_api_objects/spec/dynamic.rs is completed
+minimization of ./rabbitmq-tmp2/43/kubernetes_api_objects/spec/label_selector.rs is completed
+minimization of ./rabbitmq-tmp2/44/kubernetes_api_objects/spec/object_meta.rs is completed
+minimization of ./rabbitmq-tmp2/45/kubernetes_api_objects/spec/owner_reference.rs is completed
+minimization of ./rabbitmq-tmp2/46/kubernetes_api_objects/spec/persistent_volume_claim.rs is completed
+minimization of ./rabbitmq-tmp2/47/kubernetes_api_objects/spec/pod.rs is completed
+minimization of ./rabbitmq-tmp2/48/kubernetes_api_objects/spec/pod_template_spec.rs is completed
+minimization of ./rabbitmq-tmp2/50/kubernetes_api_objects/spec/prelude.rs is completed
+minimization of ./rabbitmq-tmp2/49/kubernetes_api_objects/spec/preconditions.rs is completed
+minimization of ./rabbitmq-tmp2/51/kubernetes_api_objects/spec/resource.rs is completed
+minimization of ./rabbitmq-tmp2/52/kubernetes_api_objects/spec/resource_requirements.rs is completed
+minimization of ./rabbitmq-tmp2/53/kubernetes_api_objects/spec/role.rs is completed
+minimization of ./rabbitmq-tmp2/54/kubernetes_api_objects/spec/role_binding.rs is completed
+minimization of ./rabbitmq-tmp2/55/kubernetes_api_objects/spec/secret.rs is completed
+minimization of ./rabbitmq-tmp2/56/kubernetes_api_objects/spec/service.rs is completed
+minimization of ./rabbitmq-tmp2/57/kubernetes_api_objects/spec/service_account.rs is completed
+minimization of ./rabbitmq-tmp2/58/kubernetes_api_objects/spec/stateful_set.rs is completed
+minimization of ./rabbitmq-tmp2/59/kubernetes_api_objects/spec/toleration.rs is completed
+minimization of ./rabbitmq-tmp2/60/kubernetes_api_objects/spec/volume.rs is completed
+minimization of ./rabbitmq-tmp2/61/kubernetes_api_objects/spec/volume_resource_requirements.rs is completed
+minimization of ./rabbitmq-tmp2/62/kubernetes_cluster/mod.rs is completed
+minimization of ./rabbitmq-tmp2/63/kubernetes_cluster/proof/mod.rs is completed
+commenting out line Lines { lines: 135..=139 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+minimization of ./rabbitmq-tmp2/65/kubernetes_cluster/proof/api_server_safety.rs is completed
+commenting out line Lines { lines: 171..=171 } in "./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs"
+minimization of ./rabbitmq-tmp2/67/kubernetes_cluster/proof/cluster.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 169..=172 } in "./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs"
+minimization of ./rabbitmq-tmp2/69/kubernetes_cluster/proof/controller_runtime.rs is completed
+commenting out line Lines { lines: 74..=103 } in "./rabbitmq-tmp2/68/kubernetes_cluster/proof/cluster_safety.rs"
+minimization of ./rabbitmq-tmp2/70/kubernetes_cluster/proof/controller_runtime_eventual_safety.rs is completed
+commenting out line Lines { lines: 346..=371 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+commenting out line Lines { lines: 44..=44 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+commenting out line Lines { lines: 115..=135 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+minimization of ./rabbitmq-tmp2/74/kubernetes_cluster/proof/external_api_liveness.rs is completed
+commenting out line Lines { lines: 41..=41 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 148..=148 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 179..=179 } in "./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 72..=104 } in "./rabbitmq-tmp2/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 383..=383 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 169..=175 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 350825ms
+commenting out line Lines { lines: 43..=46 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 349485ms
+commenting out line Lines { lines: 46..=46 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 145..=149 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 344550ms
+commenting out line Lines { lines: 183..=183 } in "./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 184..=184 } in "./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 167..=167 } in "./rabbitmq-tmp2/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 376..=384 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 181..=181 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 109..=109 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 343993ms
+commenting out line Lines { lines: 47..=47 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 290..=292 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 341818ms
+commenting out line Lines { lines: 185..=185 } in "./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 340061ms
+commenting out line Lines { lines: 171..=171 } in "./rabbitmq-tmp2/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 457..=460 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 178..=182 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 346622ms
+commenting out line Lines { lines: 118..=118 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 346703ms
+commenting out line Lines { lines: 50..=50 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 288..=293 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 349606ms
+commenting out line Lines { lines: 187..=187 } in "./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 360112ms
+commenting out line Lines { lines: 155..=174 } in "./rabbitmq-tmp2/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 223..=223 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 454..=461 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 353243ms
+commenting out line Lines { lines: 121..=121 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 332918ms
+commenting out line Lines { lines: 51..=51 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 313..=317 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 351161ms
+commenting out line Lines { lines: 191..=191 } in "./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 153..=175 } in "./rabbitmq-tmp2/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 222..=224 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 468..=468 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 357701ms
+commenting out line Lines { lines: 127..=127 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 337627ms
+commenting out line Lines { lines: 36..=57 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 327..=327 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 215..=215 } in "./rabbitmq-tmp2/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 352206ms
+commenting out line Lines { lines: 174..=194 } in "./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 221..=225 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 339054ms
+commenting out line Lines { lines: 470..=470 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 343449ms
+commenting out line Lines { lines: 129..=129 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 35..=58 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 324..=328 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 337503ms
+commenting out line Lines { lines: 210..=217 } in "./rabbitmq-tmp2/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 343756ms
+commenting out line Lines { lines: 216..=227 } in "./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 273..=276 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 345493ms
+commenting out line Lines { lines: 473..=473 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 123..=123 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 352872ms
+commenting out line Lines { lines: 135..=135 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 355..=355 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 342876ms
+commenting out line Lines { lines: 208..=218 } in "./rabbitmq-tmp2/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 255..=276 } in "./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 282..=282 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 342510ms
+commenting out line Lines { lines: 474..=474 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 462..=476 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 348038ms
+commenting out line Lines { lines: 124..=124 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 351101ms
+commenting out line Lines { lines: 138..=138 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 354..=356 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 324538ms
+minimization of ./rabbitmq-tmp2/68/kubernetes_cluster/proof/cluster_safety.rs is completed
+commenting out line Lines { lines: 164..=184 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 287..=287 } in "./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 338530ms
+commenting out line Lines { lines: 283..=283 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 339143ms
+commenting out line Lines { lines: 485..=488 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 350344ms
+commenting out line Lines { lines: 126..=126 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 340523ms
+commenting out line Lines { lines: 146..=146 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 353..=357 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 219..=225 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 281..=288 } in "./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 279..=284 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 482..=489 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 340306ms
+commenting out line Lines { lines: 128..=128 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 333971ms
+commenting out line Lines { lines: 148..=148 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 383..=388 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 231..=231 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/66/kubernetes_cluster/proof/builtin_controllers.rs is completed
+commenting out line Lines { lines: 114..=114 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 381..=381 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 496..=496 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 338407ms
+commenting out line Lines { lines: 151..=151 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 345924ms
+commenting out line Lines { lines: 129..=129 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 397..=397 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 228..=232 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 357726ms
+commenting out line Lines { lines: 116..=116 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 330783ms
+commenting out line Lines { lines: 388..=388 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 348766ms
+commenting out line Lines { lines: 498..=498 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 347072ms
+commenting out line Lines { lines: 156..=156 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 343936ms
+commenting out line Lines { lines: 114..=135 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 350057ms
+commenting out line Lines { lines: 398..=398 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 274..=274 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 343964ms
+commenting out line Lines { lines: 117..=117 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 343856ms
+commenting out line Lines { lines: 393..=393 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 335811ms
+commenting out line Lines { lines: 501..=501 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 339935ms
+commenting out line Lines { lines: 158..=158 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 340895ms
+commenting out line Lines { lines: 112..=137 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 394..=399 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 273..=275 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 331980ms
+commenting out line Lines { lines: 120..=120 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 348528ms
+commenting out line Lines { lines: 395..=395 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 345724ms
+commenting out line Lines { lines: 502..=502 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 490..=504 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 343598ms
+commenting out line Lines { lines: 164..=164 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 353852ms
+commenting out line Lines { lines: 188..=188 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 457..=457 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 272..=276 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 339905ms
+commenting out line Lines { lines: 121..=124 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 336946ms
+commenting out line Lines { lines: 399..=399 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 344667ms
+commenting out line Lines { lines: 433..=509 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 344495ms
+commenting out line Lines { lines: 167..=167 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 347160ms
+commenting out line Lines { lines: 190..=190 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 341712ms
+commenting out line Lines { lines: 459..=459 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 330..=333 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 126..=126 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 343624ms
+commenting out line Lines { lines: 402..=402 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 522..=522 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 340447ms
+commenting out line Lines { lines: 172..=172 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 346924ms
+commenting out line Lines { lines: 192..=192 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 345934ms
+commenting out line Lines { lines: 464..=464 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=339 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 347718ms
+commenting out line Lines { lines: 127..=130 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 350813ms
+commenting out line Lines { lines: 405..=405 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 519..=523 } in "./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 349608ms
+commenting out line Lines { lines: 106..=176 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 341698ms
+commenting out line Lines { lines: 193..=193 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 345234ms
+commenting out line Lines { lines: 466..=466 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 344572ms
+commenting out line Lines { lines: 340..=340 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 323015ms
+commenting out line Lines { lines: 132..=132 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 332479ms
+commenting out line Lines { lines: 408..=408 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/71/kubernetes_cluster/proof/controller_runtime_liveness.rs is completed
+commenting out line Lines { lines: 30..=35 } in "./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 353333ms
+commenting out line Lines { lines: 195..=195 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 343007ms
+commenting out line Lines { lines: 198..=198 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 341567ms
+commenting out line Lines { lines: 470..=470 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 336..=341 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 347944ms
+commenting out line Lines { lines: 133..=133 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 331027ms
+commenting out line Lines { lines: 373..=412 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 44..=44 } in "./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 336469ms
+commenting out line Lines { lines: 200..=200 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 342900ms
+commenting out line Lines { lines: 196..=196 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 339732ms
+commenting out line Lines { lines: 473..=473 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 449..=449 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 352481ms
+commenting out line Lines { lines: 134..=137 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 333984ms
+commenting out line Lines { lines: 419..=419 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 51..=56 } in "./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 335643ms
+commenting out line Lines { lines: 198..=198 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 347158ms
+commenting out line Lines { lines: 201..=201 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 359285ms
+commenting out line Lines { lines: 476..=476 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 340646ms
+commenting out line Lines { lines: 456..=456 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 344812ms
+commenting out line Lines { lines: 142..=142 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 333465ms
+commenting out line Lines { lines: 413..=420 } in "./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 65..=65 } in "./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 346368ms
+commenting out line Lines { lines: 191..=201 } in "./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 344519ms
+commenting out line Lines { lines: 181..=205 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 340149ms
+commenting out line Lines { lines: 480..=480 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 350858ms
+commenting out line Lines { lines: 461..=461 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 341226ms
+commenting out line Lines { lines: 144..=144 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 337928ms
+minimization of ./rabbitmq-tmp2/73/kubernetes_cluster/proof/daemon_set_controller.rs is completed
+minimization of ./rabbitmq-tmp2/79/kubernetes_cluster/spec/mod.rs is completed
+minimization of ./rabbitmq-tmp2/80/kubernetes_cluster/spec/api_server/mod.rs is completed
+minimization of ./rabbitmq-tmp2/81/kubernetes_cluster/spec/api_server/state_machine.rs is completed
+minimization of ./rabbitmq-tmp2/82/kubernetes_cluster/spec/api_server/types.rs is completed
+minimization of ./rabbitmq-tmp2/83/kubernetes_cluster/spec/builtin_controllers/mod.rs is completed
+minimization of ./rabbitmq-tmp2/84/kubernetes_cluster/spec/builtin_controllers/daemon_set_controller.rs is completed
+minimization of ./rabbitmq-tmp2/85/kubernetes_cluster/spec/builtin_controllers/garbage_collector.rs is completed
+minimization of ./rabbitmq-tmp2/86/kubernetes_cluster/spec/builtin_controllers/stabilizer.rs is completed
+minimization of ./rabbitmq-tmp2/87/kubernetes_cluster/spec/builtin_controllers/state_machine.rs is completed
+minimization of ./rabbitmq-tmp2/88/kubernetes_cluster/spec/builtin_controllers/stateful_set_controller.rs is completed
+minimization of ./rabbitmq-tmp2/89/kubernetes_cluster/spec/builtin_controllers/types.rs is completed
+minimization of ./rabbitmq-tmp2/90/kubernetes_cluster/spec/client/mod.rs is completed
+minimization of ./rabbitmq-tmp2/91/kubernetes_cluster/spec/client/types.rs is completed
+minimization of ./rabbitmq-tmp2/92/kubernetes_cluster/spec/client/state_machine.rs is completed
+minimization of ./rabbitmq-tmp2/93/kubernetes_cluster/spec/cluster.rs is completed
+minimization of ./rabbitmq-tmp2/94/kubernetes_cluster/spec/cluster_state_machine.rs is completed
+minimization of ./rabbitmq-tmp2/95/kubernetes_cluster/spec/controller/mod.rs is completed
+minimization of ./rabbitmq-tmp2/96/kubernetes_cluster/spec/controller/controller_runtime.rs is completed
+minimization of ./rabbitmq-tmp2/97/kubernetes_cluster/spec/controller/state_machine.rs is completed
+minimization of ./rabbitmq-tmp2/98/kubernetes_cluster/spec/controller/types.rs is completed
+minimization of ./rabbitmq-tmp2/99/kubernetes_cluster/spec/external_api/mod.rs is completed
+minimization of ./rabbitmq-tmp2/100/kubernetes_cluster/spec/external_api/state_machine.rs is completed
+minimization of ./rabbitmq-tmp2/101/kubernetes_cluster/spec/external_api/types.rs is completed
+minimization of ./rabbitmq-tmp2/102/kubernetes_cluster/spec/message.rs is completed
+minimization of ./rabbitmq-tmp2/103/kubernetes_cluster/spec/network/mod.rs is completed
+minimization of ./rabbitmq-tmp2/104/kubernetes_cluster/spec/network/types.rs is completed
+minimization of ./rabbitmq-tmp2/105/kubernetes_cluster/spec/network/state_machine.rs is completed
+minimization of ./rabbitmq-tmp2/106/kubernetes_cluster/spec/pod_event/mod.rs is completed
+minimization of ./rabbitmq-tmp2/107/kubernetes_cluster/spec/pod_event/types.rs is completed
+minimization of ./rabbitmq-tmp2/108/kubernetes_cluster/spec/pod_event/state_machine.rs is completed
+minimization of ./rabbitmq-tmp2/109/controller_examples/rabbitmq_controller/mod.rs is completed
+minimization of ./rabbitmq-tmp2/110/controller_examples/rabbitmq_controller/exec/mod.rs is completed
+minimization of ./rabbitmq-tmp2/111/controller_examples/rabbitmq_controller/exec/reconciler.rs is completed
+minimization of ./rabbitmq-tmp2/112/controller_examples/rabbitmq_controller/exec/resource/mod.rs is completed
+minimization of ./rabbitmq-tmp2/113/controller_examples/rabbitmq_controller/exec/resource/common.rs is completed
+minimization of ./rabbitmq-tmp2/114/controller_examples/rabbitmq_controller/exec/resource/config_map.rs is completed
+minimization of ./rabbitmq-tmp2/115/controller_examples/rabbitmq_controller/exec/resource/default_user_secret.rs is completed
+minimization of ./rabbitmq-tmp2/116/controller_examples/rabbitmq_controller/exec/resource/erlang_cookie.rs is completed
+minimization of ./rabbitmq-tmp2/117/controller_examples/rabbitmq_controller/exec/resource/headless_service.rs is completed
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/118/controller_examples/rabbitmq_controller/exec/resource/rabbitmq_plugins.rs is completed
+commenting out line Lines { lines: 72..=79 } in "./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs"
+minimization of ./rabbitmq-tmp2/119/controller_examples/rabbitmq_controller/exec/resource/role.rs is completed
+minimization of ./rabbitmq-tmp2/120/controller_examples/rabbitmq_controller/exec/resource/role_binding.rs is completed
+minimization of ./rabbitmq-tmp2/121/controller_examples/rabbitmq_controller/exec/resource/service.rs is completed
+minimization of ./rabbitmq-tmp2/122/controller_examples/rabbitmq_controller/exec/resource/service_account.rs is completed
+minimization of ./rabbitmq-tmp2/123/controller_examples/rabbitmq_controller/exec/resource/stateful_set.rs is completed
+minimization of ./rabbitmq-tmp2/124/controller_examples/rabbitmq_controller/model/mod.rs is completed
+minimization of ./rabbitmq-tmp2/125/controller_examples/rabbitmq_controller/model/reconciler.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 177..=207 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 327472ms
+minimization of ./rabbitmq-tmp2/72/kubernetes_cluster/proof/controller_runtime_safety.rs is completed
+minimization of ./rabbitmq-tmp2/126/controller_examples/rabbitmq_controller/model/resource/mod.rs is completed
+minimization of ./rabbitmq-tmp2/127/controller_examples/rabbitmq_controller/model/resource/common.rs is completed
+minimization of ./rabbitmq-tmp2/128/controller_examples/rabbitmq_controller/model/resource/config_map.rs is completed
+minimization of ./rabbitmq-tmp2/129/controller_examples/rabbitmq_controller/model/resource/default_user_secret.rs is completed
+verus succeeded with time: 320066ms
+commenting out line Lines { lines: 482..=482 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+minimization of ./rabbitmq-tmp2/130/controller_examples/rabbitmq_controller/model/resource/erlang_cookie.rs is completed
+verus succeeded with time: 323419ms
+commenting out line Lines { lines: 463..=463 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+minimization of ./rabbitmq-tmp2/131/controller_examples/rabbitmq_controller/model/resource/headless_service.rs is completed
+minimization of ./rabbitmq-tmp2/132/controller_examples/rabbitmq_controller/model/resource/rabbitmq_plugins.rs is completed
+verus succeeded with time: 305502ms
+commenting out line Lines { lines: 108..=150 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+minimization of ./rabbitmq-tmp2/133/controller_examples/rabbitmq_controller/model/resource/role.rs is completed
+minimization of ./rabbitmq-tmp2/134/controller_examples/rabbitmq_controller/model/resource/role_binding.rs is completed
+minimization of ./rabbitmq-tmp2/135/controller_examples/rabbitmq_controller/model/resource/service.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 90..=90 } in "./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs"
+minimization of ./rabbitmq-tmp2/136/controller_examples/rabbitmq_controller/model/resource/service_account.rs is completed
+minimization of ./rabbitmq-tmp2/137/controller_examples/rabbitmq_controller/model/resource/stateful_set.rs is completed
+minimization of ./rabbitmq-tmp2/138/controller_examples/rabbitmq_controller/proof/mod.rs is completed
+minimization of ./rabbitmq-tmp2/139/controller_examples/rabbitmq_controller/proof/helper_invariants/mod.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 86..=86 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+commenting out line Lines { lines: 265..=265 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+minimization of ./rabbitmq-tmp2/141/controller_examples/rabbitmq_controller/proof/helper_invariants/predicate.rs is completed
+commenting out line Lines { lines: 171..=171 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 294938ms
+commenting out line Lines { lines: 449..=487 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 323700ms
+commenting out line Lines { lines: 467..=467 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 218..=218 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 93..=93 } in "./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 368263ms
+commenting out line Lines { lines: 85..=90 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 368814ms
+commenting out line Lines { lines: 266..=266 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 358044ms
+commenting out line Lines { lines: 172..=172 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 361382ms
+commenting out line Lines { lines: 495..=495 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 360730ms
+commenting out line Lines { lines: 470..=470 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 365779ms
+commenting out line Lines { lines: 220..=220 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 96..=96 } in "./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 84..=91 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 365041ms
+commenting out line Lines { lines: 268..=268 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 378587ms
+commenting out line Lines { lines: 161..=184 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 365603ms
+commenting out line Lines { lines: 490..=496 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 355479ms
+commenting out line Lines { lines: 473..=473 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 372909ms
+commenting out line Lines { lines: 221..=221 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 104..=111 } in "./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 109..=109 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 356717ms
+commenting out line Lines { lines: 269..=269 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 372514ms
+commenting out line Lines { lines: 277..=277 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 374932ms
+commenting out line Lines { lines: 506..=506 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 359629ms
+commenting out line Lines { lines: 476..=476 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 357061ms
+commenting out line Lines { lines: 224..=224 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 122..=122 } in "./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 354898ms
+commenting out line Lines { lines: 116..=116 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 355489ms
+commenting out line Lines { lines: 270..=270 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 363458ms
+commenting out line Lines { lines: 278..=278 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 375264ms
+commenting out line Lines { lines: 501..=507 } in "./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 372946ms
+commenting out line Lines { lines: 441..=480 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 368204ms
+commenting out line Lines { lines: 225..=228 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 125..=125 } in "./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 354153ms
+commenting out line Lines { lines: 117..=117 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 363636ms
+commenting out line Lines { lines: 272..=272 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 353624ms
+commenting out line Lines { lines: 280..=280 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 363667ms
+minimization of ./rabbitmq-tmp2/64/kubernetes_cluster/proof/api_server_liveness.rs is completed
+commenting out line Lines { lines: 81..=102 } in "./rabbitmq-tmp2/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 369656ms
+commenting out line Lines { lines: 487..=487 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 230..=230 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 128..=128 } in "./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 355123ms
+commenting out line Lines { lines: 118..=118 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 369666ms
+commenting out line Lines { lines: 273..=273 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 366414ms
+commenting out line Lines { lines: 284..=284 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 80..=103 } in "./rabbitmq-tmp2/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 357623ms
+commenting out line Lines { lines: 481..=488 } in "./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 375593ms
+commenting out line Lines { lines: 231..=234 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 131..=131 } in "./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 353426ms
+commenting out line Lines { lines: 119..=119 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 359925ms
+commenting out line Lines { lines: 278..=278 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 362604ms
+commenting out line Lines { lines: 287..=287 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 148..=151 } in "./rabbitmq-tmp2/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 365334ms
+minimization of ./rabbitmq-tmp2/76/kubernetes_cluster/proof/stateful_set_controller.rs is completed
+commenting out line Lines { lines: 100..=100 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 385227ms
+commenting out line Lines { lines: 236..=236 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/78/kubernetes_cluster/proof/wf1_assistant.rs is completed
+minimization of ./rabbitmq-tmp2/145/controller_examples/rabbitmq_controller/proof/liveness/mod.rs is completed
+commenting out line Lines { lines: 42..=44 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus succeeded with time: 359988ms
+commenting out line Lines { lines: 123..=123 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 367164ms
+commenting out line Lines { lines: 280..=280 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 382864ms
+commenting out line Lines { lines: 292..=294 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 221..=221 } in "./rabbitmq-tmp2/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 378211ms
+commenting out line Lines { lines: 103..=103 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 360053ms
+commenting out line Lines { lines: 237..=237 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 100..=100 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus succeeded with time: 346488ms
+commenting out line Lines { lines: 124..=124 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 362240ms
+commenting out line Lines { lines: 281..=281 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 369553ms
+commenting out line Lines { lines: 223..=223 } in "./rabbitmq-tmp2/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 375153ms
+commenting out line Lines { lines: 104..=104 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 265..=296 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 362196ms
+commenting out line Lines { lines: 238..=241 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 101..=101 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus succeeded with time: 344565ms
+commenting out line Lines { lines: 125..=125 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 374324ms
+commenting out line Lines { lines: 283..=283 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 364145ms
+commenting out line Lines { lines: 226..=226 } in "./rabbitmq-tmp2/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 370530ms
+commenting out line Lines { lines: 107..=107 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 329..=329 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 383023ms
+commenting out line Lines { lines: 246..=246 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 373759ms
+commenting out line Lines { lines: 98..=102 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus succeeded with time: 349827ms
+commenting out line Lines { lines: 126..=126 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 355581ms
+commenting out line Lines { lines: 288..=288 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 367737ms
+commenting out line Lines { lines: 228..=228 } in "./rabbitmq-tmp2/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 366393ms
+commenting out line Lines { lines: 330..=330 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 379082ms
+commenting out line Lines { lines: 108..=108 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 363088ms
+commenting out line Lines { lines: 248..=248 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 96..=103 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus succeeded with time: 363256ms
+commenting out line Lines { lines: 163..=163 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 364294ms
+commenting out line Lines { lines: 297..=297 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 364643ms
+commenting out line Lines { lines: 215..=248 } in "./rabbitmq-tmp2/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 370188ms
+commenting out line Lines { lines: 332..=332 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 365274ms
+commenting out line Lines { lines: 109..=110 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 371133ms
+commenting out line Lines { lines: 259..=259 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 124..=126 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus succeeded with time: 353065ms
+commenting out line Lines { lines: 167..=167 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 369863ms
+commenting out line Lines { lines: 299..=299 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs is completed
+commenting out line Lines { lines: 144..=146 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 371932ms
+commenting out line Lines { lines: 337..=337 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 377857ms
+commenting out line Lines { lines: 112..=112 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 366227ms
+commenting out line Lines { lines: 260..=260 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 367293ms
+commenting out line Lines { lines: 145..=153 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 161..=173 } in "./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 374292ms
+commenting out line Lines { lines: 294..=307 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 151..=151 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 338..=338 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 374383ms
+commenting out line Lines { lines: 124..=124 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 371714ms
+commenting out line Lines { lines: 262..=262 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs is completed
+commenting out line Lines { lines: 377..=381 } in "./rabbitmq-tmp2/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 173..=184 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 255..=308 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 149..=152 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=339 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 363163ms
+commenting out line Lines { lines: 94..=127 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 374428ms
+commenting out line Lines { lines: 265..=265 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 392..=392 } in "./rabbitmq-tmp2/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 188..=194 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 254..=309 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 156..=158 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 344..=344 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 185..=185 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 367881ms
+commenting out line Lines { lines: 393..=393 } in "./rabbitmq-tmp2/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus succeeded with time: 373697ms
+commenting out line Lines { lines: 208..=269 } in "./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 235..=243 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 331..=331 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 375105ms
+commenting out line Lines { lines: 345..=345 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 378400ms
+commenting out line Lines { lines: 187..=187 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 168..=168 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/77/kubernetes_cluster/proof/validation_rule.rs is completed
+commenting out line Lines { lines: 133..=135 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 384749ms
+commenting out line Lines { lines: 404..=406 } in "./rabbitmq-tmp2/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 385..=385 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus succeeded with time: 369788ms
+commenting out line Lines { lines: 332..=332 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 371461ms
+commenting out line Lines { lines: 346..=346 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 161..=169 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 377174ms
+commenting out line Lines { lines: 178..=192 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 141..=141 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 419..=421 } in "./rabbitmq-tmp2/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus succeeded with time: 371173ms
+commenting out line Lines { lines: 387..=387 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus succeeded with time: 383647ms
+commenting out line Lines { lines: 336..=336 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 379125ms
+commenting out line Lines { lines: 347..=347 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 173..=175 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 138..=142 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 177..=193 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 431..=433 } in "./rabbitmq-tmp2/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus succeeded with time: 376324ms
+commenting out line Lines { lines: 391..=391 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus succeeded with time: 380523ms
+commenting out line Lines { lines: 337..=337 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 382396ms
+commenting out line Lines { lines: 349..=349 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 180..=180 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 154..=156 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 438..=440 } in "./rabbitmq-tmp2/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus succeeded with time: 383558ms
+commenting out line Lines { lines: 380..=394 } in "./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 249..=249 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 364866ms
+commenting out line Lines { lines: 339..=339 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 346..=346 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 373854ms
+commenting out line Lines { lines: 350..=350 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 167..=167 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 178..=181 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 446..=448 } in "./rabbitmq-tmp2/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus succeeded with time: 367872ms
+minimization of ./rabbitmq-tmp2/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs is completed
+commenting out line Lines { lines: 40..=49 } in "./rabbitmq-tmp2/150/controller_examples/rabbitmq_controller/proof/liveness/terminate.rs"
+verus succeeded with time: 372057ms
+commenting out line Lines { lines: 253..=253 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 376506ms
+commenting out line Lines { lines: 347..=347 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 369356ms
+commenting out line Lines { lines: 354..=354 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 159..=168 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 220..=220 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 453..=455 } in "./rabbitmq-tmp2/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/150/controller_examples/rabbitmq_controller/proof/liveness/terminate.rs is completed
+minimization of ./rabbitmq-tmp2/151/controller_examples/rabbitmq_controller/proof/predicate.rs is completed
+minimization of ./rabbitmq-tmp2/152/controller_examples/rabbitmq_controller/proof/resource.rs is completed
+minimization of ./rabbitmq-tmp2/153/controller_examples/rabbitmq_controller/proof/safety/mod.rs is completed
+commenting out line Lines { lines: 26..=28 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 244..=255 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 381764ms
+commenting out line Lines { lines: 349..=349 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 432..=432 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 364208ms
+commenting out line Lines { lines: 359..=359 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 176..=178 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 375004ms
+commenting out line Lines { lines: 221..=221 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs is completed
+minimization of ./rabbitmq-tmp2/155/controller_examples/rabbitmq_controller/trusted/mod.rs is completed
+minimization of ./rabbitmq-tmp2/156/controller_examples/rabbitmq_controller/trusted/exec_types.rs is completed
+minimization of ./rabbitmq-tmp2/157/controller_examples/rabbitmq_controller/trusted/liveness_theorem.rs is completed
+minimization of ./rabbitmq-tmp2/158/controller_examples/rabbitmq_controller/trusted/maker.rs is completed
+minimization of ./rabbitmq-tmp2/159/controller_examples/rabbitmq_controller/trusted/safety_theorem.rs is completed
+minimization of ./rabbitmq-tmp2/160/controller_examples/rabbitmq_controller/trusted/spec_types.rs is completed
+minimization of ./rabbitmq-tmp2/161/controller_examples/rabbitmq_controller/trusted/step.rs is completed
+minimization of ./rabbitmq-tmp2/162/reconciler/mod.rs is completed
+minimization of ./rabbitmq-tmp2/163/reconciler/exec/mod.rs is completed
+minimization of ./rabbitmq-tmp2/164/reconciler/exec/io.rs is completed
+minimization of ./rabbitmq-tmp2/165/reconciler/exec/reconciler.rs is completed
+minimization of ./rabbitmq-tmp2/166/reconciler/exec/resource_builder.rs is completed
+minimization of ./rabbitmq-tmp2/167/reconciler/spec/mod.rs is completed
+minimization of ./rabbitmq-tmp2/168/reconciler/spec/io.rs is completed
+minimization of ./rabbitmq-tmp2/169/reconciler/spec/reconciler.rs is completed
+minimization of ./rabbitmq-tmp2/170/reconciler/spec/resource_builder.rs is completed
+minimization of ./rabbitmq-tmp2/171/shim_layer/mod.rs is completed
+minimization of ./rabbitmq-tmp2/172/shim_layer/controller_runtime.rs is completed
+minimization of ./rabbitmq-tmp2/173/shim_layer/fault_injection.rs is completed
+minimization of ./rabbitmq-tmp2/174/state_machine/mod.rs is completed
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/175/state_machine/state_machine.rs is completed
+commenting out line Lines { lines: 68..=68 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+minimization of ./rabbitmq-tmp2/176/state_machine/action.rs is completed
+minimization of ./rabbitmq-tmp2/177/temporal_logic/mod.rs is completed
+minimization of ./rabbitmq-tmp2/178/temporal_logic/defs.rs is completed
+commenting out line Lines { lines: 136..=138 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 243..=256 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 358312ms
+commenting out line Lines { lines: 439..=439 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 184..=184 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 345986ms
+commenting out line Lines { lines: 223..=223 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 146..=148 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 354152ms
+commenting out line Lines { lines: 71..=71 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 310..=310 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 360..=360 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 346484ms
+commenting out line Lines { lines: 440..=440 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 181..=185 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 338703ms
+commenting out line Lines { lines: 227..=227 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 192..=192 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 348808ms
+commenting out line Lines { lines: 72..=72 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 339060ms
+commenting out line Lines { lines: 311..=311 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 344006ms
+commenting out line Lines { lines: 328..=364 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 336844ms
+commenting out line Lines { lines: 441..=441 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 259..=259 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 345626ms
+commenting out line Lines { lines: 191..=193 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 313..=314 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 390288ms
+commenting out line Lines { lines: 215..=230 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 359400ms
+commenting out line Lines { lines: 73..=73 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 460..=460 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 338364ms
+commenting out line Lines { lines: 427..=447 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 260..=260 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 334719ms
+commenting out line Lines { lines: 199..=201 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 337068ms
+commenting out line Lines { lines: 316..=316 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 363897ms
+commenting out line Lines { lines: 197..=234 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 338163ms
+commenting out line Lines { lines: 461..=461 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 351679ms
+commenting out line Lines { lines: 61..=77 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 350442ms
+commenting out line Lines { lines: 426..=448 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 261..=261 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 327908ms
+commenting out line Lines { lines: 317..=317 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 214..=214 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 245..=245 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 344535ms
+commenting out line Lines { lines: 463..=463 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 349306ms
+commenting out line Lines { lines: 142..=142 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 346102ms
+commenting out line Lines { lines: 485..=485 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 264..=269 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 343873ms
+commenting out line Lines { lines: 247..=259 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 350523ms
+commenting out line Lines { lines: 319..=319 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 342376ms
+commenting out line Lines { lines: 467..=467 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 238..=246 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 334110ms
+commenting out line Lines { lines: 143..=143 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 488..=488 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 270..=270 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 263..=265 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 343857ms
+commenting out line Lines { lines: 320..=320 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 340459ms
+commenting out line Lines { lines: 470..=470 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 345511ms
+commenting out line Lines { lines: 144..=144 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 299..=302 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 341396ms
+commenting out line Lines { lines: 492..=492 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 344839ms
+commenting out line Lines { lines: 254..=275 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 335894ms
+commenting out line Lines { lines: 321..=321 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 242..=267 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 354220ms
+commenting out line Lines { lines: 448..=477 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 347627ms
+commenting out line Lines { lines: 146..=146 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 308..=308 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 348342ms
+commenting out line Lines { lines: 502..=502 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 280..=285 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 334646ms
+commenting out line Lines { lines: 322..=322 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 317..=321 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 507..=507 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 339926ms
+commenting out line Lines { lines: 135..=153 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 305..=309 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 349377ms
+commenting out line Lines { lines: 503..=503 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 313..=322 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 346663ms
+commenting out line Lines { lines: 332..=332 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 354581ms
+commenting out line Lines { lines: 277..=286 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 134..=154 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 343694ms
+commenting out line Lines { lines: 508..=508 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 313..=316 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 340413ms
+commenting out line Lines { lines: 504..=504 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 329..=329 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 352413ms
+commenting out line Lines { lines: 333..=333 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 351660ms
+commenting out line Lines { lines: 375..=375 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 338577ms
+commenting out line Lines { lines: 514..=514 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 233..=233 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 348016ms
+commenting out line Lines { lines: 505..=505 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 327..=327 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=345 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 376..=376 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 356549ms
+commenting out line Lines { lines: 335..=335 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 515..=515 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 334753ms
+commenting out line Lines { lines: 235..=235 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 355205ms
+commenting out line Lines { lines: 506..=506 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 319..=328 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 346..=346 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 377..=377 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 352181ms
+commenting out line Lines { lines: 337..=337 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 519..=519 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 353123ms
+commenting out line Lines { lines: 236..=236 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 342984ms
+commenting out line Lines { lines: 507..=507 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 332..=334 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 356..=358 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 369..=381 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 344200ms
+commenting out line Lines { lines: 339..=339 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 338870ms
+commenting out line Lines { lines: 238..=238 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 349702ms
+commenting out line Lines { lines: 520..=520 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 355662ms
+commenting out line Lines { lines: 483..=509 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 340..=340 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 354..=359 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 463..=463 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 341759ms
+commenting out line Lines { lines: 341..=341 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 335294ms
+commenting out line Lines { lines: 239..=239 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 340606ms
+commenting out line Lines { lines: 521..=521 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 482..=510 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 337..=341 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 370..=370 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 350605ms
+commenting out line Lines { lines: 459..=465 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 352317ms
+commenting out line Lines { lines: 344..=344 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 358375ms
+commenting out line Lines { lines: 240..=240 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 364967ms
+commenting out line Lines { lines: 522..=522 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 558..=558 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 385..=385 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 339190ms
+commenting out line Lines { lines: 368..=371 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 336089ms
+commenting out line Lines { lines: 345..=345 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 472..=472 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 354035ms
+commenting out line Lines { lines: 248..=248 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 357207ms
+commenting out line Lines { lines: 523..=523 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 338277ms
+commenting out line Lines { lines: 563..=563 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 368357ms
+commenting out line Lines { lines: 386..=386 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 367..=372 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 354608ms
+commenting out line Lines { lines: 351..=351 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 473..=473 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 226..=254 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 360274ms
+commenting out line Lines { lines: 525..=525 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 566..=566 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 366..=373 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 359208ms
+commenting out line Lines { lines: 388..=388 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 347265ms
+commenting out line Lines { lines: 352..=352 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 467..=478 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 304..=313 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 526..=526 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 349959ms
+commenting out line Lines { lines: 568..=568 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 376..=376 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 366846ms
+commenting out line Lines { lines: 392..=392 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 351442ms
+commenting out line Lines { lines: 305..=355 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 303..=314 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 521..=521 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 350473ms
+commenting out line Lines { lines: 527..=527 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 345922ms
+commenting out line Lines { lines: 569..=569 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 319389ms
+commenting out line Lines { lines: 374..=377 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 364840ms
+commenting out line Lines { lines: 379..=395 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 302..=356 } in "./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 338..=338 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 515..=526 } in "./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 353753ms
+commenting out line Lines { lines: 531..=531 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 344505ms
+commenting out line Lines { lines: 573..=573 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 385..=387 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs is completed
+minimization of ./rabbitmq-tmp2/180/vstd_ext/mod.rs is completed
+commenting out line Lines { lines: 19..=19 } in "./rabbitmq-tmp2/181/vstd_ext/map_lib.rs"
+verus succeeded with time: 401401ms
+commenting out line Lines { lines: 360..=399 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 337837ms
+commenting out line Lines { lines: 339..=339 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs is completed
+commenting out line Lines { lines: 11..=11 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 352219ms
+commenting out line Lines { lines: 532..=532 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 347003ms
+commenting out line Lines { lines: 575..=575 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 388..=388 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/181/vstd_ext/map_lib.rs is completed
+minimization of ./rabbitmq-tmp2/183/vstd_ext/option_lib.rs is completed
+commenting out line Lines { lines: 13..=13 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 410..=410 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 342..=342 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 21..=21 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 344553ms
+commenting out line Lines { lines: 533..=533 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 344381ms
+commenting out line Lines { lines: 576..=576 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 335644ms
+commenting out line Lines { lines: 389..=391 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 16..=16 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 352244ms
+commenting out line Lines { lines: 345..=345 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 359294ms
+commenting out line Lines { lines: 19..=23 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 340586ms
+commenting out line Lines { lines: 538..=538 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 403..=411 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 328323ms
+commenting out line Lines { lines: 577..=578 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 392..=392 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 18..=18 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 338847ms
+commenting out line Lines { lines: 346..=346 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 29..=29 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 539..=539 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 355659ms
+commenting out line Lines { lines: 580..=580 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 348302ms
+commenting out line Lines { lines: 384..=393 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 479..=479 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 32..=32 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 334193ms
+commenting out line Lines { lines: 347..=347 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 46..=46 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 341806ms
+commenting out line Lines { lines: 506..=543 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 338074ms
+commenting out line Lines { lines: 581..=581 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 421..=423 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 480..=480 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 336731ms
+commenting out line Lines { lines: 33..=33 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 50..=50 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 345222ms
+commenting out line Lines { lines: 348..=348 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 579..=579 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 354927ms
+commenting out line Lines { lines: 583..=583 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 431..=433 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 341693ms
+commenting out line Lines { lines: 35..=35 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 483..=488 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 358106ms
+commenting out line Lines { lines: 360..=360 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 360628ms
+commenting out line Lines { lines: 53..=53 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 333548ms
+commenting out line Lines { lines: 587..=587 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 351204ms
+commenting out line Lines { lines: 580..=580 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 434..=434 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 345895ms
+commenting out line Lines { lines: 36..=36 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 475..=493 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 361..=361 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 54..=54 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 342443ms
+commenting out line Lines { lines: 589..=589 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 343719ms
+commenting out line Lines { lines: 582..=582 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 447..=447 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 348463ms
+commenting out line Lines { lines: 30..=38 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 350594ms
+commenting out line Lines { lines: 363..=363 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 353962ms
+commenting out line Lines { lines: 48..=56 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 498..=503 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 330660ms
+commenting out line Lines { lines: 590..=590 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 343860ms
+commenting out line Lines { lines: 587..=587 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 348078ms
+commenting out line Lines { lines: 448..=448 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 342142ms
+commenting out line Lines { lines: 47..=47 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 347295ms
+commenting out line Lines { lines: 390..=390 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 342507ms
+commenting out line Lines { lines: 61..=61 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 373189ms
+commenting out line Lines { lines: 495..=504 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 326128ms
+commenting out line Lines { lines: 591..=591 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 346755ms
+commenting out line Lines { lines: 450..=450 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 365870ms
+commenting out line Lines { lines: 590..=590 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 48..=48 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 62..=62 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 391..=391 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 342977ms
+commenting out line Lines { lines: 593..=593 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 382650ms
+commenting out line Lines { lines: 581..=581 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 446..=451 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 356640ms
+commenting out line Lines { lines: 571..=594 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 346304ms
+commenting out line Lines { lines: 50..=50 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 63..=63 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 342356ms
+commenting out line Lines { lines: 394..=394 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 350649ms
+commenting out line Lines { lines: 596..=596 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 469..=469 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 582..=582 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 356469ms
+commenting out line Lines { lines: 613..=613 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 325245ms
+commenting out line Lines { lines: 51..=51 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 342112ms
+commenting out line Lines { lines: 397..=397 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus succeeded with time: 351020ms
+commenting out line Lines { lines: 59..=65 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 340561ms
+commenting out line Lines { lines: 597..=597 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 467..=471 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 344227ms
+commenting out line Lines { lines: 645..=653 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 577..=586 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 49..=52 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 344247ms
+commenting out line Lines { lines: 398..=398 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 57..=66 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 600..=600 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 466..=472 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 722..=722 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 658..=658 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 53..=53 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 76..=76 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 358379ms
+commenting out line Lines { lines: 399..=399 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 601..=601 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 464..=473 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 723..=723 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 655..=671 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 69..=69 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 78..=78 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 346898ms
+commenting out line Lines { lines: 400..=400 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 478..=481 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 363763ms
+commenting out line Lines { lines: 555..=604 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 357026ms
+commenting out line Lines { lines: 724..=724 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 336462ms
+commenting out line Lines { lines: 70..=70 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 79..=79 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 673..=682 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 477..=482 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 340797ms
+commenting out line Lines { lines: 412..=412 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 554..=605 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 377466ms
+commenting out line Lines { lines: 726..=726 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 330944ms
+commenting out line Lines { lines: 72..=72 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 350875ms
+commenting out line Lines { lines: 74..=80 } in "./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 413..=413 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 475..=483 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 742..=742 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 653..=653 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 367581ms
+commenting out line Lines { lines: 727..=727 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 362707ms
+commenting out line Lines { lines: 73..=73 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/182/vstd_ext/multiset_lib.rs is completed
+commenting out line Lines { lines: 14..=16 } in "./rabbitmq-tmp2/185/vstd_ext/set_lib.rs"
+verus failed, reverting
+verus succeeded with time: 346128ms
+commenting out line Lines { lines: 415..=415 } in "./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+commenting out line Lines { lines: 505..=505 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 340959ms
+commenting out line Lines { lines: 658..=658 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 743..=743 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 357262ms
+commenting out line Lines { lines: 731..=731 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 343282ms
+commenting out line Lines { lines: 67..=75 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 17..=19 } in "./rabbitmq-tmp2/185/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 503..=506 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 341280ms
+minimization of ./rabbitmq-tmp2/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs is completed
+minimization of ./rabbitmq-tmp2/186/vstd_ext/string_map.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 661..=661 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+minimization of ./rabbitmq-tmp2/187/vstd_ext/string_view.rs is completed
+commenting out line Lines { lines: 28..=31 } in "./rabbitmq-tmp2/188/vstd_ext/vec_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 744..=744 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 351124ms
+commenting out line Lines { lines: 84..=84 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 380054ms
+commenting out line Lines { lines: 732..=732 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 45..=45 } in "./rabbitmq-tmp2/185/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 501..=507 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 333978ms
+commenting out line Lines { lines: 663..=663 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/188/vstd_ext/vec_lib.rs is completed
+verus succeeded with time: 354956ms
+commenting out line Lines { lines: 747..=752 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 85..=85 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 351903ms
+commenting out line Lines { lines: 735..=735 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 46..=46 } in "./rabbitmq-tmp2/185/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 523..=523 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 308026ms
+commenting out line Lines { lines: 664..=664 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 309721ms
+commenting out line Lines { lines: 88..=88 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 323735ms
+commenting out line Lines { lines: 736..=736 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 49..=49 } in "./rabbitmq-tmp2/185/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 522..=524 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 308662ms
+commenting out line Lines { lines: 668..=668 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 753..=753 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 299222ms
+commenting out line Lines { lines: 89..=89 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 302884ms
+commenting out line Lines { lines: 715..=739 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/185/vstd_ext/set_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 526..=526 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 306971ms
+commenting out line Lines { lines: 670..=670 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 325078ms
+commenting out line Lines { lines: 737..=758 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 87..=90 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 713..=740 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 516..=527 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 263664ms
+commenting out line Lines { lines: 671..=671 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 763..=768 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 91..=91 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 781..=783 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 535..=537 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 274016ms
+commenting out line Lines { lines: 672..=673 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 298828ms
+commenting out line Lines { lines: 760..=769 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 100..=102 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 829..=829 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 269340ms
+commenting out line Lines { lines: 557..=557 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 272998ms
+commenting out line Lines { lines: 675..=675 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 109..=115 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 365354ms
+commenting out line Lines { lines: 844..=844 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 266769ms
+commenting out line Lines { lines: 830..=830 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 556..=558 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 270591ms
+commenting out line Lines { lines: 676..=676 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 116..=121 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 280838ms
+commenting out line Lines { lines: 822..=833 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 552..=560 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 276902ms
+commenting out line Lines { lines: 678..=678 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 841..=857 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 136..=136 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 820..=834 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 569..=573 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 269651ms
+commenting out line Lines { lines: 682..=682 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 863..=863 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 135..=137 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 866..=868 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+commenting out line Lines { lines: 588..=588 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 269960ms
+commenting out line Lines { lines: 684..=684 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 141..=141 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 864..=864 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 582..=590 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 917..=917 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 277520ms
+commenting out line Lines { lines: 685..=685 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 140..=142 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 859..=869 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 652..=654 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 279759ms
+commenting out line Lines { lines: 918..=918 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 277111ms
+commenting out line Lines { lines: 686..=686 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 139..=143 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 651..=655 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 942..=942 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 276934ms
+commenting out line Lines { lines: 910..=921 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 275404ms
+commenting out line Lines { lines: 688..=688 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 158..=164 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 664..=667 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 908..=922 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 264700ms
+commenting out line Lines { lines: 691..=691 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 943..=943 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 155..=165 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 676..=679 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 953..=953 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 269781ms
+commenting out line Lines { lines: 692..=692 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 168..=168 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 937..=948 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 689..=689 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 262952ms
+commenting out line Lines { lines: 981..=981 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 695..=695 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 271246ms
+commenting out line Lines { lines: 166..=169 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 272538ms
+commenting out line Lines { lines: 687..=690 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 995..=995 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 265174ms
+commenting out line Lines { lines: 984..=984 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 696..=696 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 172..=172 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 700..=703 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 273748ms
+commenting out line Lines { lines: 985..=985 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 277468ms
+commenting out line Lines { lines: 650..=699 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 996..=996 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 173..=173 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 699..=704 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 278286ms
+commenting out line Lines { lines: 988..=988 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 649..=700 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 171..=175 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus succeeded with time: 364994ms
+commenting out line Lines { lines: 990..=1013 } in "./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 716..=719 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 264126ms
+commenting out line Lines { lines: 951..=992 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 754..=754 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 211..=211 } in "./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 734..=737 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs is completed
+verus succeeded with time: 266215ms
+commenting out line Lines { lines: 949..=994 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 267676ms
+commenting out line Lines { lines: 759..=759 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/184/vstd_ext/seq_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 945..=948 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 238564ms
+commenting out line Lines { lines: 1024..=1024 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 762..=762 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 958..=960 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 231516ms
+commenting out line Lines { lines: 1052..=1052 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 229982ms
+commenting out line Lines { lines: 764..=764 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 957..=961 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 231915ms
+commenting out line Lines { lines: 1053..=1053 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 228455ms
+commenting out line Lines { lines: 767..=767 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 989..=989 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 234440ms
+commenting out line Lines { lines: 1056..=1056 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 231197ms
+commenting out line Lines { lines: 771..=771 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 990..=990 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 231560ms
+commenting out line Lines { lines: 1057..=1057 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 228926ms
+commenting out line Lines { lines: 773..=773 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 992..=992 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 228758ms
+commenting out line Lines { lines: 774..=774 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 231543ms
+commenting out line Lines { lines: 1058..=1058 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 227173ms
+commenting out line Lines { lines: 987..=994 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 228910ms
+commenting out line Lines { lines: 775..=776 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 229954ms
+commenting out line Lines { lines: 1061..=1061 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 985..=995 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 230257ms
+commenting out line Lines { lines: 778..=778 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 235001ms
+commenting out line Lines { lines: 1062..=1062 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 984..=996 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 231523ms
+commenting out line Lines { lines: 779..=779 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 231030ms
+commenting out line Lines { lines: 1065..=1065 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1011..=1014 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 231069ms
+commenting out line Lines { lines: 781..=781 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 231325ms
+commenting out line Lines { lines: 1066..=1066 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1085..=1091 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 227787ms
+commenting out line Lines { lines: 785..=785 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 230968ms
+commenting out line Lines { lines: 1069..=1069 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1084..=1092 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 229986ms
+commenting out line Lines { lines: 787..=787 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 231113ms
+commenting out line Lines { lines: 1070..=1070 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1107..=1110 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 232518ms
+commenting out line Lines { lines: 788..=788 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 230773ms
+commenting out line Lines { lines: 1071..=1071 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 228983ms
+commenting out line Lines { lines: 1104..=1111 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 231328ms
+commenting out line Lines { lines: 789..=789 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 232051ms
+commenting out line Lines { lines: 1074..=1074 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1125..=1128 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 230724ms
+commenting out line Lines { lines: 791..=791 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 232466ms
+commenting out line Lines { lines: 1075..=1075 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1152..=1154 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 228757ms
+commenting out line Lines { lines: 794..=794 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 229691ms
+commenting out line Lines { lines: 1021..=1079 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1147..=1155 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 228625ms
+commenting out line Lines { lines: 795..=795 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 234510ms
+commenting out line Lines { lines: 1020..=1080 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1195..=1216 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 229692ms
+commenting out line Lines { lines: 796..=796 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 229832ms
+commenting out line Lines { lines: 1120..=1120 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1194..=1217 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 228916ms
+commenting out line Lines { lines: 799..=799 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1115..=1124 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1240..=1240 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 229582ms
+commenting out line Lines { lines: 800..=800 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1196..=1196 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 227996ms
+commenting out line Lines { lines: 1239..=1247 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 229491ms
+commenting out line Lines { lines: 749..=803 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 229994ms
+commenting out line Lines { lines: 1197..=1197 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1238..=1248 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 747..=804 } in "./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 230533ms
+commenting out line Lines { lines: 1198..=1200 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1264..=1267 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/75/kubernetes_cluster/proof/message.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 1294..=1297 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 229035ms
+commenting out line Lines { lines: 1204..=1204 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1293..=1298 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 216457ms
+commenting out line Lines { lines: 1205..=1205 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1314..=1317 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 213271ms
+commenting out line Lines { lines: 1206..=1208 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1331..=1339 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 211477ms
+commenting out line Lines { lines: 1209..=1211 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1330..=1340 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 214889ms
+commenting out line Lines { lines: 1212..=1214 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1329..=1341 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1190..=1218 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1366..=1369 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1189..=1219 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1359..=1371 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1259..=1259 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1358..=1372 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 215228ms
+commenting out line Lines { lines: 1260..=1260 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1387..=1393 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 215070ms
+commenting out line Lines { lines: 1263..=1263 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1410..=1425 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 216031ms
+commenting out line Lines { lines: 1269..=1269 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1408..=1426 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 217560ms
+commenting out line Lines { lines: 1270..=1270 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1483..=1488 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 215610ms
+commenting out line Lines { lines: 1276..=1276 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1482..=1489 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 215228ms
+commenting out line Lines { lines: 1289..=1289 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1610..=1612 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 215463ms
+commenting out line Lines { lines: 1302..=1302 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1613..=1615 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 215535ms
+commenting out line Lines { lines: 1314..=1314 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1621..=1621 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 214686ms
+commenting out line Lines { lines: 1327..=1327 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 210935ms
+commenting out line Lines { lines: 1622..=1622 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 213813ms
+commenting out line Lines { lines: 1339..=1339 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1623..=1623 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 218056ms
+commenting out line Lines { lines: 1351..=1351 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 213316ms
+commenting out line Lines { lines: 1624..=1624 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 216573ms
+commenting out line Lines { lines: 1386..=1386 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 210807ms
+commenting out line Lines { lines: 1631..=1631 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 215859ms
+commenting out line Lines { lines: 1387..=1387 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 209278ms
+commenting out line Lines { lines: 1632..=1632 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 215138ms
+commenting out line Lines { lines: 1390..=1390 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 209487ms
+commenting out line Lines { lines: 1633..=1633 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 221755ms
+commenting out line Lines { lines: 1396..=1396 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1640..=1640 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 219079ms
+commenting out line Lines { lines: 1397..=1397 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 208752ms
+commenting out line Lines { lines: 1641..=1641 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 215323ms
+commenting out line Lines { lines: 1403..=1403 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 209985ms
+commenting out line Lines { lines: 1643..=1643 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 216841ms
+commenting out line Lines { lines: 1416..=1416 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1644..=1644 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1429..=1429 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 208398ms
+commenting out line Lines { lines: 1639..=1647 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1441..=1441 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1609..=1649 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1608..=1650 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1454..=1454 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1668..=1687 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1466..=1466 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1667..=1688 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1478..=1478 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1722..=1727 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1504..=1507 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1721..=1729 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1562..=1562 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1707..=1732 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 217976ms
+commenting out line Lines { lines: 1563..=1563 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1706..=1733 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 217367ms
+commenting out line Lines { lines: 1569..=1569 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1746..=1758 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 218322ms
+commenting out line Lines { lines: 1570..=1570 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1745..=1759 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 217478ms
+commenting out line Lines { lines: 1572..=1572 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1793..=1795 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 217668ms
+commenting out line Lines { lines: 1573..=1573 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1826..=1828 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1579..=1579 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1866..=1866 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 215902ms
+commenting out line Lines { lines: 1580..=1580 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 208512ms
+commenting out line Lines { lines: 1868..=1868 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 216419ms
+commenting out line Lines { lines: 1582..=1582 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1869..=1869 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 219416ms
+commenting out line Lines { lines: 1586..=1586 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 211473ms
+commenting out line Lines { lines: 1863..=1872 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 219521ms
+commenting out line Lines { lines: 1588..=1588 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1862..=1873 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 220035ms
+commenting out line Lines { lines: 1591..=1591 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1890..=1893 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus succeeded with time: 219337ms
+commenting out line Lines { lines: 1559..=1595 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1889..=1894 } in "./rabbitmq-tmp2/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1558..=1596 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+minimization of ./rabbitmq-tmp2/179/temporal_logic/rules.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 1624..=1630 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1757..=1759 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1752..=1761 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1806..=1806 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1807..=1807 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1801..=1812 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1845..=1845 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 194877ms
+commenting out line Lines { lines: 1855..=1855 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 200176ms
+commenting out line Lines { lines: 1860..=1860 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 192801ms
+commenting out line Lines { lines: 1875..=1875 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 191504ms
+commenting out line Lines { lines: 1848..=1879 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 195405ms
+commenting out line Lines { lines: 1847..=1880 } in "./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 195987ms
+minimization of ./rabbitmq-tmp2/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs is completed

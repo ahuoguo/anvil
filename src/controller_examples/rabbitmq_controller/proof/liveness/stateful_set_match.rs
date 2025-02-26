@@ -268,23 +268,23 @@ proof fn lemma_from_key_exists_to_receives_ok_resp_at_after_get_stateful_set_ste
                         &&& resp_msg.content.get_get_response().res.is_Ok()
                         &&& resp_msg.content.get_get_response().res.get_Ok_0() == s_prime.resources()[resource_key]
                     });
-                    assert(post(s_prime));
+//                    assert(post(s_prime));
                 }
             },
             _ => {}
         }
     }
 
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && RMQCluster::kubernetes_api_next().forward(input)(s, s_prime)
-    implies post(s_prime) by {
-        let resp_msg = RMQCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
-        assert({
-            &&& s_prime.in_flight().contains(resp_msg)
-            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
-            &&& resp_msg.content.get_get_response().res.is_Ok()
-            &&& resp_msg.content.get_get_response().res.get_Ok_0() == s_prime.resources()[resource_key]
-        });
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && RMQCluster::kubernetes_api_next().forward(input)(s, s_prime)
+//    implies post(s_prime) by {
+//        let resp_msg = RMQCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
+////        assert({
+////            &&& s_prime.in_flight().contains(resp_msg)
+////            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
+////            &&& resp_msg.content.get_get_response().res.is_Ok()
+////            &&& resp_msg.content.get_get_response().res.get_Ok_0() == s_prime.resources()[resource_key]
+////        });
+//    }
 
     RMQCluster::lemma_pre_leads_to_post_by_kubernetes_api(
         spec, input, stronger_next, RMQCluster::handle_request(), pre, post
@@ -461,7 +461,7 @@ proof fn lemma_stateful_set_state_matches_at_after_update_stateful_set_step(spec
     implies post(s_prime) by {
         let pending_msg = s.ongoing_reconciles()[rabbitmq.object_ref()].pending_req_msg.get_Some_0();
         let resp = RMQCluster::handle_update_request_msg(pending_msg, s.kubernetes_api_state).1;
-        assert(s_prime.in_flight().contains(resp));
+//        assert(s_prime.in_flight().contains(resp));
         StatefulSetView::marshal_preserves_integrity();
     }
 
