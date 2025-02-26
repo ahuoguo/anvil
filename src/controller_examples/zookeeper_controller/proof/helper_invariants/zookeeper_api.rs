@@ -80,10 +80,10 @@ pub proof fn lemma_eventually_always_every_zk_set_data_request_implies_at_after_
                 if !s.in_flight().contains(msg) {
                     lemma_zk_request_implies_step_helper(zookeeper, s, s_prime, msg, step);
                     let resp = step.get_ControllerStep_0().0.get_Some_0();
-                    assert(s.in_flight().contains(resp));
+//                    assert(s.in_flight().contains(resp));
                 } else {
-                    assert(requirements(msg, s));
-                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                    assert(requirements(msg, s));
+//                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
                 }
             }
         }
@@ -158,10 +158,10 @@ pub proof fn lemma_eventually_always_every_zk_create_node_request_implies_at_aft
                 if !s.in_flight().contains(msg) {
                     lemma_zk_request_implies_step_helper(zookeeper, s, s_prime, msg, step);
                     let resp = step.get_ControllerStep_0().0.get_Some_0();
-                    assert(s.in_flight().contains(resp));
+//                    assert(s.in_flight().contains(resp));
                 } else {
-                    assert(requirements(msg, s));
-                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                    assert(requirements(msg, s));
+//                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
                 }
             }
         }
@@ -204,24 +204,24 @@ pub proof fn lemma_zk_request_implies_step_helper(zookeeper: ZookeeperClusterVie
     let key = zookeeper.object_ref();
     let cr = s.ongoing_reconciles()[key].triggering_cr;
     if zk_set_data_request_msg(zookeeper)(msg) {
-        assert(step.is_ControllerStep());
-        assert(s.ongoing_reconciles().contains_key(cr_key));
+//        assert(step.is_ControllerStep());
+//        assert(s.ongoing_reconciles().contains_key(cr_key));
         let local_step = s.ongoing_reconciles()[cr_key].local_state.reconcile_step;
         let local_step_prime = s_prime.ongoing_reconciles()[cr_key].local_state.reconcile_step;
-        assert(cr_key == zookeeper.object_ref());
-        assert(ZKCluster::pending_req_msg_is(s_prime, cr_key, msg));
-        assert(local_step_prime.is_AfterUpdateZKNode());
-        assert(local_step.is_AfterExistsZKNode());
+//        assert(cr_key == zookeeper.object_ref());
+//        assert(ZKCluster::pending_req_msg_is(s_prime, cr_key, msg));
+//        assert(local_step_prime.is_AfterUpdateZKNode());
+//        assert(local_step.is_AfterExistsZKNode());
     } else if zk_create_node_request_msg(zookeeper)(msg) {
-        assert(step.is_ControllerStep());
-        assert(s.ongoing_reconciles().contains_key(cr_key));
+//        assert(step.is_ControllerStep());
+//        assert(s.ongoing_reconciles().contains_key(cr_key));
         let local_step = s.ongoing_reconciles()[cr_key].local_state.reconcile_step;
         let local_step_prime = s_prime.ongoing_reconciles()[cr_key].local_state.reconcile_step;
-        assert(cr_key == zookeeper.object_ref());
-        assert(ZKCluster::pending_req_msg_is(s_prime, cr_key, msg));
+//        assert(cr_key == zookeeper.object_ref());
+//        assert(ZKCluster::pending_req_msg_is(s_prime, cr_key, msg));
         assert(!(zk_node_path(zookeeper) =~= zk_parent_node_path(zookeeper)));
-        assert(local_step_prime.is_AfterCreateZKNode());
-        assert(local_step.is_AfterCreateZKParentNode());
+//        assert(local_step_prime.is_AfterCreateZKNode());
+//        assert(local_step.is_AfterCreateZKParentNode());
     }
 }
 

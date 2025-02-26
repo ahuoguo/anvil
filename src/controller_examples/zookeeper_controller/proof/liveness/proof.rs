@@ -100,7 +100,7 @@ proof fn lemma_true_leads_to_always_current_state_matches(zookeeper: ZookeeperCl
         assert forall |res: SubResource| #[trigger] resource_state_matches::<ZookeeperMaker>(res, zookeeper, s.resources()) by {
             tla_forall_apply(a_to_p, res);
             assert(a_to_p(res).satisfied_by(ex));
-            assert(sub_resource_state_matches(res, zookeeper)(s));
+//            assert(sub_resource_state_matches(res, zookeeper)(s));
         }
     }
     temp_pred_equality(tla_forall(|res: SubResource| lift_state(sub_resource_state_matches(res, zookeeper))), lift_state(current_state_matches::<ZookeeperMaker>(zookeeper)));
@@ -124,9 +124,9 @@ proof fn lemma_true_leads_to_always_state_matches_for_all_but_stateful_set(zooke
 {
     let spec = assumption_and_invariants_of_all_phases(zookeeper);
 
-    assert forall |action: ActionKind, sub_resource: SubResource| #![auto] spec.entails(always(lift_state(ZKCluster::pending_req_in_flight_or_resp_in_flight_at_reconcile_state(zookeeper.object_ref(), at_step_closure(ZookeeperReconcileStep::AfterKRequestStep(action, sub_resource)))))) by {
-        always_tla_forall_apply(spec, |step: (ActionKind, SubResource)| lift_state(ZKCluster::pending_req_in_flight_or_resp_in_flight_at_reconcile_state(zookeeper.object_ref(), at_step_closure(ZookeeperReconcileStep::AfterKRequestStep(step.0, step.1)))), (action, sub_resource));
-    }
+//    assert forall |action: ActionKind, sub_resource: SubResource| #![auto] spec.entails(always(lift_state(ZKCluster::pending_req_in_flight_or_resp_in_flight_at_reconcile_state(zookeeper.object_ref(), at_step_closure(ZookeeperReconcileStep::AfterKRequestStep(action, sub_resource)))))) by {
+//        always_tla_forall_apply(spec, |step: (ActionKind, SubResource)| lift_state(ZKCluster::pending_req_in_flight_or_resp_in_flight_at_reconcile_state(zookeeper.object_ref(), at_step_closure(ZookeeperReconcileStep::AfterKRequestStep(step.0, step.1)))), (action, sub_resource));
+//    }
 
     // The use of termination property ensures spec |= true ~> reconcile_idle.
     terminate::reconcile_eventually_terminates(spec, zookeeper);
@@ -369,21 +369,21 @@ proof fn lemma_from_init_step_to_after_create_headless_service_step(spec: TempPr
     combine_spec_entails_always_n!(
         spec, lift_action(stronger_next), lift_action(ZKCluster::next()), lift_state(ZKCluster::crash_disabled())
     );
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || post(s_prime) by {
-        let step = choose |step| ZKCluster::next_step(s, s_prime, step);
-        match step {
-            Step::ControllerStep(input) => {
-                if input.1.get_Some_0() != zookeeper.object_ref() {
-                    assert(pre(s_prime));
-                } else {
-                    assert(post(s_prime));
-                }
-            },
-            _ => {
-                assert(pre(s_prime));
-            }
-        }
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || post(s_prime) by {
+//        let step = choose |step| ZKCluster::next_step(s, s_prime, step);
+//        match step {
+//            Step::ControllerStep(input) => {
+//                if input.1.get_Some_0() != zookeeper.object_ref() {
+////                    assert(pre(s_prime));
+//                } else {
+////                    assert(post(s_prime));
+//                }
+//            },
+//            _ => {
+////                assert(pre(s_prime));
+//            }
+//        }
+//    }
     ZKCluster::lemma_pre_leads_to_post_by_controller(spec, input, stronger_next, ZKCluster::continue_reconcile(), pre, post);
 }
 

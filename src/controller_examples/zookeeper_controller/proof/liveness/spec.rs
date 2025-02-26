@@ -472,8 +472,8 @@ pub proof fn sm_spec_entails_all_invariants(zookeeper: ZookeeperClusterView)
     let spec = cluster_spec();
     // Adding two assertions to make the verification faster because all the lemmas below require the two preconditions.
     // And then the verifier doesn't have to infer it every time applying those lemmas.
-    assert(spec.entails(lift_state(ZKCluster::init())));
-    assert(spec.entails(always(lift_action(ZKCluster::next()))));
+//    assert(spec.entails(lift_state(ZKCluster::init())));
+//    assert(spec.entails(always(lift_action(ZKCluster::next()))));
     ZKCluster::lemma_always_every_in_flight_msg_has_unique_id(spec);
     ZKCluster::lemma_always_object_in_ok_get_response_has_smaller_rv_than_etcd(spec);
     ZKCluster::lemma_always_every_in_flight_req_msg_has_different_id_from_pending_req_msg_of(spec, zookeeper.object_ref());

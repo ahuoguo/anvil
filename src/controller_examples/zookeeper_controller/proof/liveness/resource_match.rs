@@ -229,21 +229,21 @@ pub proof fn lemma_from_after_get_resource_step_and_key_not_exists_to_resource_m
                     lift_state(ZKCluster::pending_req_of_key_is_unique_with_unique_id(zookeeper.object_ref()))
                 );
 
-                assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || next_state(s_prime) by {
-                    let step = choose |step| ZKCluster::next_step(s, s_prime, step);
-                    match step {
-                        Step::ControllerStep(input) => {
-                            if input.1.is_Some() && input.1.get_Some_0() == zookeeper.object_ref() {
-                                assert(next_state(s_prime));
-                            } else {
-                                assert(pre(s_prime));
-                            }
-                        }
-                        _ => {
-                            assert(pre(s_prime));
-                        }
-                    }
-                }
+//                assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || next_state(s_prime) by {
+//                    let step = choose |step| ZKCluster::next_step(s, s_prime, step);
+//                    match step {
+//                        Step::ControllerStep(input) => {
+//                            if input.1.is_Some() && input.1.get_Some_0() == zookeeper.object_ref() {
+////                                assert(next_state(s_prime));
+//                            } else {
+////                                assert(pre(s_prime));
+//                            }
+//                        }
+//                        _ => {
+////                            assert(pre(s_prime));
+//                        }
+//                    }
+//                }
                 ZKCluster::lemma_pre_leads_to_post_by_controller(
                     spec, (Some(resp_msg), Some(zookeeper.object_ref())), stronger_next, ZKCluster::continue_reconcile(), pre, next_state
                 );
@@ -400,21 +400,21 @@ proof fn lemma_from_after_get_resource_step_and_key_exists_to_resource_matches(
                 lift_state(ZKCluster::every_in_flight_msg_has_unique_id()),
                 lift_state(ZKCluster::pending_req_of_key_is_unique_with_unique_id(zookeeper.object_ref()))
             );
-            assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || next_state(s_prime) by {
-                let step = choose |step| ZKCluster::next_step(s, s_prime, step);
-                match step {
-                    Step::ControllerStep(input) => {
-                        if input.1.is_Some() && input.1.get_Some_0() == zookeeper.object_ref() {
-                            assert(next_state(s_prime));
-                        } else {
-                            assert(pre(s_prime));
-                        }
-                    }
-                    _ => {
-                        assert(pre(s_prime));
-                    }
-                }
-            }
+//            assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || next_state(s_prime) by {
+//                let step = choose |step| ZKCluster::next_step(s, s_prime, step);
+//                match step {
+//                    Step::ControllerStep(input) => {
+//                        if input.1.is_Some() && input.1.get_Some_0() == zookeeper.object_ref() {
+////                            assert(next_state(s_prime));
+//                        } else {
+////                            assert(pre(s_prime));
+//                        }
+//                    }
+//                    _ => {
+////                        assert(pre(s_prime));
+//                    }
+//                }
+//            }
             ZKCluster::lemma_pre_leads_to_post_by_controller(
                 spec, (Some(resp_msg), Some(zookeeper.object_ref())), stronger_next, ZKCluster::continue_reconcile(), pre, next_state
             );
@@ -512,16 +512,16 @@ proof fn lemma_from_key_not_exists_to_receives_not_found_resp_at_after_get_resou
         }
     }
 
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::kubernetes_api_next().forward(input)(s, s_prime)
-    implies post(s_prime) by {
-        let resp_msg = ZKCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
-        assert({
-            &&& s_prime.in_flight().contains(resp_msg)
-            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
-            &&& resp_msg.content.get_get_response().res.is_Err()
-            &&& resp_msg.content.get_get_response().res.get_Err_0().is_ObjectNotFound()
-        });
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::kubernetes_api_next().forward(input)(s, s_prime)
+//    implies post(s_prime) by {
+//        let resp_msg = ZKCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
+////        assert({
+////            &&& s_prime.in_flight().contains(resp_msg)
+////            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
+////            &&& resp_msg.content.get_get_response().res.is_Err()
+////            &&& resp_msg.content.get_get_response().res.get_Err_0().is_ObjectNotFound()
+////        });
+//    }
 
     ZKCluster::lemma_pre_leads_to_post_by_kubernetes_api(
         spec, input, stronger_next, ZKCluster::handle_request(), pre, post
@@ -672,29 +672,29 @@ proof fn lemma_resource_state_matches_at_after_create_resource_step(
         &&& at_after_create_resource_step_and_exists_ok_resp_in_flight(sub_resource, zookeeper)(s)
     };
 
-    assert forall |s, s_prime: ZKCluster| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::kubernetes_api_next().forward(input)(s, s_prime) implies post(s_prime) by {
-        let pending_msg = s.ongoing_reconciles()[zookeeper.object_ref()].pending_req_msg.get_Some_0();
-        let resp = ZKCluster::handle_create_request_msg(pending_msg, s.kubernetes_api_state).1;
-        assert(s_prime.in_flight().contains(resp));
-        match sub_resource {
-            SubResource::HeadlessService => ServiceView::marshal_preserves_integrity(),
-            SubResource::ClientService => ServiceView::marshal_preserves_integrity(),
-            SubResource::AdminServerService => ServiceView::marshal_preserves_integrity(),
-            SubResource::ConfigMap => ConfigMapView::marshal_preserves_integrity(),
-            SubResource::StatefulSet => StatefulSetView::marshal_preserves_integrity(),
-        }
-    }
+//    assert forall |s, s_prime: ZKCluster| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::kubernetes_api_next().forward(input)(s, s_prime) implies post(s_prime) by {
+//        let pending_msg = s.ongoing_reconciles()[zookeeper.object_ref()].pending_req_msg.get_Some_0();
+//        let resp = ZKCluster::handle_create_request_msg(pending_msg, s.kubernetes_api_state).1;
+////        assert(s_prime.in_flight().contains(resp));
+//        match sub_resource {
+//            SubResource::HeadlessService => ServiceView::marshal_preserves_integrity(),
+//            SubResource::ClientService => ServiceView::marshal_preserves_integrity(),
+//            SubResource::AdminServerService => ServiceView::marshal_preserves_integrity(),
+//            SubResource::ConfigMap => ConfigMapView::marshal_preserves_integrity(),
+//            SubResource::StatefulSet => StatefulSetView::marshal_preserves_integrity(),
+//        }
+//    }
 
-    assert forall |s, s_prime: ZKCluster| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || post(s_prime) by {
-        let step = choose |step| ZKCluster::next_step(s, s_prime, step);
-        match step {
-            Step::ApiServerStep(input) => {
-                if resource_create_request_msg(resource_key)(input.get_Some_0()) {} else {}
-                if resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(input.get_Some_0()) {} else {}
-            },
-            _ => {},
-        }
-    }
+//    assert forall |s, s_prime: ZKCluster| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || post(s_prime) by {
+//        let step = choose |step| ZKCluster::next_step(s, s_prime, step);
+//        match step {
+//            Step::ApiServerStep(input) => {
+//                if resource_create_request_msg(resource_key)(input.get_Some_0()) {} else {}
+//                if resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(input.get_Some_0()) {} else {}
+//            },
+//            _ => {},
+//        }
+//    }
 
     ZKCluster::lemma_pre_leads_to_post_by_kubernetes_api(
         spec, input, stronger_next, ZKCluster::handle_request(), pre, post
@@ -752,7 +752,7 @@ proof fn lemma_from_key_exists_to_receives_ok_resp_at_after_get_resource_step(sp
                 let req = input.get_Some_0();
                 assert(!resource_update_request_msg(get_request(sub_resource, zookeeper).key)(req));
                 assert(!resource_delete_request_msg(get_request(sub_resource, zookeeper).key)(req));
-                assert(!resource_update_status_request_msg(get_request(sub_resource, zookeeper).key)(req));
+//                assert(!resource_update_status_request_msg(get_request(sub_resource, zookeeper).key)(req));
                 if input.get_Some_0() == req_msg {
                     let resp_msg = ZKCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
                     assert({
@@ -761,23 +761,23 @@ proof fn lemma_from_key_exists_to_receives_ok_resp_at_after_get_resource_step(sp
                         &&& resp_msg.content.get_get_response().res.is_Ok()
                         &&& resp_msg.content.get_get_response().res.get_Ok_0() == s_prime.resources()[resource_key]
                     });
-                    assert(post(s_prime));
+//                    assert(post(s_prime));
                 }
             },
             _ => {}
         }
     }
 
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::kubernetes_api_next().forward(input)(s, s_prime)
-    implies post(s_prime) by {
-        let resp_msg = ZKCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
-        assert({
-            &&& s_prime.in_flight().contains(resp_msg)
-            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
-            &&& resp_msg.content.get_get_response().res.is_Ok()
-            &&& resp_msg.content.get_get_response().res.get_Ok_0() == s_prime.resources()[resource_key]
-        });
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::kubernetes_api_next().forward(input)(s, s_prime)
+//    implies post(s_prime) by {
+//        let resp_msg = ZKCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
+////        assert({
+////            &&& s_prime.in_flight().contains(resp_msg)
+////            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
+////            &&& resp_msg.content.get_get_response().res.is_Ok()
+////            &&& resp_msg.content.get_get_response().res.get_Ok_0() == s_prime.resources()[resource_key]
+////        });
+//    }
 
     ZKCluster::lemma_pre_leads_to_post_by_kubernetes_api(
         spec, input, stronger_next, ZKCluster::handle_request(), pre, post
@@ -985,25 +985,25 @@ pub proof fn lemma_resource_object_is_stable(spec: TempPred<ZKCluster>, sub_reso
         lift_state(helper_invariants::object_in_etcd_satisfies_unchangeable(sub_resource, zookeeper))
     );
 
-    assert forall |s, s_prime: ZKCluster| post(s) && #[trigger] stronger_next(s, s_prime) implies post(s_prime) by {
-        let step = choose |step| ZKCluster::next_step(s, s_prime, step);
-        match step {
-            Step::ApiServerStep(input) => {
-                let req = input.get_Some_0();
-                assert(!resource_delete_request_msg(resource_key)(req));
-                assert(!resource_update_status_request_msg(resource_key)(req));
-                if resource_update_request_msg(resource_key)(req) {} else {}
-            },
-            _ => {},
-        }
-        match sub_resource {
-            SubResource::HeadlessService => ServiceView::marshal_preserves_integrity(),
-            SubResource::ClientService => ServiceView::marshal_preserves_integrity(),
-            SubResource::AdminServerService => ServiceView::marshal_preserves_integrity(),
-            SubResource::ConfigMap => ConfigMapView::marshal_preserves_integrity(),
-            _ => {}
-        }
-    }
+//    assert forall |s, s_prime: ZKCluster| post(s) && #[trigger] stronger_next(s, s_prime) implies post(s_prime) by {
+//        let step = choose |step| ZKCluster::next_step(s, s_prime, step);
+//        match step {
+//            Step::ApiServerStep(input) => {
+//                let req = input.get_Some_0();
+////                assert(!resource_delete_request_msg(resource_key)(req));
+////                assert(!resource_update_status_request_msg(resource_key)(req));
+//                if resource_update_request_msg(resource_key)(req) {} else {}
+//            },
+//            _ => {},
+//        }
+//        match sub_resource {
+//            SubResource::HeadlessService => ServiceView::marshal_preserves_integrity(),
+//            SubResource::ClientService => ServiceView::marshal_preserves_integrity(),
+//            SubResource::AdminServerService => ServiceView::marshal_preserves_integrity(),
+//            SubResource::ConfigMap => ConfigMapView::marshal_preserves_integrity(),
+//            _ => {}
+//        }
+//    }
 
     leads_to_stable(spec, lift_action(stronger_next), p, lift_state(post));
 }

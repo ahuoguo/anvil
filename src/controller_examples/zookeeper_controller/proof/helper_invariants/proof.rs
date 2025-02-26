@@ -272,24 +272,24 @@ pub proof fn lemma_eventually_always_object_in_response_at_after_create_resource
                         Step::ControllerStep(input) => {
                             let cr_key = input.1.get_Some_0();
                             if cr_key == key {
-                                assert(s_prime.ongoing_reconciles()[key].pending_req_msg.is_Some());
-                                assert(resource_create_request_msg(resource_key)(s_prime.ongoing_reconciles()[key].pending_req_msg.get_Some_0()));
+//                                assert(s_prime.ongoing_reconciles()[key].pending_req_msg.is_Some());
+//                                assert(resource_create_request_msg(resource_key)(s_prime.ongoing_reconciles()[key].pending_req_msg.get_Some_0()));
                             } else {
-                                assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
+//                                assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
                             }
                         },
                         Step::RestartController() => {
-                            assert(false);
+//                            assert(false);
                         },
                         _ => {
-                            assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
+//                            assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
                         }
                     }
                 }
             );
             assert forall |msg: ZKMessage| #[trigger] s_prime.in_flight().contains(msg) && Message::resp_msg_matches_req_msg(msg, pending_req) implies resource_create_response_msg(resource_key, s_prime)(msg) by {
-                assert(msg.src.is_ApiServer());
-                assert(msg.content.is_create_response());
+//                assert(msg.src.is_ApiServer());
+//                assert(msg.content.is_create_response());
                 if msg.content.get_create_response().res.is_Ok() {
                     let step = choose |step| ZKCluster::next_step(s, s_prime, step);
                     match step {
@@ -302,24 +302,24 @@ pub proof fn lemma_eventually_always_object_in_response_at_after_create_resource
                             match req_msg.content.get_APIRequest_0() {
                                 APIRequest::CreateRequest(_) => {
                                     if !s.in_flight().contains(msg) {
-                                        assert(msg.content.get_create_response().res.get_Ok_0().object_ref() == req_msg.content.get_create_request().key());
-                                        assert(msg.content.get_create_response().res.get_Ok_0().object_ref() == resource_key);
-                                        assert(msg.content.get_create_response().res.get_Ok_0() == s_prime.resources()[req_msg.content.get_create_request().key()]);
+//                                        assert(msg.content.get_create_response().res.get_Ok_0().object_ref() == req_msg.content.get_create_request().key());
+//                                        assert(msg.content.get_create_response().res.get_Ok_0().object_ref() == resource_key);
+//                                        assert(msg.content.get_create_response().res.get_Ok_0() == s_prime.resources()[req_msg.content.get_create_request().key()]);
                                     } else {
-                                        assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
-                                        assert(!s.in_flight().contains(pending_req));
+//                                        assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                                        assert(!s.in_flight().contains(pending_req));
                                     }
                                 }
                                 _ => {
-                                    assert(s.in_flight().contains(msg));
-                                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                                    assert(s.in_flight().contains(msg));
+//                                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
                                     assert(!s.in_flight().contains(pending_req));
                                 }
                             }
                         },
                         _ => {
                             assert(s.in_flight().contains(msg));
-                            assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                            assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
                             assert(!s.in_flight().contains(pending_req));
                         }
                     }
@@ -423,25 +423,25 @@ pub proof fn lemma_eventually_always_object_in_response_at_after_update_resource
                         Step::ControllerStep(input) => {
                             let cr_key = input.1.get_Some_0();
                             if cr_key == key {
-                                assert(s_prime.ongoing_reconciles()[key].pending_req_msg.is_Some());
-                                assert(resource_update_request_msg(resource_key)(s_prime.ongoing_reconciles()[key].pending_req_msg.get_Some_0()));
+//                                assert(s_prime.ongoing_reconciles()[key].pending_req_msg.is_Some());
+//                                assert(resource_update_request_msg(resource_key)(s_prime.ongoing_reconciles()[key].pending_req_msg.get_Some_0()));
                             } else {
-                                assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
+//                                assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
                             }
                         },
                         Step::RestartController() => {
-                            assert(false);
+//                            assert(false);
                         },
                         _ => {
-                            assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
+//                            assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
                         }
                     }
                 }
             );
 
             assert forall |msg: ZKMessage| #[trigger] s_prime.in_flight().contains(msg) && Message::resp_msg_matches_req_msg(msg, pending_req) implies resource_update_response_msg(resource_key, s_prime)(msg) by {
-                assert(msg.src.is_ApiServer());
-                assert(msg.content.is_update_response());
+//                assert(msg.src.is_ApiServer());
+//                assert(msg.content.is_update_response());
                 if msg.content.get_update_response().res.is_Ok() {
                     let step = choose |step| ZKCluster::next_step(s, s_prime, step);
                     match step {
@@ -449,30 +449,30 @@ pub proof fn lemma_eventually_always_object_in_response_at_after_update_resource
                             let req_msg = input.get_Some_0();
                             assert(!resource_delete_request_msg(resource_key)(req_msg));
                             assert(!resource_update_status_request_msg(resource_key)(req_msg));
-                            assert(!resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(req_msg));
+//                            assert(!resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(req_msg));
                             match req_msg.content.get_APIRequest_0() {
                                 APIRequest::UpdateRequest(_) => {
                                     if !s.in_flight().contains(msg) {
-                                        assert(msg.content.get_update_response().res.get_Ok_0().object_ref() == req_msg.content.get_update_request().key());
-                                        assert(msg.content.get_update_response().res.get_Ok_0().object_ref() == resource_key);
-                                        assert(msg.content.get_update_response().res.get_Ok_0() == s_prime.resources()[req_msg.content.get_update_request().key()]);
+//                                        assert(msg.content.get_update_response().res.get_Ok_0().object_ref() == req_msg.content.get_update_request().key());
+//                                        assert(msg.content.get_update_response().res.get_Ok_0().object_ref() == resource_key);
+//                                        assert(msg.content.get_update_response().res.get_Ok_0() == s_prime.resources()[req_msg.content.get_update_request().key()]);
                                     } else {
                                         assert(!resource_update_request_msg(resource_key)(req_msg));
-                                        assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
-                                        assert(!s.in_flight().contains(pending_req));
+//                                        assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                                        assert(!s.in_flight().contains(pending_req));
                                     }
                                 }
                                 _ => {
                                     assert(s.in_flight().contains(msg));
-                                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
-                                    assert(!s.in_flight().contains(pending_req));
+//                                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                                    assert(!s.in_flight().contains(pending_req));
                                 }
                             }
                         },
                         _ => {
                             assert(s.in_flight().contains(msg));
-                            assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
-                            assert(!s.in_flight().contains(pending_req));
+//                            assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                            assert(!s.in_flight().contains(pending_req));
                         }
                     }
                 }
@@ -505,28 +505,28 @@ pub proof fn lemma_always_response_at_after_get_resource_step_is_resource_get_re
         lift_state(ZKCluster::each_object_in_reconcile_has_consistent_key_and_valid_metadata()),
         later(lift_state(ZKCluster::key_of_object_in_matched_ok_get_resp_message_is_same_as_key_of_pending_req(key)))
     );
-    assert forall |s: ZKCluster, s_prime: ZKCluster| inv(s) && #[trigger] next(s, s_prime) implies inv(s_prime) by {
-        if at_zk_step(key, ZookeeperReconcileStep::AfterKRequestStep(ActionKind::Get, sub_resource))(s_prime) {
-            let step = choose |step| ZKCluster::next_step(s, s_prime, step);
-            match step {
-                Step::ControllerStep(input) => {
-                    let cr_key = input.1.get_Some_0();
-                    if cr_key == key {
-                        assert(s_prime.ongoing_reconciles()[key].pending_req_msg.is_Some());
-                        assert(resource_get_request_msg(resource_key)(s_prime.ongoing_reconciles()[key].pending_req_msg.get_Some_0()));
-                    } else {
-                        assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
-                    }
-                },
-                Step::RestartController() => {
-                    assert(false);
-                },
-                _ => {
-                    assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
-                }
-            }
-        }
-    }
+//    assert forall |s: ZKCluster, s_prime: ZKCluster| inv(s) && #[trigger] next(s, s_prime) implies inv(s_prime) by {
+//        if at_zk_step(key, ZookeeperReconcileStep::AfterKRequestStep(ActionKind::Get, sub_resource))(s_prime) {
+//            let step = choose |step| ZKCluster::next_step(s, s_prime, step);
+//            match step {
+//                Step::ControllerStep(input) => {
+//                    let cr_key = input.1.get_Some_0();
+//                    if cr_key == key {
+////                        assert(s_prime.ongoing_reconciles()[key].pending_req_msg.is_Some());
+////                        assert(resource_get_request_msg(resource_key)(s_prime.ongoing_reconciles()[key].pending_req_msg.get_Some_0()));
+//                    } else {
+////                        assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
+//                    }
+//                },
+//                Step::RestartController() => {
+////                    assert(false);
+//                },
+//                _ => {
+////                    assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
+//                }
+//            }
+//        }
+//    }
     init_invariant(spec, ZKCluster::init(), next, inv);
 }
 
@@ -633,20 +633,20 @@ pub proof fn lemma_eventually_always_every_resource_update_request_implies_at_af
                     lemma_resource_create_or_update_request_msg_implies_key_in_reconcile_equals(sub_resource, zookeeper, s, s_prime, msg, step);
                     let resp = step.get_ControllerStep_0().0.get_Some_0();
                     assert(ZKCluster::is_ok_get_response_msg()(resp));
-                    assert(s.in_flight().contains(resp));
-                    assert(resp.content.get_get_response().res.get_Ok_0().metadata.resource_version == msg.content.get_update_request().obj.metadata.resource_version);
+//                    assert(s.in_flight().contains(resp));
+//                    assert(resp.content.get_get_response().res.get_Ok_0().metadata.resource_version == msg.content.get_update_request().obj.metadata.resource_version);
                     if s.resources().contains_key(resource_key) && resp.content.get_get_response().res.get_Ok_0().metadata.resource_version == s.resources()[resource_key].metadata.resource_version {
-                        assert(resp.content.get_get_response().res.get_Ok_0() == s.resources()[resource_key]);
-                        assert(s_prime.resources()[resource_key] == s.resources()[resource_key]);
+//                        assert(resp.content.get_get_response().res.get_Ok_0() == s.resources()[resource_key]);
+//                        assert(s_prime.resources()[resource_key] == s.resources()[resource_key]);
                     }
                     if sub_resource == SubResource::StatefulSet {
                         let cm_key = get_request(SubResource::ConfigMap, zookeeper).key;
-                        assert(s.resources()[cm_key] == s_prime.resources()[cm_key]);
-                        assert(s.ongoing_reconciles()[key].local_state.latest_config_map_rv_opt == s_prime.ongoing_reconciles()[key].local_state.latest_config_map_rv_opt)
+//                        assert(s.resources()[cm_key] == s_prime.resources()[cm_key]);
+//                        assert(s.ongoing_reconciles()[key].local_state.latest_config_map_rv_opt == s_prime.ongoing_reconciles()[key].local_state.latest_config_map_rv_opt)
                     }
                 } else {
-                    assert(requirements(msg, s));
-                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                    assert(requirements(msg, s));
+//                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
                 }
             }
         }
@@ -741,8 +741,8 @@ pub proof fn lemma_eventually_always_object_in_every_resource_update_request_onl
                 if !s.in_flight().contains(msg) {
                     lemma_resource_create_or_update_request_msg_implies_key_in_reconcile_equals(sub_resource, zookeeper, s, s_prime, msg, step);
                 } else {
-                    assert(requirements(msg, s));
-                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                    assert(requirements(msg, s));
+//                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
                 }
             }
         }
@@ -829,8 +829,8 @@ pub proof fn lemma_eventually_always_every_resource_create_request_implies_at_af
                 if !s.in_flight().contains(msg) {
                     lemma_resource_create_or_update_request_msg_implies_key_in_reconcile_equals(sub_resource, zookeeper, s, s_prime, msg, step);
                 } else {
-                    assert(requirements(msg, s));
-                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                    assert(requirements(msg, s));
+//                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
                 }
             }
         }
@@ -875,7 +875,7 @@ pub proof fn lemma_always_no_update_status_request_msg_in_flight_of_except_state
         if sub_resource != SubResource::StatefulSet {
             assert forall |msg: ZKMessage| s_prime.in_flight().contains(msg) implies !(#[trigger] resource_update_status_request_msg(resource_key)(msg)) by {
                 if s.in_flight().contains(msg) {
-                    assert(!resource_update_status_request_msg(resource_key)(msg));
+//                    assert(!resource_update_status_request_msg(resource_key)(msg));
                 } else {
                     let step = choose |step: ZKStep| ZKCluster::next_step(s, s_prime, step);
                     match step {
@@ -898,14 +898,14 @@ pub proof fn lemma_always_no_update_status_request_msg_in_flight_of_except_state
                                     }
                                 } else {}
                             } else {}
-                            assert(!resource_update_status_request_msg(resource_key)(msg));
+//                            assert(!resource_update_status_request_msg(resource_key)(msg));
                         },
                         Step::BuiltinControllersStep(_) => {
-                            assert(resource_key.kind != Kind::StatefulSetKind && resource_key.kind != Kind::DaemonSetKind);
-                            assert(!resource_update_status_request_msg(resource_key)(msg));
+//                            assert(resource_key.kind != Kind::StatefulSetKind && resource_key.kind != Kind::DaemonSetKind);
+//                            assert(!resource_update_status_request_msg(resource_key)(msg));
                         },
                         _ => {
-                            assert(!resource_update_status_request_msg(resource_key)(msg));
+//                            assert(!resource_update_status_request_msg(resource_key)(msg));
                         }
                     }
                 }
@@ -937,61 +937,61 @@ pub proof fn lemma_always_no_update_status_request_msg_not_from_bc_in_flight_of_
     );
 
     let resource_key = get_request(SubResource::StatefulSet, zookeeper).key;
-    assert forall |s, s_prime: ZKCluster| inv(s) && #[trigger] stronger_next(s, s_prime) implies inv(s_prime) by {
-        assert forall |msg: ZKMessage| #[trigger] s_prime.in_flight().contains(msg) && msg.dst.is_ApiServer() && !msg.src.is_BuiltinController() && msg.content.is_update_status_request()
-        implies msg.content.get_update_status_request().key() != resource_key by {
-            if s.in_flight().contains(msg) {
-                assert(msg.content.get_update_status_request().key() != resource_key);
-            } else {
-                let step = choose |step: ZKStep| ZKCluster::next_step(s, s_prime, step);
-                match step {
-                    Step::ControllerStep(input) => {
-                        if input.1.is_Some() {
-                            let cr_key = input.1.get_Some_0();
-                            if s.ongoing_reconciles().contains_key(cr_key) {
-                                match s.ongoing_reconciles()[cr_key].local_state.reconcile_step {
-                                    ZookeeperReconcileStep::Init => {},
-                                    ZookeeperReconcileStep::AfterKRequestStep(_, resource) => {
-                                        match resource {
-                                            SubResource::HeadlessService => {},
-                                            SubResource::ClientService => {},
-                                            SubResource::AdminServerService => {},
-                                            SubResource::ConfigMap => {},
-                                            SubResource::StatefulSet => {},
-                                        }
-                                    },
-                                    _ => {}
-                                }
-                            } else {}
-                        } else {}
-                        assert(msg.content.get_update_status_request().key() != resource_key);
-                    },
-                    Step::ApiServerStep(_) => {
-                        assert(!msg.content.is_APIRequest());
-                        assert(!msg.content.is_update_status_request());
-                        assert(false);
-                    },
-                    Step::ClientStep() => {
-                        assert(!msg.content.is_update_status_request());
-                        assert(false);
-                    },
-                    Step::BuiltinControllersStep(_) => {
-                        assert(msg.src.is_BuiltinController());
-                        assert(false);
-                    },
-                    Step::FailTransientlyStep(_) => {
-                        assert(!msg.content.is_APIRequest());
-                        assert(!msg.content.is_update_status_request());
-                        assert(false);
-                    },
-                    _ => {
-                        assert(!s_prime.in_flight().contains(msg));
-                        assert(false);
-                    }
-                }
-            }
-        }
-    }
+//    assert forall |s, s_prime: ZKCluster| inv(s) && #[trigger] stronger_next(s, s_prime) implies inv(s_prime) by {
+////        assert forall |msg: ZKMessage| #[trigger] s_prime.in_flight().contains(msg) && msg.dst.is_ApiServer() && !msg.src.is_BuiltinController() && msg.content.is_update_status_request()
+////        implies msg.content.get_update_status_request().key() != resource_key by {
+////            if s.in_flight().contains(msg) {
+//////                assert(msg.content.get_update_status_request().key() != resource_key);
+////            } else {
+////                let step = choose |step: ZKStep| ZKCluster::next_step(s, s_prime, step);
+////                match step {
+////                    Step::ControllerStep(input) => {
+////                        if input.1.is_Some() {
+////                            let cr_key = input.1.get_Some_0();
+////                            if s.ongoing_reconciles().contains_key(cr_key) {
+////                                match s.ongoing_reconciles()[cr_key].local_state.reconcile_step {
+////                                    ZookeeperReconcileStep::Init => {},
+////                                    ZookeeperReconcileStep::AfterKRequestStep(_, resource) => {
+////                                        match resource {
+////                                            SubResource::HeadlessService => {},
+////                                            SubResource::ClientService => {},
+////                                            SubResource::AdminServerService => {},
+////                                            SubResource::ConfigMap => {},
+////                                            SubResource::StatefulSet => {},
+////                                        }
+////                                    },
+////                                    _ => {}
+////                                }
+////                            } else {}
+////                        } else {}
+//////                        assert(msg.content.get_update_status_request().key() != resource_key);
+////                    },
+////                    Step::ApiServerStep(_) => {
+//////                        assert(!msg.content.is_APIRequest());
+//////                        assert(!msg.content.is_update_status_request());
+//////                        assert(false);
+////                    },
+////                    Step::ClientStep() => {
+//////                        assert(!msg.content.is_update_status_request());
+//////                        assert(false);
+////                    },
+////                    Step::BuiltinControllersStep(_) => {
+//////                        assert(msg.src.is_BuiltinController());
+//////                        assert(false);
+////                    },
+////                    Step::FailTransientlyStep(_) => {
+//////                        assert(!msg.content.is_APIRequest());
+//////                        assert(!msg.content.is_update_status_request());
+//////                        assert(false);
+////                    },
+////                    _ => {
+//////                        assert(!s_prime.in_flight().contains(msg));
+//////                        assert(false);
+////                    }
+////                }
+////            }
+////        }
+//    }
     init_invariant(spec, ZKCluster::init(), stronger_next, inv);
 }
 
@@ -1107,21 +1107,21 @@ proof fn lemma_always_resource_object_create_or_update_request_msg_has_one_contr
                 lemma_resource_create_or_update_request_msg_implies_key_in_reconcile_equals(sub_resource, zookeeper, s, s_prime, msg, step);
                 let cr = s.ongoing_reconciles()[key].triggering_cr;
                 if resource_create_request_msg(resource_key)(msg) {
-                    assert(msg.content.get_create_request().obj == make(sub_resource, cr, s.ongoing_reconciles()[key].local_state).get_Ok_0());
-                    assert(msg.content.get_create_request().obj.metadata.finalizers.is_None());
-                    assert(msg.content.get_create_request().obj.metadata.owner_references == Some(seq![
-                        make_owner_references_with_name_and_uid(key.name, cr.metadata.uid.get_Some_0())
-                    ]));
+//                    assert(msg.content.get_create_request().obj == make(sub_resource, cr, s.ongoing_reconciles()[key].local_state).get_Ok_0());
+//                    assert(msg.content.get_create_request().obj.metadata.finalizers.is_None());
+//                    assert(msg.content.get_create_request().obj.metadata.owner_references == Some(seq![
+//                        make_owner_references_with_name_and_uid(key.name, cr.metadata.uid.get_Some_0())
+//                    ]));
                 }
                 if resource_update_request_msg(resource_key)(msg) {
-                    assert(step.get_ControllerStep_0().0.get_Some_0().content.is_get_response());
-                    assert(step.get_ControllerStep_0().0.get_Some_0().content.get_get_response().res.is_Ok());
-                    assert(update(
-                        sub_resource, cr, s.ongoing_reconciles()[key].local_state, step.get_ControllerStep_0().0.get_Some_0().content.get_get_response().res.get_Ok_0()
-                    ).is_Ok());
-                    assert(msg.content.get_update_request().obj == update(
-                        sub_resource, cr, s.ongoing_reconciles()[key].local_state, step.get_ControllerStep_0().0.get_Some_0().content.get_get_response().res.get_Ok_0()
-                    ).get_Ok_0());
+//                    assert(step.get_ControllerStep_0().0.get_Some_0().content.is_get_response());
+//                    assert(step.get_ControllerStep_0().0.get_Some_0().content.get_get_response().res.is_Ok());
+//                    assert(update(
+//                        sub_resource, cr, s.ongoing_reconciles()[key].local_state, step.get_ControllerStep_0().0.get_Some_0().content.get_get_response().res.get_Ok_0()
+//                    ).is_Ok());
+//                    assert(msg.content.get_update_request().obj == update(
+//                        sub_resource, cr, s.ongoing_reconciles()[key].local_state, step.get_ControllerStep_0().0.get_Some_0().content.get_get_response().res.get_Ok_0()
+//                    ).get_Ok_0());
                     assert(msg.content.get_update_request().obj.metadata.owner_references == Some(seq![
                         make_owner_references_with_name_and_uid(key.name, cr.metadata.uid.get_Some_0())
                     ]));
@@ -1165,17 +1165,17 @@ pub proof fn lemma_resource_create_or_update_request_msg_implies_key_in_reconcil
     let cr = s.ongoing_reconciles()[key].triggering_cr;
     let resource_key = get_request(sub_resource, zookeeper).key;
     if resource_create_request_msg(get_request(sub_resource, zookeeper).key)(msg) || resource_update_request_msg(get_request(sub_resource, zookeeper).key)(msg) {
-        assert(step.is_ControllerStep());
-        assert(s.ongoing_reconciles().contains_key(cr_key));
+//        assert(step.is_ControllerStep());
+//        assert(s.ongoing_reconciles().contains_key(cr_key));
         let local_step = s.ongoing_reconciles()[cr_key].local_state.reconcile_step;
         let local_step_prime = s_prime.ongoing_reconciles()[cr_key].local_state.reconcile_step;
-        assert(local_step_prime.is_AfterKRequestStep());
-        assert(local_step.is_AfterKRequestStep() && local_step.get_AfterKRequestStep_0() == ActionKind::Get);
+//        assert(local_step_prime.is_AfterKRequestStep());
+//        assert(local_step.is_AfterKRequestStep() && local_step.get_AfterKRequestStep_0() == ActionKind::Get);
         if resource_create_request_msg(get_request(sub_resource, zookeeper).key)(msg) {
-            assert(local_step_prime.get_AfterKRequestStep_0() == ActionKind::Create);
+//            assert(local_step_prime.get_AfterKRequestStep_0() == ActionKind::Create);
         }
         if resource_update_request_msg(get_request(sub_resource, zookeeper).key)(msg) {
-            assert(local_step_prime.get_AfterKRequestStep_0() == ActionKind::Update);
+//            assert(local_step_prime.get_AfterKRequestStep_0() == ActionKind::Update);
         }
         assert_by(
             cr_key == zookeeper.object_ref() && local_step.get_AfterKRequestStep_1() == sub_resource && ZKCluster::pending_req_msg_is(s_prime, cr_key, msg),
@@ -1191,7 +1191,7 @@ pub proof fn lemma_resource_create_or_update_request_msg_implies_key_in_reconcil
                                 reveal_strlit("-headless");
                                 reveal_strlit("-client");
                                 if str1.len() == str2.len() {
-                                    assert(str1[str1.len() - 1] == 's');
+//                                    assert(str1[str1.len() - 1] == 's');
                                     assert(str2[str1.len() - 1] == 't');
                                 }
                             }
@@ -1204,7 +1204,7 @@ pub proof fn lemma_resource_create_or_update_request_msg_implies_key_in_reconcil
                                 reveal_strlit("-headless");
                                 reveal_strlit("-admin-server");
                                 if str1.len() == str2.len() {
-                                    assert(str1[str1.len() - 1] == 's');
+//                                    assert(str1[str1.len() - 1] == 's');
                                     assert(str2[str1.len() - 1] == 'r');
                                 }
                             }
@@ -1220,7 +1220,7 @@ pub proof fn lemma_resource_create_or_update_request_msg_implies_key_in_reconcil
                                 reveal_strlit("-client");
                                 reveal_strlit("-headless");
                                 if str1.len() == str2.len() {
-                                    assert(str1[str1.len() - 1] == 't');
+//                                    assert(str1[str1.len() - 1] == 't');
                                     assert(str2[str1.len() - 1] == 's');
                                 }
                             }
@@ -1233,7 +1233,7 @@ pub proof fn lemma_resource_create_or_update_request_msg_implies_key_in_reconcil
                                 reveal_strlit("-client");
                                 reveal_strlit("-admin-server");
                                 if str1.len() == str2.len() {
-                                    assert(str1[str1.len() - 1] == 't');
+//                                    assert(str1[str1.len() - 1] == 't');
                                     assert(str2[str1.len() - 1] == 'r');
                                 }
                             }
@@ -1249,7 +1249,7 @@ pub proof fn lemma_resource_create_or_update_request_msg_implies_key_in_reconcil
                                 reveal_strlit("-admin-server");
                                 reveal_strlit("-headless");
                                 if str1.len() == str2.len() {
-                                    assert(str1[str1.len() - 1] == 'r');
+//                                    assert(str1[str1.len() - 1] == 'r');
                                     assert(str2[str1.len() - 1] == 's');
                                 }
                             }
@@ -1262,7 +1262,7 @@ pub proof fn lemma_resource_create_or_update_request_msg_implies_key_in_reconcil
                                 reveal_strlit("-admin-server");
                                 reveal_strlit("-client");
                                 if str1.len() == str2.len() {
-                                    assert(str1[str1.len() - 1] == 'r');
+//                                    assert(str1[str1.len() - 1] == 'r');
                                     assert(str2[str1.len() - 1] == 't');
                                 }
                             }
@@ -1352,32 +1352,32 @@ pub proof fn lemma_eventually_always_no_delete_resource_request_msg_in_flight(sp
         assert forall |msg: ZKMessage| (!s.in_flight().contains(msg) || requirements(msg, s)) && #[trigger] s_prime.in_flight().contains(msg)
         implies requirements(msg, s_prime) by {
             if s.in_flight().contains(msg) {
-                assert(requirements(msg, s));
-                assert(requirements(msg, s_prime));
+//                assert(requirements(msg, s));
+//                assert(requirements(msg, s_prime));
             } else {
                 let step = choose |step| ZKCluster::next_step(s, s_prime, step);
                 match step {
                     Step::BuiltinControllersStep(_) => {
                         if s.resources().contains_key(resource_key) {
                             let owner_refs = s.resources()[resource_key].metadata.owner_references;
-                            assert(owner_refs == Some(seq![zookeeper.controller_owner_ref()]));
+//                            assert(owner_refs == Some(seq![zookeeper.controller_owner_ref()]));
                             assert(owner_reference_to_object_reference(owner_refs.get_Some_0()[0], key.namespace) == key);
                         }
                     },
                     Step::ControllerStep(input) => {
                         let cr_key = input.1.get_Some_0();
                         if s_prime.ongoing_reconciles()[cr_key].pending_req_msg.is_Some() {
-                            assert(msg == s_prime.ongoing_reconciles()[cr_key].pending_req_msg.get_Some_0());
-                            assert(!s_prime.ongoing_reconciles()[cr_key].pending_req_msg.get_Some_0().content.is_delete_request());
+//                            assert(msg == s_prime.ongoing_reconciles()[cr_key].pending_req_msg.get_Some_0());
+//                            assert(!s_prime.ongoing_reconciles()[cr_key].pending_req_msg.get_Some_0().content.is_delete_request());
                         }
                     },
                     Step::ClientStep() => {
                         if msg.content.is_delete_request() {
-                            assert(msg.content.get_delete_request().key.kind != resource_key.kind);
+//                            assert(msg.content.get_delete_request().key.kind != resource_key.kind);
                         }
                     },
                     _ => {
-                        assert(requirements(msg, s_prime));
+//                        assert(requirements(msg, s_prime));
                     }
                 }
             }
@@ -1629,17 +1629,17 @@ pub proof fn lemma_always_no_create_resource_request_msg_without_name_in_flight(
     let resource_key = get_request(sub_resource, zookeeper).key;
     let inv = no_create_resource_request_msg_without_name_in_flight(sub_resource, zookeeper);
 
-    assert forall |s: ZKCluster| #[trigger] ZKCluster::init()(s) implies inv(s) by {}
+//    assert forall |s: ZKCluster| #[trigger] ZKCluster::init()(s) implies inv(s) by {}
 
-    assert forall |s: ZKCluster, s_prime: ZKCluster| #[trigger] ZKCluster::next()(s, s_prime) && inv(s) implies inv(s_prime) by {
-        assert forall |msg: ZKMessage|
-            !(s_prime.in_flight().contains(msg) && #[trigger] resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(msg))
-        by {
-            if !s.in_flight().contains(msg) && s_prime.in_flight().contains(msg) {
-                assert(!resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(msg));
-            }
-        }
-    }
+//    assert forall |s: ZKCluster, s_prime: ZKCluster| #[trigger] ZKCluster::next()(s, s_prime) && inv(s) implies inv(s_prime) by {
+////        assert forall |msg: ZKMessage|
+////            !(s_prime.in_flight().contains(msg) && #[trigger] resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(msg))
+////        by {
+////            if !s.in_flight().contains(msg) && s_prime.in_flight().contains(msg) {
+//////                assert(!resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(msg));
+////            }
+////        }
+//    }
     init_invariant(spec, ZKCluster::init(), ZKCluster::next(), inv);
 }
 

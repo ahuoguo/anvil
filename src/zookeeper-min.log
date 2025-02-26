@@ -1,0 +1,2145 @@
+warning: unused variable: `tokens`
+    --> tools/minimize/src/main.rs:1511:55
+     |
+1511 |             Meta::List(MetaList { path, delimiter: _, tokens }) => {
+     |                                                       ^^^^^^ help: try ignoring the field: `tokens: _`
+     |
+     = note: `#[warn(unused_variables)]` on by default
+
+warning: `minimize` (bin "minimize") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 2.10s
+     Running `/local/abai/verus/source/target/release/minimize -d ./zookeeper-tmp3 /local/abai/anvil/src/zookeeper_controller.d`
+verus succeeded with time: 183739ms
+minimization of ./zookeeper-tmp3/0/zookeeper_controller.rs is completed
+minimization of ./zookeeper-tmp3/1/external_api/mod.rs is completed
+minimization of ./zookeeper-tmp3/5/kubernetes_api_objects/error.rs is completed
+minimization of ./zookeeper-tmp3/6/kubernetes_api_objects/exec/mod.rs is completed
+minimization of ./zookeeper-tmp3/3/external_api/spec.rs is completed
+minimization of ./zookeeper-tmp3/4/kubernetes_api_objects/mod.rs is completed
+minimization of ./zookeeper-tmp3/2/external_api/exec.rs is completed
+minimization of ./zookeeper-tmp3/7/kubernetes_api_objects/exec/affinity.rs is completed
+minimization of ./zookeeper-tmp3/8/kubernetes_api_objects/exec/api_method.rs is completed
+minimization of ./zookeeper-tmp3/9/kubernetes_api_objects/exec/api_resource.rs is completed
+minimization of ./zookeeper-tmp3/10/kubernetes_api_objects/exec/common.rs is completed
+minimization of ./zookeeper-tmp3/11/kubernetes_api_objects/exec/config_map.rs is completed
+minimization of ./zookeeper-tmp3/13/kubernetes_api_objects/exec/daemon_set.rs is completed
+minimization of ./zookeeper-tmp3/12/kubernetes_api_objects/exec/container.rs is completed
+minimization of ./zookeeper-tmp3/14/kubernetes_api_objects/exec/dynamic.rs is completed
+minimization of ./zookeeper-tmp3/15/kubernetes_api_objects/exec/label_selector.rs is completed
+minimization of ./zookeeper-tmp3/16/kubernetes_api_objects/exec/object_meta.rs is completed
+minimization of ./zookeeper-tmp3/17/kubernetes_api_objects/exec/owner_reference.rs is completed
+minimization of ./zookeeper-tmp3/18/kubernetes_api_objects/exec/persistent_volume_claim.rs is completed
+minimization of ./zookeeper-tmp3/19/kubernetes_api_objects/exec/pod.rs is completed
+minimization of ./zookeeper-tmp3/20/kubernetes_api_objects/exec/pod_template_spec.rs is completed
+minimization of ./zookeeper-tmp3/21/kubernetes_api_objects/exec/preconditions.rs is completed
+minimization of ./zookeeper-tmp3/22/kubernetes_api_objects/exec/prelude.rs is completed
+minimization of ./zookeeper-tmp3/23/kubernetes_api_objects/exec/resource.rs is completed
+minimization of ./zookeeper-tmp3/24/kubernetes_api_objects/exec/resource_requirements.rs is completed
+minimization of ./zookeeper-tmp3/25/kubernetes_api_objects/exec/role.rs is completed
+minimization of ./zookeeper-tmp3/26/kubernetes_api_objects/exec/role_binding.rs is completed
+minimization of ./zookeeper-tmp3/27/kubernetes_api_objects/exec/secret.rs is completed
+minimization of ./zookeeper-tmp3/28/kubernetes_api_objects/exec/service.rs is completed
+minimization of ./zookeeper-tmp3/29/kubernetes_api_objects/exec/service_account.rs is completed
+minimization of ./zookeeper-tmp3/30/kubernetes_api_objects/exec/stateful_set.rs is completed
+minimization of ./zookeeper-tmp3/31/kubernetes_api_objects/exec/toleration.rs is completed
+minimization of ./zookeeper-tmp3/32/kubernetes_api_objects/exec/volume.rs is completed
+minimization of ./zookeeper-tmp3/33/kubernetes_api_objects/exec/volume_resource_requirements.rs is completed
+minimization of ./zookeeper-tmp3/34/kubernetes_api_objects/spec/mod.rs is completed
+minimization of ./zookeeper-tmp3/35/kubernetes_api_objects/spec/affinity.rs is completed
+minimization of ./zookeeper-tmp3/36/kubernetes_api_objects/spec/api_method.rs is completed
+minimization of ./zookeeper-tmp3/37/kubernetes_api_objects/spec/api_resource.rs is completed
+minimization of ./zookeeper-tmp3/38/kubernetes_api_objects/spec/common.rs is completed
+minimization of ./zookeeper-tmp3/39/kubernetes_api_objects/spec/config_map.rs is completed
+minimization of ./zookeeper-tmp3/40/kubernetes_api_objects/spec/container.rs is completed
+minimization of ./zookeeper-tmp3/41/kubernetes_api_objects/spec/daemon_set.rs is completed
+minimization of ./zookeeper-tmp3/42/kubernetes_api_objects/spec/dynamic.rs is completed
+minimization of ./zookeeper-tmp3/43/kubernetes_api_objects/spec/label_selector.rs is completed
+minimization of ./zookeeper-tmp3/44/kubernetes_api_objects/spec/object_meta.rs is completed
+minimization of ./zookeeper-tmp3/45/kubernetes_api_objects/spec/owner_reference.rs is completed
+minimization of ./zookeeper-tmp3/46/kubernetes_api_objects/spec/persistent_volume_claim.rs is completed
+minimization of ./zookeeper-tmp3/47/kubernetes_api_objects/spec/pod.rs is completed
+minimization of ./zookeeper-tmp3/48/kubernetes_api_objects/spec/pod_template_spec.rs is completed
+minimization of ./zookeeper-tmp3/49/kubernetes_api_objects/spec/preconditions.rs is completed
+minimization of ./zookeeper-tmp3/50/kubernetes_api_objects/spec/prelude.rs is completed
+minimization of ./zookeeper-tmp3/51/kubernetes_api_objects/spec/resource.rs is completed
+minimization of ./zookeeper-tmp3/52/kubernetes_api_objects/spec/resource_requirements.rs is completed
+minimization of ./zookeeper-tmp3/53/kubernetes_api_objects/spec/role.rs is completed
+minimization of ./zookeeper-tmp3/54/kubernetes_api_objects/spec/role_binding.rs is completed
+minimization of ./zookeeper-tmp3/55/kubernetes_api_objects/spec/secret.rs is completed
+minimization of ./zookeeper-tmp3/56/kubernetes_api_objects/spec/service.rs is completed
+minimization of ./zookeeper-tmp3/57/kubernetes_api_objects/spec/service_account.rs is completed
+minimization of ./zookeeper-tmp3/58/kubernetes_api_objects/spec/stateful_set.rs is completed
+minimization of ./zookeeper-tmp3/59/kubernetes_api_objects/spec/toleration.rs is completed
+minimization of ./zookeeper-tmp3/60/kubernetes_api_objects/spec/volume.rs is completed
+minimization of ./zookeeper-tmp3/61/kubernetes_api_objects/spec/volume_resource_requirements.rs is completed
+minimization of ./zookeeper-tmp3/62/kubernetes_cluster/mod.rs is completed
+minimization of ./zookeeper-tmp3/63/kubernetes_cluster/proof/mod.rs is completed
+commenting out line Lines { lines: 135..=139 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+minimization of ./zookeeper-tmp3/65/kubernetes_cluster/proof/api_server_safety.rs is completed
+commenting out line Lines { lines: 171..=171 } in "./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/67/kubernetes_cluster/proof/cluster.rs is completed
+commenting out line Lines { lines: 169..=172 } in "./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs"
+commenting out line Lines { lines: 74..=103 } in "./zookeeper-tmp3/68/kubernetes_cluster/proof/cluster_safety.rs"
+minimization of ./zookeeper-tmp3/69/kubernetes_cluster/proof/controller_runtime.rs is completed
+minimization of ./zookeeper-tmp3/70/kubernetes_cluster/proof/controller_runtime_eventual_safety.rs is completed
+commenting out line Lines { lines: 346..=371 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+commenting out line Lines { lines: 44..=44 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+commenting out line Lines { lines: 115..=135 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+minimization of ./zookeeper-tmp3/74/kubernetes_cluster/proof/external_api_liveness.rs is completed
+commenting out line Lines { lines: 41..=41 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 148..=148 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 179..=179 } in "./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 72..=104 } in "./zookeeper-tmp3/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 383..=383 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 407068ms
+commenting out line Lines { lines: 43..=46 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 169..=175 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 388543ms
+commenting out line Lines { lines: 46..=46 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 145..=149 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 382136ms
+commenting out line Lines { lines: 183..=183 } in "./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 184..=184 } in "./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 167..=167 } in "./zookeeper-tmp3/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 376..=384 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 109..=109 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 181..=181 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 419630ms
+commenting out line Lines { lines: 47..=47 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 290..=292 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 411726ms
+commenting out line Lines { lines: 185..=185 } in "./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 406019ms
+commenting out line Lines { lines: 171..=171 } in "./zookeeper-tmp3/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 457..=460 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 395803ms
+commenting out line Lines { lines: 118..=118 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 178..=182 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 403787ms
+commenting out line Lines { lines: 50..=50 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 288..=293 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 410831ms
+commenting out line Lines { lines: 187..=187 } in "./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 426394ms
+commenting out line Lines { lines: 155..=174 } in "./zookeeper-tmp3/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 406601ms
+commenting out line Lines { lines: 121..=121 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 454..=461 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 223..=223 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 408620ms
+commenting out line Lines { lines: 51..=51 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 313..=317 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 407593ms
+commenting out line Lines { lines: 191..=191 } in "./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 153..=175 } in "./zookeeper-tmp3/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 406666ms
+commenting out line Lines { lines: 127..=127 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 468..=468 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 222..=224 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 413597ms
+commenting out line Lines { lines: 36..=57 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 327..=327 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 408052ms
+commenting out line Lines { lines: 174..=194 } in "./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 215..=215 } in "./zookeeper-tmp3/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 410088ms
+commenting out line Lines { lines: 129..=129 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 221..=225 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 409921ms
+commenting out line Lines { lines: 470..=470 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 35..=58 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 324..=328 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 428287ms
+commenting out line Lines { lines: 216..=227 } in "./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 416625ms
+commenting out line Lines { lines: 210..=217 } in "./zookeeper-tmp3/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 273..=276 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 410771ms
+commenting out line Lines { lines: 135..=135 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 412311ms
+commenting out line Lines { lines: 473..=473 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 123..=123 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 355..=355 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 255..=276 } in "./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 407763ms
+commenting out line Lines { lines: 208..=218 } in "./zookeeper-tmp3/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 282..=282 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 403986ms
+commenting out line Lines { lines: 138..=138 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 420081ms
+commenting out line Lines { lines: 124..=124 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 433321ms
+commenting out line Lines { lines: 474..=474 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 462..=476 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 354..=356 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 287..=287 } in "./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 390497ms
+minimization of ./zookeeper-tmp3/68/kubernetes_cluster/proof/cluster_safety.rs is completed
+commenting out line Lines { lines: 164..=184 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 400964ms
+commenting out line Lines { lines: 283..=283 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 391907ms
+commenting out line Lines { lines: 146..=146 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 407897ms
+commenting out line Lines { lines: 126..=126 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 412868ms
+commenting out line Lines { lines: 485..=488 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 353..=357 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 281..=288 } in "./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 219..=225 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 279..=284 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 404664ms
+commenting out line Lines { lines: 148..=148 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 432771ms
+commenting out line Lines { lines: 128..=128 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 482..=489 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 383..=388 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/66/kubernetes_cluster/proof/builtin_controllers.rs is completed
+commenting out line Lines { lines: 114..=114 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 231..=231 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 381..=381 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 397079ms
+commenting out line Lines { lines: 151..=151 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 411974ms
+commenting out line Lines { lines: 129..=129 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 496..=496 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 397..=397 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 417574ms
+commenting out line Lines { lines: 116..=116 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 228..=232 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 409015ms
+commenting out line Lines { lines: 388..=388 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 411645ms
+commenting out line Lines { lines: 156..=156 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 427500ms
+commenting out line Lines { lines: 114..=135 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 402514ms
+commenting out line Lines { lines: 498..=498 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 412225ms
+commenting out line Lines { lines: 398..=398 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 274..=274 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 405234ms
+commenting out line Lines { lines: 117..=117 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 417364ms
+commenting out line Lines { lines: 393..=393 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 411971ms
+commenting out line Lines { lines: 158..=158 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 399198ms
+commenting out line Lines { lines: 112..=137 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 420810ms
+commenting out line Lines { lines: 501..=501 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 394..=399 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 273..=275 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 418932ms
+commenting out line Lines { lines: 120..=120 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 389498ms
+commenting out line Lines { lines: 395..=395 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 412013ms
+commenting out line Lines { lines: 164..=164 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 407253ms
+commenting out line Lines { lines: 188..=188 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 438227ms
+commenting out line Lines { lines: 502..=502 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 490..=504 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 272..=276 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 457..=457 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 418045ms
+commenting out line Lines { lines: 121..=124 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 423544ms
+commenting out line Lines { lines: 399..=399 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 387005ms
+commenting out line Lines { lines: 167..=167 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 399675ms
+commenting out line Lines { lines: 190..=190 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 392611ms
+commenting out line Lines { lines: 433..=509 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 330..=333 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 403484ms
+commenting out line Lines { lines: 459..=459 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 126..=126 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 404202ms
+commenting out line Lines { lines: 402..=402 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 417008ms
+commenting out line Lines { lines: 172..=172 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 403804ms
+commenting out line Lines { lines: 192..=192 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 522..=522 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=339 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 412955ms
+commenting out line Lines { lines: 464..=464 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 400700ms
+commenting out line Lines { lines: 127..=130 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 414304ms
+commenting out line Lines { lines: 405..=405 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 406732ms
+commenting out line Lines { lines: 106..=176 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 428494ms
+commenting out line Lines { lines: 193..=193 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 519..=523 } in "./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 406965ms
+commenting out line Lines { lines: 466..=466 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 430102ms
+commenting out line Lines { lines: 340..=340 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 414022ms
+commenting out line Lines { lines: 132..=132 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 385239ms
+commenting out line Lines { lines: 195..=195 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 403746ms
+commenting out line Lines { lines: 408..=408 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 386746ms
+commenting out line Lines { lines: 198..=198 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/71/kubernetes_cluster/proof/controller_runtime_liveness.rs is completed
+commenting out line Lines { lines: 30..=35 } in "./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 421494ms
+commenting out line Lines { lines: 470..=470 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 336..=341 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 402884ms
+commenting out line Lines { lines: 133..=133 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 407197ms
+commenting out line Lines { lines: 196..=196 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 420738ms
+commenting out line Lines { lines: 373..=412 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 415958ms
+commenting out line Lines { lines: 200..=200 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 44..=44 } in "./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 406338ms
+commenting out line Lines { lines: 473..=473 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 449..=449 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 411541ms
+commenting out line Lines { lines: 134..=137 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 405321ms
+commenting out line Lines { lines: 198..=198 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 404940ms
+commenting out line Lines { lines: 419..=419 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 419075ms
+commenting out line Lines { lines: 201..=201 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 51..=56 } in "./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 411734ms
+commenting out line Lines { lines: 456..=456 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 417996ms
+commenting out line Lines { lines: 476..=476 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 399105ms
+commenting out line Lines { lines: 191..=201 } in "./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 416768ms
+commenting out line Lines { lines: 142..=142 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 410121ms
+commenting out line Lines { lines: 413..=420 } in "./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 418803ms
+commenting out line Lines { lines: 181..=205 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 65..=65 } in "./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 402095ms
+commenting out line Lines { lines: 480..=480 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 415636ms
+commenting out line Lines { lines: 461..=461 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 412166ms
+minimization of ./zookeeper-tmp3/72/kubernetes_cluster/proof/controller_runtime_safety.rs is completed
+minimization of ./zookeeper-tmp3/79/kubernetes_cluster/spec/mod.rs is completed
+minimization of ./zookeeper-tmp3/80/kubernetes_cluster/spec/api_server/mod.rs is completed
+minimization of ./zookeeper-tmp3/81/kubernetes_cluster/spec/api_server/state_machine.rs is completed
+minimization of ./zookeeper-tmp3/82/kubernetes_cluster/spec/api_server/types.rs is completed
+minimization of ./zookeeper-tmp3/83/kubernetes_cluster/spec/builtin_controllers/mod.rs is completed
+minimization of ./zookeeper-tmp3/84/kubernetes_cluster/spec/builtin_controllers/daemon_set_controller.rs is completed
+minimization of ./zookeeper-tmp3/85/kubernetes_cluster/spec/builtin_controllers/garbage_collector.rs is completed
+minimization of ./zookeeper-tmp3/86/kubernetes_cluster/spec/builtin_controllers/stabilizer.rs is completed
+minimization of ./zookeeper-tmp3/87/kubernetes_cluster/spec/builtin_controllers/state_machine.rs is completed
+minimization of ./zookeeper-tmp3/88/kubernetes_cluster/spec/builtin_controllers/stateful_set_controller.rs is completed
+minimization of ./zookeeper-tmp3/89/kubernetes_cluster/spec/builtin_controllers/types.rs is completed
+minimization of ./zookeeper-tmp3/90/kubernetes_cluster/spec/client/mod.rs is completed
+minimization of ./zookeeper-tmp3/91/kubernetes_cluster/spec/client/types.rs is completed
+minimization of ./zookeeper-tmp3/92/kubernetes_cluster/spec/client/state_machine.rs is completed
+minimization of ./zookeeper-tmp3/93/kubernetes_cluster/spec/cluster.rs is completed
+minimization of ./zookeeper-tmp3/94/kubernetes_cluster/spec/cluster_state_machine.rs is completed
+minimization of ./zookeeper-tmp3/95/kubernetes_cluster/spec/controller/mod.rs is completed
+minimization of ./zookeeper-tmp3/96/kubernetes_cluster/spec/controller/controller_runtime.rs is completed
+verus succeeded with time: 402057ms
+minimization of ./zookeeper-tmp3/73/kubernetes_cluster/proof/daemon_set_controller.rs is completed
+minimization of ./zookeeper-tmp3/97/kubernetes_cluster/spec/controller/state_machine.rs is completed
+minimization of ./zookeeper-tmp3/98/kubernetes_cluster/spec/controller/types.rs is completed
+minimization of ./zookeeper-tmp3/99/kubernetes_cluster/spec/external_api/mod.rs is completed
+minimization of ./zookeeper-tmp3/100/kubernetes_cluster/spec/external_api/state_machine.rs is completed
+minimization of ./zookeeper-tmp3/101/kubernetes_cluster/spec/external_api/types.rs is completed
+minimization of ./zookeeper-tmp3/103/kubernetes_cluster/spec/network/mod.rs is completed
+minimization of ./zookeeper-tmp3/102/kubernetes_cluster/spec/message.rs is completed
+minimization of ./zookeeper-tmp3/104/kubernetes_cluster/spec/network/types.rs is completed
+verus succeeded with time: 431234ms
+commenting out line Lines { lines: 144..=144 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+minimization of ./zookeeper-tmp3/105/kubernetes_cluster/spec/network/state_machine.rs is completed
+minimization of ./zookeeper-tmp3/106/kubernetes_cluster/spec/pod_event/mod.rs is completed
+minimization of ./zookeeper-tmp3/107/kubernetes_cluster/spec/pod_event/types.rs is completed
+minimization of ./zookeeper-tmp3/108/kubernetes_cluster/spec/pod_event/state_machine.rs is completed
+minimization of ./zookeeper-tmp3/109/reconciler/mod.rs is completed
+minimization of ./zookeeper-tmp3/110/reconciler/exec/mod.rs is completed
+minimization of ./zookeeper-tmp3/111/reconciler/exec/io.rs is completed
+minimization of ./zookeeper-tmp3/112/reconciler/exec/reconciler.rs is completed
+minimization of ./zookeeper-tmp3/113/reconciler/exec/resource_builder.rs is completed
+minimization of ./zookeeper-tmp3/114/reconciler/spec/mod.rs is completed
+minimization of ./zookeeper-tmp3/115/reconciler/spec/io.rs is completed
+minimization of ./zookeeper-tmp3/116/reconciler/spec/reconciler.rs is completed
+minimization of ./zookeeper-tmp3/117/reconciler/spec/resource_builder.rs is completed
+minimization of ./zookeeper-tmp3/118/shim_layer/mod.rs is completed
+minimization of ./zookeeper-tmp3/119/shim_layer/controller_runtime.rs is completed
+minimization of ./zookeeper-tmp3/120/shim_layer/fault_injection.rs is completed
+minimization of ./zookeeper-tmp3/121/state_machine/mod.rs is completed
+minimization of ./zookeeper-tmp3/122/state_machine/state_machine.rs is completed
+minimization of ./zookeeper-tmp3/123/state_machine/action.rs is completed
+minimization of ./zookeeper-tmp3/124/temporal_logic/mod.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 177..=207 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 72..=79 } in "./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs"
+minimization of ./zookeeper-tmp3/125/temporal_logic/defs.rs is completed
+commenting out line Lines { lines: 136..=138 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+minimization of ./zookeeper-tmp3/127/vstd_ext/mod.rs is completed
+commenting out line Lines { lines: 19..=19 } in "./zookeeper-tmp3/128/vstd_ext/map_lib.rs"
+verus succeeded with time: 389825ms
+commenting out line Lines { lines: 482..=482 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 410615ms
+commenting out line Lines { lines: 463..=463 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 392572ms
+commenting out line Lines { lines: 108..=150 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 265..=265 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 90..=90 } in "./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 146..=148 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/128/vstd_ext/map_lib.rs is completed
+commenting out line Lines { lines: 11..=11 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 424979ms
+commenting out line Lines { lines: 449..=487 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 420100ms
+commenting out line Lines { lines: 467..=467 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 218..=218 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 413494ms
+commenting out line Lines { lines: 266..=266 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 93..=93 } in "./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 192..=192 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 21..=21 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 439631ms
+commenting out line Lines { lines: 495..=495 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 448326ms
+commenting out line Lines { lines: 470..=470 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 447747ms
+commenting out line Lines { lines: 220..=220 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 419145ms
+commenting out line Lines { lines: 268..=268 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 96..=96 } in "./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 458963ms
+commenting out line Lines { lines: 191..=193 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 428220ms
+commenting out line Lines { lines: 19..=23 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 463649ms
+commenting out line Lines { lines: 490..=496 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 444027ms
+commenting out line Lines { lines: 473..=473 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 444484ms
+commenting out line Lines { lines: 221..=221 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 434385ms
+commenting out line Lines { lines: 269..=269 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 104..=111 } in "./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 421517ms
+commenting out line Lines { lines: 199..=201 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 29..=29 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 441658ms
+commenting out line Lines { lines: 476..=476 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 458994ms
+commenting out line Lines { lines: 506..=506 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 448640ms
+commenting out line Lines { lines: 224..=224 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 425768ms
+commenting out line Lines { lines: 270..=270 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 122..=122 } in "./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 214..=214 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 46..=46 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 448338ms
+commenting out line Lines { lines: 441..=480 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 459880ms
+commenting out line Lines { lines: 501..=507 } in "./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 440650ms
+commenting out line Lines { lines: 225..=228 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 438542ms
+commenting out line Lines { lines: 272..=272 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 125..=125 } in "./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 443013ms
+commenting out line Lines { lines: 247..=259 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 50..=50 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 461700ms
+commenting out line Lines { lines: 487..=487 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 456415ms
+minimization of ./zookeeper-tmp3/64/kubernetes_cluster/proof/api_server_liveness.rs is completed
+minimization of ./zookeeper-tmp3/130/vstd_ext/option_lib.rs is completed
+commenting out line Lines { lines: 13..=13 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 230..=230 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 438128ms
+commenting out line Lines { lines: 273..=273 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 128..=128 } in "./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 263..=265 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 436544ms
+commenting out line Lines { lines: 53..=53 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 451379ms
+commenting out line Lines { lines: 481..=488 } in "./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 16..=16 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 446414ms
+commenting out line Lines { lines: 231..=234 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 423856ms
+commenting out line Lines { lines: 278..=278 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 131..=131 } in "./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 242..=267 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 54..=54 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 441519ms
+minimization of ./zookeeper-tmp3/76/kubernetes_cluster/proof/stateful_set_controller.rs is completed
+commenting out line Lines { lines: 14..=16 } in "./zookeeper-tmp3/132/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 18..=18 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 447579ms
+commenting out line Lines { lines: 280..=280 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 455674ms
+commenting out line Lines { lines: 236..=236 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/78/kubernetes_cluster/proof/wf1_assistant.rs is completed
+minimization of ./zookeeper-tmp3/133/vstd_ext/string_map.rs is completed
+minimization of ./zookeeper-tmp3/134/vstd_ext/string_view.rs is completed
+commenting out line Lines { lines: 28..=31 } in "./zookeeper-tmp3/135/vstd_ext/vec_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 317..=321 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 419712ms
+commenting out line Lines { lines: 48..=56 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 32..=32 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 17..=19 } in "./zookeeper-tmp3/132/vstd_ext/set_lib.rs"
+verus succeeded with time: 426058ms
+commenting out line Lines { lines: 237..=237 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 441226ms
+commenting out line Lines { lines: 281..=281 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 313..=322 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/135/vstd_ext/vec_lib.rs is completed
+minimization of ./zookeeper-tmp3/136/controller_examples/zookeeper_controller/mod.rs is completed
+minimization of ./zookeeper-tmp3/137/controller_examples/zookeeper_controller/exec/mod.rs is completed
+minimization of ./zookeeper-tmp3/138/controller_examples/zookeeper_controller/exec/reconciler.rs is completed
+minimization of ./zookeeper-tmp3/139/controller_examples/zookeeper_controller/exec/resource/mod.rs is completed
+minimization of ./zookeeper-tmp3/140/controller_examples/zookeeper_controller/exec/resource/admin_server_service.rs is completed
+minimization of ./zookeeper-tmp3/141/controller_examples/zookeeper_controller/exec/resource/client_service.rs is completed
+verus succeeded with time: 425620ms
+commenting out line Lines { lines: 61..=61 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+minimization of ./zookeeper-tmp3/142/controller_examples/zookeeper_controller/exec/resource/common.rs is completed
+minimization of ./zookeeper-tmp3/143/controller_examples/zookeeper_controller/exec/resource/config_map.rs is completed
+minimization of ./zookeeper-tmp3/144/controller_examples/zookeeper_controller/exec/resource/headless_service.rs is completed
+minimization of ./zookeeper-tmp3/145/controller_examples/zookeeper_controller/exec/resource/stateful_set.rs is completed
+minimization of ./zookeeper-tmp3/146/controller_examples/zookeeper_controller/model/mod.rs is completed
+minimization of ./zookeeper-tmp3/147/controller_examples/zookeeper_controller/model/reconciler.rs is completed
+minimization of ./zookeeper-tmp3/148/controller_examples/zookeeper_controller/model/resource/mod.rs is completed
+minimization of ./zookeeper-tmp3/149/controller_examples/zookeeper_controller/model/resource/admin_server_service.rs is completed
+minimization of ./zookeeper-tmp3/150/controller_examples/zookeeper_controller/model/resource/client_service.rs is completed
+minimization of ./zookeeper-tmp3/151/controller_examples/zookeeper_controller/model/resource/common.rs is completed
+minimization of ./zookeeper-tmp3/152/controller_examples/zookeeper_controller/model/resource/config_map.rs is completed
+minimization of ./zookeeper-tmp3/153/controller_examples/zookeeper_controller/model/resource/headless_service.rs is completed
+minimization of ./zookeeper-tmp3/154/controller_examples/zookeeper_controller/model/resource/stateful_set.rs is completed
+minimization of ./zookeeper-tmp3/155/controller_examples/zookeeper_controller/proof/mod.rs is completed
+minimization of ./zookeeper-tmp3/156/controller_examples/zookeeper_controller/proof/helper_invariants/mod.rs is completed
+commenting out line Lines { lines: 86..=86 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 423622ms
+commenting out line Lines { lines: 33..=33 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 45..=45 } in "./zookeeper-tmp3/132/vstd_ext/set_lib.rs"
+verus succeeded with time: 429869ms
+commenting out line Lines { lines: 283..=283 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 438790ms
+commenting out line Lines { lines: 238..=241 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 329..=329 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 62..=62 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 445280ms
+commenting out line Lines { lines: 94..=94 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 46..=46 } in "./zookeeper-tmp3/132/vstd_ext/set_lib.rs"
+verus succeeded with time: 444381ms
+commenting out line Lines { lines: 35..=35 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 451963ms
+commenting out line Lines { lines: 288..=288 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 459989ms
+commenting out line Lines { lines: 246..=246 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=345 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 63..=63 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 462224ms
+commenting out line Lines { lines: 95..=95 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 49..=49 } in "./zookeeper-tmp3/132/vstd_ext/set_lib.rs"
+verus succeeded with time: 463902ms
+commenting out line Lines { lines: 36..=36 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 415178ms
+commenting out line Lines { lines: 248..=248 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 429915ms
+commenting out line Lines { lines: 297..=297 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 346..=346 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 440671ms
+commenting out line Lines { lines: 59..=65 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 442971ms
+commenting out line Lines { lines: 96..=96 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/132/vstd_ext/set_lib.rs is completed
+minimization of ./zookeeper-tmp3/158/controller_examples/zookeeper_controller/proof/helper_invariants/predicate.rs is completed
+commenting out line Lines { lines: 170..=170 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 444486ms
+commenting out line Lines { lines: 30..=38 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 432961ms
+commenting out line Lines { lines: 259..=259 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 451741ms
+commenting out line Lines { lines: 299..=299 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 356..=358 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 57..=66 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 438755ms
+commenting out line Lines { lines: 97..=97 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 171..=171 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 416179ms
+commenting out line Lines { lines: 47..=47 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 447200ms
+commenting out line Lines { lines: 260..=260 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 453029ms
+commenting out line Lines { lines: 294..=307 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 76..=76 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 354..=359 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 418461ms
+commenting out line Lines { lines: 100..=100 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 164..=177 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 48..=48 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 429900ms
+commenting out line Lines { lines: 262..=262 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 78..=78 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 255..=308 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 370..=370 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 416334ms
+commenting out line Lines { lines: 101..=101 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 274..=274 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 442816ms
+commenting out line Lines { lines: 50..=50 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 424753ms
+commenting out line Lines { lines: 265..=265 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 79..=79 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 254..=309 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 454727ms
+commenting out line Lines { lines: 368..=371 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 441569ms
+commenting out line Lines { lines: 102..=102 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 456543ms
+commenting out line Lines { lines: 275..=275 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 429605ms
+commenting out line Lines { lines: 51..=51 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 470601ms
+commenting out line Lines { lines: 208..=269 } in "./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 431526ms
+commenting out line Lines { lines: 74..=80 } in "./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 331..=331 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 367..=372 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 430022ms
+commenting out line Lines { lines: 103..=103 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 440760ms
+commenting out line Lines { lines: 277..=277 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 49..=52 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/77/kubernetes_cluster/proof/validation_rule.rs is completed
+commenting out line Lines { lines: 86..=104 } in "./zookeeper-tmp3/160/controller_examples/zookeeper_controller/proof/helper_invariants/unchangeable.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/129/vstd_ext/multiset_lib.rs is completed
+commenting out line Lines { lines: 99..=99 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 462329ms
+commenting out line Lines { lines: 332..=332 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 366..=373 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 458622ms
+commenting out line Lines { lines: 85..=106 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 426998ms
+commenting out line Lines { lines: 281..=281 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 53..=53 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 85..=105 } in "./zookeeper-tmp3/160/controller_examples/zookeeper_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 437647ms
+commenting out line Lines { lines: 102..=102 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 444293ms
+commenting out line Lines { lines: 336..=336 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 376..=376 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 84..=107 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 463333ms
+commenting out line Lines { lines: 284..=284 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 69..=69 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 153..=156 } in "./zookeeper-tmp3/160/controller_examples/zookeeper_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 473520ms
+commenting out line Lines { lines: 103..=103 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 144..=144 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 439472ms
+commenting out line Lines { lines: 374..=377 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 450083ms
+commenting out line Lines { lines: 337..=337 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 412664ms
+commenting out line Lines { lines: 290..=290 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 455833ms
+commenting out line Lines { lines: 70..=70 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 220..=220 } in "./zookeeper-tmp3/160/controller_examples/zookeeper_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 457835ms
+commenting out line Lines { lines: 106..=106 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 437081ms
+commenting out line Lines { lines: 148..=148 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 385..=387 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 440026ms
+commenting out line Lines { lines: 339..=339 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 346..=346 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 463034ms
+commenting out line Lines { lines: 291..=291 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 423778ms
+commenting out line Lines { lines: 222..=222 } in "./zookeeper-tmp3/160/controller_examples/zookeeper_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 471766ms
+commenting out line Lines { lines: 72..=72 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 425251ms
+commenting out line Lines { lines: 107..=107 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 142..=154 } in "./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 388..=388 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 445881ms
+commenting out line Lines { lines: 347..=347 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 461611ms
+commenting out line Lines { lines: 297..=297 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 461081ms
+commenting out line Lines { lines: 225..=225 } in "./zookeeper-tmp3/160/controller_examples/zookeeper_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 468170ms
+commenting out line Lines { lines: 73..=73 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 433775ms
+commenting out line Lines { lines: 108..=109 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/157/controller_examples/zookeeper_controller/proof/helper_invariants/owner_ref.rs is completed
+commenting out line Lines { lines: 82..=82 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus succeeded with time: 422606ms
+commenting out line Lines { lines: 389..=391 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 452626ms
+commenting out line Lines { lines: 349..=349 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 432..=432 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 298..=298 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 442228ms
+commenting out line Lines { lines: 227..=227 } in "./zookeeper-tmp3/160/controller_examples/zookeeper_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 432617ms
+commenting out line Lines { lines: 67..=75 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 440595ms
+commenting out line Lines { lines: 111..=111 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 430814ms
+commenting out line Lines { lines: 84..=84 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 392..=392 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 442066ms
+commenting out line Lines { lines: 439..=439 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 451247ms
+commenting out line Lines { lines: 214..=244 } in "./zookeeper-tmp3/160/controller_examples/zookeeper_controller/proof/helper_invariants/unchangeable.rs"
+verus failed, reverting
+commenting out line Lines { lines: 299..=299 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 452415ms
+commenting out line Lines { lines: 84..=84 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 439500ms
+commenting out line Lines { lines: 93..=125 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 441397ms
+commenting out line Lines { lines: 85..=85 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus succeeded with time: 434970ms
+commenting out line Lines { lines: 384..=393 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 443331ms
+commenting out line Lines { lines: 440..=440 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 258..=258 } in "./zookeeper-tmp3/160/controller_examples/zookeeper_controller/proof/helper_invariants/unchangeable.rs"
+verus failed, reverting
+commenting out line Lines { lines: 85..=85 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 183..=183 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 454075ms
+commenting out line Lines { lines: 75..=88 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 421..=423 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 300..=300 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 470211ms
+commenting out line Lines { lines: 441..=441 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 259..=259 } in "./zookeeper-tmp3/160/controller_examples/zookeeper_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 451971ms
+commenting out line Lines { lines: 88..=88 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 453660ms
+commenting out line Lines { lines: 185..=185 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 73..=89 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 431..=433 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 304..=304 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 439467ms
+commenting out line Lines { lines: 427..=447 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 441414ms
+commenting out line Lines { lines: 261..=261 } in "./zookeeper-tmp3/160/controller_examples/zookeeper_controller/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 440716ms
+commenting out line Lines { lines: 89..=89 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 448848ms
+commenting out line Lines { lines: 176..=190 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 160..=160 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 434..=434 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 427995ms
+commenting out line Lines { lines: 305..=305 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 446147ms
+commenting out line Lines { lines: 426..=448 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 471146ms
+minimization of ./zookeeper-tmp3/160/controller_examples/zookeeper_controller/proof/helper_invariants/unchangeable.rs is completed
+minimization of ./zookeeper-tmp3/163/controller_examples/zookeeper_controller/proof/liveness/mod.rs is completed
+commenting out line Lines { lines: 43..=45 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 87..=90 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 440029ms
+commenting out line Lines { lines: 175..=191 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 470636ms
+commenting out line Lines { lines: 162..=162 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 447..=447 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 448123ms
+commenting out line Lines { lines: 485..=485 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 473487ms
+commenting out line Lines { lines: 306..=306 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 101..=101 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 91..=91 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 437007ms
+commenting out line Lines { lines: 247..=247 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 442154ms
+commenting out line Lines { lines: 163..=163 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus succeeded with time: 444056ms
+commenting out line Lines { lines: 448..=448 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 488..=488 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 478668ms
+commenting out line Lines { lines: 308..=308 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 102..=102 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 100..=102 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 445291ms
+commenting out line Lines { lines: 251..=251 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 437354ms
+commenting out line Lines { lines: 153..=166 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus succeeded with time: 450886ms
+commenting out line Lines { lines: 450..=450 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 434036ms
+commenting out line Lines { lines: 492..=492 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 412600ms
+commenting out line Lines { lines: 309..=309 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 449843ms
+commenting out line Lines { lines: 99..=103 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 109..=115 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 242..=253 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 151..=167 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 446..=451 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 444058ms
+commenting out line Lines { lines: 502..=502 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 455447ms
+commenting out line Lines { lines: 313..=313 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 97..=104 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 241..=254 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 116..=121 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 206..=206 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 469..=469 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 443486ms
+commenting out line Lines { lines: 503..=503 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 470174ms
+commenting out line Lines { lines: 314..=314 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 126..=128 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 308..=308 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 136..=136 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 448451ms
+commenting out line Lines { lines: 207..=207 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 467..=471 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 428521ms
+commenting out line Lines { lines: 504..=504 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 458130ms
+commenting out line Lines { lines: 315..=315 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 442000ms
+commenting out line Lines { lines: 309..=309 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 447553ms
+commenting out line Lines { lines: 147..=154 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 135..=137 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 460485ms
+commenting out line Lines { lines: 210..=210 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 466..=472 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 442165ms
+commenting out line Lines { lines: 505..=505 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 320..=320 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 311..=312 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 169..=179 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 141..=141 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 438372ms
+commenting out line Lines { lines: 211..=211 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 464..=473 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 436547ms
+commenting out line Lines { lines: 506..=506 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 183..=189 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 140..=142 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 444866ms
+commenting out line Lines { lines: 314..=314 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 321..=321 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 429307ms
+commenting out line Lines { lines: 212..=212 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 478..=481 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 435725ms
+commenting out line Lines { lines: 507..=507 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 229..=236 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 139..=143 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 459391ms
+commenting out line Lines { lines: 315..=315 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 436967ms
+commenting out line Lines { lines: 213..=213 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus succeeded with time: 467533ms
+commenting out line Lines { lines: 322..=322 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 477..=482 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 443160ms
+commenting out line Lines { lines: 483..=509 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 376..=376 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 158..=164 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 456450ms
+commenting out line Lines { lines: 317..=317 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 444616ms
+commenting out line Lines { lines: 215..=215 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 289..=326 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 482..=510 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 475..=483 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 155..=165 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 471256ms
+commenting out line Lines { lines: 378..=378 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus succeeded with time: 455098ms
+commenting out line Lines { lines: 216..=216 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 262..=328 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 558..=558 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 505..=505 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 318..=318 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 168..=168 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 445176ms
+commenting out line Lines { lines: 382..=382 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus succeeded with time: 440067ms
+commenting out line Lines { lines: 219..=219 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus succeeded with time: 433809ms
+commenting out line Lines { lines: 563..=563 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 425..=425 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 430697ms
+commenting out line Lines { lines: 319..=319 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 503..=506 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 456153ms
+commenting out line Lines { lines: 371..=385 } in "./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs"
+verus succeeded with time: 461164ms
+commenting out line Lines { lines: 166..=169 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 434275ms
+commenting out line Lines { lines: 220..=220 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 566..=566 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 453007ms
+commenting out line Lines { lines: 426..=426 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 501..=507 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 452639ms
+commenting out line Lines { lines: 320..=320 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 172..=172 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus succeeded with time: 451331ms
+minimization of ./zookeeper-tmp3/164/controller_examples/zookeeper_controller/proof/liveness/proof.rs is completed
+commenting out line Lines { lines: 159..=161 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 444595ms
+commenting out line Lines { lines: 221..=221 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus succeeded with time: 438467ms
+commenting out line Lines { lines: 568..=568 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 523..=523 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 475097ms
+commenting out line Lines { lines: 428..=428 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 475157ms
+commenting out line Lines { lines: 330..=330 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 166..=166 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 173..=173 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 222..=222 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus succeeded with time: 441942ms
+commenting out line Lines { lines: 569..=569 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 431368ms
+commenting out line Lines { lines: 432..=432 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 522..=524 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 479833ms
+commenting out line Lines { lines: 331..=331 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 171..=175 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 164..=167 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 443353ms
+commenting out line Lines { lines: 223..=223 } in "./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs"
+verus succeeded with time: 445148ms
+commenting out line Lines { lines: 573..=573 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 442857ms
+commenting out line Lines { lines: 435..=435 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 526..=526 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 436504ms
+commenting out line Lines { lines: 333..=333 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 211..=211 } in "./zookeeper-tmp3/131/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 171..=173 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 457405ms
+minimization of ./zookeeper-tmp3/162/controller_examples/zookeeper_controller/proof/helper_invariants/zookeeper_api.rs is completed
+commenting out line Lines { lines: 397..=401 } in "./zookeeper-tmp3/166/controller_examples/zookeeper_controller/proof/liveness/spec.rs"
+verus succeeded with time: 428891ms
+commenting out line Lines { lines: 575..=575 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 464352ms
+commenting out line Lines { lines: 442..=442 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 516..=527 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 474768ms
+commenting out line Lines { lines: 335..=335 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/131/vstd_ext/seq_lib.rs is completed
+commenting out line Lines { lines: 131..=133 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 183..=183 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 474..=474 } in "./zookeeper-tmp3/166/controller_examples/zookeeper_controller/proof/liveness/spec.rs"
+verus succeeded with time: 435164ms
+commenting out line Lines { lines: 576..=576 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 535..=537 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 458508ms
+commenting out line Lines { lines: 443..=443 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 454896ms
+commenting out line Lines { lines: 337..=337 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 139..=139 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 176..=184 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 441638ms
+commenting out line Lines { lines: 577..=578 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 445738ms
+commenting out line Lines { lines: 475..=475 } in "./zookeeper-tmp3/166/controller_examples/zookeeper_controller/proof/liveness/spec.rs"
+verus succeeded with time: 448015ms
+commenting out line Lines { lines: 449..=449 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 455348ms
+commenting out line Lines { lines: 557..=557 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 435784ms
+commenting out line Lines { lines: 339..=339 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 136..=140 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 188..=190 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 455510ms
+commenting out line Lines { lines: 580..=580 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 457844ms
+commenting out line Lines { lines: 486..=488 } in "./zookeeper-tmp3/166/controller_examples/zookeeper_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 450..=450 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 556..=558 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 468141ms
+commenting out line Lines { lines: 342..=342 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 152..=154 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 195..=195 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 508..=510 } in "./zookeeper-tmp3/166/controller_examples/zookeeper_controller/proof/liveness/spec.rs"
+verus succeeded with time: 475096ms
+commenting out line Lines { lines: 581..=581 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 552..=560 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 451..=451 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 443865ms
+commenting out line Lines { lines: 343..=343 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 165..=165 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 193..=196 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 520..=522 } in "./zookeeper-tmp3/166/controller_examples/zookeeper_controller/proof/liveness/spec.rs"
+verus succeeded with time: 442352ms
+commenting out line Lines { lines: 583..=583 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 569..=573 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 443009ms
+commenting out line Lines { lines: 455..=455 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 458519ms
+commenting out line Lines { lines: 349..=349 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 157..=166 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 236..=236 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 438210ms
+commenting out line Lines { lines: 587..=587 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 527..=529 } in "./zookeeper-tmp3/166/controller_examples/zookeeper_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 588..=588 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 466117ms
+commenting out line Lines { lines: 456..=456 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 423499ms
+commenting out line Lines { lines: 350..=350 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 174..=176 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 451000ms
+commenting out line Lines { lines: 589..=589 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 462236ms
+commenting out line Lines { lines: 238..=238 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 535..=537 } in "./zookeeper-tmp3/166/controller_examples/zookeeper_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 582..=590 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 446864ms
+commenting out line Lines { lines: 457..=457 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 445399ms
+commenting out line Lines { lines: 303..=353 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 182..=182 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 446626ms
+commenting out line Lines { lines: 590..=590 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 460637ms
+commenting out line Lines { lines: 242..=242 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 542..=544 } in "./zookeeper-tmp3/166/controller_examples/zookeeper_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 652..=654 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 300..=354 } in "./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs"
+verus succeeded with time: 455296ms
+commenting out line Lines { lines: 459..=459 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 179..=183 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 442667ms
+commenting out line Lines { lines: 591..=591 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/166/controller_examples/zookeeper_controller/proof/liveness/spec.rs is completed
+commenting out line Lines { lines: 45..=54 } in "./zookeeper-tmp3/168/controller_examples/zookeeper_controller/proof/liveness/terminate.rs"
+verus succeeded with time: 467673ms
+commenting out line Lines { lines: 231..=245 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 651..=655 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/161/controller_examples/zookeeper_controller/proof/helper_invariants/validation.rs is completed
+commenting out line Lines { lines: 115..=117 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 460..=460 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 256..=256 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 435147ms
+commenting out line Lines { lines: 593..=593 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 664..=667 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/168/controller_examples/zookeeper_controller/proof/liveness/terminate.rs is completed
+minimization of ./zookeeper-tmp3/170/controller_examples/zookeeper_controller/proof/predicate.rs is completed
+minimization of ./zookeeper-tmp3/171/controller_examples/zookeeper_controller/proof/resource.rs is completed
+minimization of ./zookeeper-tmp3/172/controller_examples/zookeeper_controller/trusted/mod.rs is completed
+minimization of ./zookeeper-tmp3/173/controller_examples/zookeeper_controller/trusted/config_map.rs is completed
+minimization of ./zookeeper-tmp3/174/controller_examples/zookeeper_controller/trusted/exec_types.rs is completed
+minimization of ./zookeeper-tmp3/175/controller_examples/zookeeper_controller/trusted/liveness_theorem.rs is completed
+minimization of ./zookeeper-tmp3/176/controller_examples/zookeeper_controller/trusted/maker.rs is completed
+minimization of ./zookeeper-tmp3/177/controller_examples/zookeeper_controller/trusted/spec_types.rs is completed
+minimization of ./zookeeper-tmp3/178/controller_examples/zookeeper_controller/trusted/step.rs is completed
+minimization of ./zookeeper-tmp3/179/controller_examples/zookeeper_controller/trusted/zookeeper_api_exec.rs is completed
+minimization of ./zookeeper-tmp3/180/controller_examples/zookeeper_controller/trusted/zookeeper_api_spec.rs is completed
+verus succeeded with time: 486985ms
+commenting out line Lines { lines: 212..=249 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 122..=122 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 440992ms
+commenting out line Lines { lines: 461..=461 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 257..=257 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 373689ms
+commenting out line Lines { lines: 596..=596 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 676..=679 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 260..=260 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 120..=123 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 378573ms
+commenting out line Lines { lines: 465..=465 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 258..=258 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 375434ms
+commenting out line Lines { lines: 597..=597 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 689..=689 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 253..=261 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 127..=129 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 466..=466 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 261..=266 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 600..=600 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 384049ms
+commenting out line Lines { lines: 687..=690 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 325..=328 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 139..=139 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 403508ms
+commenting out line Lines { lines: 467..=467 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 601..=601 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 267..=267 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 700..=703 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 132..=140 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 334..=334 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 398645ms
+commenting out line Lines { lines: 472..=472 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 388987ms
+commenting out line Lines { lines: 555..=604 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 403691ms
+commenting out line Lines { lines: 251..=272 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 699..=704 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 200..=202 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 331..=335 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 473..=473 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 554..=605 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 277..=282 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 716..=719 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 207..=207 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=342 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 653..=653 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 412276ms
+commenting out line Lines { lines: 474..=474 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 394692ms
+commenting out line Lines { lines: 274..=283 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 734..=737 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 205..=208 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 353..=353 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 382469ms
+commenting out line Lines { lines: 658..=658 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 385287ms
+commenting out line Lines { lines: 441..=478 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 400235ms
+commenting out line Lines { lines: 374..=374 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 945..=948 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 216..=218 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 345..=354 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 661..=661 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 413..=480 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 375..=375 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 958..=960 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 227..=227 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 392567ms
+commenting out line Lines { lines: 663..=663 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 358..=360 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 514..=514 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 376..=376 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 957..=961 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 221..=228 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 383224ms
+commenting out line Lines { lines: 664..=664 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 396118ms
+commenting out line Lines { lines: 515..=515 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 368..=380 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 366..=366 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 989..=989 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 258..=260 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 376143ms
+commenting out line Lines { lines: 668..=668 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 462..=462 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 418593ms
+commenting out line Lines { lines: 517..=517 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 265..=265 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 990..=990 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 363..=367 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 392654ms
+commenting out line Lines { lines: 670..=670 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 391350ms
+commenting out line Lines { lines: 458..=464 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 404141ms
+commenting out line Lines { lines: 521..=521 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 992..=992 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 263..=266 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 407..=407 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 415891ms
+commenting out line Lines { lines: 671..=671 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 380956ms
+commenting out line Lines { lines: 524..=524 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 471..=471 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 384808ms
+commenting out line Lines { lines: 987..=994 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 280..=282 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 488955ms
+commenting out line Lines { lines: 409..=409 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 400721ms
+commenting out line Lines { lines: 672..=673 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 376604ms
+commenting out line Lines { lines: 507..=528 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 985..=995 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 472..=472 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 292..=292 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 435792ms
+commenting out line Lines { lines: 413..=413 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 377955ms
+commenting out line Lines { lines: 675..=675 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 397304ms
+commenting out line Lines { lines: 555..=563 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 984..=996 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 466..=477 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 285..=293 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 419606ms
+commenting out line Lines { lines: 402..=416 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 399035ms
+commenting out line Lines { lines: 676..=676 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 634..=634 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1011..=1014 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 521..=521 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 303..=305 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 405880ms
+commenting out line Lines { lines: 678..=678 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 635..=635 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 478827ms
+commenting out line Lines { lines: 385..=420 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1085..=1091 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 515..=526 } in "./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 310..=310 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 386180ms
+commenting out line Lines { lines: 682..=682 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 406324ms
+commenting out line Lines { lines: 636..=636 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 431..=431 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1084..=1092 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/167/controller_examples/zookeeper_controller/proof/liveness/stateful_set_match.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 308..=311 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 371073ms
+commenting out line Lines { lines: 684..=684 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 359962ms
+commenting out line Lines { lines: 638..=638 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1107..=1110 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 424..=432 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 316..=318 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 339108ms
+commenting out line Lines { lines: 685..=685 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 355715ms
+commenting out line Lines { lines: 639..=639 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 366598ms
+commenting out line Lines { lines: 1104..=1111 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 327..=327 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 498..=498 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 345369ms
+commenting out line Lines { lines: 686..=686 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 349742ms
+commenting out line Lines { lines: 643..=643 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1125..=1128 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 321..=328 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 499..=499 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 365965ms
+commenting out line Lines { lines: 688..=688 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 339176ms
+commenting out line Lines { lines: 644..=644 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1152..=1154 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 349..=351 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 502..=507 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 333956ms
+commenting out line Lines { lines: 691..=691 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 346384ms
+commenting out line Lines { lines: 647..=647 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 356..=356 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1147..=1155 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 494..=512 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 338886ms
+commenting out line Lines { lines: 692..=692 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 341692ms
+commenting out line Lines { lines: 648..=648 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 354..=357 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1195..=1216 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 517..=522 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 695..=695 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 349649ms
+commenting out line Lines { lines: 627..=651 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 371..=373 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1194..=1217 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 378243ms
+commenting out line Lines { lines: 514..=523 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 696..=696 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 383..=383 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 625..=652 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1240..=1240 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 351775ms
+commenting out line Lines { lines: 598..=598 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 336887ms
+commenting out line Lines { lines: 650..=699 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 376..=384 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 695..=697 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 348256ms
+commenting out line Lines { lines: 1239..=1247 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 599..=599 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 649..=700 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 743..=743 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 399..=401 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1238..=1248 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 594..=603 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 754..=754 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 350160ms
+commenting out line Lines { lines: 744..=744 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 406..=406 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1264..=1267 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 677..=677 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 343473ms
+commenting out line Lines { lines: 759..=759 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 404..=407 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 346735ms
+commenting out line Lines { lines: 736..=747 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1294..=1297 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 343918ms
+commenting out line Lines { lines: 674..=685 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 762..=762 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 734..=748 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 423..=425 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1293..=1298 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 351282ms
+commenting out line Lines { lines: 687..=696 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 356701ms
+commenting out line Lines { lines: 764..=764 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 780..=782 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 436..=436 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1314..=1317 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 345556ms
+commenting out line Lines { lines: 752..=752 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 349133ms
+commenting out line Lines { lines: 767..=767 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 831..=831 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 428..=437 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1331..=1339 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 753..=753 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 370463ms
+commenting out line Lines { lines: 771..=771 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 355709ms
+commenting out line Lines { lines: 832..=832 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 448..=450 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1330..=1340 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 754..=754 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 334297ms
+commenting out line Lines { lines: 773..=773 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 343068ms
+commenting out line Lines { lines: 824..=835 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 455..=455 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1329..=1341 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 363383ms
+commenting out line Lines { lines: 757..=762 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 333794ms
+commenting out line Lines { lines: 774..=774 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 822..=836 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 453..=456 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1366..=1369 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 763..=763 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 341955ms
+commenting out line Lines { lines: 775..=776 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 877..=877 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 461..=463 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1359..=1371 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 342296ms
+commenting out line Lines { lines: 747..=768 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 339961ms
+commenting out line Lines { lines: 778..=778 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 348308ms
+commenting out line Lines { lines: 900..=900 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 473..=473 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1358..=1372 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 773..=778 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 348992ms
+commenting out line Lines { lines: 779..=779 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 466..=474 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 352361ms
+commenting out line Lines { lines: 903..=903 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1387..=1393 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 362520ms
+commenting out line Lines { lines: 770..=779 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 345286ms
+commenting out line Lines { lines: 781..=781 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 544..=544 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 366275ms
+commenting out line Lines { lines: 904..=904 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1410..=1425 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 354974ms
+commenting out line Lines { lines: 851..=851 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 346982ms
+commenting out line Lines { lines: 785..=785 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 545..=545 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 349372ms
+commenting out line Lines { lines: 907..=907 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1408..=1426 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 346876ms
+commenting out line Lines { lines: 787..=787 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 848..=859 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 548..=553 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 328601ms
+commenting out line Lines { lines: 875..=911 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1483..=1488 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 345663ms
+commenting out line Lines { lines: 788..=788 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 865..=865 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 540..=558 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 873..=913 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1482..=1489 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 338303ms
+commenting out line Lines { lines: 789..=789 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 866..=866 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 563..=568 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 943..=943 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1610..=1612 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 362726ms
+commenting out line Lines { lines: 791..=791 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 861..=871 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 340160ms
+commenting out line Lines { lines: 560..=569 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 339674ms
+commenting out line Lines { lines: 966..=966 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1613..=1615 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 341727ms
+commenting out line Lines { lines: 794..=794 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 939..=939 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 340348ms
+commenting out line Lines { lines: 634..=634 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 339819ms
+commenting out line Lines { lines: 969..=969 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1621..=1621 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 350580ms
+commenting out line Lines { lines: 795..=795 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 940..=940 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 635..=635 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 343716ms
+commenting out line Lines { lines: 970..=970 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 350802ms
+commenting out line Lines { lines: 1622..=1622 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 356006ms
+commenting out line Lines { lines: 796..=796 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 934..=945 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 629..=639 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 350811ms
+commenting out line Lines { lines: 971..=971 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1623..=1623 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 333646ms
+commenting out line Lines { lines: 799..=799 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 698..=698 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 992..=992 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 349164ms
+commenting out line Lines { lines: 974..=974 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 352246ms
+commenting out line Lines { lines: 1624..=1624 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 343516ms
+commenting out line Lines { lines: 800..=800 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 699..=699 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 365497ms
+commenting out line Lines { lines: 993..=993 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 344542ms
+commenting out line Lines { lines: 975..=975 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 348671ms
+commenting out line Lines { lines: 1631..=1631 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 338299ms
+commenting out line Lines { lines: 749..=803 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 702..=707 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 352546ms
+commenting out line Lines { lines: 987..=1005 } in "./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 334064ms
+commenting out line Lines { lines: 978..=978 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 344926ms
+commenting out line Lines { lines: 1632..=1632 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 747..=804 } in "./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 708..=708 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 356575ms
+minimization of ./zookeeper-tmp3/165/controller_examples/zookeeper_controller/proof/liveness/resource_match.rs is completed
+verus succeeded with time: 359340ms
+commenting out line Lines { lines: 979..=979 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 352407ms
+commenting out line Lines { lines: 1633..=1633 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/75/kubernetes_cluster/proof/message.rs is completed
+verus succeeded with time: 299703ms
+commenting out line Lines { lines: 693..=713 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 280645ms
+commenting out line Lines { lines: 982..=982 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1640..=1640 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 718..=723 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 276029ms
+commenting out line Lines { lines: 983..=983 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 278655ms
+commenting out line Lines { lines: 1641..=1641 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 277026ms
+commenting out line Lines { lines: 715..=724 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 278871ms
+commenting out line Lines { lines: 984..=984 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 274863ms
+commenting out line Lines { lines: 1643..=1643 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 266251ms
+commenting out line Lines { lines: 791..=791 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 276692ms
+commenting out line Lines { lines: 987..=987 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1644..=1644 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 792..=792 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 278735ms
+commenting out line Lines { lines: 988..=988 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 281010ms
+commenting out line Lines { lines: 1639..=1647 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 786..=796 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 274949ms
+commenting out line Lines { lines: 940..=992 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1609..=1649 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 870..=875 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 270567ms
+commenting out line Lines { lines: 939..=993 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1608..=1650 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 876..=876 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 265097ms
+commenting out line Lines { lines: 1033..=1033 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1668..=1687 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 267843ms
+commenting out line Lines { lines: 880..=880 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1028..=1037 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1667..=1688 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 881..=881 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1109..=1109 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1722..=1727 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 863..=885 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 270426ms
+commenting out line Lines { lines: 1110..=1110 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1721..=1729 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 891..=896 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1707..=1732 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 270779ms
+commenting out line Lines { lines: 1111..=1113 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 266326ms
+commenting out line Lines { lines: 887..=897 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1706..=1733 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 268710ms
+commenting out line Lines { lines: 1116..=1116 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 268533ms
+commenting out line Lines { lines: 972..=972 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1746..=1758 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 268777ms
+commenting out line Lines { lines: 1117..=1117 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 973..=973 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1745..=1759 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 268297ms
+commenting out line Lines { lines: 1118..=1120 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 967..=977 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1793..=1795 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 269568ms
+commenting out line Lines { lines: 1121..=1123 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1047..=1052 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1826..=1828 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 271984ms
+commenting out line Lines { lines: 1124..=1126 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1053..=1053 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1866..=1866 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1103..=1130 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 271771ms
+commenting out line Lines { lines: 1057..=1057 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1102..=1131 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 272803ms
+commenting out line Lines { lines: 1868..=1868 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1058..=1058 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1167..=1167 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1869..=1869 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1039..=1062 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 271372ms
+commenting out line Lines { lines: 1168..=1168 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 271293ms
+commenting out line Lines { lines: 1863..=1872 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1068..=1073 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 267451ms
+commenting out line Lines { lines: 1171..=1171 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1862..=1873 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 269561ms
+commenting out line Lines { lines: 1064..=1074 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 266283ms
+commenting out line Lines { lines: 1172..=1172 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1890..=1893 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus succeeded with time: 267560ms
+commenting out line Lines { lines: 1201..=1206 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 268607ms
+commenting out line Lines { lines: 1174..=1174 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1889..=1894 } in "./zookeeper-tmp3/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1207..=1207 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+minimization of ./zookeeper-tmp3/126/temporal_logic/rules.rs is completed
+verus succeeded with time: 270088ms
+commenting out line Lines { lines: 1177..=1177 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 251341ms
+commenting out line Lines { lines: 1211..=1211 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 244052ms
+commenting out line Lines { lines: 1193..=1193 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1212..=1212 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 244171ms
+commenting out line Lines { lines: 1194..=1194 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1193..=1216 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1206..=1206 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1222..=1227 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 240367ms
+commenting out line Lines { lines: 1207..=1207 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 244973ms
+commenting out line Lines { lines: 1218..=1228 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1222..=1222 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 248147ms
+commenting out line Lines { lines: 1303..=1303 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 245412ms
+commenting out line Lines { lines: 1223..=1223 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1304..=1304 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1235..=1235 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1298..=1308 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 242344ms
+commenting out line Lines { lines: 1236..=1236 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1386..=1392 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1251..=1251 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1393..=1393 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 241046ms
+commenting out line Lines { lines: 1252..=1252 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 242733ms
+commenting out line Lines { lines: 1398..=1398 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1264..=1264 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1399..=1399 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 244469ms
+commenting out line Lines { lines: 1265..=1265 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1380..=1403 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1296..=1299 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1408..=1414 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1354..=1354 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 248282ms
+commenting out line Lines { lines: 1405..=1415 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 246508ms
+commenting out line Lines { lines: 1355..=1355 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 243825ms
+commenting out line Lines { lines: 1494..=1494 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 243493ms
+commenting out line Lines { lines: 1362..=1362 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1495..=1495 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 246270ms
+commenting out line Lines { lines: 1363..=1363 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1489..=1499 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1369..=1369 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1568..=1568 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 244920ms
+commenting out line Lines { lines: 1370..=1370 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 241097ms
+commenting out line Lines { lines: 1375..=1375 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1569..=1574 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 243001ms
+commenting out line Lines { lines: 1379..=1379 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1575..=1575 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus succeeded with time: 241344ms
+commenting out line Lines { lines: 1351..=1383 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 244870ms
+commenting out line Lines { lines: 1579..=1579 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1350..=1384 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1580..=1580 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1412..=1418 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1561..=1584 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1548..=1550 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1589..=1589 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1543..=1552 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1590..=1595 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1599..=1599 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 242909ms
+commenting out line Lines { lines: 1586..=1596 } in "./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1600..=1600 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 245357ms
+minimization of ./zookeeper-tmp3/169/controller_examples/zookeeper_controller/proof/liveness/zookeeper_api.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 1594..=1605 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1631..=1631 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 212786ms
+commenting out line Lines { lines: 1638..=1638 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 221028ms
+commenting out line Lines { lines: 1634..=1640 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 215650ms
+commenting out line Lines { lines: 1633..=1641 } in "./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 224646ms
+minimization of ./zookeeper-tmp3/159/controller_examples/zookeeper_controller/proof/helper_invariants/proof.rs is completed

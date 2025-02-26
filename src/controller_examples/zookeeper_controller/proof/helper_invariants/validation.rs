@@ -97,19 +97,19 @@ pub proof fn lemma_always_stateful_set_in_etcd_satisfies_unchangeable(spec: Temp
         if s_prime.resources().contains_key(key) && s_prime.resources().contains_key(sts_key) {
             if s.resources().contains_key(sts_key) && s.resources()[sts_key] == s_prime.resources()[sts_key] {
                 if !s.resources().contains_key(key) {
-                    assert(s_prime.resources()[key].metadata.uid.get_Some_0() == s.kubernetes_api_state.uid_counter);
+//                    assert(s_prime.resources()[key].metadata.uid.get_Some_0() == s.kubernetes_api_state.uid_counter);
                     let owner_refs = s.resources()[sts_key].metadata.owner_references;
                     if owner_refs.is_Some() && owner_refs.get_Some_0().len() == 1 {
-                        assert(owner_refs.get_Some_0()[0].uid != s.kubernetes_api_state.uid_counter);
-                        assert(owner_refs.get_Some_0()[0] != ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
+//                        assert(owner_refs.get_Some_0()[0].uid != s.kubernetes_api_state.uid_counter);
+//                        assert(owner_refs.get_Some_0()[0] != ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
                     }
                 } else if s.resources()[key] != s_prime.resources()[key] {
-                    assert(s.resources()[key].metadata.uid == s_prime.resources()[key].metadata.uid);
-                    assert(ZookeeperClusterView::unmarshal(s.resources()[key]).get_Ok_0().controller_owner_ref() == ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
-                    assert(ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0()
-                        .transition_validation(ZookeeperClusterView::unmarshal(s.resources()[key]).get_Ok_0()));
+//                    assert(s.resources()[key].metadata.uid == s_prime.resources()[key].metadata.uid);
+//                    assert(ZookeeperClusterView::unmarshal(s.resources()[key]).get_Ok_0().controller_owner_ref() == ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
+//                    assert(ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0()
+//                        .transition_validation(ZookeeperClusterView::unmarshal(s.resources()[key]).get_Ok_0()));
                 }
-                assert(certain_fields_of_stateful_set_stay_unchanged(s_prime.resources()[sts_key], ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0()));
+//                assert(certain_fields_of_stateful_set_stay_unchanged(s_prime.resources()[sts_key], ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0()));
             } else {
                 let step = choose |step| ZKCluster::next_step(s, s_prime, step);
                 match step {
@@ -173,23 +173,23 @@ pub proof fn lemma_always_stateful_set_update_request_msg_does_not_change_owner_
         lift_state(ZKCluster::object_in_ok_get_resp_is_same_as_etcd_with_same_rv(sts_key)),
         lift_state(object_in_resource_update_request_msg_has_smaller_rv_than_etcd(SubResource::StatefulSet, zookeeper))
     );
-    assert forall |s, s_prime| inv(s) && #[trigger] next(s, s_prime) implies inv(s_prime) by {
-        assert forall |msg| s_prime.in_flight().contains(msg) && #[trigger] resource_update_request_msg(sts_key)(msg)
-        && s_prime.resources().contains_key(sts_key)
-        && s_prime.resources()[sts_key].metadata.resource_version == msg.content.get_update_request().obj.metadata.resource_version
-        implies s_prime.resources()[sts_key].metadata.owner_references == msg.content.get_update_request().obj.metadata.owner_references by {
-            let step = choose |step| ZKCluster::next_step(s, s_prime, step);
-            if s.in_flight().contains(msg) {
-                if s.resources().contains_key(sts_key) {
-                    assert(s_prime.resources()[sts_key].metadata.owner_references == s.resources()[sts_key].metadata.owner_references);
-                } else {
-                    assert(msg.content.get_update_request().obj.metadata.resource_version.get_Some_0() < s_prime.resources()[sts_key].metadata.resource_version.get_Some_0());
-                }
-            } else if resource_update_request_msg(sts_key)(msg) {
-                lemma_resource_create_or_update_request_msg_implies_key_in_reconcile_equals(SubResource::StatefulSet, zookeeper, s, s_prime, msg, step);
-            }
-        }
-    }
+//    assert forall |s, s_prime| inv(s) && #[trigger] next(s, s_prime) implies inv(s_prime) by {
+////        assert forall |msg| s_prime.in_flight().contains(msg) && #[trigger] resource_update_request_msg(sts_key)(msg)
+////        && s_prime.resources().contains_key(sts_key)
+////        && s_prime.resources()[sts_key].metadata.resource_version == msg.content.get_update_request().obj.metadata.resource_version
+////        implies s_prime.resources()[sts_key].metadata.owner_references == msg.content.get_update_request().obj.metadata.owner_references by {
+////            let step = choose |step| ZKCluster::next_step(s, s_prime, step);
+////            if s.in_flight().contains(msg) {
+////                if s.resources().contains_key(sts_key) {
+//////                    assert(s_prime.resources()[sts_key].metadata.owner_references == s.resources()[sts_key].metadata.owner_references);
+////                } else {
+//////                    assert(msg.content.get_update_request().obj.metadata.resource_version.get_Some_0() < s_prime.resources()[sts_key].metadata.resource_version.get_Some_0());
+////                }
+////            } else if resource_update_request_msg(sts_key)(msg) {
+////                lemma_resource_create_or_update_request_msg_implies_key_in_reconcile_equals(SubResource::StatefulSet, zookeeper, s, s_prime, msg, step);
+////            }
+////        }
+//    }
     init_invariant(spec, ZKCluster::init(), next, inv);
 }
 
@@ -245,7 +245,7 @@ pub proof fn lemma_always_object_in_resource_update_request_msg_has_smaller_rv_t
         && msg.content.get_update_request().obj.metadata.resource_version.get_Some_0() < s_prime.kubernetes_api_state.resource_version_counter by {
             let step = choose |step| ZKCluster::next_step(s, s_prime, step);
             if s.in_flight().contains(msg) {
-                assert(s.kubernetes_api_state.resource_version_counter <= s_prime.kubernetes_api_state.resource_version_counter);
+//                assert(s.kubernetes_api_state.resource_version_counter <= s_prime.kubernetes_api_state.resource_version_counter);
             } else if resource_update_request_msg(sts_key)(msg) {
                 lemma_resource_create_or_update_request_msg_implies_key_in_reconcile_equals(sub_resource, zookeeper, s, s_prime, msg, step);
                 let resp = step.get_ControllerStep_0().0.get_Some_0();
@@ -306,19 +306,19 @@ proof fn lemma_always_stateful_set_in_create_request_msg_satisfies_unchangeable(
             let step = choose |step| ZKCluster::next_step(s, s_prime, step);
             match step {
                 Step::ApiServerStep(input) => {
-                    assert(s.controller_state == s_prime.controller_state);
+//                    assert(s.controller_state == s_prime.controller_state);
                     assert(s.in_flight().contains(msg));
                     if s.resources().contains_key(key) {
-                        assert(ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0()
-                        .transition_validation(ZookeeperClusterView::unmarshal(s.resources()[key]).get_Ok_0()));
+//                        assert(ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0()
+//                        .transition_validation(ZookeeperClusterView::unmarshal(s.resources()[key]).get_Ok_0()));
                     } else {
-                        assert(s_prime.resources()[key].metadata.uid.is_Some());
-                        assert(s_prime.resources()[key].metadata.uid.get_Some_0() == s.kubernetes_api_state.uid_counter);
+//                        assert(s_prime.resources()[key].metadata.uid.is_Some());
+//                        assert(s_prime.resources()[key].metadata.uid.get_Some_0() == s.kubernetes_api_state.uid_counter);
                         let owner_refs = msg.content.get_create_request().obj.metadata.owner_references;
                         assert(owner_refs.is_Some() && owner_refs.get_Some_0().len() == 1);
-                        assert(owner_refs.get_Some_0()[0].uid != s.kubernetes_api_state.uid_counter);
-                        assert(owner_refs.get_Some_0()[0] != ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
-                        assert(certain_fields_of_stateful_set_stay_unchanged(msg.content.get_create_request().obj, ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0()));
+//                        assert(owner_refs.get_Some_0()[0].uid != s.kubernetes_api_state.uid_counter);
+//                        assert(owner_refs.get_Some_0()[0] != ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
+//                        assert(certain_fields_of_stateful_set_stay_unchanged(msg.content.get_create_request().obj, ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0()));
                     }
                 },
                 Step::ControllerStep(input) => {
@@ -328,27 +328,27 @@ proof fn lemma_always_stateful_set_in_create_request_msg_satisfies_unchangeable(
                         lemma_resource_create_or_update_request_msg_implies_key_in_reconcile_equals(sts_res, zookeeper, s, s_prime, msg, step);
                         let triggering_cr = s.ongoing_reconciles()[key].triggering_cr;
                         let etcd_cr = ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0();
-                        assert(msg.content.get_create_request().obj.metadata.owner_references_only_contains(triggering_cr.controller_owner_ref()));
-                        assert(certain_fields_of_stateful_set_stay_unchanged(msg.content.get_create_request().obj, triggering_cr));
+//                        assert(msg.content.get_create_request().obj.metadata.owner_references_only_contains(triggering_cr.controller_owner_ref()));
+//                        assert(certain_fields_of_stateful_set_stay_unchanged(msg.content.get_create_request().obj, triggering_cr));
                         if triggering_cr.metadata.uid.is_None() || triggering_cr.metadata.uid.get_Some_0() != etcd_cr.metadata.uid.get_Some_0() {
-                            assert(!msg.content.get_create_request().obj.metadata.owner_references_only_contains(etcd_cr.controller_owner_ref()));
+//                            assert(!msg.content.get_create_request().obj.metadata.owner_references_only_contains(etcd_cr.controller_owner_ref()));
                         } else {
-                            assert(etcd_cr.transition_validation(triggering_cr));
+//                            assert(etcd_cr.transition_validation(triggering_cr));
                         }
-                        assert(certain_fields_of_stateful_set_stay_unchanged(msg.content.get_create_request().obj, ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0()));
+//                        assert(certain_fields_of_stateful_set_stay_unchanged(msg.content.get_create_request().obj, ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0()));
                     }
-                    assert(certain_fields_of_stateful_set_stay_unchanged(msg.content.get_create_request().obj, ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0()));
+//                    assert(certain_fields_of_stateful_set_stay_unchanged(msg.content.get_create_request().obj, ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0()));
                 },
                 Step::BuiltinControllersStep(_) => {
-                    assert(s.in_flight().contains(msg));
-                    assert(s.resources().contains_key(key) == s_prime.resources().contains_key(key));
+//                    assert(s.in_flight().contains(msg));
+//                    assert(s.resources().contains_key(key) == s_prime.resources().contains_key(key));
                     if s.resources().contains_key(key) {
                         s.resources()[key] == s_prime.resources()[key];
                     }
                 }
                 _ => {
-                    assert(s.in_flight().contains(msg));
-                    assert(s.kubernetes_api_state == s_prime.kubernetes_api_state);
+//                    assert(s.in_flight().contains(msg));
+//                    assert(s.kubernetes_api_state == s_prime.kubernetes_api_state);
                 },
             }
         }

@@ -558,16 +558,16 @@ proof fn lemma_from_pending_req_to_receives_not_found_resp_at_after_exists_state
         }
     }
 
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::kubernetes_api_next().forward(input)(s, s_prime)
-    implies post(s_prime) by {
-        let resp_msg = ZKCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
-        assert({
-            &&& s_prime.in_flight().contains(resp_msg)
-            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
-            &&& resp_msg.content.get_get_response().res.is_Err()
-            &&& resp_msg.content.get_get_response().res.get_Err_0().is_ObjectNotFound()
-        });
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::kubernetes_api_next().forward(input)(s, s_prime)
+//    implies post(s_prime) by {
+//        let resp_msg = ZKCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
+////        assert({
+////            &&& s_prime.in_flight().contains(resp_msg)
+////            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
+////            &&& resp_msg.content.get_get_response().res.is_Err()
+////            &&& resp_msg.content.get_get_response().res.get_Err_0().is_ObjectNotFound()
+////        });
+//    }
     ZKCluster::lemma_pre_leads_to_post_by_kubernetes_api(spec, input, stronger_next, ZKCluster::handle_request(), pre, post);
 }
 
@@ -706,23 +706,23 @@ proof fn lemma_from_pending_req_to_receives_ok_resp_at_after_exists_stateful_set
                         &&& resp_msg.content.get_get_response().res.is_Ok()
                         &&& resp_msg.content.get_get_response().res.get_Ok_0() == s_prime.resources()[resource_key]
                     });
-                    assert(post(s_prime));
+//                    assert(post(s_prime));
                 }
             },
             _ => {}
         }
     }
 
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::kubernetes_api_next().forward(input)(s, s_prime)
-    implies post(s_prime) by {
-        let resp_msg = ZKCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
-        assert({
-            &&& s_prime.in_flight().contains(resp_msg)
-            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
-            &&& resp_msg.content.get_get_response().res.is_Ok()
-            &&& resp_msg.content.get_get_response().res.get_Ok_0() == s_prime.resources()[resource_key]
-        });
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::kubernetes_api_next().forward(input)(s, s_prime)
+//    implies post(s_prime) by {
+//        let resp_msg = ZKCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
+////        assert({
+////            &&& s_prime.in_flight().contains(resp_msg)
+////            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
+////            &&& resp_msg.content.get_get_response().res.is_Ok()
+////            &&& resp_msg.content.get_get_response().res.get_Ok_0() == s_prime.resources()[resource_key]
+////        });
+//    }
     ZKCluster::lemma_pre_leads_to_post_by_kubernetes_api(spec, input, stronger_next, ZKCluster::handle_request(), pre, post);
 }
 
@@ -874,7 +874,7 @@ proof fn lemma_from_pending_req_to_receives_ok_resp_at_after_exists_zk_node_step
                         &&& resp_msg.content.is_ExternalAPIResponse()
                         &&& resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::ExistsResponse(ZKAPIExistsResultView{res: Ok(Some(s_prime.external_state().data[addr].1))})
                     });
-                    assert(post(s_prime));
+//                    assert(post(s_prime));
                 }
             },
             Step::ApiServerStep(input) => {
@@ -885,17 +885,17 @@ proof fn lemma_from_pending_req_to_receives_ok_resp_at_after_exists_zk_node_step
         }
     }
 
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::external_api_next().forward(input)(s, s_prime)
-    implies post(s_prime) by {
-        let resp_msg = ZKCluster::handle_external_request_helper(req_msg, s.external_api_state, s.resources()).1;
-        let addr = zk_node_addr(s_prime, zookeeper);
-        assert({
-            &&& s_prime.in_flight().contains(resp_msg)
-            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
-            &&& resp_msg.content.is_ExternalAPIResponse()
-            &&& resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::ExistsResponse(ZKAPIExistsResultView{res: Ok(Some(s_prime.external_state().data[addr].1))})
-        });
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::external_api_next().forward(input)(s, s_prime)
+//    implies post(s_prime) by {
+//        let resp_msg = ZKCluster::handle_external_request_helper(req_msg, s.external_api_state, s.resources()).1;
+//        let addr = zk_node_addr(s_prime, zookeeper);
+////        assert({
+////            &&& s_prime.in_flight().contains(resp_msg)
+////            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
+////            &&& resp_msg.content.is_ExternalAPIResponse()
+////            &&& resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::ExistsResponse(ZKAPIExistsResultView{res: Ok(Some(s_prime.external_state().data[addr].1))})
+////        });
+//    }
 
     ZKCluster::lemma_pre_leads_to_post_by_external_api(spec, input, stronger_next, ZKCluster::handle_external_request(), pre, post);
 }
@@ -1051,7 +1051,7 @@ proof fn lemma_from_pending_req_to_receives_ok_resp_at_after_update_zk_node_step
                         &&& resp_msg.content.is_ExternalAPIResponse()
                         &&& resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::SetDataResponse(ZKAPISetDataResultView{res: Ok(())})
                     });
-                    assert(post(s_prime));
+//                    assert(post(s_prime));
                 }
             },
             Step::ApiServerStep(input) => {
@@ -1062,17 +1062,17 @@ proof fn lemma_from_pending_req_to_receives_ok_resp_at_after_update_zk_node_step
         }
     }
 
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::external_api_next().forward(input)(s, s_prime)
-    implies post(s_prime) by {
-        let resp_msg = ZKCluster::handle_external_request_helper(req_msg, s.external_api_state, s.resources()).1;
-        let addr = zk_node_addr(s_prime, zookeeper);
-        assert({
-            &&& s_prime.in_flight().contains(resp_msg)
-            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
-            &&& resp_msg.content.is_ExternalAPIResponse()
-            &&& resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::SetDataResponse(ZKAPISetDataResultView{res: Ok(())})
-        });
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::external_api_next().forward(input)(s, s_prime)
+//    implies post(s_prime) by {
+//        let resp_msg = ZKCluster::handle_external_request_helper(req_msg, s.external_api_state, s.resources()).1;
+//        let addr = zk_node_addr(s_prime, zookeeper);
+////        assert({
+////            &&& s_prime.in_flight().contains(resp_msg)
+////            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
+////            &&& resp_msg.content.is_ExternalAPIResponse()
+////            &&& resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::SetDataResponse(ZKAPISetDataResultView{res: Ok(())})
+////        });
+//    }
 
     ZKCluster::lemma_pre_leads_to_post_by_external_api(spec, input, stronger_next, ZKCluster::handle_external_request(), pre, post);
 }
@@ -1205,7 +1205,7 @@ proof fn lemma_from_pending_req_to_receives_not_found_resp_at_after_exists_zk_no
                         &&& resp_msg.content.is_ExternalAPIResponse()
                         &&& resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::ExistsResponse(ZKAPIExistsResultView{res: Ok(None)})
                     });
-                    assert(post(s_prime));
+//                    assert(post(s_prime));
                 }
             },
             Step::ApiServerStep(input) => {
@@ -1216,17 +1216,17 @@ proof fn lemma_from_pending_req_to_receives_not_found_resp_at_after_exists_zk_no
         }
     }
 
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::external_api_next().forward(input)(s, s_prime)
-    implies post(s_prime) by {
-        let resp_msg = ZKCluster::handle_external_request_helper(req_msg, s.external_api_state, s.resources()).1;
-        let addr = zk_node_addr(s_prime, zookeeper);
-        assert({
-            &&& s_prime.in_flight().contains(resp_msg)
-            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
-            &&& resp_msg.content.is_ExternalAPIResponse()
-            &&& resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::ExistsResponse(ZKAPIExistsResultView{res: Ok(None)})
-        });
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::external_api_next().forward(input)(s, s_prime)
+//    implies post(s_prime) by {
+//        let resp_msg = ZKCluster::handle_external_request_helper(req_msg, s.external_api_state, s.resources()).1;
+//        let addr = zk_node_addr(s_prime, zookeeper);
+////        assert({
+////            &&& s_prime.in_flight().contains(resp_msg)
+////            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
+////            &&& resp_msg.content.is_ExternalAPIResponse()
+////            &&& resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::ExistsResponse(ZKAPIExistsResultView{res: Ok(None)})
+////        });
+//    }
 
     ZKCluster::lemma_pre_leads_to_post_by_external_api(spec, input, stronger_next, ZKCluster::handle_external_request(), pre, post);
 }
@@ -1391,7 +1391,7 @@ proof fn lemma_from_pending_req_to_receives_ok_or_already_exists_resp_at_after_c
                         &&& (resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::CreateResponse(ZKAPICreateResultView{res: Ok(())})
                             || resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::CreateResponse(ZKAPICreateResultView{res: Err(ZKAPIError::ZKNodeCreateAlreadyExists)}))
                     });
-                    assert(post(s_prime));
+//                    assert(post(s_prime));
                 }
             },
             Step::ApiServerStep(input) => {
@@ -1403,17 +1403,17 @@ proof fn lemma_from_pending_req_to_receives_ok_or_already_exists_resp_at_after_c
         }
     }
 
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::external_api_next().forward(input)(s, s_prime)
-    implies post(s_prime) by {
-        let resp_msg = ZKCluster::handle_external_request_helper(req_msg, s.external_api_state, s.resources()).1;
-        assert({
-            &&& s_prime.in_flight().contains(resp_msg)
-            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
-            &&& resp_msg.content.is_ExternalAPIResponse()
-            &&& (resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::CreateResponse(ZKAPICreateResultView{res: Ok(())})
-                || resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::CreateResponse(ZKAPICreateResultView{res: Err(ZKAPIError::ZKNodeCreateAlreadyExists)}))
-        });
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::external_api_next().forward(input)(s, s_prime)
+//    implies post(s_prime) by {
+//        let resp_msg = ZKCluster::handle_external_request_helper(req_msg, s.external_api_state, s.resources()).1;
+////        assert({
+////            &&& s_prime.in_flight().contains(resp_msg)
+////            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
+////            &&& resp_msg.content.is_ExternalAPIResponse()
+////            &&& (resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::CreateResponse(ZKAPICreateResultView{res: Ok(())})
+////                || resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::CreateResponse(ZKAPICreateResultView{res: Err(ZKAPIError::ZKNodeCreateAlreadyExists)}))
+////        });
+//    }
 
     ZKCluster::lemma_pre_leads_to_post_by_external_api(spec, input, stronger_next, ZKCluster::handle_external_request(), pre, post);
 }
@@ -1573,7 +1573,7 @@ proof fn lemma_from_pending_req_to_receives_ok_resp_at_after_create_zk_node_step
                         &&& resp_msg.content.is_ExternalAPIResponse()
                         &&& resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::CreateResponse(ZKAPICreateResultView{res: Ok(())})
                     });
-                    assert(post(s_prime));
+//                    assert(post(s_prime));
                 }
             },
             Step::ApiServerStep(input) => {
@@ -1584,17 +1584,17 @@ proof fn lemma_from_pending_req_to_receives_ok_resp_at_after_create_zk_node_step
         }
     }
 
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::external_api_next().forward(input)(s, s_prime)
-    implies post(s_prime) by {
-        let resp_msg = ZKCluster::handle_external_request_helper(req_msg, s.external_api_state, s.resources()).1;
-        assert(zk_parent_node_addr(s, zookeeper).path =~= zk_node_addr(s, zookeeper).parent_addr().path);
-        assert({
-            &&& s_prime.in_flight().contains(resp_msg)
-            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
-            &&& resp_msg.content.is_ExternalAPIResponse()
-            &&& resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::CreateResponse(ZKAPICreateResultView{res: Ok(())})
-        });
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && ZKCluster::external_api_next().forward(input)(s, s_prime)
+//    implies post(s_prime) by {
+//        let resp_msg = ZKCluster::handle_external_request_helper(req_msg, s.external_api_state, s.resources()).1;
+//        assert(zk_parent_node_addr(s, zookeeper).path =~= zk_node_addr(s, zookeeper).parent_addr().path);
+////        assert({
+////            &&& s_prime.in_flight().contains(resp_msg)
+////            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
+////            &&& resp_msg.content.is_ExternalAPIResponse()
+////            &&& resp_msg.content.get_ExternalAPIResponse_0() == ZKAPIOutputView::CreateResponse(ZKAPICreateResultView{res: Ok(())})
+////        });
+//    }
 
     ZKCluster::lemma_pre_leads_to_post_by_external_api(spec, input, stronger_next, ZKCluster::handle_external_request(), pre, post);
 }

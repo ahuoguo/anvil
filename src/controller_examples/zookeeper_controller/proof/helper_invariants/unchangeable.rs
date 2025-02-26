@@ -218,14 +218,14 @@ pub proof fn object_in_every_update_request_msg_satisfies_unchangeable_induction
         if s.in_flight().contains(msg) {
             if s.resources().contains_key(resource_key) {
                 if s.resources()[resource_key].metadata.resource_version == msg.content.get_update_request().obj.metadata.resource_version {
-                    assert(unchangeable(sub_resource, msg.content.get_update_request().obj, zookeeper));
+//                    assert(unchangeable(sub_resource, msg.content.get_update_request().obj, zookeeper));
                 } else {
-                    assert(s_prime.resources()[resource_key].metadata.resource_version.get_Some_0() == s.kubernetes_api_state.resource_version_counter);
+//                    assert(s_prime.resources()[resource_key].metadata.resource_version.get_Some_0() == s.kubernetes_api_state.resource_version_counter);
                 }
             } else {
-                assert(s_prime.resources()[resource_key].metadata.resource_version.get_Some_0() == s.kubernetes_api_state.resource_version_counter);
+//                assert(s_prime.resources()[resource_key].metadata.resource_version.get_Some_0() == s.kubernetes_api_state.resource_version_counter);
             }
-            assert(unchangeable(sub_resource, msg.content.get_update_request().obj, zookeeper));
+//            assert(unchangeable(sub_resource, msg.content.get_update_request().obj, zookeeper));
         } else {
             let step = choose |step| ZKCluster::next_step(s, s_prime, step);
             lemma_resource_create_or_update_request_msg_implies_key_in_reconcile_equals(sub_resource, zookeeper, s, s_prime, msg, step);
@@ -257,9 +257,9 @@ proof fn made_config_map_data_satisfies_validation(zookeeper: ZookeeperClusterVi
     reveal_strlit("log4j-quiet.properties");
     reveal_strlit("env.sh");
     assert("zoo.cfg"@.len() == 7);
-    assert(data.contains_key("zoo.cfg"@));
+//    assert(data.contains_key("zoo.cfg"@));
     let zk_config = make_zk_config(zookeeper);
-    assert(data["zoo.cfg"@] == zk_config);
+//    assert(data["zoo.cfg"@] == zk_config);
 }
 
 }
