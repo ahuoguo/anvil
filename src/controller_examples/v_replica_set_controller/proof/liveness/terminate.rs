@@ -496,12 +496,12 @@ proof fn lemma_true_equal_to_reconcile_idle_or_at_any_state(vrs: VReplicaSetView
                 VReplicaSetReconcileStep::AfterCreatePod(n) => {
                     // Introduce tla_exists with n as witness.
                     assert((|n| lift_state(at_step_state_pred(vrs, VReplicaSetReconcileStep::AfterCreatePod(n))))(n).satisfied_by(ex));
-                    assert(tla_exists(|n| lift_state(at_step_state_pred(vrs, VReplicaSetReconcileStep::AfterCreatePod(n)))).satisfied_by(ex));
+//                    assert(tla_exists(|n| lift_state(at_step_state_pred(vrs, VReplicaSetReconcileStep::AfterCreatePod(n)))).satisfied_by(ex));
                 },
                 VReplicaSetReconcileStep::AfterDeletePod(n) => {
                     // Introduce tla_exists with n as witness.
                     assert((|n| lift_state(at_step_state_pred(vrs, VReplicaSetReconcileStep::AfterDeletePod(n))))(n).satisfied_by(ex));
-                    assert(tla_exists(|n| lift_state(at_step_state_pred(vrs, VReplicaSetReconcileStep::AfterDeletePod(n)))).satisfied_by(ex));
+//                    assert(tla_exists(|n| lift_state(at_step_state_pred(vrs, VReplicaSetReconcileStep::AfterDeletePod(n)))).satisfied_by(ex));
                 },
                 step => {},
             }

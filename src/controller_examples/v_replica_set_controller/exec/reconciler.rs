@@ -295,7 +295,7 @@ fn objects_to_pods(objs: Vec<DynamicObject>) -> (pods_or_none: Option<Vec<Pod>>)
                         .filter(|o: DynamicObjectView| PodView::unmarshal(o).is_err())
                         .contains(model_input[idx as int])
                 );
-                assert(model_result == None::<Seq<PodView>>);
+//                assert(model_result == None::<Seq<PodView>>);
             }
             return None;
         }
@@ -317,7 +317,7 @@ fn objects_to_pods(objs: Vec<DynamicObject>) -> (pods_or_none: Option<Vec<Pod>>)
                 );
             }
         };
-        assert(model_result.is_some());
+//        assert(model_result.is_some());
 
         assert(model_result.unwrap().take(objs.len() as int) == model_result.unwrap());
     }

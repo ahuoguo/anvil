@@ -1,0 +1,1496 @@
+warning: unused variable: `tokens`
+    --> tools/minimize/src/main.rs:1511:55
+     |
+1511 |             Meta::List(MetaList { path, delimiter: _, tokens }) => {
+     |                                                       ^^^^^^ help: try ignoring the field: `tokens: _`
+     |
+     = note: `#[warn(unused_variables)]` on by default
+
+warning: `minimize` (bin "minimize") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 1.37s
+     Running `/local/abai/verus/source/target/release/minimize -d ./vreplicaset-tmp /local/abai/anvil/src/vreplicaset_controller.d`
+verus succeeded with time: 73718ms
+minimization of ./vreplicaset-tmp/1/external_api/mod.rs is completed
+minimization of ./vreplicaset-tmp/0/vreplicaset_controller.rs is completed
+minimization of ./vreplicaset-tmp/4/kubernetes_api_objects/mod.rs is completed
+minimization of ./vreplicaset-tmp/2/external_api/exec.rs is completed
+minimization of ./vreplicaset-tmp/6/kubernetes_api_objects/exec/mod.rs is completed
+minimization of ./vreplicaset-tmp/5/kubernetes_api_objects/error.rs is completed
+minimization of ./vreplicaset-tmp/3/external_api/spec.rs is completed
+minimization of ./vreplicaset-tmp/7/kubernetes_api_objects/exec/affinity.rs is completed
+minimization of ./vreplicaset-tmp/8/kubernetes_api_objects/exec/api_method.rs is completed
+minimization of ./vreplicaset-tmp/9/kubernetes_api_objects/exec/api_resource.rs is completed
+minimization of ./vreplicaset-tmp/10/kubernetes_api_objects/exec/common.rs is completed
+minimization of ./vreplicaset-tmp/13/kubernetes_api_objects/exec/daemon_set.rs is completed
+minimization of ./vreplicaset-tmp/12/kubernetes_api_objects/exec/container.rs is completed
+minimization of ./vreplicaset-tmp/11/kubernetes_api_objects/exec/config_map.rs is completed
+minimization of ./vreplicaset-tmp/15/kubernetes_api_objects/exec/label_selector.rs is completed
+minimization of ./vreplicaset-tmp/14/kubernetes_api_objects/exec/dynamic.rs is completed
+minimization of ./vreplicaset-tmp/18/kubernetes_api_objects/exec/persistent_volume_claim.rs is completed
+minimization of ./vreplicaset-tmp/20/kubernetes_api_objects/exec/pod_template_spec.rs is completed
+minimization of ./vreplicaset-tmp/19/kubernetes_api_objects/exec/pod.rs is completed
+minimization of ./vreplicaset-tmp/17/kubernetes_api_objects/exec/owner_reference.rs is completed
+minimization of ./vreplicaset-tmp/16/kubernetes_api_objects/exec/object_meta.rs is completed
+minimization of ./vreplicaset-tmp/23/kubernetes_api_objects/exec/resource.rs is completed
+minimization of ./vreplicaset-tmp/22/kubernetes_api_objects/exec/prelude.rs is completed
+minimization of ./vreplicaset-tmp/21/kubernetes_api_objects/exec/preconditions.rs is completed
+minimization of ./vreplicaset-tmp/24/kubernetes_api_objects/exec/resource_requirements.rs is completed
+minimization of ./vreplicaset-tmp/25/kubernetes_api_objects/exec/role.rs is completed
+minimization of ./vreplicaset-tmp/26/kubernetes_api_objects/exec/role_binding.rs is completed
+minimization of ./vreplicaset-tmp/27/kubernetes_api_objects/exec/secret.rs is completed
+minimization of ./vreplicaset-tmp/28/kubernetes_api_objects/exec/service.rs is completed
+minimization of ./vreplicaset-tmp/29/kubernetes_api_objects/exec/service_account.rs is completed
+minimization of ./vreplicaset-tmp/31/kubernetes_api_objects/exec/toleration.rs is completed
+minimization of ./vreplicaset-tmp/30/kubernetes_api_objects/exec/stateful_set.rs is completed
+minimization of ./vreplicaset-tmp/32/kubernetes_api_objects/exec/volume.rs is completed
+minimization of ./vreplicaset-tmp/33/kubernetes_api_objects/exec/volume_resource_requirements.rs is completed
+minimization of ./vreplicaset-tmp/34/kubernetes_api_objects/spec/mod.rs is completed
+minimization of ./vreplicaset-tmp/35/kubernetes_api_objects/spec/affinity.rs is completed
+minimization of ./vreplicaset-tmp/36/kubernetes_api_objects/spec/api_method.rs is completed
+minimization of ./vreplicaset-tmp/37/kubernetes_api_objects/spec/api_resource.rs is completed
+minimization of ./vreplicaset-tmp/38/kubernetes_api_objects/spec/common.rs is completed
+minimization of ./vreplicaset-tmp/39/kubernetes_api_objects/spec/config_map.rs is completed
+minimization of ./vreplicaset-tmp/40/kubernetes_api_objects/spec/container.rs is completed
+minimization of ./vreplicaset-tmp/41/kubernetes_api_objects/spec/daemon_set.rs is completed
+minimization of ./vreplicaset-tmp/42/kubernetes_api_objects/spec/dynamic.rs is completed
+minimization of ./vreplicaset-tmp/44/kubernetes_api_objects/spec/object_meta.rs is completed
+minimization of ./vreplicaset-tmp/43/kubernetes_api_objects/spec/label_selector.rs is completed
+minimization of ./vreplicaset-tmp/45/kubernetes_api_objects/spec/owner_reference.rs is completed
+minimization of ./vreplicaset-tmp/46/kubernetes_api_objects/spec/persistent_volume_claim.rs is completed
+minimization of ./vreplicaset-tmp/47/kubernetes_api_objects/spec/pod.rs is completed
+minimization of ./vreplicaset-tmp/48/kubernetes_api_objects/spec/pod_template_spec.rs is completed
+minimization of ./vreplicaset-tmp/49/kubernetes_api_objects/spec/preconditions.rs is completed
+minimization of ./vreplicaset-tmp/50/kubernetes_api_objects/spec/prelude.rs is completed
+minimization of ./vreplicaset-tmp/51/kubernetes_api_objects/spec/resource.rs is completed
+minimization of ./vreplicaset-tmp/52/kubernetes_api_objects/spec/resource_requirements.rs is completed
+minimization of ./vreplicaset-tmp/53/kubernetes_api_objects/spec/role.rs is completed
+minimization of ./vreplicaset-tmp/54/kubernetes_api_objects/spec/role_binding.rs is completed
+minimization of ./vreplicaset-tmp/55/kubernetes_api_objects/spec/secret.rs is completed
+minimization of ./vreplicaset-tmp/56/kubernetes_api_objects/spec/service.rs is completed
+minimization of ./vreplicaset-tmp/57/kubernetes_api_objects/spec/service_account.rs is completed
+minimization of ./vreplicaset-tmp/58/kubernetes_api_objects/spec/stateful_set.rs is completed
+minimization of ./vreplicaset-tmp/59/kubernetes_api_objects/spec/toleration.rs is completed
+minimization of ./vreplicaset-tmp/60/kubernetes_api_objects/spec/volume.rs is completed
+minimization of ./vreplicaset-tmp/61/kubernetes_api_objects/spec/volume_resource_requirements.rs is completed
+minimization of ./vreplicaset-tmp/62/kubernetes_cluster/mod.rs is completed
+minimization of ./vreplicaset-tmp/63/kubernetes_cluster/proof/mod.rs is completed
+commenting out line Lines { lines: 135..=139 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+minimization of ./vreplicaset-tmp/65/kubernetes_cluster/proof/api_server_safety.rs is completed
+commenting out line Lines { lines: 171..=171 } in "./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 169..=172 } in "./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+minimization of ./vreplicaset-tmp/67/kubernetes_cluster/proof/cluster.rs is completed
+commenting out line Lines { lines: 74..=103 } in "./vreplicaset-tmp/68/kubernetes_cluster/proof/cluster_safety.rs"
+minimization of ./vreplicaset-tmp/69/kubernetes_cluster/proof/controller_runtime.rs is completed
+minimization of ./vreplicaset-tmp/70/kubernetes_cluster/proof/controller_runtime_eventual_safety.rs is completed
+commenting out line Lines { lines: 346..=371 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+commenting out line Lines { lines: 44..=44 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 148..=148 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+commenting out line Lines { lines: 115..=135 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 179..=179 } in "./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+minimization of ./vreplicaset-tmp/74/kubernetes_cluster/proof/external_api_liveness.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 72..=104 } in "./vreplicaset-tmp/68/kubernetes_cluster/proof/cluster_safety.rs"
+commenting out line Lines { lines: 41..=41 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 383..=383 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 169..=175 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 145..=149 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 116717ms
+commenting out line Lines { lines: 43..=46 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 111738ms
+commenting out line Lines { lines: 183..=183 } in "./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 184..=184 } in "./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 167..=167 } in "./vreplicaset-tmp/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 116200ms
+commenting out line Lines { lines: 46..=46 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 376..=384 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 181..=181 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 109..=109 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 290..=292 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 119216ms
+commenting out line Lines { lines: 185..=185 } in "./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 120269ms
+commenting out line Lines { lines: 171..=171 } in "./vreplicaset-tmp/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 118415ms
+commenting out line Lines { lines: 47..=47 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 457..=460 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 178..=182 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 108640ms
+commenting out line Lines { lines: 118..=118 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 288..=293 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 112079ms
+commenting out line Lines { lines: 187..=187 } in "./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 116728ms
+commenting out line Lines { lines: 155..=174 } in "./vreplicaset-tmp/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 113368ms
+commenting out line Lines { lines: 50..=50 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 454..=461 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 223..=223 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 105689ms
+commenting out line Lines { lines: 121..=121 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 313..=317 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 115663ms
+commenting out line Lines { lines: 191..=191 } in "./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 153..=175 } in "./vreplicaset-tmp/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 110603ms
+commenting out line Lines { lines: 51..=51 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 468..=468 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 222..=224 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 111014ms
+commenting out line Lines { lines: 127..=127 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 327..=327 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 107026ms
+commenting out line Lines { lines: 174..=194 } in "./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 215..=215 } in "./vreplicaset-tmp/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 108151ms
+commenting out line Lines { lines: 36..=57 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 109362ms
+commenting out line Lines { lines: 470..=470 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 221..=225 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 106978ms
+commenting out line Lines { lines: 129..=129 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 324..=328 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 111068ms
+commenting out line Lines { lines: 216..=227 } in "./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 107781ms
+commenting out line Lines { lines: 210..=217 } in "./vreplicaset-tmp/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 35..=58 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 112397ms
+commenting out line Lines { lines: 473..=473 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 273..=276 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 355..=355 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 109966ms
+commenting out line Lines { lines: 135..=135 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 255..=276 } in "./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 105624ms
+commenting out line Lines { lines: 208..=218 } in "./vreplicaset-tmp/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 123..=123 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 108927ms
+commenting out line Lines { lines: 474..=474 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 462..=476 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 282..=282 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 354..=356 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 108282ms
+commenting out line Lines { lines: 138..=138 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 287..=287 } in "./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 112116ms
+minimization of ./vreplicaset-tmp/68/kubernetes_cluster/proof/cluster_safety.rs is completed
+commenting out line Lines { lines: 164..=184 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 111726ms
+commenting out line Lines { lines: 124..=124 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 105217ms
+commenting out line Lines { lines: 485..=488 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 103686ms
+commenting out line Lines { lines: 283..=283 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 353..=357 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 104754ms
+commenting out line Lines { lines: 146..=146 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 281..=288 } in "./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 219..=225 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 113187ms
+commenting out line Lines { lines: 126..=126 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 482..=489 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 279..=284 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 383..=388 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 119853ms
+commenting out line Lines { lines: 148..=148 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs is completed
+commenting out line Lines { lines: 114..=114 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 231..=231 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 111461ms
+commenting out line Lines { lines: 128..=128 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 381..=381 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 496..=496 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 397..=397 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 109295ms
+commenting out line Lines { lines: 151..=151 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 106002ms
+commenting out line Lines { lines: 116..=116 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 228..=232 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 113604ms
+commenting out line Lines { lines: 129..=129 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 104702ms
+commenting out line Lines { lines: 388..=388 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 106372ms
+commenting out line Lines { lines: 498..=498 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 106827ms
+commenting out line Lines { lines: 398..=398 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 111571ms
+commenting out line Lines { lines: 156..=156 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 112782ms
+commenting out line Lines { lines: 117..=117 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 274..=274 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 114007ms
+commenting out line Lines { lines: 114..=135 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 109671ms
+commenting out line Lines { lines: 393..=393 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 113114ms
+commenting out line Lines { lines: 501..=501 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 394..=399 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 101926ms
+commenting out line Lines { lines: 120..=120 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 111887ms
+commenting out line Lines { lines: 158..=158 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 273..=275 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 110081ms
+commenting out line Lines { lines: 112..=137 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 108462ms
+commenting out line Lines { lines: 395..=395 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 106473ms
+commenting out line Lines { lines: 502..=502 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 490..=504 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 457..=457 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 109563ms
+commenting out line Lines { lines: 121..=124 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 110090ms
+commenting out line Lines { lines: 164..=164 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 272..=276 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 107622ms
+commenting out line Lines { lines: 188..=188 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 106991ms
+commenting out line Lines { lines: 399..=399 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 109747ms
+commenting out line Lines { lines: 433..=509 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 111726ms
+commenting out line Lines { lines: 459..=459 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 126..=126 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 330..=333 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 117291ms
+commenting out line Lines { lines: 167..=167 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 107781ms
+commenting out line Lines { lines: 190..=190 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 107061ms
+commenting out line Lines { lines: 402..=402 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 522..=522 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 109462ms
+commenting out line Lines { lines: 464..=464 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 105265ms
+commenting out line Lines { lines: 127..=130 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=339 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 113654ms
+commenting out line Lines { lines: 172..=172 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 107690ms
+commenting out line Lines { lines: 405..=405 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 108313ms
+commenting out line Lines { lines: 192..=192 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 519..=523 } in "./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 111699ms
+commenting out line Lines { lines: 466..=466 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 106706ms
+commenting out line Lines { lines: 132..=132 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 113828ms
+commenting out line Lines { lines: 340..=340 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 110282ms
+commenting out line Lines { lines: 106..=176 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 102689ms
+commenting out line Lines { lines: 193..=193 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 108161ms
+commenting out line Lines { lines: 408..=408 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs is completed
+commenting out line Lines { lines: 30..=35 } in "./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 105779ms
+commenting out line Lines { lines: 133..=133 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 111563ms
+commenting out line Lines { lines: 470..=470 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 336..=341 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 108784ms
+commenting out line Lines { lines: 195..=195 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 103442ms
+commenting out line Lines { lines: 198..=198 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 106019ms
+commenting out line Lines { lines: 373..=412 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 44..=44 } in "./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 109994ms
+commenting out line Lines { lines: 134..=137 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 112844ms
+commenting out line Lines { lines: 473..=473 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 449..=449 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 108906ms
+commenting out line Lines { lines: 196..=196 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 107261ms
+commenting out line Lines { lines: 200..=200 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+verus succeeded with time: 108960ms
+commenting out line Lines { lines: 419..=419 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+commenting out line Lines { lines: 51..=56 } in "./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 103866ms
+commenting out line Lines { lines: 142..=142 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 110390ms
+commenting out line Lines { lines: 476..=476 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 107109ms
+commenting out line Lines { lines: 456..=456 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 108706ms
+commenting out line Lines { lines: 198..=198 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 104627ms
+commenting out line Lines { lines: 201..=201 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 65..=65 } in "./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 112666ms
+commenting out line Lines { lines: 413..=420 } in "./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 109414ms
+commenting out line Lines { lines: 144..=144 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 103215ms
+commenting out line Lines { lines: 480..=480 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 105515ms
+commenting out line Lines { lines: 461..=461 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 109471ms
+commenting out line Lines { lines: 191..=201 } in "./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 111084ms
+commenting out line Lines { lines: 181..=205 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 72..=79 } in "./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 106830ms
+minimization of ./vreplicaset-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs is completed
+minimization of ./vreplicaset-tmp/79/kubernetes_cluster/spec/mod.rs is completed
+minimization of ./vreplicaset-tmp/80/kubernetes_cluster/spec/api_server/mod.rs is completed
+minimization of ./vreplicaset-tmp/81/kubernetes_cluster/spec/api_server/state_machine.rs is completed
+minimization of ./vreplicaset-tmp/82/kubernetes_cluster/spec/api_server/types.rs is completed
+minimization of ./vreplicaset-tmp/83/kubernetes_cluster/spec/builtin_controllers/mod.rs is completed
+minimization of ./vreplicaset-tmp/84/kubernetes_cluster/spec/builtin_controllers/daemon_set_controller.rs is completed
+minimization of ./vreplicaset-tmp/85/kubernetes_cluster/spec/builtin_controllers/garbage_collector.rs is completed
+minimization of ./vreplicaset-tmp/86/kubernetes_cluster/spec/builtin_controllers/stabilizer.rs is completed
+minimization of ./vreplicaset-tmp/87/kubernetes_cluster/spec/builtin_controllers/state_machine.rs is completed
+minimization of ./vreplicaset-tmp/88/kubernetes_cluster/spec/builtin_controllers/stateful_set_controller.rs is completed
+minimization of ./vreplicaset-tmp/89/kubernetes_cluster/spec/builtin_controllers/types.rs is completed
+minimization of ./vreplicaset-tmp/90/kubernetes_cluster/spec/client/mod.rs is completed
+minimization of ./vreplicaset-tmp/91/kubernetes_cluster/spec/client/types.rs is completed
+minimization of ./vreplicaset-tmp/92/kubernetes_cluster/spec/client/state_machine.rs is completed
+minimization of ./vreplicaset-tmp/93/kubernetes_cluster/spec/cluster.rs is completed
+minimization of ./vreplicaset-tmp/94/kubernetes_cluster/spec/cluster_state_machine.rs is completed
+minimization of ./vreplicaset-tmp/95/kubernetes_cluster/spec/controller/mod.rs is completed
+minimization of ./vreplicaset-tmp/96/kubernetes_cluster/spec/controller/controller_runtime.rs is completed
+minimization of ./vreplicaset-tmp/97/kubernetes_cluster/spec/controller/state_machine.rs is completed
+minimization of ./vreplicaset-tmp/98/kubernetes_cluster/spec/controller/types.rs is completed
+minimization of ./vreplicaset-tmp/99/kubernetes_cluster/spec/external_api/mod.rs is completed
+minimization of ./vreplicaset-tmp/100/kubernetes_cluster/spec/external_api/state_machine.rs is completed
+minimization of ./vreplicaset-tmp/101/kubernetes_cluster/spec/external_api/types.rs is completed
+minimization of ./vreplicaset-tmp/102/kubernetes_cluster/spec/message.rs is completed
+minimization of ./vreplicaset-tmp/103/kubernetes_cluster/spec/network/mod.rs is completed
+minimization of ./vreplicaset-tmp/104/kubernetes_cluster/spec/network/types.rs is completed
+minimization of ./vreplicaset-tmp/105/kubernetes_cluster/spec/network/state_machine.rs is completed
+minimization of ./vreplicaset-tmp/106/kubernetes_cluster/spec/pod_event/mod.rs is completed
+minimization of ./vreplicaset-tmp/107/kubernetes_cluster/spec/pod_event/types.rs is completed
+minimization of ./vreplicaset-tmp/108/kubernetes_cluster/spec/pod_event/state_machine.rs is completed
+minimization of ./vreplicaset-tmp/109/reconciler/mod.rs is completed
+minimization of ./vreplicaset-tmp/110/reconciler/exec/mod.rs is completed
+verus succeeded with time: 103958ms
+commenting out line Lines { lines: 108..=150 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+minimization of ./vreplicaset-tmp/111/reconciler/exec/io.rs is completed
+minimization of ./vreplicaset-tmp/112/reconciler/exec/reconciler.rs is completed
+minimization of ./vreplicaset-tmp/113/reconciler/exec/resource_builder.rs is completed
+minimization of ./vreplicaset-tmp/114/reconciler/spec/mod.rs is completed
+minimization of ./vreplicaset-tmp/115/reconciler/spec/io.rs is completed
+verus succeeded with time: 104531ms
+commenting out line Lines { lines: 482..=482 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+minimization of ./vreplicaset-tmp/116/reconciler/spec/reconciler.rs is completed
+minimization of ./vreplicaset-tmp/117/reconciler/spec/resource_builder.rs is completed
+minimization of ./vreplicaset-tmp/118/shim_layer/mod.rs is completed
+minimization of ./vreplicaset-tmp/119/shim_layer/controller_runtime.rs is completed
+minimization of ./vreplicaset-tmp/120/shim_layer/fault_injection.rs is completed
+verus succeeded with time: 107672ms
+commenting out line Lines { lines: 463..=463 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+minimization of ./vreplicaset-tmp/121/state_machine/mod.rs is completed
+minimization of ./vreplicaset-tmp/122/state_machine/state_machine.rs is completed
+minimization of ./vreplicaset-tmp/123/state_machine/action.rs is completed
+verus succeeded with time: 104207ms
+minimization of ./vreplicaset-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 177..=207 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+minimization of ./vreplicaset-tmp/124/temporal_logic/mod.rs is completed
+minimization of ./vreplicaset-tmp/125/temporal_logic/defs.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 90..=90 } in "./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+commenting out line Lines { lines: 136..=138 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+minimization of ./vreplicaset-tmp/127/controller_examples/v_replica_set_controller/mod.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 218..=218 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+minimization of ./vreplicaset-tmp/128/controller_examples/v_replica_set_controller/exec/mod.rs is completed
+verus succeeded with time: 104046ms
+commenting out line Lines { lines: 449..=487 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 100126ms
+commenting out line Lines { lines: 467..=467 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+commenting out line Lines { lines: 279..=280 } in "./vreplicaset-tmp/129/controller_examples/v_replica_set_controller/exec/reconciler.rs"
+verus failed, reverting
+commenting out line Lines { lines: 265..=265 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 93..=93 } in "./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 146..=148 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 118170ms
+commenting out line Lines { lines: 220..=220 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 118072ms
+commenting out line Lines { lines: 495..=495 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 115945ms
+commenting out line Lines { lines: 470..=470 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 292..=296 } in "./vreplicaset-tmp/129/controller_examples/v_replica_set_controller/exec/reconciler.rs"
+verus failed, reverting
+commenting out line Lines { lines: 96..=96 } in "./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 121950ms
+commenting out line Lines { lines: 266..=266 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 192..=192 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 116949ms
+commenting out line Lines { lines: 221..=221 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 113680ms
+commenting out line Lines { lines: 473..=473 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 117509ms
+commenting out line Lines { lines: 490..=496 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 297..=297 } in "./vreplicaset-tmp/129/controller_examples/v_replica_set_controller/exec/reconciler.rs"
+verus failed, reverting
+commenting out line Lines { lines: 104..=111 } in "./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 116813ms
+commenting out line Lines { lines: 268..=268 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 118639ms
+commenting out line Lines { lines: 191..=193 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 119892ms
+commenting out line Lines { lines: 224..=224 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 115736ms
+commenting out line Lines { lines: 506..=506 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 118931ms
+commenting out line Lines { lines: 476..=476 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 116877ms
+commenting out line Lines { lines: 310..=318 } in "./vreplicaset-tmp/129/controller_examples/v_replica_set_controller/exec/reconciler.rs"
+verus failed, reverting
+commenting out line Lines { lines: 122..=122 } in "./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 118597ms
+commenting out line Lines { lines: 269..=269 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 113887ms
+commenting out line Lines { lines: 199..=201 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 120721ms
+commenting out line Lines { lines: 225..=228 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 119966ms
+commenting out line Lines { lines: 501..=507 } in "./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+verus succeeded with time: 123767ms
+commenting out line Lines { lines: 441..=480 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+commenting out line Lines { lines: 319..=319 } in "./vreplicaset-tmp/129/controller_examples/v_replica_set_controller/exec/reconciler.rs"
+verus failed, reverting
+commenting out line Lines { lines: 125..=125 } in "./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 116914ms
+commenting out line Lines { lines: 270..=270 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 214..=214 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 230..=230 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 120030ms
+minimization of ./vreplicaset-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs is completed
+minimization of ./vreplicaset-tmp/130/controller_examples/v_replica_set_controller/model/mod.rs is completed
+verus succeeded with time: 117746ms
+commenting out line Lines { lines: 487..=487 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+minimization of ./vreplicaset-tmp/131/controller_examples/v_replica_set_controller/model/reconciler.rs is completed
+minimization of ./vreplicaset-tmp/132/controller_examples/v_replica_set_controller/proof/mod.rs is completed
+verus succeeded with time: 120110ms
+commenting out line Lines { lines: 321..=321 } in "./vreplicaset-tmp/129/controller_examples/v_replica_set_controller/exec/reconciler.rs"
+minimization of ./vreplicaset-tmp/133/controller_examples/v_replica_set_controller/proof/helper_invariants/mod.rs is completed
+minimization of ./vreplicaset-tmp/134/controller_examples/v_replica_set_controller/proof/helper_invariants/predicate.rs is completed
+commenting out line Lines { lines: 52..=52 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 128..=128 } in "./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 117344ms
+commenting out line Lines { lines: 272..=272 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 116685ms
+commenting out line Lines { lines: 247..=259 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 117743ms
+commenting out line Lines { lines: 231..=234 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 397..=397 } in "./vreplicaset-tmp/129/controller_examples/v_replica_set_controller/exec/reconciler.rs"
+verus succeeded with time: 116664ms
+commenting out line Lines { lines: 481..=488 } in "./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 118785ms
+commenting out line Lines { lines: 53..=53 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 131..=131 } in "./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 119860ms
+commenting out line Lines { lines: 273..=273 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 263..=265 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 113017ms
+commenting out line Lines { lines: 236..=236 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 404..=405 } in "./vreplicaset-tmp/129/controller_examples/v_replica_set_controller/exec/reconciler.rs"
+verus succeeded with time: 117660ms
+minimization of ./vreplicaset-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs is completed
+minimization of ./vreplicaset-tmp/136/controller_examples/v_replica_set_controller/proof/liveness/mod.rs is completed
+minimization of ./vreplicaset-tmp/137/controller_examples/v_replica_set_controller/proof/liveness/api_actions.rs is completed
+verus succeeded with time: 113697ms
+commenting out line Lines { lines: 58..=58 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+commenting out line Lines { lines: 33..=35 } in "./vreplicaset-tmp/138/controller_examples/v_replica_set_controller/proof/liveness/proof.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs is completed
+commenting out line Lines { lines: 106..=109 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 111073ms
+commenting out line Lines { lines: 278..=278 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 242..=267 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 115573ms
+commenting out line Lines { lines: 237..=237 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 406..=406 } in "./vreplicaset-tmp/129/controller_examples/v_replica_set_controller/exec/reconciler.rs"
+verus succeeded with time: 115392ms
+commenting out line Lines { lines: 49..=62 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 111..=111 } in "./vreplicaset-tmp/138/controller_examples/v_replica_set_controller/proof/liveness/proof.rs"
+verus succeeded with time: 113539ms
+commenting out line Lines { lines: 280..=280 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 117..=117 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 317..=321 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 116870ms
+commenting out line Lines { lines: 238..=241 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 411..=411 } in "./vreplicaset-tmp/129/controller_examples/v_replica_set_controller/exec/reconciler.rs"
+verus succeeded with time: 117680ms
+commenting out line Lines { lines: 48..=63 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 104..=112 } in "./vreplicaset-tmp/138/controller_examples/v_replica_set_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 114..=118 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 116286ms
+commenting out line Lines { lines: 281..=281 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 313..=322 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 424..=424 } in "./vreplicaset-tmp/129/controller_examples/v_replica_set_controller/exec/reconciler.rs"
+verus succeeded with time: 120112ms
+commenting out line Lines { lines: 246..=246 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 117897ms
+commenting out line Lines { lines: 131..=131 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 113..=113 } in "./vreplicaset-tmp/138/controller_examples/v_replica_set_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 167..=170 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 329..=329 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 116738ms
+commenting out line Lines { lines: 283..=283 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/129/controller_examples/v_replica_set_controller/exec/reconciler.rs is completed
+minimization of ./vreplicaset-tmp/140/controller_examples/v_replica_set_controller/proof/liveness/spec.rs is completed
+commenting out line Lines { lines: 46..=55 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus succeeded with time: 123961ms
+commenting out line Lines { lines: 248..=248 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 119193ms
+commenting out line Lines { lines: 134..=134 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 118484ms
+commenting out line Lines { lines: 121..=121 } in "./vreplicaset-tmp/138/controller_examples/v_replica_set_controller/proof/liveness/proof.rs"
+verus succeeded with time: 117768ms
+commenting out line Lines { lines: 172..=175 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=345 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 117290ms
+commenting out line Lines { lines: 288..=288 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 56..=65 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus succeeded with time: 117714ms
+commenting out line Lines { lines: 259..=259 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 114126ms
+commenting out line Lines { lines: 135..=136 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 123..=123 } in "./vreplicaset-tmp/138/controller_examples/v_replica_set_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 178..=190 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 346..=346 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 117767ms
+commenting out line Lines { lines: 297..=297 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 84..=88 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus succeeded with time: 114097ms
+commenting out line Lines { lines: 260..=260 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 138..=138 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 119..=124 } in "./vreplicaset-tmp/138/controller_examples/v_replica_set_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 356..=358 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 239..=242 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 122640ms
+commenting out line Lines { lines: 299..=299 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 96..=97 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus succeeded with time: 116083ms
+commenting out line Lines { lines: 262..=262 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 111338ms
+commenting out line Lines { lines: 145..=145 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 129..=131 } in "./vreplicaset-tmp/138/controller_examples/v_replica_set_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 354..=359 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 121510ms
+commenting out line Lines { lines: 244..=247 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 118344ms
+commenting out line Lines { lines: 294..=307 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 81..=105 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus succeeded with time: 114009ms
+commenting out line Lines { lines: 265..=265 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 115047ms
+commenting out line Lines { lines: 146..=146 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/138/controller_examples/v_replica_set_controller/proof/liveness/proof.rs is completed
+minimization of ./vreplicaset-tmp/142/controller_examples/v_replica_set_controller/proof/predicate.rs is completed
+minimization of ./vreplicaset-tmp/143/controller_examples/v_replica_set_controller/proof/utility_lemmas.rs is completed
+minimization of ./vreplicaset-tmp/144/controller_examples/v_replica_set_controller/trusted/mod.rs is completed
+minimization of ./vreplicaset-tmp/145/controller_examples/v_replica_set_controller/trusted/exec_types.rs is completed
+minimization of ./vreplicaset-tmp/146/controller_examples/v_replica_set_controller/trusted/liveness_theorem.rs is completed
+minimization of ./vreplicaset-tmp/147/controller_examples/v_replica_set_controller/trusted/spec_types.rs is completed
+minimization of ./vreplicaset-tmp/148/controller_examples/v_replica_set_controller/trusted/step.rs is completed
+minimization of ./vreplicaset-tmp/149/vstd_ext/mod.rs is completed
+commenting out line Lines { lines: 19..=19 } in "./vreplicaset-tmp/150/vstd_ext/map_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 370..=370 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 250..=262 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 255..=308 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+verus succeeded with time: 113014ms
+verus succeeded with time: 109440ms
+commenting out line Lines { lines: 208..=269 } in "./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+commenting out line Lines { lines: 127..=149 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+commenting out line Lines { lines: 111..=115 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/150/vstd_ext/map_lib.rs is completed
+commenting out line Lines { lines: 11..=11 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 104866ms
+commenting out line Lines { lines: 368..=371 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 365..=365 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 254..=309 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/77/kubernetes_cluster/proof/validation_rule.rs is completed
+minimization of ./vreplicaset-tmp/152/vstd_ext/option_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 126..=150 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+commenting out line Lines { lines: 13..=13 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 123..=124 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus failed, reverting
+commenting out line Lines { lines: 21..=21 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 367..=372 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 356..=369 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 331..=331 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 16..=16 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 108..=132 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus failed, reverting
+commenting out line Lines { lines: 238..=238 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 366..=373 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 116205ms
+commenting out line Lines { lines: 19..=23 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 452..=452 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 107514ms
+commenting out line Lines { lines: 332..=332 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 421..=421 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus failed, reverting
+commenting out line Lines { lines: 18..=18 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus succeeded with time: 109027ms
+commenting out line Lines { lines: 241..=241 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 376..=376 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 29..=29 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 467..=467 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 111975ms
+commenting out line Lines { lines: 336..=336 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 415..=422 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus failed, reverting
+commenting out line Lines { lines: 32..=32 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus succeeded with time: 111022ms
+commenting out line Lines { lines: 242..=243 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 46..=46 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 107715ms
+commenting out line Lines { lines: 374..=377 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 458..=470 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 102188ms
+commenting out line Lines { lines: 337..=337 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 442..=442 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus succeeded with time: 107035ms
+commenting out line Lines { lines: 33..=33 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 245..=245 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 50..=50 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 385..=387 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 111093ms
+commenting out line Lines { lines: 339..=339 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 346..=346 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 483..=483 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 436..=443 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus succeeded with time: 108272ms
+commenting out line Lines { lines: 35..=35 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus succeeded with time: 111289ms
+commenting out line Lines { lines: 269..=269 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 388..=388 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 111028ms
+commenting out line Lines { lines: 53..=53 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 109694ms
+commenting out line Lines { lines: 347..=347 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 107174ms
+commenting out line Lines { lines: 484..=484 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 497..=497 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus succeeded with time: 113341ms
+commenting out line Lines { lines: 36..=36 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 270..=270 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 54..=54 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 113334ms
+commenting out line Lines { lines: 389..=391 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 110761ms
+commenting out line Lines { lines: 349..=349 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 432..=432 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 498..=498 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus failed, reverting
+commenting out line Lines { lines: 472..=485 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 112366ms
+commenting out line Lines { lines: 30..=38 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 392..=392 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 276..=278 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 114181ms
+commenting out line Lines { lines: 48..=56 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 109897ms
+commenting out line Lines { lines: 439..=439 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 108674ms
+commenting out line Lines { lines: 502..=502 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus failed, reverting
+commenting out line Lines { lines: 488..=498 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 118574ms
+commenting out line Lines { lines: 47..=47 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 279..=279 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 113585ms
+commenting out line Lines { lines: 384..=393 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 111655ms
+commenting out line Lines { lines: 61..=61 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 109090ms
+commenting out line Lines { lines: 440..=440 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 503..=503 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus failed, reverting
+commenting out line Lines { lines: 48..=48 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 499..=499 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 281..=281 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 421..=423 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 62..=62 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 106773ms
+commenting out line Lines { lines: 490..=508 } in "./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs"
+verus succeeded with time: 109665ms
+commenting out line Lines { lines: 441..=441 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 112881ms
+commenting out line Lines { lines: 50..=50 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus succeeded with time: 112871ms
+commenting out line Lines { lines: 443..=504 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 119029ms
+commenting out line Lines { lines: 282..=282 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 431..=433 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 63..=63 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/141/controller_examples/v_replica_set_controller/proof/liveness/terminate.rs is completed
+commenting out line Lines { lines: 14..=16 } in "./vreplicaset-tmp/154/vstd_ext/set_lib.rs"
+verus succeeded with time: 108342ms
+commenting out line Lines { lines: 427..=447 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 109140ms
+commenting out line Lines { lines: 51..=51 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 519..=519 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 283..=283 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 434..=434 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 112991ms
+commenting out line Lines { lines: 59..=65 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 17..=19 } in "./vreplicaset-tmp/154/vstd_ext/set_lib.rs"
+verus succeeded with time: 109118ms
+commenting out line Lines { lines: 426..=448 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 49..=52 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 510..=522 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 109474ms
+commenting out line Lines { lines: 287..=287 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 57..=66 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 447..=447 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 45..=45 } in "./vreplicaset-tmp/154/vstd_ext/set_lib.rs"
+verus succeeded with time: 108187ms
+commenting out line Lines { lines: 485..=485 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 53..=53 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 535..=535 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 76..=76 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 109969ms
+commenting out line Lines { lines: 234..=307 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 111892ms
+commenting out line Lines { lines: 448..=448 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 488..=488 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 46..=46 } in "./vreplicaset-tmp/154/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 69..=69 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus succeeded with time: 105546ms
+commenting out line Lines { lines: 536..=536 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 233..=308 } in "./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 78..=78 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 109178ms
+commenting out line Lines { lines: 450..=450 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 107575ms
+commenting out line Lines { lines: 492..=492 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 49..=49 } in "./vreplicaset-tmp/154/vstd_ext/set_lib.rs"
+verus succeeded with time: 111986ms
+commenting out line Lines { lines: 70..=70 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 524..=537 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/135/controller_examples/v_replica_set_controller/proof/helper_invariants/proof.rs is completed
+minimization of ./vreplicaset-tmp/155/vstd_ext/string_map.rs is completed
+minimization of ./vreplicaset-tmp/156/vstd_ext/string_view.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 79..=79 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+commenting out line Lines { lines: 28..=31 } in "./vreplicaset-tmp/157/vstd_ext/vec_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 446..=451 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 103925ms
+commenting out line Lines { lines: 502..=502 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/154/vstd_ext/set_lib.rs is completed
+verus succeeded with time: 108091ms
+commenting out line Lines { lines: 72..=72 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 540..=550 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 100840ms
+commenting out line Lines { lines: 74..=80 } in "./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/157/vstd_ext/vec_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 469..=469 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 99111ms
+commenting out line Lines { lines: 503..=503 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 97254ms
+commenting out line Lines { lines: 73..=73 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/151/vstd_ext/multiset_lib.rs is completed
+verus succeeded with time: 99009ms
+commenting out line Lines { lines: 551..=551 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 467..=471 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 94791ms
+commenting out line Lines { lines: 504..=504 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 91104ms
+commenting out line Lines { lines: 67..=75 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 466..=472 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 93671ms
+commenting out line Lines { lines: 506..=552 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 92320ms
+commenting out line Lines { lines: 505..=505 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 92560ms
+commenting out line Lines { lines: 84..=84 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus succeeded with time: 85456ms
+commenting out line Lines { lines: 636..=639 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 464..=473 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 94907ms
+commenting out line Lines { lines: 506..=506 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 85..=85 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 478..=481 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 640..=643 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 90772ms
+commenting out line Lines { lines: 507..=507 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 91952ms
+commenting out line Lines { lines: 88..=88 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 477..=482 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 666..=666 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 93030ms
+commenting out line Lines { lines: 483..=509 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 90504ms
+commenting out line Lines { lines: 89..=89 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 475..=483 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 651..=667 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 482..=510 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 87..=90 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 677..=677 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 505..=505 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 558..=558 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 674..=678 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 91..=91 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 503..=506 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 92336ms
+commenting out line Lines { lines: 563..=563 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 754..=757 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 100..=102 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 501..=507 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 566..=566 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 758..=761 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 109..=115 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 523..=523 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+verus succeeded with time: 91078ms
+commenting out line Lines { lines: 568..=568 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+commenting out line Lines { lines: 772..=772 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 116..=121 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 522..=524 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 769..=773 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 90740ms
+commenting out line Lines { lines: 569..=569 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 136..=136 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 526..=526 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 789..=789 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 92703ms
+commenting out line Lines { lines: 573..=573 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 135..=137 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 516..=527 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 780..=790 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 90024ms
+commenting out line Lines { lines: 575..=575 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 141..=141 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 535..=537 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 891..=891 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 90741ms
+commenting out line Lines { lines: 576..=576 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 140..=142 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus succeeded with time: 94014ms
+commenting out line Lines { lines: 557..=557 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 882..=900 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 91497ms
+commenting out line Lines { lines: 577..=578 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 139..=143 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 556..=558 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1032..=1036 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 90928ms
+commenting out line Lines { lines: 580..=580 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 158..=164 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 552..=560 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 86696ms
+commenting out line Lines { lines: 1040..=1040 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 92163ms
+commenting out line Lines { lines: 581..=581 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 155..=165 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 569..=573 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 79568ms
+commenting out line Lines { lines: 1041..=1041 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+verus succeeded with time: 89972ms
+commenting out line Lines { lines: 583..=583 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+commenting out line Lines { lines: 168..=168 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 588..=588 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 82668ms
+commenting out line Lines { lines: 1042..=1042 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 90316ms
+commenting out line Lines { lines: 587..=587 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 90688ms
+commenting out line Lines { lines: 166..=169 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 582..=590 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 83259ms
+commenting out line Lines { lines: 1046..=1046 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 172..=172 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus succeeded with time: 89505ms
+commenting out line Lines { lines: 589..=589 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 81283ms
+commenting out line Lines { lines: 1052..=1052 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1000..=1056 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 652..=654 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 173..=173 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus succeeded with time: 85054ms
+commenting out line Lines { lines: 1084..=1088 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 89438ms
+commenting out line Lines { lines: 590..=590 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 651..=655 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 81671ms
+commenting out line Lines { lines: 1092..=1092 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 171..=175 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 664..=667 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 89164ms
+commenting out line Lines { lines: 591..=591 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 211..=211 } in "./vreplicaset-tmp/153/vstd_ext/seq_lib.rs"
+verus succeeded with time: 87376ms
+commenting out line Lines { lines: 1093..=1093 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 676..=679 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 88758ms
+commenting out line Lines { lines: 593..=593 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/153/vstd_ext/seq_lib.rs is completed
+verus succeeded with time: 86503ms
+commenting out line Lines { lines: 1094..=1094 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 689..=689 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 90387ms
+commenting out line Lines { lines: 596..=596 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 80652ms
+commenting out line Lines { lines: 1098..=1098 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 84708ms
+commenting out line Lines { lines: 687..=690 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 86460ms
+commenting out line Lines { lines: 597..=597 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 700..=703 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 94369ms
+commenting out line Lines { lines: 1058..=1099 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 600..=600 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 699..=704 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 601..=601 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 95048ms
+commenting out line Lines { lines: 1190..=1190 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 716..=719 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1183..=1194 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 85554ms
+commenting out line Lines { lines: 555..=604 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 734..=737 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 554..=605 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1278..=1281 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 945..=948 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1282..=1285 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 653..=653 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 958..=960 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1308..=1308 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 86911ms
+commenting out line Lines { lines: 658..=658 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 957..=961 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1293..=1309 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 661..=661 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 989..=989 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1319..=1319 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 87694ms
+commenting out line Lines { lines: 663..=663 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 990..=990 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1316..=1320 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 86401ms
+commenting out line Lines { lines: 664..=664 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 992..=992 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1398..=1401 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 88248ms
+commenting out line Lines { lines: 668..=668 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 86459ms
+commenting out line Lines { lines: 987..=994 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1402..=1405 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 87859ms
+commenting out line Lines { lines: 670..=670 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 985..=995 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1416..=1416 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 87276ms
+commenting out line Lines { lines: 671..=671 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 984..=996 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1413..=1417 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 86066ms
+commenting out line Lines { lines: 672..=673 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1011..=1014 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1433..=1433 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 85276ms
+commenting out line Lines { lines: 675..=675 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1085..=1091 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 86997ms
+commenting out line Lines { lines: 676..=676 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1424..=1434 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1084..=1092 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 86803ms
+commenting out line Lines { lines: 678..=678 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1535..=1535 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1107..=1110 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 85993ms
+commenting out line Lines { lines: 682..=682 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 86650ms
+commenting out line Lines { lines: 1547..=1547 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 85237ms
+commenting out line Lines { lines: 1104..=1111 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 86635ms
+commenting out line Lines { lines: 684..=684 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1548..=1548 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1125..=1128 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 87351ms
+commenting out line Lines { lines: 685..=685 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1526..=1553 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1152..=1154 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 87654ms
+commenting out line Lines { lines: 686..=686 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1670..=1674 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1147..=1155 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 86107ms
+commenting out line Lines { lines: 688..=688 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1678..=1678 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1195..=1216 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 86557ms
+commenting out line Lines { lines: 691..=691 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1684..=1684 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1194..=1217 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 85763ms
+commenting out line Lines { lines: 692..=692 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 80747ms
+commenting out line Lines { lines: 1658..=1689 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1240..=1240 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 84473ms
+commenting out line Lines { lines: 695..=695 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 85890ms
+commenting out line Lines { lines: 1239..=1247 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1697..=1701 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 696..=696 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1238..=1248 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 84699ms
+commenting out line Lines { lines: 1705..=1705 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus succeeded with time: 86193ms
+commenting out line Lines { lines: 650..=699 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1264..=1267 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 83441ms
+commenting out line Lines { lines: 1691..=1706 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 649..=700 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1294..=1297 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 84315ms
+commenting out line Lines { lines: 1803..=1803 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1796..=1807 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1293..=1298 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 754..=754 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1857..=1857 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1314..=1317 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 87583ms
+commenting out line Lines { lines: 759..=759 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 85350ms
+commenting out line Lines { lines: 1848..=1861 } in "./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1331..=1339 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 762..=762 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 87522ms
+minimization of ./vreplicaset-tmp/139/controller_examples/v_replica_set_controller/proof/liveness/resource_match.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 1330..=1340 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 83521ms
+commenting out line Lines { lines: 764..=764 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1329..=1341 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 79851ms
+commenting out line Lines { lines: 767..=767 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1366..=1369 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 80522ms
+commenting out line Lines { lines: 771..=771 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1359..=1371 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 80783ms
+commenting out line Lines { lines: 773..=773 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1358..=1372 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 82463ms
+commenting out line Lines { lines: 774..=774 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1387..=1393 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 82198ms
+commenting out line Lines { lines: 775..=776 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1410..=1425 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 80758ms
+commenting out line Lines { lines: 778..=778 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1408..=1426 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 80814ms
+commenting out line Lines { lines: 779..=779 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1483..=1488 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 81762ms
+commenting out line Lines { lines: 781..=781 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1482..=1489 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 82607ms
+commenting out line Lines { lines: 785..=785 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1610..=1612 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 79974ms
+commenting out line Lines { lines: 787..=787 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1613..=1615 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 79768ms
+commenting out line Lines { lines: 788..=788 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1621..=1621 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 80484ms
+commenting out line Lines { lines: 789..=789 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 81003ms
+commenting out line Lines { lines: 1622..=1622 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 791..=791 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1623..=1623 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 80848ms
+commenting out line Lines { lines: 794..=794 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 80294ms
+commenting out line Lines { lines: 1624..=1624 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 80856ms
+commenting out line Lines { lines: 795..=795 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 79498ms
+commenting out line Lines { lines: 1631..=1631 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 80400ms
+commenting out line Lines { lines: 796..=796 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 81780ms
+commenting out line Lines { lines: 1632..=1632 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 80939ms
+commenting out line Lines { lines: 799..=799 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 79873ms
+commenting out line Lines { lines: 1633..=1633 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 80330ms
+commenting out line Lines { lines: 800..=800 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1640..=1640 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 80353ms
+commenting out line Lines { lines: 749..=803 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 81604ms
+commenting out line Lines { lines: 1641..=1641 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 747..=804 } in "./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 79390ms
+commenting out line Lines { lines: 1643..=1643 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/75/kubernetes_cluster/proof/message.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 1644..=1644 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 76854ms
+commenting out line Lines { lines: 1639..=1647 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1609..=1649 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1608..=1650 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1668..=1687 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1667..=1688 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1722..=1727 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1721..=1729 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1707..=1732 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1706..=1733 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1746..=1758 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1745..=1759 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1793..=1795 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1826..=1828 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1866..=1866 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 78096ms
+commenting out line Lines { lines: 1868..=1868 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1869..=1869 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus succeeded with time: 76309ms
+commenting out line Lines { lines: 1863..=1872 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1862..=1873 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1890..=1893 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1889..=1894 } in "./vreplicaset-tmp/126/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./vreplicaset-tmp/126/temporal_logic/rules.rs is completed

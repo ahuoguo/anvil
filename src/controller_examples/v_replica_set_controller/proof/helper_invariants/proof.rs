@@ -46,22 +46,22 @@ pub proof fn lemma_eventually_always_no_pending_update_or_update_status_request_
         &&& VRSCluster::pod_event_disabled()(s)
     };
 
-    assert forall |s: VRSCluster, s_prime: VRSCluster| #[trigger]  #[trigger] stronger_next(s, s_prime) implies VRSCluster::every_new_req_msg_if_in_flight_then_satisfies(requirements)(s, s_prime) by {
-        assert forall |msg: VRSMessage| (!s.in_flight().contains(msg) || requirements(msg, s)) && #[trigger] s_prime.in_flight().contains(msg)
-        implies requirements(msg, s_prime) by {
-            if s.in_flight().contains(msg) {
-                assert(requirements(msg, s));
-                assert(requirements(msg, s_prime));
-            } else {
-                let step = choose |step| VRSCluster::next_step(s, s_prime, step);
-                match step {
-                    _ => {
-                        assert(requirements(msg, s_prime));
-                    }
-                }
-            }
-        }
-    }
+//    assert forall |s: VRSCluster, s_prime: VRSCluster| #[trigger]  #[trigger] stronger_next(s, s_prime) implies VRSCluster::every_new_req_msg_if_in_flight_then_satisfies(requirements)(s, s_prime) by {
+////        assert forall |msg: VRSMessage| (!s.in_flight().contains(msg) || requirements(msg, s)) && #[trigger] s_prime.in_flight().contains(msg)
+////        implies requirements(msg, s_prime) by {
+////            if s.in_flight().contains(msg) {
+//////                assert(requirements(msg, s));
+//////                assert(requirements(msg, s_prime));
+////            } else {
+////                let step = choose |step| VRSCluster::next_step(s, s_prime, step);
+////                match step {
+////                    _ => {
+//////                        assert(requirements(msg, s_prime));
+////                    }
+////                }
+////            }
+////        }
+//    }
 
     invariant_n!(
         spec, lift_action(stronger_next), 
@@ -129,22 +129,22 @@ pub proof fn lemma_eventually_always_every_create_matching_pod_request_implies_a
         implies requirements(msg, s_prime) by {
             if requirements_antecedent(msg, s) {
                 if s.in_flight().contains(msg) {
-                    assert(requirements(msg, s));
+//                    assert(requirements(msg, s));
 
                     let diff = choose |diff: usize| #[trigger] at_vrs_step_with_vrs(vrs, VReplicaSetReconcileStep::AfterCreatePod(diff))(s);
-                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
                     assert(at_vrs_step_with_vrs(vrs, VReplicaSetReconcileStep::AfterCreatePod(diff))(s_prime)
                         || at_vrs_step_with_vrs(vrs, VReplicaSetReconcileStep::AfterCreatePod((diff - 1) as usize))(s_prime));
 
-                    assert(requirements(msg, s_prime));
+//                    assert(requirements(msg, s_prime));
                 } else {
                     let step = choose |step| VRSCluster::next_step(s, s_prime, step);
                     let cr_key = step.get_ControllerStep_0().1.get_Some_0();
                     let local_step = s.ongoing_reconciles()[cr_key].local_state.reconcile_step;
                     let local_step_prime = s_prime.ongoing_reconciles()[cr_key].local_state.reconcile_step;
                     let new_diff = local_step_prime.get_AfterCreatePod_0();
-                    assert(at_vrs_step_with_vrs(vrs, VReplicaSetReconcileStep::AfterCreatePod(new_diff))(s_prime));
-                    assert(requirements(msg, s_prime));
+//                    assert(at_vrs_step_with_vrs(vrs, VReplicaSetReconcileStep::AfterCreatePod(new_diff))(s_prime));
+//                    assert(requirements(msg, s_prime));
                 }
             }
         }
@@ -236,14 +236,14 @@ pub proof fn lemma_eventually_always_every_delete_matching_pod_request_implies_a
         implies requirements(msg, s_prime) by {
             if requirements_antecedent(msg, s) {
                 if s.in_flight().contains(msg) {
-                    assert(requirements(msg, s));
+//                    assert(requirements(msg, s));
 
                     let diff = choose |diff: usize| #[trigger] at_vrs_step_with_vrs(vrs, VReplicaSetReconcileStep::AfterDeletePod(diff))(s);
-                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
                     assert(at_vrs_step_with_vrs(vrs, VReplicaSetReconcileStep::AfterDeletePod(diff))(s_prime)
                         || at_vrs_step_with_vrs(vrs, VReplicaSetReconcileStep::AfterDeletePod((diff + 1) as usize))(s_prime));
 
-                    assert(requirements(msg, s_prime));
+//                    assert(requirements(msg, s_prime));
                 } else {
                     let content = msg.content;
                     let obj = s.resources()[content.get_delete_request().key];
@@ -279,13 +279,13 @@ pub proof fn lemma_eventually_always_every_delete_matching_pod_request_implies_a
                     ));
                     assert(controller_owners.contains(vrs.controller_owner_ref()));
 
-                    assert(cr_key.name == key.name);
+//                    assert(cr_key.name == key.name);
                     assert(at_vrs_step_with_vrs(vrs, VReplicaSetReconcileStep::AfterDeletePod(new_diff))(s_prime));
-                    assert(requirements(msg, s_prime));
+//                    assert(requirements(msg, s_prime));
                 }
             } else {
                 if s.in_flight().contains(msg) {
-                    assert(!requirements_antecedent(msg, s));
+//                    assert(!requirements_antecedent(msg, s));
                     let content = msg.content;
                     let key = content.get_delete_request().key;
                     let obj = s.resources()[key];

@@ -111,7 +111,7 @@ proof fn lemma_true_leads_to_always_current_state_matches(vrs: VReplicaSetView)
             // Instantiate exists statement.
             assert((|diff| lift_state(num_diff_pods_is(vrs, diff)))(diff).satisfied_by(ex));
         }
-        assert(valid(true_pred::<VRSCluster>().implies(exists_num_diff_pods_is)));
+//        assert(valid(true_pred::<VRSCluster>().implies(exists_num_diff_pods_is)));
         temp_pred_equality(true_pred::<VRSCluster>(), tla_exists(|diff| lift_state(num_diff_pods_is(vrs, diff))));
     });
 
