@@ -117,28 +117,28 @@ pub proof fn lemma_always_response_at_after_get_resource_step_is_resource_get_re
         lift_state(FBCluster::each_object_in_reconcile_has_consistent_key_and_valid_metadata()),
         later(lift_state(FBCluster::key_of_object_in_matched_ok_get_resp_message_is_same_as_key_of_pending_req(key)))
     );
-    assert forall |s: FBCluster, s_prime: FBCluster| inv(s) && #[trigger] next(s, s_prime) implies inv(s_prime) by {
-        if at_fb_step(key, FluentBitReconcileStep::AfterKRequestStep(ActionKind::Get, sub_resource))(s_prime) {
-            let step = choose |step| FBCluster::next_step(s, s_prime, step);
-            match step {
-                Step::ControllerStep(input) => {
-                    let cr_key = input.1.get_Some_0();
-                    if cr_key == key {
-                        assert(s_prime.ongoing_reconciles()[key].pending_req_msg.is_Some());
-                        assert(resource_get_request_msg(resource_key)(s_prime.ongoing_reconciles()[key].pending_req_msg.get_Some_0()));
-                    } else {
-                        assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
-                    }
-                },
-                Step::RestartController() => {
-                    assert(false);
-                },
-                _ => {
-                    assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
-                }
-            }
-        }
-    }
+//    assert forall |s: FBCluster, s_prime: FBCluster| inv(s) && #[trigger] next(s, s_prime) implies inv(s_prime) by {
+//        if at_fb_step(key, FluentBitReconcileStep::AfterKRequestStep(ActionKind::Get, sub_resource))(s_prime) {
+//            let step = choose |step| FBCluster::next_step(s, s_prime, step);
+//            match step {
+//                Step::ControllerStep(input) => {
+//                    let cr_key = input.1.get_Some_0();
+//                    if cr_key == key {
+////                        assert(s_prime.ongoing_reconciles()[key].pending_req_msg.is_Some());
+////                        assert(resource_get_request_msg(resource_key)(s_prime.ongoing_reconciles()[key].pending_req_msg.get_Some_0()));
+//                    } else {
+////                        assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
+//                    }
+//                },
+//                Step::RestartController() => {
+////                    assert(false);
+//                },
+//                _ => {
+////                    assert(s_prime.ongoing_reconciles()[key] == s.ongoing_reconciles()[key]);
+//                }
+//            }
+//        }
+//    }
     init_invariant(spec, FBCluster::init(), next, inv);
 }
 
@@ -256,15 +256,15 @@ pub proof fn lemma_eventually_always_every_resource_update_request_implies_at_af
                     make_fluentbit_pod_spec_determined_by_spec_and_name(fb, s.ongoing_reconciles()[key].triggering_cr);
                     let resp = step.get_ControllerStep_0().0.get_Some_0();
                     assert(FBCluster::is_ok_get_response_msg()(resp));
-                    assert(s.in_flight().contains(resp));
-                    assert(resp.content.get_get_response().res.get_Ok_0().metadata.resource_version == msg.content.get_update_request().obj.metadata.resource_version);
+//                    assert(s.in_flight().contains(resp));
+//                    assert(resp.content.get_get_response().res.get_Ok_0().metadata.resource_version == msg.content.get_update_request().obj.metadata.resource_version);
                     if s.resources().contains_key(resource_key) && resp.content.get_get_response().res.get_Ok_0().metadata.resource_version == s.resources()[resource_key].metadata.resource_version {
-                        assert(resp.content.get_get_response().res.get_Ok_0() == s.resources()[resource_key]);
-                        assert(s_prime.resources()[resource_key] == s.resources()[resource_key]);
+//                        assert(resp.content.get_get_response().res.get_Ok_0() == s.resources()[resource_key]);
+//                        assert(s_prime.resources()[resource_key] == s.resources()[resource_key]);
                     }
                 } else {
-                    assert(requirements(msg, s));
-                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                    assert(requirements(msg, s));
+//                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
                 }
             }
         }
@@ -353,8 +353,8 @@ pub proof fn lemma_eventually_always_object_in_every_resource_update_request_onl
                 if !s.in_flight().contains(msg) {
                     lemma_resource_create_or_update_request_msg_implies_key_in_reconcile_equals(sub_resource, fb, s, s_prime, msg, step);
                 } else {
-                    assert(requirements(msg, s));
-                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                    assert(requirements(msg, s));
+//                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
                 }
             }
         }
@@ -439,8 +439,8 @@ pub proof fn lemma_eventually_always_every_resource_create_request_implies_at_af
                     lemma_resource_create_or_update_request_msg_implies_key_in_reconcile_equals(sub_resource, fb, s, s_prime, msg, step);
                     make_fluentbit_pod_spec_determined_by_spec_and_name(fb, s.ongoing_reconciles()[key].triggering_cr);
                 } else {
-                    assert(requirements(msg, s));
-                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
+//                    assert(requirements(msg, s));
+//                    assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
                 }
             }
         }
@@ -483,47 +483,47 @@ pub proof fn lemma_always_no_update_status_request_msg_in_flight_of_except_daemo
     );
 
     let resource_key = get_request(sub_resource, fb).key;
-    assert forall |s, s_prime: FBCluster| inv(s) && #[trigger] stronger_next(s, s_prime) implies inv(s_prime) by {
-        if sub_resource != SubResource::DaemonSet {
-            assert forall |msg: FBMessage| s_prime.in_flight().contains(msg) implies !(#[trigger] resource_update_status_request_msg(resource_key)(msg)) by {
-                if s.in_flight().contains(msg) {
-                    assert(!resource_update_status_request_msg(resource_key)(msg));
-                } else {
-                    let step = choose |step: FBStep| FBCluster::next_step(s, s_prime, step);
-                    match step {
-                        Step::ControllerStep(input) => {
-                            if input.1.is_Some() {
-                                let cr_key = input.1.get_Some_0();
-                                if s.ongoing_reconciles().contains_key(cr_key) {
-                                    match s.ongoing_reconciles()[cr_key].local_state.reconcile_step {
-                                        FluentBitReconcileStep::Init => {},
-                                        FluentBitReconcileStep::AfterKRequestStep(_, resource) => {
-                                            match resource {
-                                                SubResource::ServiceAccount => {},
-                                                SubResource::Role => {},
-                                                SubResource::RoleBinding => {},
-                                                SubResource::Service => {},
-                                                SubResource::DaemonSet => {},
-                                            }
-                                        },
-                                        _ => {}
-                                    }
-                                } else {}
-                            } else {}
-                            assert(!resource_update_status_request_msg(resource_key)(msg));
-                        },
-                        Step::BuiltinControllersStep(_) => {
-                            assert(resource_key.kind != Kind::StatefulSetKind && resource_key.kind != Kind::DaemonSetKind);
-                            assert(!resource_update_status_request_msg(resource_key)(msg));
-                        },
-                        _ => {
-                            assert(!resource_update_status_request_msg(resource_key)(msg));
-                        }
-                    }
-                }
-            }
-        }
-    }
+//    assert forall |s, s_prime: FBCluster| inv(s) && #[trigger] stronger_next(s, s_prime) implies inv(s_prime) by {
+//        if sub_resource != SubResource::DaemonSet {
+////            assert forall |msg: FBMessage| s_prime.in_flight().contains(msg) implies !(#[trigger] resource_update_status_request_msg(resource_key)(msg)) by {
+////                if s.in_flight().contains(msg) {
+//////                    assert(!resource_update_status_request_msg(resource_key)(msg));
+////                } else {
+////                    let step = choose |step: FBStep| FBCluster::next_step(s, s_prime, step);
+////                    match step {
+////                        Step::ControllerStep(input) => {
+////                            if input.1.is_Some() {
+////                                let cr_key = input.1.get_Some_0();
+////                                if s.ongoing_reconciles().contains_key(cr_key) {
+////                                    match s.ongoing_reconciles()[cr_key].local_state.reconcile_step {
+////                                        FluentBitReconcileStep::Init => {},
+////                                        FluentBitReconcileStep::AfterKRequestStep(_, resource) => {
+////                                            match resource {
+////                                                SubResource::ServiceAccount => {},
+////                                                SubResource::Role => {},
+////                                                SubResource::RoleBinding => {},
+////                                                SubResource::Service => {},
+////                                                SubResource::DaemonSet => {},
+////                                            }
+////                                        },
+////                                        _ => {}
+////                                    }
+////                                } else {}
+////                            } else {}
+//////                            assert(!resource_update_status_request_msg(resource_key)(msg));
+////                        },
+////                        Step::BuiltinControllersStep(_) => {
+//////                            assert(resource_key.kind != Kind::StatefulSetKind && resource_key.kind != Kind::DaemonSetKind);
+//////                            assert(!resource_update_status_request_msg(resource_key)(msg));
+////                        },
+////                        _ => {
+//////                            assert(!resource_update_status_request_msg(resource_key)(msg));
+////                        }
+////                    }
+////                }
+////            }
+//        }
+//    }
     init_invariant(spec, FBCluster::init(), stronger_next, inv);
 }
 
@@ -549,62 +549,62 @@ pub proof fn lemma_always_no_update_status_request_msg_not_from_bc_in_flight_of_
     );
 
     let resource_key = get_request(SubResource::DaemonSet, fb).key;
-    assert forall |s, s_prime: FBCluster| inv(s) && #[trigger] stronger_next(s, s_prime) implies inv(s_prime) by {
-        assert forall |msg: FBMessage| #[trigger] s_prime.in_flight().contains(msg) && msg.dst.is_ApiServer() && !msg.src.is_BuiltinController() && msg.content.is_update_status_request()
-        implies msg.content.get_update_status_request().key() != resource_key by {
-            if s.in_flight().contains(msg) {
-                assert(msg.content.get_update_status_request().key() != resource_key);
-            } else {
-                let step = choose |step: FBStep| FBCluster::next_step(s, s_prime, step);
-                match step {
-                    Step::ControllerStep(input) => {
-                        if input.1.is_Some() {
-                            let cr_key = input.1.get_Some_0();
-                            if s.ongoing_reconciles().contains_key(cr_key) {
-                                match s.ongoing_reconciles()[cr_key].local_state.reconcile_step {
-                                    FluentBitReconcileStep::Init => {},
-                                    FluentBitReconcileStep::AfterKRequestStep(_, resource) => {
-                                        match resource {
-                                            SubResource::ServiceAccount => {},
-                                            SubResource::Role => {},
-                                            SubResource::RoleBinding => {},
-                                            SubResource::Service => {},
-                                            SubResource::DaemonSet => {},
-                                        }
-                                    },
-                                    _ => {}
-                                }
-                            } else {}
-                        } else {}
-                        assert(!msg.content.is_update_status_request());
-                        assert(false);
-                    },
-                    Step::ApiServerStep(_) => {
-                        assert(!msg.content.is_APIRequest());
-                        assert(!msg.content.is_update_status_request());
-                        assert(false);
-                    },
-                    Step::ClientStep() => {
-                        assert(!msg.content.is_update_status_request());
-                        assert(false);
-                    },
-                    Step::BuiltinControllersStep(_) => {
-                        assert(msg.src.is_BuiltinController());
-                        assert(false);
-                    },
-                    Step::FailTransientlyStep(_) => {
-                        assert(!msg.content.is_APIRequest());
-                        assert(!msg.content.is_update_status_request());
-                        assert(false);
-                    },
-                    _ => {
-                        assert(!s_prime.in_flight().contains(msg));
-                        assert(false);
-                    }
-                }
-            }
-        }
-    }
+//    assert forall |s, s_prime: FBCluster| inv(s) && #[trigger] stronger_next(s, s_prime) implies inv(s_prime) by {
+////        assert forall |msg: FBMessage| #[trigger] s_prime.in_flight().contains(msg) && msg.dst.is_ApiServer() && !msg.src.is_BuiltinController() && msg.content.is_update_status_request()
+////        implies msg.content.get_update_status_request().key() != resource_key by {
+////            if s.in_flight().contains(msg) {
+//////                assert(msg.content.get_update_status_request().key() != resource_key);
+////            } else {
+////                let step = choose |step: FBStep| FBCluster::next_step(s, s_prime, step);
+////                match step {
+////                    Step::ControllerStep(input) => {
+////                        if input.1.is_Some() {
+////                            let cr_key = input.1.get_Some_0();
+////                            if s.ongoing_reconciles().contains_key(cr_key) {
+////                                match s.ongoing_reconciles()[cr_key].local_state.reconcile_step {
+////                                    FluentBitReconcileStep::Init => {},
+////                                    FluentBitReconcileStep::AfterKRequestStep(_, resource) => {
+////                                        match resource {
+////                                            SubResource::ServiceAccount => {},
+////                                            SubResource::Role => {},
+////                                            SubResource::RoleBinding => {},
+////                                            SubResource::Service => {},
+////                                            SubResource::DaemonSet => {},
+////                                        }
+////                                    },
+////                                    _ => {}
+////                                }
+////                            } else {}
+////                        } else {}
+//////                        assert(!msg.content.is_update_status_request());
+//////                        assert(false);
+////                    },
+////                    Step::ApiServerStep(_) => {
+//////                        assert(!msg.content.is_APIRequest());
+//////                        assert(!msg.content.is_update_status_request());
+//////                        assert(false);
+////                    },
+////                    Step::ClientStep() => {
+//////                        assert(!msg.content.is_update_status_request());
+//////                        assert(false);
+////                    },
+////                    Step::BuiltinControllersStep(_) => {
+//////                        assert(msg.src.is_BuiltinController());
+//////                        assert(false);
+////                    },
+////                    Step::FailTransientlyStep(_) => {
+//////                        assert(!msg.content.is_APIRequest());
+//////                        assert(!msg.content.is_update_status_request());
+//////                        assert(false);
+////                    },
+////                    _ => {
+//////                        assert(!s_prime.in_flight().contains(msg));
+//////                        assert(false);
+////                    }
+////                }
+////            }
+////        }
+//    }
     init_invariant(spec, FBCluster::init(), stronger_next, inv);
 }
 
@@ -720,21 +720,21 @@ proof fn lemma_always_resource_object_create_or_update_request_msg_has_one_contr
                 lemma_resource_create_or_update_request_msg_implies_key_in_reconcile_equals(sub_resource, fb, s, s_prime, msg, step);
                 let cr = s.ongoing_reconciles()[key].triggering_cr;
                 if resource_create_request_msg(resource_key)(msg) {
-                    assert(msg.content.get_create_request().obj == make(sub_resource, cr, s.ongoing_reconciles()[key].local_state).get_Ok_0());
-                    assert(msg.content.get_create_request().obj.metadata.finalizers.is_None());
-                    assert(msg.content.get_create_request().obj.metadata.owner_references == Some(seq![
-                        make_owner_references_with_name_and_uid(key.name, cr.metadata.uid.get_Some_0())
-                    ]));
+//                    assert(msg.content.get_create_request().obj == make(sub_resource, cr, s.ongoing_reconciles()[key].local_state).get_Ok_0());
+//                    assert(msg.content.get_create_request().obj.metadata.finalizers.is_None());
+//                    assert(msg.content.get_create_request().obj.metadata.owner_references == Some(seq![
+//                        make_owner_references_with_name_and_uid(key.name, cr.metadata.uid.get_Some_0())
+//                    ]));
                 }
                 if resource_update_request_msg(resource_key)(msg) {
-                    assert(step.get_ControllerStep_0().0.get_Some_0().content.is_get_response());
-                    assert(step.get_ControllerStep_0().0.get_Some_0().content.get_get_response().res.is_Ok());
-                    assert(update(
-                        sub_resource, cr, s.ongoing_reconciles()[key].local_state, step.get_ControllerStep_0().0.get_Some_0().content.get_get_response().res.get_Ok_0()
-                    ).is_Ok());
-                    assert(msg.content.get_update_request().obj == update(
-                        sub_resource, cr, s.ongoing_reconciles()[key].local_state, step.get_ControllerStep_0().0.get_Some_0().content.get_get_response().res.get_Ok_0()
-                    ).get_Ok_0());
+//                    assert(step.get_ControllerStep_0().0.get_Some_0().content.is_get_response());
+//                    assert(step.get_ControllerStep_0().0.get_Some_0().content.get_get_response().res.is_Ok());
+//                    assert(update(
+//                        sub_resource, cr, s.ongoing_reconciles()[key].local_state, step.get_ControllerStep_0().0.get_Some_0().content.get_get_response().res.get_Ok_0()
+//                    ).is_Ok());
+//                    assert(msg.content.get_update_request().obj == update(
+//                        sub_resource, cr, s.ongoing_reconciles()[key].local_state, step.get_ControllerStep_0().0.get_Some_0().content.get_get_response().res.get_Ok_0()
+//                    ).get_Ok_0());
                     assert(msg.content.get_update_request().obj.metadata.owner_references == Some(seq![
                         make_owner_references_with_name_and_uid(key.name, cr.metadata.uid.get_Some_0())
                     ]));
@@ -779,17 +779,17 @@ pub proof fn lemma_resource_create_or_update_request_msg_implies_key_in_reconcil
     let cr = s.ongoing_reconciles()[key].triggering_cr;
     let resource_key = get_request(sub_resource, fb).key;
     if resource_create_request_msg(get_request(sub_resource, fb).key)(msg) || resource_update_request_msg(get_request(sub_resource, fb).key)(msg) {
-        assert(step.is_ControllerStep());
-        assert(s.ongoing_reconciles().contains_key(cr_key));
+//        assert(step.is_ControllerStep());
+//        assert(s.ongoing_reconciles().contains_key(cr_key));
         let local_step = s.ongoing_reconciles()[cr_key].local_state.reconcile_step;
         let local_step_prime = s_prime.ongoing_reconciles()[cr_key].local_state.reconcile_step;
-        assert(local_step_prime.is_AfterKRequestStep());
-        assert(local_step.is_AfterKRequestStep() && local_step.get_AfterKRequestStep_0() == ActionKind::Get);
+//        assert(local_step_prime.is_AfterKRequestStep());
+//        assert(local_step.is_AfterKRequestStep() && local_step.get_AfterKRequestStep_0() == ActionKind::Get);
         if resource_create_request_msg(get_request(sub_resource, fb).key)(msg) {
-            assert(local_step_prime.get_AfterKRequestStep_0() == ActionKind::Create);
+//            assert(local_step_prime.get_AfterKRequestStep_0() == ActionKind::Create);
         }
         if resource_update_request_msg(get_request(sub_resource, fb).key)(msg) {
-            assert(local_step_prime.get_AfterKRequestStep_0() == ActionKind::Update);
+//            assert(local_step_prime.get_AfterKRequestStep_0() == ActionKind::Update);
         }
         assert_by(
             cr_key == fb.object_ref() && local_step.get_AfterKRequestStep_1() == sub_resource && FBCluster::pending_req_msg_is(s_prime, cr_key, msg),
@@ -877,32 +877,32 @@ pub proof fn lemma_eventually_always_no_delete_resource_request_msg_in_flight(sp
         assert forall |msg: FBMessage| (!s.in_flight().contains(msg) || requirements(msg, s)) && #[trigger] s_prime.in_flight().contains(msg)
         implies requirements(msg, s_prime) by {
             if s.in_flight().contains(msg) {
-                assert(requirements(msg, s));
-                assert(requirements(msg, s_prime));
+//                assert(requirements(msg, s));
+//                assert(requirements(msg, s_prime));
             } else {
                 let step = choose |step| FBCluster::next_step(s, s_prime, step);
                 match step {
                     Step::BuiltinControllersStep(_) => {
                         if s.resources().contains_key(resource_key) {
                             let owner_refs = s.resources()[resource_key].metadata.owner_references;
-                            assert(owner_refs == Some(seq![fb.controller_owner_ref()]));
+//                            assert(owner_refs == Some(seq![fb.controller_owner_ref()]));
                             assert(owner_reference_to_object_reference(owner_refs.get_Some_0()[0], key.namespace) == key);
                         }
                     },
                     Step::ControllerStep(input) => {
                         let cr_key = input.1.get_Some_0();
                         if s_prime.ongoing_reconciles()[cr_key].pending_req_msg.is_Some() {
-                            assert(msg == s_prime.ongoing_reconciles()[cr_key].pending_req_msg.get_Some_0());
-                            assert(!s_prime.ongoing_reconciles()[cr_key].pending_req_msg.get_Some_0().content.is_delete_request());
+//                            assert(msg == s_prime.ongoing_reconciles()[cr_key].pending_req_msg.get_Some_0());
+//                            assert(!s_prime.ongoing_reconciles()[cr_key].pending_req_msg.get_Some_0().content.is_delete_request());
                         }
                     },
                     Step::ClientStep() => {
                         if msg.content.is_delete_request() {
-                            assert(msg.content.get_delete_request().key.kind != resource_key.kind);
+//                            assert(msg.content.get_delete_request().key.kind != resource_key.kind);
                         }
                     },
                     _ => {
-                        assert(requirements(msg, s_prime));
+//                        assert(requirements(msg, s_prime));
                     }
                 }
             }
@@ -1079,32 +1079,32 @@ pub proof fn lemma_always_no_create_resource_request_msg_without_name_in_flight(
     let resource_key = get_request(sub_resource, fb).key;
     let inv = no_create_resource_request_msg_without_name_in_flight(sub_resource, fb);
 
-    assert forall |s: FBCluster| #[trigger] FBCluster::init()(s) implies inv(s) by {}
+//    assert forall |s: FBCluster| #[trigger] FBCluster::init()(s) implies inv(s) by {}
 
-    assert forall |s: FBCluster, s_prime: FBCluster| #[trigger] FBCluster::next()(s, s_prime) && inv(s) implies inv(s_prime) by {
-        assert forall |msg: FBMessage|
-            !(s_prime.in_flight().contains(msg) && #[trigger] resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(msg))
-        by {
-            let step = choose |step| FBCluster::next_step(s, s_prime, step);
-            match step {
-                Step::ApiServerStep(_) => {
-                    if !s.in_flight().contains(msg) && s_prime.in_flight().contains(msg) {
-                        assert(!resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(msg));
-                    }
-                },
-                Step::ControllerStep(_) => {
-                    if !s.in_flight().contains(msg) && s_prime.in_flight().contains(msg) {
-                        assert(!resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(msg));
-                    }
-                },
-                _ => {
-                    if !s.in_flight().contains(msg) && s_prime.in_flight().contains(msg) {
-                        assert(!resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(msg));
-                    }
-                },
-            }
-        }
-    }
+//    assert forall |s: FBCluster, s_prime: FBCluster| #[trigger] FBCluster::next()(s, s_prime) && inv(s) implies inv(s_prime) by {
+////        assert forall |msg: FBMessage|
+////            !(s_prime.in_flight().contains(msg) && #[trigger] resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(msg))
+////        by {
+////            let step = choose |step| FBCluster::next_step(s, s_prime, step);
+////            match step {
+////                Step::ApiServerStep(_) => {
+////                    if !s.in_flight().contains(msg) && s_prime.in_flight().contains(msg) {
+//////                        assert(!resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(msg));
+////                    }
+////                },
+////                Step::ControllerStep(_) => {
+////                    if !s.in_flight().contains(msg) && s_prime.in_flight().contains(msg) {
+//////                        assert(!resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(msg));
+////                    }
+////                },
+////                _ => {
+////                    if !s.in_flight().contains(msg) && s_prime.in_flight().contains(msg) {
+//////                        assert(!resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(msg));
+////                    }
+////                },
+////            }
+////        }
+//    }
     init_invariant(spec, FBCluster::init(), FBCluster::next(), inv);
 }
 

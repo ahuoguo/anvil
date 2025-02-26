@@ -205,7 +205,7 @@ fn make_new_ports(ports: Vec<ContainerPort>) -> (service_ports: Vec<ServicePort>
         }
         service_ports.push(service_port);
         proof {
-            assert(service_port@ == model_resource::make_service_port(port@));
+//            assert(service_port@ == model_resource::make_service_port(port@));
             assert_seqs_equal!(
                 service_ports@.map_values(|p: ServicePort| p@),
                 Seq::new(i as nat, |k: int| model_resource::make_service_port(ports[k]@)).push(service_port@)

@@ -90,7 +90,7 @@ proof fn lemma_true_leads_to_always_current_state_matches(fbc: FluentBitConfigVi
         assert forall |res: SubResource| #[trigger] resource_state_matches::<FluentBitConfigMaker>(res, fbc, s.resources()) by {
             tla_forall_apply(a_to_p, res);
             assert(a_to_p(res).satisfied_by(ex));
-            assert(sub_resource_state_matches(res, fbc)(s));
+//            assert(sub_resource_state_matches(res, fbc)(s));
         }
     }
     temp_pred_equality(tla_forall(|res: SubResource| lift_state(sub_resource_state_matches(res, fbc))), lift_state(current_state_matches::<FluentBitConfigMaker>(fbc)));
@@ -101,9 +101,9 @@ proof fn lemma_true_leads_to_always_state_matches_for_all_resources(fbc: FluentB
 {
     let spec = assumption_and_invariants_of_all_phases(fbc);
 
-    assert forall |action: ActionKind, sub_resource: SubResource| #![auto] spec.entails(always(lift_state(FBCCluster::pending_req_in_flight_or_resp_in_flight_at_reconcile_state(fbc.object_ref(), at_step_closure(FluentBitConfigReconcileStep::AfterKRequestStep(action, sub_resource)))))) by {
-        always_tla_forall_apply(spec, |step: (ActionKind, SubResource)| lift_state(FBCCluster::pending_req_in_flight_or_resp_in_flight_at_reconcile_state(fbc.object_ref(), at_step_closure(FluentBitConfigReconcileStep::AfterKRequestStep(step.0, step.1)))), (action, sub_resource));
-    }
+//    assert forall |action: ActionKind, sub_resource: SubResource| #![auto] spec.entails(always(lift_state(FBCCluster::pending_req_in_flight_or_resp_in_flight_at_reconcile_state(fbc.object_ref(), at_step_closure(FluentBitConfigReconcileStep::AfterKRequestStep(action, sub_resource)))))) by {
+//        always_tla_forall_apply(spec, |step: (ActionKind, SubResource)| lift_state(FBCCluster::pending_req_in_flight_or_resp_in_flight_at_reconcile_state(fbc.object_ref(), at_step_closure(FluentBitConfigReconcileStep::AfterKRequestStep(step.0, step.1)))), (action, sub_resource));
+//    }
 
     // The use of termination property ensures spec |= true ~> reconcile_idle.
     terminate::reconcile_eventually_terminates(spec, fbc);
@@ -221,21 +221,21 @@ proof fn lemma_from_init_step_to_after_get_secret_step(spec: TempPred<FBCCluster
     combine_spec_entails_always_n!(
         spec, lift_action(stronger_next), lift_action(FBCCluster::next()), lift_state(FBCCluster::crash_disabled())
     );
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || post(s_prime) by {
-        let step = choose |step| FBCCluster::next_step(s, s_prime, step);
-        match step {
-            Step::ControllerStep(input) => {
-                if input.1.get_Some_0() != fbc.object_ref() {
-                    assert(pre(s_prime));
-                } else {
-                    assert(post(s_prime));
-                }
-            },
-            _ => {
-                assert(pre(s_prime));
-            }
-        }
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || post(s_prime) by {
+//        let step = choose |step| FBCCluster::next_step(s, s_prime, step);
+//        match step {
+//            Step::ControllerStep(input) => {
+//                if input.1.get_Some_0() != fbc.object_ref() {
+////                    assert(pre(s_prime));
+//                } else {
+////                    assert(post(s_prime));
+//                }
+//            },
+//            _ => {
+////                assert(pre(s_prime));
+//            }
+//        }
+//    }
     FBCCluster::lemma_pre_leads_to_post_by_controller(spec, input, stronger_next, FBCCluster::continue_reconcile(), pre, post);
 }
 

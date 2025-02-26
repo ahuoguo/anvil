@@ -84,7 +84,7 @@ pub proof fn lemma_always_object_in_every_resource_create_or_update_request_msg_
     };
     assert forall |s, s_prime| inv(s) && #[trigger] next(s, s_prime) implies inv(s_prime) by {
         assert forall |msg| #[trigger] s_prime.in_flight().contains(msg) implies create_valid(msg, s_prime) && update_valid(msg, s_prime) by {
-            assert(s.kubernetes_api_state.uid_counter <= s_prime.kubernetes_api_state.uid_counter);
+//            assert(s.kubernetes_api_state.uid_counter <= s_prime.kubernetes_api_state.uid_counter);
             if !s.in_flight().contains(msg) {
                 let step = choose |step| FBCluster::next_step(s, s_prime, step);
                 lemma_resource_create_or_update_request_msg_implies_key_in_reconcile_equals(sub_resource, fb, s, s_prime, msg, step);
@@ -92,16 +92,16 @@ pub proof fn lemma_always_object_in_every_resource_create_or_update_request_msg_
                 let cr = s.ongoing_reconciles()[input.1.get_Some_0()].triggering_cr;
                 if resource_create_request_msg(resource_key)(msg) {
                     let owner_refs = msg.content.get_create_request().obj.metadata.owner_references;
-                    assert(owner_refs == Some(seq![cr.controller_owner_ref()]));
-                    assert(owner_refs.is_Some());
-                    assert(owner_refs.get_Some_0().len() == 1);
-                    assert(owner_refs.get_Some_0()[0].uid < s.kubernetes_api_state.uid_counter);
+//                    assert(owner_refs == Some(seq![cr.controller_owner_ref()]));
+//                    assert(owner_refs.is_Some());
+//                    assert(owner_refs.get_Some_0().len() == 1);
+//                    assert(owner_refs.get_Some_0()[0].uid < s.kubernetes_api_state.uid_counter);
                 } else if resource_update_request_msg(resource_key)(msg) {
                     let owner_refs = msg.content.get_update_request().obj.metadata.owner_references;
-                    assert(owner_refs == Some(seq![cr.controller_owner_ref()]));
-                    assert(owner_refs.is_Some());
-                    assert(owner_refs.get_Some_0().len() == 1);
-                    assert(owner_refs.get_Some_0()[0].uid < s.kubernetes_api_state.uid_counter);
+//                    assert(owner_refs == Some(seq![cr.controller_owner_ref()]));
+//                    assert(owner_refs.is_Some());
+//                    assert(owner_refs.get_Some_0().len() == 1);
+//                    assert(owner_refs.get_Some_0()[0].uid < s.kubernetes_api_state.uid_counter);
                 }
             }
         }
@@ -142,7 +142,7 @@ pub proof fn lemma_always_every_owner_ref_of_every_object_in_etcd_has_different_
     let resource_key = get_request(sub_resource, fb).key;
     assert forall |s, s_prime| inv(s) && #[trigger] next(s, s_prime) implies inv(s_prime) by {
         if s_prime.resources().contains_key(resource_key) {
-            assert(s.kubernetes_api_state.uid_counter <= s_prime.kubernetes_api_state.uid_counter);
+//            assert(s.kubernetes_api_state.uid_counter <= s_prime.kubernetes_api_state.uid_counter);
             let step = choose |step| FBCluster::next_step(s, s_prime, step);
             match step {
                 Step::ApiServerStep(input) => {

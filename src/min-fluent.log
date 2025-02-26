@@ -1,0 +1,2315 @@
+   Compiling minimize v0.1.0 (/local/abai/verus/source/tools/minimize)
+warning: unused variable: `tokens`
+    --> tools/minimize/src/main.rs:1511:55
+     |
+1511 |             Meta::List(MetaList { path, delimiter: _, tokens }) => {
+     |                                                       ^^^^^^ help: try ignoring the field: `tokens: _`
+     |
+     = note: `#[warn(unused_variables)]` on by default
+
+warning: `minimize` (bin "minimize") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 6.26s
+     Running `/local/abai/verus/source/target/release/minimize -d ./fluent-min-tmp/ /local/abai/anvil/src/fluent_controller.d`
+verus succeeded with time: 101814ms
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/0/fluent_controller.rs is completed
+minimization of ./fluent-min-tmp/1/external_api/mod.rs is completed
+minimization of ./fluent-min-tmp/2/external_api/exec.rs is completed
+minimization of ./fluent-min-tmp/3/external_api/spec.rs is completed
+minimization of ./fluent-min-tmp/5/controller_examples/fluent_controller/fluentbit/mod.rs is completed
+minimization of ./fluent-min-tmp/4/controller_examples/fluent_controller/mod.rs is completed
+minimization of ./fluent-min-tmp/6/controller_examples/fluent_controller/fluentbit/exec/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/7/controller_examples/fluent_controller/fluentbit/exec/reconciler.rs is completed
+minimization of ./fluent-min-tmp/8/controller_examples/fluent_controller/fluentbit/exec/resource/mod.rs is completed
+minimization of ./fluent-min-tmp/9/controller_examples/fluent_controller/fluentbit/exec/resource/common.rs is completed
+minimization of ./fluent-min-tmp/10/controller_examples/fluent_controller/fluentbit/exec/resource/daemon_set.rs is completed
+minimization of ./fluent-min-tmp/11/controller_examples/fluent_controller/fluentbit/exec/resource/role.rs is completed
+minimization of ./fluent-min-tmp/12/controller_examples/fluent_controller/fluentbit/exec/resource/role_binding.rs is completed
+commenting out line Lines { lines: 207..=207 } in "./fluent-min-tmp/13/controller_examples/fluent_controller/fluentbit/exec/resource/service.rs"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/14/controller_examples/fluent_controller/fluentbit/exec/resource/service_account.rs is completed
+minimization of ./fluent-min-tmp/16/controller_examples/fluent_controller/fluentbit/model/reconciler.rs is completed
+minimization of ./fluent-min-tmp/15/controller_examples/fluent_controller/fluentbit/model/mod.rs is completed
+minimization of ./fluent-min-tmp/17/controller_examples/fluent_controller/fluentbit/model/resource/mod.rs is completed
+minimization of ./fluent-min-tmp/19/controller_examples/fluent_controller/fluentbit/model/resource/daemon_set.rs is completed
+minimization of ./fluent-min-tmp/18/controller_examples/fluent_controller/fluentbit/model/resource/common.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/20/controller_examples/fluent_controller/fluentbit/model/resource/role.rs is completed
+minimization of ./fluent-min-tmp/21/controller_examples/fluent_controller/fluentbit/model/resource/role_binding.rs is completed
+minimization of ./fluent-min-tmp/22/controller_examples/fluent_controller/fluentbit/model/resource/service.rs is completed
+minimization of ./fluent-min-tmp/23/controller_examples/fluent_controller/fluentbit/model/resource/service_account.rs is completed
+minimization of ./fluent-min-tmp/25/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/mod.rs is completed
+minimization of ./fluent-min-tmp/24/controller_examples/fluent_controller/fluentbit/proof/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 126..=126 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+commenting out line Lines { lines: 86..=86 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+commenting out line Lines { lines: 98..=98 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+minimization of ./fluent-min-tmp/31/controller_examples/fluent_controller/fluentbit/proof/liveness/mod.rs is completed
+minimization of ./fluent-min-tmp/27/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/predicate.rs is completed
+commenting out line Lines { lines: 81..=102 } in "./fluent-min-tmp/29/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/unchangeable.rs"
+deps hack: "/local/abai/anvil/src/deps_hack"
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 120..=122 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+commenting out line Lines { lines: 42..=44 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus succeeded with time: 264107ms
+minimization of ./fluent-min-tmp/13/controller_examples/fluent_controller/fluentbit/exec/resource/service.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 134..=136 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 259612ms
+commenting out line Lines { lines: 127..=127 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 128..=128 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 80..=103 } in "./fluent-min-tmp/29/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/unchangeable.rs"
+verus failed, reverting
+commenting out line Lines { lines: 100..=100 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus succeeded with time: 266648ms
+commenting out line Lines { lines: 94..=94 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 269499ms
+commenting out line Lines { lines: 101..=101 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 148..=151 } in "./fluent-min-tmp/29/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/unchangeable.rs"
+verus failed, reverting
+commenting out line Lines { lines: 141..=141 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 263012ms
+commenting out line Lines { lines: 129..=129 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 101..=101 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 125..=129 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 262121ms
+commenting out line Lines { lines: 95..=95 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 260552ms
+commenting out line Lines { lines: 102..=102 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 221..=221 } in "./fluent-min-tmp/29/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 258242ms
+commenting out line Lines { lines: 133..=133 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 139..=142 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 141..=143 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 261591ms
+commenting out line Lines { lines: 98..=102 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus succeeded with time: 258283ms
+commenting out line Lines { lines: 105..=105 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 263734ms
+commenting out line Lines { lines: 96..=96 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 146..=148 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 263284ms
+commenting out line Lines { lines: 223..=223 } in "./fluent-min-tmp/29/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/unchangeable.rs"
+verus failed, reverting
+commenting out line Lines { lines: 154..=154 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 255717ms
+commenting out line Lines { lines: 106..=106 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 96..=103 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus succeeded with time: 265157ms
+commenting out line Lines { lines: 136..=136 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 262812ms
+commenting out line Lines { lines: 97..=97 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 146..=155 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 158..=158 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 263559ms
+commenting out line Lines { lines: 226..=226 } in "./fluent-min-tmp/29/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/unchangeable.rs"
+verus failed, reverting
+commenting out line Lines { lines: 112..=114 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus succeeded with time: 263092ms
+commenting out line Lines { lines: 107..=108 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 263228ms
+commenting out line Lines { lines: 119..=140 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 258339ms
+commenting out line Lines { lines: 100..=100 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 151..=159 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 163..=165 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 260085ms
+commenting out line Lines { lines: 228..=228 } in "./fluent-min-tmp/29/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 255650ms
+commenting out line Lines { lines: 110..=110 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 270350ms
+commenting out line Lines { lines: 131..=139 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus succeeded with time: 263054ms
+commenting out line Lines { lines: 101..=101 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 267797ms
+commenting out line Lines { lines: 165..=173 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 171..=171 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 163..=165 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 272814ms
+commenting out line Lines { lines: 215..=248 } in "./fluent-min-tmp/29/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/unchangeable.rs"
+verus succeeded with time: 273659ms
+commenting out line Lines { lines: 92..=124 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 257..=257 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 155..=173 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus succeeded with time: 271851ms
+commenting out line Lines { lines: 102..=102 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 168..=172 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 170..=170 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/29/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/unchangeable.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus failed, reverting
+commenting out line Lines { lines: 182..=182 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+commenting out line Lines { lines: 373..=377 } in "./fluent-min-tmp/35/controller_examples/fluent_controller/fluentbit/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 177..=186 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 258..=258 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 268098ms
+commenting out line Lines { lines: 103..=103 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 238..=238 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 388..=388 } in "./fluent-min-tmp/35/controller_examples/fluent_controller/fluentbit/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 168..=171 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 258447ms
+commenting out line Lines { lines: 184..=184 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 284..=288 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus succeeded with time: 262749ms
+commenting out line Lines { lines: 259..=259 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 266302ms
+commenting out line Lines { lines: 85..=106 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 239..=239 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 249577ms
+commenting out line Lines { lines: 175..=189 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 254896ms
+commenting out line Lines { lines: 389..=389 } in "./fluent-min-tmp/35/controller_examples/fluent_controller/fluentbit/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 210..=210 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 294..=294 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 84..=107 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 265792ms
+commenting out line Lines { lines: 261..=261 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 240..=240 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 253176ms
+commenting out line Lines { lines: 174..=190 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 291..=295 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus succeeded with time: 261310ms
+commenting out line Lines { lines: 400..=402 } in "./fluent-min-tmp/35/controller_examples/fluent_controller/fluentbit/proof/liveness/spec.rs"
+verus succeeded with time: 262193ms
+commenting out line Lines { lines: 211..=211 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 144..=144 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 260788ms
+commenting out line Lines { lines: 262..=262 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 243..=248 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 257500ms
+commenting out line Lines { lines: 245..=245 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 302..=306 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 412..=414 } in "./fluent-min-tmp/35/controller_examples/fluent_controller/fluentbit/proof/liveness/spec.rs"
+verus succeeded with time: 261628ms
+commenting out line Lines { lines: 213..=213 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 255498ms
+commenting out line Lines { lines: 148..=148 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 267774ms
+commenting out line Lines { lines: 265..=265 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 249..=249 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 258634ms
+commenting out line Lines { lines: 249..=249 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 317..=317 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 424..=426 } in "./fluent-min-tmp/35/controller_examples/fluent_controller/fluentbit/proof/liveness/spec.rs"
+verus succeeded with time: 254827ms
+commenting out line Lines { lines: 217..=217 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 142..=154 } in "./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 270820ms
+commenting out line Lines { lines: 266..=266 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 257883ms
+commenting out line Lines { lines: 233..=254 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 240..=251 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 309..=318 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 431..=433 } in "./fluent-min-tmp/35/controller_examples/fluent_controller/fluentbit/proof/liveness/spec.rs"
+verus succeeded with time: 262914ms
+commenting out line Lines { lines: 205..=220 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/26/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/owner_ref.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 40..=49 } in "./fluent-min-tmp/36/controller_examples/fluent_controller/fluentbit/proof/liveness/terminate.rs"
+verus succeeded with time: 260474ms
+commenting out line Lines { lines: 249..=269 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 239..=252 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 259..=264 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 352..=352 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 439..=441 } in "./fluent-min-tmp/35/controller_examples/fluent_controller/fluentbit/proof/liveness/spec.rs"
+verus succeeded with time: 271727ms
+commenting out line Lines { lines: 187..=224 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/36/controller_examples/fluent_controller/fluentbit/proof/liveness/terminate.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/37/controller_examples/fluent_controller/fluentbit/proof/predicate.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/38/controller_examples/fluent_controller/fluentbit/proof/resource.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/39/controller_examples/fluent_controller/fluentbit/trusted/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/40/controller_examples/fluent_controller/fluentbit/trusted/exec_types.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/41/controller_examples/fluent_controller/fluentbit/trusted/liveness_theorem.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/42/controller_examples/fluent_controller/fluentbit/trusted/maker.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/43/controller_examples/fluent_controller/fluentbit/trusted/spec_types.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/44/controller_examples/fluent_controller/fluentbit/trusted/step.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/45/controller_examples/fluent_controller/fluentbit_config/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/46/controller_examples/fluent_controller/fluentbit_config/exec/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/47/controller_examples/fluent_controller/fluentbit_config/exec/reconciler.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/48/controller_examples/fluent_controller/fluentbit_config/exec/resource/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/49/controller_examples/fluent_controller/fluentbit_config/exec/resource/common.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/50/controller_examples/fluent_controller/fluentbit_config/exec/resource/secret.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/51/controller_examples/fluent_controller/fluentbit_config/model/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/52/controller_examples/fluent_controller/fluentbit_config/model/reconciler.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/53/controller_examples/fluent_controller/fluentbit_config/model/resource/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/54/controller_examples/fluent_controller/fluentbit_config/model/resource/common.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/55/controller_examples/fluent_controller/fluentbit_config/model/resource/secret.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/56/controller_examples/fluent_controller/fluentbit_config/proof/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/57/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 84..=84 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 247..=270 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 306..=306 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 270255ms
+commenting out line Lines { lines: 256..=265 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 267125ms
+commenting out line Lines { lines: 354..=354 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 446..=448 } in "./fluent-min-tmp/35/controller_examples/fluent_controller/fluentbit/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 235..=235 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 309..=311 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 261179ms
+commenting out line Lines { lines: 92..=92 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 256807ms
+commenting out line Lines { lines: 307..=307 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 266484ms
+commenting out line Lines { lines: 344..=344 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/35/controller_examples/fluent_controller/fluentbit/proof/liveness/spec.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus succeeded with time: 261285ms
+commenting out line Lines { lines: 358..=358 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+minimization of ./fluent-min-tmp/59/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/predicate.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 124..=124 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 228..=236 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 355..=355 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 260777ms
+commenting out line Lines { lines: 93..=93 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 309..=310 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 345..=345 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 261349ms
+commenting out line Lines { lines: 125..=125 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 267789ms
+commenting out line Lines { lines: 347..=361 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 289..=292 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 250816ms
+commenting out line Lines { lines: 94..=94 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 265136ms
+commenting out line Lines { lines: 356..=356 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 250246ms
+commenting out line Lines { lines: 312..=312 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 346..=346 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 258586ms
+commenting out line Lines { lines: 401..=406 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus succeeded with time: 272818ms
+commenting out line Lines { lines: 127..=127 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 298..=298 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 263504ms
+commenting out line Lines { lines: 95..=95 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 255540ms
+commenting out line Lines { lines: 348..=359 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 257464ms
+commenting out line Lines { lines: 313..=313 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 338..=350 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 407..=407 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus succeeded with time: 259094ms
+commenting out line Lines { lines: 131..=131 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 295..=299 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 346..=360 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 266285ms
+commenting out line Lines { lines: 98..=98 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 247799ms
+commenting out line Lines { lines: 315..=315 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 426..=426 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 265364ms
+commenting out line Lines { lines: 395..=412 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus succeeded with time: 253540ms
+commenting out line Lines { lines: 134..=134 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 303..=306 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 390..=392 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 267662ms
+commenting out line Lines { lines: 99..=99 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 260761ms
+commenting out line Lines { lines: 316..=316 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 256995ms
+commenting out line Lines { lines: 422..=428 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 256035ms
+commenting out line Lines { lines: 117..=138 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 263412ms
+commenting out line Lines { lines: 417..=422 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 317..=317 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 441..=441 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 264664ms
+commenting out line Lines { lines: 100..=100 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 435..=435 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 264853ms
+commenting out line Lines { lines: 317..=317 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 257033ms
+commenting out line Lines { lines: 161..=167 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 414..=423 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 309..=318 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 261273ms
+commenting out line Lines { lines: 442..=442 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 259927ms
+commenting out line Lines { lines: 101..=101 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 436..=436 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 266650ms
+commenting out line Lines { lines: 318..=318 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 232..=232 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 466..=466 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 322..=324 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 263919ms
+commenting out line Lines { lines: 433..=445 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 261178ms
+commenting out line Lines { lines: 83..=104 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 430..=441 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 256731ms
+commenting out line Lines { lines: 328..=328 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 251666ms
+commenting out line Lines { lines: 468..=468 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 233..=233 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 330..=330 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 431..=446 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 82..=105 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 478..=478 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 272331ms
+commenting out line Lines { lines: 329..=329 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 260909ms
+commenting out line Lines { lines: 234..=234 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 265479ms
+commenting out line Lines { lines: 472..=472 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 327..=331 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 489..=489 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 140..=140 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 472..=483 } in "./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs"
+verus succeeded with time: 269367ms
+commenting out line Lines { lines: 331..=331 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 265616ms
+commenting out line Lines { lines: 236..=236 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 273087ms
+commenting out line Lines { lines: 461..=475 } in "./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 375..=375 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 265767ms
+commenting out line Lines { lines: 512..=512 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 253518ms
+commenting out line Lines { lines: 145..=145 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/32/controller_examples/fluent_controller/fluentbit/proof/liveness/daemon_set_match.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/61/controller_examples/fluent_controller/fluentbit_config/proof/liveness/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 34..=36 } in "./fluent-min-tmp/62/controller_examples/fluent_controller/fluentbit_config/proof/liveness/proof.rs"
+verus succeeded with time: 261922ms
+commenting out line Lines { lines: 333..=333 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 256541ms
+commenting out line Lines { lines: 237..=237 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 258309ms
+minimization of ./fluent-min-tmp/33/controller_examples/fluent_controller/fluentbit/proof/liveness/proof.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 111..=113 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 273934ms
+commenting out line Lines { lines: 376..=376 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 138..=151 } in "./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs"
+verus succeeded with time: 258773ms
+commenting out line Lines { lines: 515..=515 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 91..=91 } in "./fluent-min-tmp/62/controller_examples/fluent_controller/fluentbit_config/proof/liveness/proof.rs"
+verus succeeded with time: 254401ms
+commenting out line Lines { lines: 335..=335 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 265183ms
+commenting out line Lines { lines: 240..=240 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 118..=118 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/58/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/owner_ref.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 335..=339 } in "./fluent-min-tmp/64/controller_examples/fluent_controller/fluentbit_config/proof/liveness/spec.rs"
+verus succeeded with time: 277940ms
+commenting out line Lines { lines: 378..=378 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 278881ms
+commenting out line Lines { lines: 516..=516 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 92..=92 } in "./fluent-min-tmp/62/controller_examples/fluent_controller/fluentbit_config/proof/liveness/proof.rs"
+verus succeeded with time: 258354ms
+commenting out line Lines { lines: 337..=337 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 277236ms
+commenting out line Lines { lines: 241..=241 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 116..=119 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 350..=350 } in "./fluent-min-tmp/64/controller_examples/fluent_controller/fluentbit_config/proof/liveness/spec.rs"
+verus succeeded with time: 280223ms
+commenting out line Lines { lines: 382..=382 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 273515ms
+commenting out line Lines { lines: 519..=519 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 264963ms
+commenting out line Lines { lines: 89..=93 } in "./fluent-min-tmp/62/controller_examples/fluent_controller/fluentbit_config/proof/liveness/proof.rs"
+verus succeeded with time: 259047ms
+commenting out line Lines { lines: 340..=340 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus succeeded with time: 260469ms
+commenting out line Lines { lines: 225..=244 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 123..=125 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 257831ms
+commenting out line Lines { lines: 351..=351 } in "./fluent-min-tmp/64/controller_examples/fluent_controller/fluentbit_config/proof/liveness/spec.rs"
+verus succeeded with time: 262349ms
+commenting out line Lines { lines: 369..=385 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 273449ms
+commenting out line Lines { lines: 487..=523 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 87..=94 } in "./fluent-min-tmp/62/controller_examples/fluent_controller/fluentbit_config/proof/liveness/proof.rs"
+verus succeeded with time: 264675ms
+commenting out line Lines { lines: 341..=341 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 223..=245 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 135..=135 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 264674ms
+commenting out line Lines { lines: 362..=364 } in "./fluent-min-tmp/64/controller_examples/fluent_controller/fluentbit_config/proof/liveness/spec.rs"
+verus succeeded with time: 265463ms
+commenting out line Lines { lines: 485..=525 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 283244ms
+commenting out line Lines { lines: 350..=389 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 103..=105 } in "./fluent-min-tmp/62/controller_examples/fluent_controller/fluentbit_config/proof/liveness/proof.rs"
+verus succeeded with time: 262023ms
+commenting out line Lines { lines: 347..=347 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 284..=286 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 128..=136 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 374..=376 } in "./fluent-min-tmp/64/controller_examples/fluent_controller/fluentbit_config/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 400..=400 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 270161ms
+commenting out line Lines { lines: 555..=555 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 272697ms
+commenting out line Lines { lines: 228..=228 } in "./fluent-min-tmp/62/controller_examples/fluent_controller/fluentbit_config/proof/liveness/proof.rs"
+verus succeeded with time: 266954ms
+commenting out line Lines { lines: 348..=348 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 330..=330 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 140..=142 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 385..=387 } in "./fluent-min-tmp/64/controller_examples/fluent_controller/fluentbit_config/proof/liveness/spec.rs"
+verus succeeded with time: 270494ms
+commenting out line Lines { lines: 578..=578 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 393..=401 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 288553ms
+commenting out line Lines { lines: 230..=230 } in "./fluent-min-tmp/62/controller_examples/fluent_controller/fluentbit_config/proof/liveness/proof.rs"
+verus succeeded with time: 273746ms
+commenting out line Lines { lines: 301..=351 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 147..=147 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 266989ms
+commenting out line Lines { lines: 331..=331 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 392..=394 } in "./fluent-min-tmp/64/controller_examples/fluent_controller/fluentbit_config/proof/liveness/spec.rs"
+verus succeeded with time: 273416ms
+commenting out line Lines { lines: 579..=579 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 461..=461 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 260030ms
+commenting out line Lines { lines: 234..=234 } in "./fluent-min-tmp/62/controller_examples/fluent_controller/fluentbit_config/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 298..=352 } in "./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 145..=148 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 259989ms
+commenting out line Lines { lines: 323..=334 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 399..=401 } in "./fluent-min-tmp/64/controller_examples/fluent_controller/fluentbit_config/proof/liveness/spec.rs"
+verus succeeded with time: 268598ms
+commenting out line Lines { lines: 582..=582 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 462..=462 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 263623ms
+commenting out line Lines { lines: 223..=237 } in "./fluent-min-tmp/62/controller_examples/fluent_controller/fluentbit_config/proof/liveness/proof.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/30/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/validation.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 39..=48 } in "./fluent-min-tmp/65/controller_examples/fluent_controller/fluentbit_config/proof/liveness/terminate.rs"
+verus failed, reverting
+commenting out line Lines { lines: 192..=195 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 321..=335 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/64/controller_examples/fluent_controller/fluentbit_config/proof/liveness/spec.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/66/controller_examples/fluent_controller/fluentbit_config/proof/predicate.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/67/controller_examples/fluent_controller/fluentbit_config/proof/resource.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/68/controller_examples/fluent_controller/fluentbit_config/trusted/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/69/controller_examples/fluent_controller/fluentbit_config/trusted/exec_types.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/70/controller_examples/fluent_controller/fluentbit_config/trusted/liveness_theorem.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/71/controller_examples/fluent_controller/fluentbit_config/trusted/maker.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/72/controller_examples/fluent_controller/fluentbit_config/trusted/spec_types.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/73/controller_examples/fluent_controller/fluentbit_config/trusted/step.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/74/kubernetes_api_objects/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/75/kubernetes_api_objects/error.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/76/kubernetes_api_objects/exec/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/77/kubernetes_api_objects/exec/affinity.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/78/kubernetes_api_objects/exec/api_method.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/79/kubernetes_api_objects/exec/api_resource.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/80/kubernetes_api_objects/exec/common.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/81/kubernetes_api_objects/exec/config_map.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/82/kubernetes_api_objects/exec/container.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/83/kubernetes_api_objects/exec/daemon_set.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/84/kubernetes_api_objects/exec/dynamic.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/85/kubernetes_api_objects/exec/label_selector.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/86/kubernetes_api_objects/exec/object_meta.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/87/kubernetes_api_objects/exec/owner_reference.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/88/kubernetes_api_objects/exec/persistent_volume_claim.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/89/kubernetes_api_objects/exec/pod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/90/kubernetes_api_objects/exec/pod_template_spec.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/91/kubernetes_api_objects/exec/preconditions.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/92/kubernetes_api_objects/exec/prelude.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/93/kubernetes_api_objects/exec/resource.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/94/kubernetes_api_objects/exec/resource_requirements.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/95/kubernetes_api_objects/exec/role.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/96/kubernetes_api_objects/exec/role_binding.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/97/kubernetes_api_objects/exec/secret.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/98/kubernetes_api_objects/exec/service.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/99/kubernetes_api_objects/exec/service_account.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus succeeded with time: 252626ms
+commenting out line Lines { lines: 583..=583 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+minimization of ./fluent-min-tmp/100/kubernetes_api_objects/exec/stateful_set.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/101/kubernetes_api_objects/exec/toleration.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/102/kubernetes_api_objects/exec/volume.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/103/kubernetes_api_objects/exec/volume_resource_requirements.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/104/kubernetes_api_objects/spec/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/105/kubernetes_api_objects/spec/affinity.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/106/kubernetes_api_objects/spec/api_method.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/107/kubernetes_api_objects/spec/api_resource.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/108/kubernetes_api_objects/spec/common.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/109/kubernetes_api_objects/spec/config_map.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/110/kubernetes_api_objects/spec/container.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/111/kubernetes_api_objects/spec/daemon_set.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/112/kubernetes_api_objects/spec/dynamic.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus failed, reverting
+commenting out line Lines { lines: 465..=470 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+minimization of ./fluent-min-tmp/113/kubernetes_api_objects/spec/label_selector.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus succeeded with time: 250381ms
+minimization of ./fluent-min-tmp/62/controller_examples/fluent_controller/fluentbit_config/proof/liveness/proof.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus failed, reverting
+minimization of ./fluent-min-tmp/65/controller_examples/fluent_controller/fluentbit_config/proof/liveness/terminate.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/114/kubernetes_api_objects/spec/object_meta.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/115/kubernetes_api_objects/spec/owner_reference.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus failed, reverting
+commenting out line Lines { lines: 201..=201 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+minimization of ./fluent-min-tmp/116/kubernetes_api_objects/spec/persistent_volume_claim.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/117/kubernetes_api_objects/spec/pod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus failed, reverting
+commenting out line Lines { lines: 367..=369 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+minimization of ./fluent-min-tmp/118/kubernetes_api_objects/spec/pod_template_spec.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/119/kubernetes_api_objects/spec/preconditions.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/120/kubernetes_api_objects/spec/prelude.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/121/kubernetes_api_objects/spec/resource.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus succeeded with time: 204228ms
+commenting out line Lines { lines: 584..=584 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+minimization of ./fluent-min-tmp/122/kubernetes_api_objects/spec/resource_requirements.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/123/kubernetes_api_objects/spec/role.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/124/kubernetes_api_objects/spec/role_binding.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus failed, reverting
+commenting out line Lines { lines: 457..=475 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+minimization of ./fluent-min-tmp/125/kubernetes_api_objects/spec/secret.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/126/kubernetes_api_objects/spec/service.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/127/kubernetes_api_objects/spec/service_account.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus failed, reverting
+commenting out line Lines { lines: 198..=202 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/128/kubernetes_api_objects/spec/stateful_set.rs is completed
+commenting out line Lines { lines: 416..=416 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/129/kubernetes_api_objects/spec/toleration.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/130/kubernetes_api_objects/spec/volume.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/131/kubernetes_api_objects/spec/volume_resource_requirements.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/132/kubernetes_cluster/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/133/kubernetes_cluster/proof/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus succeeded with time: 191875ms
+commenting out line Lines { lines: 587..=587 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+commenting out line Lines { lines: 135..=139 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+minimization of ./fluent-min-tmp/135/kubernetes_cluster/proof/api_server_safety.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 171..=171 } in "./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 169..=172 } in "./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs"
+minimization of ./fluent-min-tmp/137/kubernetes_cluster/proof/cluster.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus failed, reverting
+commenting out line Lines { lines: 480..=485 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+commenting out line Lines { lines: 74..=103 } in "./fluent-min-tmp/138/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 206..=209 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 212605ms
+commenting out line Lines { lines: 417..=417 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 258937ms
+commenting out line Lines { lines: 588..=588 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 148..=148 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 179..=179 } in "./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 72..=104 } in "./fluent-min-tmp/138/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 270342ms
+commenting out line Lines { lines: 477..=486 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 220..=220 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 263688ms
+commenting out line Lines { lines: 409..=420 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 145..=149 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 265950ms
+commenting out line Lines { lines: 591..=591 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 259458ms
+commenting out line Lines { lines: 183..=183 } in "./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 184..=184 } in "./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 167..=167 } in "./fluent-min-tmp/138/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 267911ms
+commenting out line Lines { lines: 556..=556 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 212..=221 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 407..=421 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 290..=292 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 256546ms
+commenting out line Lines { lines: 592..=592 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 262597ms
+commenting out line Lines { lines: 185..=185 } in "./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 261624ms
+commenting out line Lines { lines: 171..=171 } in "./fluent-min-tmp/138/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 557..=557 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 225..=227 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 464..=464 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 288..=293 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 267829ms
+commenting out line Lines { lines: 595..=595 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 254011ms
+commenting out line Lines { lines: 187..=187 } in "./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 552..=561 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 257978ms
+commenting out line Lines { lines: 155..=174 } in "./fluent-min-tmp/138/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 233..=233 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 266430ms
+commenting out line Lines { lines: 483..=483 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 313..=317 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 255501ms
+commenting out line Lines { lines: 596..=596 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 257887ms
+commenting out line Lines { lines: 191..=191 } in "./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 622..=622 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 153..=175 } in "./fluent-min-tmp/138/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 230..=234 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 261916ms
+commenting out line Lines { lines: 484..=484 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 327..=327 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 252357ms
+commenting out line Lines { lines: 597..=597 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 259272ms
+commenting out line Lines { lines: 174..=194 } in "./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 215..=215 } in "./fluent-min-tmp/138/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 619..=630 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 301..=301 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 256583ms
+commenting out line Lines { lines: 487..=487 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 324..=328 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 261755ms
+commenting out line Lines { lines: 600..=600 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 261387ms
+commenting out line Lines { lines: 216..=227 } in "./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 259692ms
+commenting out line Lines { lines: 210..=217 } in "./fluent-min-tmp/138/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 632..=641 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 304..=309 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 256975ms
+commenting out line Lines { lines: 488..=488 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 355..=355 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 255873ms
+commenting out line Lines { lines: 601..=601 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 255..=276 } in "./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 260586ms
+commenting out line Lines { lines: 208..=218 } in "./fluent-min-tmp/138/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 695..=695 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 297..=314 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 251507ms
+commenting out line Lines { lines: 489..=489 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 354..=356 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 264643ms
+commenting out line Lines { lines: 552..=605 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 287..=287 } in "./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 250711ms
+minimization of ./fluent-min-tmp/138/kubernetes_cluster/proof/cluster_safety.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/139/kubernetes_cluster/proof/controller_runtime.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/140/kubernetes_cluster/proof/controller_runtime_eventual_safety.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 346..=371 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 696..=696 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 319..=324 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 262175ms
+commenting out line Lines { lines: 492..=492 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 353..=357 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 281..=288 } in "./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 271601ms
+commenting out line Lines { lines: 551..=606 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 383..=383 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 697..=697 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 277863ms
+commenting out line Lines { lines: 316..=325 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 268947ms
+commenting out line Lines { lines: 493..=493 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 383..=388 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/136/kubernetes_cluster/proof/builtin_controllers.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 44..=44 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 265151ms
+commenting out line Lines { lines: 646..=646 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 376..=384 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 271610ms
+commenting out line Lines { lines: 700..=705 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 263440ms
+commenting out line Lines { lines: 392..=392 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 255185ms
+commenting out line Lines { lines: 496..=497 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 397..=397 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 261368ms
+commenting out line Lines { lines: 43..=46 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 641..=650 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 457..=460 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 257530ms
+commenting out line Lines { lines: 393..=393 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 706..=706 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 280417ms
+commenting out line Lines { lines: 498..=498 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 272860ms
+commenting out line Lines { lines: 398..=398 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 109..=109 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 722..=722 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 454..=461 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 388..=397 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 271478ms
+commenting out line Lines { lines: 690..=711 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 264383ms
+commenting out line Lines { lines: 501..=501 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 394..=399 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 267167ms
+commenting out line Lines { lines: 118..=118 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 261347ms
+commenting out line Lines { lines: 723..=723 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 468..=468 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 458..=458 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 716..=721 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 260261ms
+commenting out line Lines { lines: 502..=502 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 457..=457 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 267228ms
+commenting out line Lines { lines: 724..=726 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 270832ms
+commenting out line Lines { lines: 121..=121 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 278354ms
+commenting out line Lines { lines: 470..=470 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 455..=462 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 271179ms
+commenting out line Lines { lines: 503..=503 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 278825ms
+commenting out line Lines { lines: 713..=722 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 264350ms
+commenting out line Lines { lines: 459..=459 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 261219ms
+commenting out line Lines { lines: 127..=127 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 267782ms
+commenting out line Lines { lines: 729..=729 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 267489ms
+commenting out line Lines { lines: 473..=473 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 468..=468 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 275767ms
+commenting out line Lines { lines: 506..=506 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 281746ms
+commenting out line Lines { lines: 790..=790 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 255507ms
+commenting out line Lines { lines: 464..=464 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 255388ms
+commenting out line Lines { lines: 129..=129 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 255640ms
+commenting out line Lines { lines: 730..=730 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 464..=473 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 261664ms
+commenting out line Lines { lines: 474..=474 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 462..=476 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 259343ms
+commenting out line Lines { lines: 507..=507 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 787..=798 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 262111ms
+commenting out line Lines { lines: 466..=466 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 257404ms
+commenting out line Lines { lines: 135..=135 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 260935ms
+commenting out line Lines { lines: 731..=733 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 529..=534 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 260173ms
+commenting out line Lines { lines: 485..=488 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 257603ms
+commenting out line Lines { lines: 461..=511 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 804..=804 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 273487ms
+commenting out line Lines { lines: 470..=470 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 272218ms
+commenting out line Lines { lines: 138..=138 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 277373ms
+commenting out line Lines { lines: 734..=736 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 535..=535 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 482..=489 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 261364ms
+commenting out line Lines { lines: 460..=512 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 805..=805 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 265370ms
+commenting out line Lines { lines: 473..=473 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 274465ms
+commenting out line Lines { lines: 146..=146 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 267089ms
+commenting out line Lines { lines: 737..=739 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 257081ms
+commenting out line Lines { lines: 523..=540 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 496..=496 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 271897ms
+commenting out line Lines { lines: 552..=552 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 800..=810 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 264401ms
+commenting out line Lines { lines: 476..=476 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 258749ms
+commenting out line Lines { lines: 148..=148 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 716..=743 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 276173ms
+commenting out line Lines { lines: 545..=550 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 273126ms
+commenting out line Lines { lines: 498..=498 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 547..=556 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 877..=877 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 257431ms
+commenting out line Lines { lines: 480..=480 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 269872ms
+commenting out line Lines { lines: 151..=151 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 715..=744 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 542..=551 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 282213ms
+commenting out line Lines { lines: 501..=501 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 628..=628 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 878..=878 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 263250ms
+commenting out line Lines { lines: 482..=482 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 257319ms
+commenting out line Lines { lines: 156..=156 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 781..=781 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 612..=612 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 261861ms
+commenting out line Lines { lines: 502..=502 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 490..=504 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 265462ms
+commenting out line Lines { lines: 629..=629 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 872..=883 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 261501ms
+commenting out line Lines { lines: 449..=487 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 268971ms
+commenting out line Lines { lines: 158..=158 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 268376ms
+commenting out line Lines { lines: 782..=782 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 609..=616 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus succeeded with time: 278386ms
+commenting out line Lines { lines: 433..=509 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 270230ms
+commenting out line Lines { lines: 630..=632 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 928..=928 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 269889ms
+commenting out line Lines { lines: 495..=495 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 259177ms
+commenting out line Lines { lines: 164..=164 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 266096ms
+commenting out line Lines { lines: 785..=785 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 708..=712 } in "./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 522..=522 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 261683ms
+commenting out line Lines { lines: 635..=635 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 929..=929 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 260648ms
+commenting out line Lines { lines: 490..=496 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 261664ms
+commenting out line Lines { lines: 167..=167 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 270309ms
+commenting out line Lines { lines: 786..=786 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/63/controller_examples/fluent_controller/fluentbit_config/proof/liveness/resource_match.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 115..=135 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 519..=523 } in "./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 258977ms
+commenting out line Lines { lines: 636..=636 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 279628ms
+commenting out line Lines { lines: 506..=506 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 282227ms
+commenting out line Lines { lines: 923..=941 } in "./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs"
+verus succeeded with time: 269929ms
+commenting out line Lines { lines: 172..=172 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 275790ms
+commenting out line Lines { lines: 788..=788 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 169..=175 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/141/kubernetes_cluster/proof/controller_runtime_liveness.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/144/kubernetes_cluster/proof/external_api_liveness.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 41..=41 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 266856ms
+commenting out line Lines { lines: 637..=639 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 277743ms
+commenting out line Lines { lines: 501..=507 } in "./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/34/controller_examples/fluent_controller/fluentbit/proof/liveness/resource_match.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 164..=184 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 277207ms
+commenting out line Lines { lines: 106..=176 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 181..=181 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 274012ms
+commenting out line Lines { lines: 791..=791 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 270623ms
+commenting out line Lines { lines: 46..=46 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 268199ms
+commenting out line Lines { lines: 640..=642 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 219..=225 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 272879ms
+minimization of ./fluent-min-tmp/134/kubernetes_cluster/proof/api_server_liveness.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 114..=114 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 266907ms
+commenting out line Lines { lines: 195..=195 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 178..=182 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 269713ms
+commenting out line Lines { lines: 823..=826 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 277894ms
+commenting out line Lines { lines: 47..=47 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 271773ms
+commenting out line Lines { lines: 643..=645 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 231..=231 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 271409ms
+commenting out line Lines { lines: 196..=196 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 274152ms
+commenting out line Lines { lines: 116..=116 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 223..=223 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 879..=879 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 265019ms
+commenting out line Lines { lines: 50..=50 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 622..=649 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 228..=232 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 272121ms
+commenting out line Lines { lines: 198..=198 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 275028ms
+commenting out line Lines { lines: 117..=117 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 222..=224 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 278759ms
+commenting out line Lines { lines: 880..=880 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 277391ms
+commenting out line Lines { lines: 51..=51 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 621..=650 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 274..=274 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 221..=225 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 278332ms
+commenting out line Lines { lines: 191..=201 } in "./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 274976ms
+commenting out line Lines { lines: 120..=120 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 277442ms
+commenting out line Lines { lines: 887..=887 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 282264ms
+commenting out line Lines { lines: 36..=57 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 686..=686 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 273..=275 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 273..=276 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 275889ms
+commenting out line Lines { lines: 121..=124 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 278401ms
+minimization of ./fluent-min-tmp/142/kubernetes_cluster/proof/controller_runtime_safety.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 30..=35 } in "./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 287027ms
+commenting out line Lines { lines: 888..=888 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 35..=58 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 286099ms
+commenting out line Lines { lines: 687..=687 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 272..=276 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 282..=282 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 126..=126 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 44..=44 } in "./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 894..=894 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 123..=123 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 275531ms
+commenting out line Lines { lines: 690..=690 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 330..=333 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 277383ms
+commenting out line Lines { lines: 283..=283 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 265061ms
+commenting out line Lines { lines: 127..=130 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 51..=56 } in "./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 285423ms
+commenting out line Lines { lines: 895..=895 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 280590ms
+commenting out line Lines { lines: 124..=124 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 268242ms
+commenting out line Lines { lines: 691..=691 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=339 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 279..=284 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 265672ms
+commenting out line Lines { lines: 132..=132 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 65..=65 } in "./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 272250ms
+commenting out line Lines { lines: 126..=126 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 292618ms
+commenting out line Lines { lines: 900..=900 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 283918ms
+commenting out line Lines { lines: 693..=693 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 268165ms
+commenting out line Lines { lines: 340..=340 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 381..=381 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 269493ms
+commenting out line Lines { lines: 133..=133 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 72..=79 } in "./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 275811ms
+commenting out line Lines { lines: 128..=128 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 289264ms
+commenting out line Lines { lines: 904..=904 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 286793ms
+commenting out line Lines { lines: 696..=696 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 336..=341 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 269715ms
+commenting out line Lines { lines: 388..=388 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 265489ms
+commenting out line Lines { lines: 134..=137 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 90..=90 } in "./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 273279ms
+commenting out line Lines { lines: 129..=129 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 278127ms
+commenting out line Lines { lines: 876..=908 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 271658ms
+commenting out line Lines { lines: 722..=725 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 449..=449 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 276306ms
+commenting out line Lines { lines: 393..=393 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 277606ms
+commenting out line Lines { lines: 142..=142 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 93..=93 } in "./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 271525ms
+commenting out line Lines { lines: 114..=135 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 875..=909 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 760..=760 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 274867ms
+commenting out line Lines { lines: 456..=456 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 275984ms
+commenting out line Lines { lines: 395..=395 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 272440ms
+commenting out line Lines { lines: 144..=144 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 96..=96 } in "./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 285951ms
+commenting out line Lines { lines: 112..=137 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 937..=943 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 285224ms
+commenting out line Lines { lines: 761..=761 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 271867ms
+commenting out line Lines { lines: 461..=461 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 274148ms
+commenting out line Lines { lines: 399..=399 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 104..=111 } in "./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 274088ms
+commenting out line Lines { lines: 108..=150 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 275722ms
+commenting out line Lines { lines: 188..=188 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1052..=1054 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 276430ms
+commenting out line Lines { lines: 768..=768 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 278040ms
+commenting out line Lines { lines: 463..=463 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 280363ms
+commenting out line Lines { lines: 402..=402 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 218..=218 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 122..=122 } in "./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 278581ms
+commenting out line Lines { lines: 190..=190 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1047..=1056 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 271818ms
+commenting out line Lines { lines: 769..=769 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 276098ms
+commenting out line Lines { lines: 467..=467 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 125..=125 } in "./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 274914ms
+commenting out line Lines { lines: 220..=220 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 278544ms
+commenting out line Lines { lines: 405..=405 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 270957ms
+commenting out line Lines { lines: 192..=192 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 775..=775 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1081..=1081 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 280329ms
+commenting out line Lines { lines: 470..=470 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 128..=128 } in "./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 271216ms
+commenting out line Lines { lines: 408..=408 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 276473ms
+commenting out line Lines { lines: 221..=221 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 276421ms
+commenting out line Lines { lines: 193..=193 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 270639ms
+commenting out line Lines { lines: 776..=776 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 292214ms
+commenting out line Lines { lines: 1091..=1091 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 131..=131 } in "./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs"
+verus succeeded with time: 275704ms
+commenting out line Lines { lines: 473..=473 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 270251ms
+commenting out line Lines { lines: 224..=224 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 274702ms
+commenting out line Lines { lines: 373..=412 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 267832ms
+commenting out line Lines { lines: 198..=198 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 273917ms
+commenting out line Lines { lines: 781..=781 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 301520ms
+commenting out line Lines { lines: 1096..=1096 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/148/kubernetes_cluster/proof/wf1_assistant.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/149/kubernetes_cluster/spec/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/150/kubernetes_cluster/spec/api_server/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus succeeded with time: 276317ms
+commenting out line Lines { lines: 476..=476 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+minimization of ./fluent-min-tmp/151/kubernetes_cluster/spec/api_server/state_machine.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/152/kubernetes_cluster/spec/api_server/types.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/153/kubernetes_cluster/spec/builtin_controllers/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/154/kubernetes_cluster/spec/builtin_controllers/daemon_set_controller.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/155/kubernetes_cluster/spec/builtin_controllers/garbage_collector.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/156/kubernetes_cluster/spec/builtin_controllers/stabilizer.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/157/kubernetes_cluster/spec/builtin_controllers/state_machine.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus succeeded with time: 274684ms
+commenting out line Lines { lines: 225..=228 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+minimization of ./fluent-min-tmp/158/kubernetes_cluster/spec/builtin_controllers/stateful_set_controller.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/159/kubernetes_cluster/spec/builtin_controllers/types.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/160/kubernetes_cluster/spec/client/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/161/kubernetes_cluster/spec/client/types.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus succeeded with time: 276653ms
+commenting out line Lines { lines: 419..=419 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+minimization of ./fluent-min-tmp/162/kubernetes_cluster/spec/client/state_machine.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/163/kubernetes_cluster/spec/cluster.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/164/kubernetes_cluster/spec/cluster_state_machine.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/165/kubernetes_cluster/spec/controller/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/166/kubernetes_cluster/spec/controller/controller_runtime.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/167/kubernetes_cluster/spec/controller/state_machine.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/168/kubernetes_cluster/spec/controller/types.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/169/kubernetes_cluster/spec/external_api/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/170/kubernetes_cluster/spec/external_api/state_machine.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/171/kubernetes_cluster/spec/external_api/types.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/172/kubernetes_cluster/spec/message.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/173/kubernetes_cluster/spec/network/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/174/kubernetes_cluster/spec/network/types.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/175/kubernetes_cluster/spec/network/state_machine.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/176/kubernetes_cluster/spec/pod_event/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/177/kubernetes_cluster/spec/pod_event/types.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/178/kubernetes_cluster/spec/pod_event/state_machine.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/179/reconciler/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/180/reconciler/exec/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/181/reconciler/exec/io.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/182/reconciler/exec/reconciler.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/183/reconciler/exec/resource_builder.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/184/reconciler/spec/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/185/reconciler/spec/io.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/186/reconciler/spec/reconciler.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/187/reconciler/spec/resource_builder.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/188/shim_layer/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/189/shim_layer/controller_runtime.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/190/shim_layer/fault_injection.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/191/state_machine/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/192/state_machine/state_machine.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/193/state_machine/action.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/194/temporal_logic/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/195/temporal_logic/defs.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus succeeded with time: 266343ms
+commenting out line Lines { lines: 200..=200 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+commenting out line Lines { lines: 136..=138 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 260463ms
+commenting out line Lines { lines: 785..=785 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 276018ms
+commenting out line Lines { lines: 1101..=1101 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 245969ms
+commenting out line Lines { lines: 441..=480 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 230..=230 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 259283ms
+commenting out line Lines { lines: 413..=420 } in "./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 265955ms
+commenting out line Lines { lines: 201..=201 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 146..=148 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 271542ms
+commenting out line Lines { lines: 757..=789 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 287436ms
+commenting out line Lines { lines: 1084..=1105 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 277941ms
+commenting out line Lines { lines: 487..=487 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 270437ms
+commenting out line Lines { lines: 231..=234 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 267184ms
+minimization of ./fluent-min-tmp/143/kubernetes_cluster/proof/daemon_set_controller.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/197/vstd_ext/mod.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 19..=19 } in "./fluent-min-tmp/198/vstd_ext/map_lib.rs"
+verus succeeded with time: 275963ms
+commenting out line Lines { lines: 181..=205 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 192..=192 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 756..=790 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 279923ms
+commenting out line Lines { lines: 1083..=1106 } in "./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs"
+verus succeeded with time: 268027ms
+commenting out line Lines { lines: 481..=488 } in "./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 268202ms
+commenting out line Lines { lines: 236..=236 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/198/vstd_ext/map_lib.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 11..=11 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 177..=207 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 265594ms
+commenting out line Lines { lines: 191..=193 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 818..=824 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 253271ms
+minimization of ./fluent-min-tmp/146/kubernetes_cluster/proof/stateful_set_controller.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/200/vstd_ext/option_lib.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 13..=13 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 269561ms
+minimization of ./fluent-min-tmp/28/controller_examples/fluent_controller/fluentbit/proof/helper_invariants/proof.rs is completed
+verus succeeded with time: 263295ms
+commenting out line Lines { lines: 237..=237 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+deps hack: "/local/abai/anvil/src/deps_hack"
+commenting out line Lines { lines: 14..=16 } in "./fluent-min-tmp/202/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 21..=21 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 265..=265 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 258368ms
+commenting out line Lines { lines: 199..=201 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 885..=885 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 16..=16 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 257104ms
+commenting out line Lines { lines: 238..=241 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 17..=19 } in "./fluent-min-tmp/202/vstd_ext/set_lib.rs"
+verus succeeded with time: 264191ms
+commenting out line Lines { lines: 19..=23 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 266942ms
+commenting out line Lines { lines: 266..=266 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 214..=214 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 253208ms
+commenting out line Lines { lines: 895..=895 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 250000ms
+commenting out line Lines { lines: 246..=246 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 18..=18 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 45..=45 } in "./fluent-min-tmp/202/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 29..=29 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 261072ms
+commenting out line Lines { lines: 268..=268 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 257814ms
+commenting out line Lines { lines: 247..=259 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 258425ms
+commenting out line Lines { lines: 900..=900 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 32..=32 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 257401ms
+commenting out line Lines { lines: 248..=248 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 46..=46 } in "./fluent-min-tmp/202/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 46..=46 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 268194ms
+commenting out line Lines { lines: 269..=269 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 263..=265 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 250690ms
+commenting out line Lines { lines: 905..=905 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 253331ms
+commenting out line Lines { lines: 259..=259 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 260816ms
+commenting out line Lines { lines: 33..=33 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 49..=49 } in "./fluent-min-tmp/202/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 50..=50 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 260947ms
+commenting out line Lines { lines: 270..=270 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 242..=267 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 259156ms
+commenting out line Lines { lines: 888..=909 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 257354ms
+commenting out line Lines { lines: 260..=260 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 257383ms
+commenting out line Lines { lines: 35..=35 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/202/vstd_ext/set_lib.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/203/vstd_ext/string_map.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+minimization of ./fluent-min-tmp/204/vstd_ext/string_view.rs is completed
+deps hack: "/local/abai/anvil/src/deps_hack"
+verus succeeded with time: 252768ms
+commenting out line Lines { lines: 53..=53 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+commenting out line Lines { lines: 28..=31 } in "./fluent-min-tmp/205/vstd_ext/vec_lib.rs"
+verus succeeded with time: 248456ms
+commenting out line Lines { lines: 272..=272 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 317..=321 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 261366ms
+commenting out line Lines { lines: 887..=910 } in "./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs"
+verus succeeded with time: 251436ms
+commenting out line Lines { lines: 262..=262 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 256891ms
+commenting out line Lines { lines: 36..=36 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 54..=54 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/205/vstd_ext/vec_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 313..=322 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 243716ms
+commenting out line Lines { lines: 273..=273 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 233990ms
+minimization of ./fluent-min-tmp/60/controller_examples/fluent_controller/fluentbit_config/proof/helper_invariants/proof.rs is completed
+verus succeeded with time: 227000ms
+commenting out line Lines { lines: 265..=265 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 231327ms
+commenting out line Lines { lines: 30..=38 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 219346ms
+commenting out line Lines { lines: 48..=56 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 329..=329 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 206372ms
+commenting out line Lines { lines: 278..=278 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 209186ms
+commenting out line Lines { lines: 208..=269 } in "./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 212791ms
+commenting out line Lines { lines: 47..=47 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 206223ms
+commenting out line Lines { lines: 61..=61 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 339..=345 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 199942ms
+commenting out line Lines { lines: 280..=280 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/147/kubernetes_cluster/proof/validation_rule.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 48..=48 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 62..=62 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 346..=346 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 194485ms
+commenting out line Lines { lines: 281..=281 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 180063ms
+commenting out line Lines { lines: 50..=50 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 63..=63 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 356..=358 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 178689ms
+commenting out line Lines { lines: 283..=283 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 181374ms
+commenting out line Lines { lines: 51..=51 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 181749ms
+commenting out line Lines { lines: 59..=65 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 354..=359 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 177752ms
+commenting out line Lines { lines: 288..=288 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 49..=52 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 57..=66 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 370..=370 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 178882ms
+commenting out line Lines { lines: 297..=297 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 53..=53 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 76..=76 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 182748ms
+commenting out line Lines { lines: 368..=371 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 179436ms
+commenting out line Lines { lines: 299..=299 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 69..=69 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 78..=78 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 367..=372 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 182548ms
+commenting out line Lines { lines: 294..=307 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 79..=79 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 183898ms
+commenting out line Lines { lines: 70..=70 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 366..=373 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 255..=308 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 181283ms
+commenting out line Lines { lines: 74..=80 } in "./fluent-min-tmp/199/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 182899ms
+commenting out line Lines { lines: 72..=72 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 254..=309 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 376..=376 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/199/vstd_ext/multiset_lib.rs is completed
+verus succeeded with time: 181450ms
+commenting out line Lines { lines: 73..=73 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 331..=331 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 175768ms
+commenting out line Lines { lines: 374..=377 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 169685ms
+commenting out line Lines { lines: 67..=75 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 168365ms
+commenting out line Lines { lines: 332..=332 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 385..=387 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 169498ms
+commenting out line Lines { lines: 84..=84 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 169677ms
+commenting out line Lines { lines: 336..=336 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 388..=388 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 85..=85 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 170459ms
+commenting out line Lines { lines: 337..=337 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 172090ms
+commenting out line Lines { lines: 389..=391 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 169782ms
+commenting out line Lines { lines: 88..=88 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 170708ms
+commenting out line Lines { lines: 339..=339 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 392..=392 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 346..=346 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 167810ms
+commenting out line Lines { lines: 89..=89 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 170598ms
+commenting out line Lines { lines: 384..=393 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 171031ms
+commenting out line Lines { lines: 347..=347 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 87..=90 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 421..=423 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 171042ms
+commenting out line Lines { lines: 349..=349 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 432..=432 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 91..=91 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 431..=433 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 170366ms
+commenting out line Lines { lines: 439..=439 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 100..=102 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 434..=434 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 173254ms
+commenting out line Lines { lines: 440..=440 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 109..=115 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 447..=447 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 170236ms
+commenting out line Lines { lines: 441..=441 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 116..=121 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 173396ms
+commenting out line Lines { lines: 448..=448 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 171928ms
+commenting out line Lines { lines: 427..=447 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 136..=136 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 170566ms
+commenting out line Lines { lines: 450..=450 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 170014ms
+commenting out line Lines { lines: 426..=448 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 135..=137 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 446..=451 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 172212ms
+commenting out line Lines { lines: 485..=485 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 141..=141 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 469..=469 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 488..=488 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 140..=142 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 467..=471 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 172602ms
+commenting out line Lines { lines: 492..=492 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 139..=143 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 466..=472 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 172345ms
+commenting out line Lines { lines: 502..=502 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 158..=164 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 464..=473 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 172248ms
+commenting out line Lines { lines: 503..=503 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 155..=165 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 478..=481 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 171742ms
+commenting out line Lines { lines: 504..=504 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 168..=168 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 477..=482 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 171249ms
+commenting out line Lines { lines: 505..=505 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 171704ms
+commenting out line Lines { lines: 166..=169 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 475..=483 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 172550ms
+commenting out line Lines { lines: 506..=506 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 172..=172 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 505..=505 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 173..=173 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 171179ms
+commenting out line Lines { lines: 507..=507 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 503..=506 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 171..=175 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus succeeded with time: 168409ms
+commenting out line Lines { lines: 483..=509 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 501..=507 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 211..=211 } in "./fluent-min-tmp/201/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 482..=510 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 523..=523 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/201/vstd_ext/seq_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 558..=558 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 522..=524 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 155841ms
+commenting out line Lines { lines: 563..=563 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 526..=526 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 566..=566 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 516..=527 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 157979ms
+commenting out line Lines { lines: 568..=568 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 535..=537 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 157011ms
+commenting out line Lines { lines: 569..=569 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 158079ms
+commenting out line Lines { lines: 557..=557 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 155775ms
+commenting out line Lines { lines: 573..=573 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 556..=558 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 155258ms
+commenting out line Lines { lines: 575..=575 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 552..=560 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 154883ms
+commenting out line Lines { lines: 576..=576 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 569..=573 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 154313ms
+commenting out line Lines { lines: 577..=578 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 588..=588 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 154543ms
+commenting out line Lines { lines: 580..=580 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 582..=590 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 155865ms
+commenting out line Lines { lines: 581..=581 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 652..=654 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 154884ms
+commenting out line Lines { lines: 583..=583 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 651..=655 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156684ms
+commenting out line Lines { lines: 587..=587 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 664..=667 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 155147ms
+commenting out line Lines { lines: 589..=589 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 676..=679 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 155801ms
+commenting out line Lines { lines: 590..=590 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 689..=689 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 157641ms
+commenting out line Lines { lines: 591..=591 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 156229ms
+commenting out line Lines { lines: 687..=690 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 157712ms
+commenting out line Lines { lines: 593..=593 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 700..=703 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 158653ms
+commenting out line Lines { lines: 596..=596 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 699..=704 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156986ms
+commenting out line Lines { lines: 597..=597 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 716..=719 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 600..=600 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 734..=737 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 601..=601 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 945..=948 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156923ms
+commenting out line Lines { lines: 555..=604 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 958..=960 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 554..=605 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 957..=961 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 653..=653 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 989..=989 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156247ms
+commenting out line Lines { lines: 658..=658 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 990..=990 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 661..=661 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 992..=992 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 157637ms
+commenting out line Lines { lines: 663..=663 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 159053ms
+commenting out line Lines { lines: 987..=994 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156403ms
+commenting out line Lines { lines: 664..=664 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 985..=995 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156252ms
+commenting out line Lines { lines: 668..=668 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 984..=996 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1011..=1014 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 157885ms
+commenting out line Lines { lines: 670..=670 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1085..=1091 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 157465ms
+commenting out line Lines { lines: 671..=671 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1084..=1092 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 158064ms
+commenting out line Lines { lines: 672..=673 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1107..=1110 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156114ms
+commenting out line Lines { lines: 675..=675 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 157284ms
+commenting out line Lines { lines: 1104..=1111 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 155133ms
+commenting out line Lines { lines: 676..=676 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1125..=1128 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156663ms
+commenting out line Lines { lines: 678..=678 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1152..=1154 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156246ms
+commenting out line Lines { lines: 682..=682 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1147..=1155 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 155765ms
+commenting out line Lines { lines: 684..=684 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1195..=1216 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156513ms
+commenting out line Lines { lines: 685..=685 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1194..=1217 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156290ms
+commenting out line Lines { lines: 686..=686 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1240..=1240 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 157193ms
+commenting out line Lines { lines: 688..=688 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 155624ms
+commenting out line Lines { lines: 1239..=1247 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 157462ms
+commenting out line Lines { lines: 691..=691 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1238..=1248 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156894ms
+commenting out line Lines { lines: 692..=692 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1264..=1267 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 695..=695 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1294..=1297 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 696..=696 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1293..=1298 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 154943ms
+commenting out line Lines { lines: 650..=699 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1314..=1317 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 649..=700 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1331..=1339 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 754..=754 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1330..=1340 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156264ms
+commenting out line Lines { lines: 759..=759 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1329..=1341 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 762..=762 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1366..=1369 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156714ms
+commenting out line Lines { lines: 764..=764 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1359..=1371 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 155516ms
+commenting out line Lines { lines: 767..=767 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1358..=1372 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 158055ms
+commenting out line Lines { lines: 771..=771 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1387..=1393 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156435ms
+commenting out line Lines { lines: 773..=773 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1410..=1425 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 157193ms
+commenting out line Lines { lines: 774..=774 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1408..=1426 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 155390ms
+commenting out line Lines { lines: 775..=776 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1483..=1488 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156702ms
+commenting out line Lines { lines: 778..=778 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1482..=1489 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 157375ms
+commenting out line Lines { lines: 779..=779 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1610..=1612 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 155871ms
+commenting out line Lines { lines: 781..=781 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1613..=1615 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156839ms
+commenting out line Lines { lines: 785..=785 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1621..=1621 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156337ms
+commenting out line Lines { lines: 787..=787 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 155923ms
+commenting out line Lines { lines: 1622..=1622 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156346ms
+commenting out line Lines { lines: 788..=788 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1623..=1623 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 155231ms
+commenting out line Lines { lines: 789..=789 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 156838ms
+commenting out line Lines { lines: 1624..=1624 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 159089ms
+commenting out line Lines { lines: 791..=791 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 159081ms
+commenting out line Lines { lines: 1631..=1631 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 156775ms
+commenting out line Lines { lines: 794..=794 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 156217ms
+commenting out line Lines { lines: 1632..=1632 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 158543ms
+commenting out line Lines { lines: 795..=795 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 154624ms
+commenting out line Lines { lines: 1633..=1633 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 158272ms
+commenting out line Lines { lines: 796..=796 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1640..=1640 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 157765ms
+commenting out line Lines { lines: 799..=799 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 156062ms
+commenting out line Lines { lines: 1641..=1641 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 157280ms
+commenting out line Lines { lines: 800..=800 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 155669ms
+commenting out line Lines { lines: 1643..=1643 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 159548ms
+commenting out line Lines { lines: 749..=803 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1644..=1644 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 747..=804 } in "./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 155492ms
+commenting out line Lines { lines: 1639..=1647 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/145/kubernetes_cluster/proof/message.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 1609..=1649 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1608..=1650 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1668..=1687 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1667..=1688 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1722..=1727 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1721..=1729 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1707..=1732 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1706..=1733 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1746..=1758 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1745..=1759 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1793..=1795 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1826..=1828 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1866..=1866 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 139339ms
+commenting out line Lines { lines: 1868..=1868 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1869..=1869 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus succeeded with time: 140454ms
+commenting out line Lines { lines: 1863..=1872 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1862..=1873 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1890..=1893 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1889..=1894 } in "./fluent-min-tmp/196/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./fluent-min-tmp/196/temporal_logic/rules.rs is completed

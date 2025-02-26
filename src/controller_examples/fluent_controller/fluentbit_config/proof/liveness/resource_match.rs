@@ -314,16 +314,16 @@ proof fn lemma_from_key_not_exists_to_receives_not_found_resp_at_after_get_resou
         }
     }
 
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && FBCCluster::kubernetes_api_next().forward(input)(s, s_prime)
-    implies post(s_prime) by {
-        let resp_msg = FBCCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
-        assert({
-            &&& s_prime.in_flight().contains(resp_msg)
-            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
-            &&& resp_msg.content.get_get_response().res.is_Err()
-            &&& resp_msg.content.get_get_response().res.get_Err_0().is_ObjectNotFound()
-        });
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && FBCCluster::kubernetes_api_next().forward(input)(s, s_prime)
+//    implies post(s_prime) by {
+//        let resp_msg = FBCCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
+////        assert({
+////            &&& s_prime.in_flight().contains(resp_msg)
+////            &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
+////            &&& resp_msg.content.get_get_response().res.is_Err()
+////            &&& resp_msg.content.get_get_response().res.get_Err_0().is_ObjectNotFound()
+////        });
+//    }
 
     FBCCluster::lemma_pre_leads_to_post_by_kubernetes_api(
         spec, input, stronger_next, FBCCluster::handle_request(), pre, post
@@ -390,7 +390,7 @@ proof fn lemma_from_after_get_resource_step_to_after_create_resource_step(spec: 
         let step = choose |step| FBCCluster::next_step(s, s_prime, step);
         match step {
             Step::ApiServerStep(input) => {
-                assert(!resource_create_request_msg(resource_key)(input.get_Some_0()));
+//                assert(!resource_create_request_msg(resource_key)(input.get_Some_0()));
                 assert(!resource_create_request_msg_without_name(resource_key.kind, resource_key.namespace)(input.get_Some_0()));
             },
             _ => {}
@@ -521,24 +521,24 @@ proof fn lemma_from_key_exists_to_receives_ok_resp_at_after_get_resource_step(sp
         lift_state(helper_invariants::no_update_status_request_msg_in_flight(sub_resource, fbc))
     );
 
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || post(s_prime) by {
-        let step = choose |step| FBCCluster::next_step(s, s_prime, step);
-        match step {
-            Step::ApiServerStep(input) => {
-                if input.get_Some_0() == req_msg {
-                    let resp_msg = FBCCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
-                    assert({
-                        &&& s_prime.in_flight().contains(resp_msg)
-                        &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
-                        &&& resp_msg.content.get_get_response().res.is_Ok()
-                        &&& resp_msg.content.get_get_response().res.get_Ok_0() == s_prime.resources()[resource_key]
-                    });
-                    assert(post(s_prime));
-                }
-            },
-            _ => {}
-        }
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || post(s_prime) by {
+//        let step = choose |step| FBCCluster::next_step(s, s_prime, step);
+//        match step {
+//            Step::ApiServerStep(input) => {
+//                if input.get_Some_0() == req_msg {
+//                    let resp_msg = FBCCluster::handle_get_request_msg(req_msg, s.kubernetes_api_state).1;
+//                    assert({
+//                        &&& s_prime.in_flight().contains(resp_msg)
+//                        &&& Message::resp_msg_matches_req_msg(resp_msg, req_msg)
+//                        &&& resp_msg.content.get_get_response().res.is_Ok()
+//                        &&& resp_msg.content.get_get_response().res.get_Ok_0() == s_prime.resources()[resource_key]
+//                    });
+////                    assert(post(s_prime));
+//                }
+//            },
+//            _ => {}
+//        }
+//    }
 
     assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) && FBCCluster::kubernetes_api_next().forward(input)(s, s_prime)
     implies post(s_prime) by {
