@@ -308,7 +308,7 @@ pub proof fn lemma_eventually_always_object_in_response_at_after_create_resource
                                     if !s.in_flight().contains(msg) {
 //                                        assert(msg.content.get_create_response().res.get_Ok_0().object_ref() == req_msg.content.get_create_request().key());
 //                                        assert(msg.content.get_create_response().res.get_Ok_0().object_ref() == resource_key);
-//                                        assert(msg.content.get_create_response().res.get_Ok_0() == s_prime.resources()[req_msg.content.get_create_request().key()]);
+                                        assert(msg.content.get_create_response().res.get_Ok_0() == s_prime.resources()[req_msg.content.get_create_request().key()]); // OBSERVE
                                     } else {
 //                                        assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
 //                                        assert(!s.in_flight().contains(pending_req));
