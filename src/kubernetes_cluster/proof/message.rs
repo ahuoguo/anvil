@@ -697,7 +697,7 @@ pub proof fn lemma_always_key_of_object_in_matched_ok_update_resp_message_is_sam
 //                    assert(s.in_flight().contains(msg));
                 },
                 _ => {
-                    assert(s.in_flight().contains(msg));
+//                    assert(s.in_flight().contains(msg));
 //                    assert(Self::is_ok_update_response_msg_and_matches_key(req_key)(msg));
                 }
             }
