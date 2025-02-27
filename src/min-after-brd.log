@@ -1,0 +1,1029 @@
+warning: unused variable: `tokens`
+    --> tools/minimize/src/main.rs:1511:55
+     |
+1511 |             Meta::List(MetaList { path, delimiter: _, tokens }) => {
+     |                                                       ^^^^^^ help: try ignoring the field: `tokens: _`
+     |
+     = note: `#[warn(unused_variables)]` on by default
+
+warning: `minimize` (bin "minimize") generated 1 warning
+    Finished `release` profile [optimized] target(s) in 1.92s
+     Running `/local/abai/verus/source/target/release/minimize -d ./rabbitmq-after-brd-tmp /local/abai/anvil/src/rabbitmq_controller.d`
+verus succeeded with time: 214965ms
+minimization of ./rabbitmq-after-brd-tmp/1/external_api/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/3/external_api/spec.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/0/rabbitmq_controller.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/6/kubernetes_api_objects/exec/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/5/kubernetes_api_objects/error.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/2/external_api/exec.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/4/kubernetes_api_objects/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/7/kubernetes_api_objects/exec/affinity.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/8/kubernetes_api_objects/exec/api_method.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/10/kubernetes_api_objects/exec/common.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/9/kubernetes_api_objects/exec/api_resource.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/12/kubernetes_api_objects/exec/container.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/13/kubernetes_api_objects/exec/daemon_set.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/11/kubernetes_api_objects/exec/config_map.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/15/kubernetes_api_objects/exec/label_selector.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/14/kubernetes_api_objects/exec/dynamic.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/16/kubernetes_api_objects/exec/object_meta.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/20/kubernetes_api_objects/exec/pod_template_spec.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/17/kubernetes_api_objects/exec/owner_reference.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/19/kubernetes_api_objects/exec/pod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/18/kubernetes_api_objects/exec/persistent_volume_claim.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/21/kubernetes_api_objects/exec/preconditions.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/23/kubernetes_api_objects/exec/resource.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/22/kubernetes_api_objects/exec/prelude.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/27/kubernetes_api_objects/exec/secret.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/26/kubernetes_api_objects/exec/role_binding.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/24/kubernetes_api_objects/exec/resource_requirements.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/25/kubernetes_api_objects/exec/role.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/28/kubernetes_api_objects/exec/service.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/29/kubernetes_api_objects/exec/service_account.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/30/kubernetes_api_objects/exec/stateful_set.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/33/kubernetes_api_objects/exec/volume_resource_requirements.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/31/kubernetes_api_objects/exec/toleration.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/34/kubernetes_api_objects/spec/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/32/kubernetes_api_objects/exec/volume.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/35/kubernetes_api_objects/spec/affinity.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/36/kubernetes_api_objects/spec/api_method.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/37/kubernetes_api_objects/spec/api_resource.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/38/kubernetes_api_objects/spec/common.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/39/kubernetes_api_objects/spec/config_map.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/40/kubernetes_api_objects/spec/container.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/41/kubernetes_api_objects/spec/daemon_set.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/42/kubernetes_api_objects/spec/dynamic.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/43/kubernetes_api_objects/spec/label_selector.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/44/kubernetes_api_objects/spec/object_meta.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/45/kubernetes_api_objects/spec/owner_reference.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/46/kubernetes_api_objects/spec/persistent_volume_claim.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/47/kubernetes_api_objects/spec/pod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/48/kubernetes_api_objects/spec/pod_template_spec.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/49/kubernetes_api_objects/spec/preconditions.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/50/kubernetes_api_objects/spec/prelude.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/51/kubernetes_api_objects/spec/resource.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/52/kubernetes_api_objects/spec/resource_requirements.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/53/kubernetes_api_objects/spec/role.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/54/kubernetes_api_objects/spec/role_binding.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/55/kubernetes_api_objects/spec/secret.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/56/kubernetes_api_objects/spec/service.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/57/kubernetes_api_objects/spec/service_account.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/58/kubernetes_api_objects/spec/stateful_set.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/59/kubernetes_api_objects/spec/toleration.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/60/kubernetes_api_objects/spec/volume.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/61/kubernetes_api_objects/spec/volume_resource_requirements.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/62/kubernetes_cluster/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/63/kubernetes_cluster/proof/mod.rs is completed
+commenting out line Lines { lines: 139..=143 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+minimization of ./rabbitmq-after-brd-tmp/65/kubernetes_cluster/proof/api_server_safety.rs is completed
+commenting out line Lines { lines: 175..=175 } in "./rabbitmq-after-brd-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+minimization of ./rabbitmq-after-brd-tmp/67/kubernetes_cluster/proof/cluster.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 173..=176 } in "./rabbitmq-after-brd-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+commenting out line Lines { lines: 78..=107 } in "./rabbitmq-after-brd-tmp/68/kubernetes_cluster/proof/cluster_safety.rs"
+minimization of ./rabbitmq-after-brd-tmp/69/kubernetes_cluster/proof/controller_runtime.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/70/kubernetes_cluster/proof/controller_runtime_eventual_safety.rs is completed
+commenting out line Lines { lines: 350..=375 } in "./rabbitmq-after-brd-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+commenting out line Lines { lines: 47..=50 } in "./rabbitmq-after-brd-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs"
+commenting out line Lines { lines: 119..=139 } in "./rabbitmq-after-brd-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+minimization of ./rabbitmq-after-brd-tmp/74/kubernetes_cluster/proof/external_api_liveness.rs is completed
+commenting out line Lines { lines: 40..=61 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 152..=152 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 220..=231 } in "./rabbitmq-after-brd-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 76..=108 } in "./rabbitmq-after-brd-tmp/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/72/kubernetes_cluster/proof/controller_runtime_safety.rs is completed
+commenting out line Lines { lines: 168..=188 } in "./rabbitmq-after-brd-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 387..=387 } in "./rabbitmq-after-brd-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 173..=179 } in "./rabbitmq-after-brd-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 39..=62 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 149..=153 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 159..=178 } in "./rabbitmq-after-brd-tmp/68/kubernetes_cluster/proof/cluster_safety.rs"
+commenting out line Lines { lines: 259..=280 } in "./rabbitmq-after-brd-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 223..=229 } in "./rabbitmq-after-brd-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 380..=388 } in "./rabbitmq-after-brd-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 185..=185 } in "./rabbitmq-after-brd-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 185..=209 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 294..=296 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 291..=291 } in "./rabbitmq-after-brd-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+commenting out line Lines { lines: 157..=179 } in "./rabbitmq-after-brd-tmp/68/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed, reverting
+commenting out line Lines { lines: 182..=186 } in "./rabbitmq-after-brd-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 461..=464 } in "./rabbitmq-after-brd-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 235..=235 } in "./rabbitmq-after-brd-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 181..=211 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 292..=297 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 285..=292 } in "./rabbitmq-after-brd-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/68/kubernetes_cluster/proof/cluster_safety.rs is completed
+commenting out line Lines { lines: 125..=128 } in "./rabbitmq-after-brd-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 232..=236 } in "./rabbitmq-after-brd-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 227..=227 } in "./rabbitmq-after-brd-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 458..=465 } in "./rabbitmq-after-brd-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 298..=311 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 317..=321 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/66/kubernetes_cluster/proof/builtin_controllers.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 34..=39 } in "./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+commenting out line Lines { lines: 112..=154 } in "./rabbitmq-after-brd-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 278..=278 } in "./rabbitmq-after-brd-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 226..=228 } in "./rabbitmq-after-brd-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 489..=492 } in "./rabbitmq-after-brd-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 259..=312 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 331..=331 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 229..=232 } in "./rabbitmq-after-brd-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 48..=48 } in "./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 225..=229 } in "./rabbitmq-after-brd-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 277..=279 } in "./rabbitmq-after-brd-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 258..=313 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 486..=493 } in "./rabbitmq-after-brd-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 328..=332 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 212..=273 } in "./rabbitmq-after-brd-tmp/77/kubernetes_cluster/proof/validation_rule.rs"
+verus failed, reverting
+commenting out line Lines { lines: 55..=60 } in "./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 277..=280 } in "./rabbitmq-after-brd-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 276..=280 } in "./rabbitmq-after-brd-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 437..=513 } in "./rabbitmq-after-brd-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 343..=343 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 353..=353 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 489..=489 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 359..=359 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/77/kubernetes_cluster/proof/validation_rule.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/79/kubernetes_cluster/spec/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/80/kubernetes_cluster/spec/api_server/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/81/kubernetes_cluster/spec/api_server/state_machine.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/82/kubernetes_cluster/spec/api_server/types.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/83/kubernetes_cluster/spec/builtin_controllers/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/84/kubernetes_cluster/spec/builtin_controllers/daemon_set_controller.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/85/kubernetes_cluster/spec/builtin_controllers/garbage_collector.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/86/kubernetes_cluster/spec/builtin_controllers/stabilizer.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/87/kubernetes_cluster/spec/builtin_controllers/state_machine.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/88/kubernetes_cluster/spec/builtin_controllers/stateful_set_controller.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/89/kubernetes_cluster/spec/builtin_controllers/types.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/90/kubernetes_cluster/spec/client/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/91/kubernetes_cluster/spec/client/types.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/92/kubernetes_cluster/spec/client/state_machine.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/93/kubernetes_cluster/spec/cluster.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 69..=69 } in "./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+minimization of ./rabbitmq-after-brd-tmp/94/kubernetes_cluster/spec/cluster_state_machine.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/95/kubernetes_cluster/spec/controller/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/96/kubernetes_cluster/spec/controller/controller_runtime.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/97/kubernetes_cluster/spec/controller/state_machine.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/98/kubernetes_cluster/spec/controller/types.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/99/kubernetes_cluster/spec/external_api/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/100/kubernetes_cluster/spec/external_api/state_machine.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/101/kubernetes_cluster/spec/external_api/types.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/102/kubernetes_cluster/spec/message.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/103/kubernetes_cluster/spec/network/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/104/kubernetes_cluster/spec/network/types.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/105/kubernetes_cluster/spec/network/state_machine.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/106/kubernetes_cluster/spec/pod_event/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/107/kubernetes_cluster/spec/pod_event/types.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/108/kubernetes_cluster/spec/pod_event/state_machine.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/109/controller_examples/rabbitmq_controller/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/110/controller_examples/rabbitmq_controller/exec/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/111/controller_examples/rabbitmq_controller/exec/reconciler.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/112/controller_examples/rabbitmq_controller/exec/resource/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/113/controller_examples/rabbitmq_controller/exec/resource/common.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/114/controller_examples/rabbitmq_controller/exec/resource/config_map.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/115/controller_examples/rabbitmq_controller/exec/resource/default_user_secret.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/116/controller_examples/rabbitmq_controller/exec/resource/erlang_cookie.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/117/controller_examples/rabbitmq_controller/exec/resource/headless_service.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/118/controller_examples/rabbitmq_controller/exec/resource/rabbitmq_plugins.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/119/controller_examples/rabbitmq_controller/exec/resource/role.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/120/controller_examples/rabbitmq_controller/exec/resource/role_binding.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/121/controller_examples/rabbitmq_controller/exec/resource/service.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/122/controller_examples/rabbitmq_controller/exec/resource/service_account.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/123/controller_examples/rabbitmq_controller/exec/resource/stateful_set.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/124/controller_examples/rabbitmq_controller/model/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/125/controller_examples/rabbitmq_controller/model/reconciler.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/126/controller_examples/rabbitmq_controller/model/resource/mod.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 287..=287 } in "./rabbitmq-after-brd-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 526..=526 } in "./rabbitmq-after-brd-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+minimization of ./rabbitmq-after-brd-tmp/127/controller_examples/rabbitmq_controller/model/resource/common.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 334..=337 } in "./rabbitmq-after-brd-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 487..=513 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+minimization of ./rabbitmq-after-brd-tmp/128/controller_examples/rabbitmq_controller/model/resource/config_map.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/129/controller_examples/rabbitmq_controller/model/resource/default_user_secret.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/130/controller_examples/rabbitmq_controller/model/resource/erlang_cookie.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/131/controller_examples/rabbitmq_controller/model/resource/headless_service.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/132/controller_examples/rabbitmq_controller/model/resource/rabbitmq_plugins.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/133/controller_examples/rabbitmq_controller/model/resource/role.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/134/controller_examples/rabbitmq_controller/model/resource/role_binding.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/135/controller_examples/rabbitmq_controller/model/resource/service.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/136/controller_examples/rabbitmq_controller/model/resource/service_account.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 358..=360 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+minimization of ./rabbitmq-after-brd-tmp/137/controller_examples/rabbitmq_controller/model/resource/stateful_set.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 76..=83 } in "./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+minimization of ./rabbitmq-after-brd-tmp/138/controller_examples/rabbitmq_controller/proof/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/139/controller_examples/rabbitmq_controller/proof/helper_invariants/mod.rs is completed
+commenting out line Lines { lines: 89..=94 } in "./rabbitmq-after-brd-tmp/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 283..=288 } in "./rabbitmq-after-brd-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 523..=527 } in "./rabbitmq-after-brd-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 344..=344 } in "./rabbitmq-after-brd-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 486..=514 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 357..=361 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 94..=94 } in "./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 88..=95 } in "./rabbitmq-after-brd-tmp/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/73/kubernetes_cluster/proof/daemon_set_controller.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/141/controller_examples/rabbitmq_controller/proof/helper_invariants/predicate.rs is completed
+commenting out line Lines { lines: 296..=298 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/71/kubernetes_cluster/proof/controller_runtime_liveness.rs is completed
+commenting out line Lines { lines: 85..=106 } in "./rabbitmq-after-brd-tmp/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs"
+verus failed, reverting
+commenting out line Lines { lines: 567..=567 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 340..=345 } in "./rabbitmq-after-brd-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed, reverting
+commenting out line Lines { lines: 387..=392 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 97..=97 } in "./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 171..=171 } in "./rabbitmq-after-brd-tmp/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 84..=107 } in "./rabbitmq-after-brd-tmp/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/76/kubernetes_cluster/proof/stateful_set_controller.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 601..=601 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+commenting out line Lines { lines: 98..=131 } in "./rabbitmq-after-brd-tmp/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 269..=300 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 402..=402 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 100..=100 } in "./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 165..=177 } in "./rabbitmq-after-brd-tmp/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs"
+verus failed, reverting
+commenting out line Lines { lines: 182..=196 } in "./rabbitmq-after-brd-tmp/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 152..=155 } in "./rabbitmq-after-brd-tmp/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs"
+verus failed, reverting
+commenting out line Lines { lines: 341..=341 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus succeeded with time: 479582ms
+commenting out line Lines { lines: 604..=604 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 398..=403 } in "./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed, reverting
+commenting out line Lines { lines: 108..=115 } in "./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/140/controller_examples/rabbitmq_controller/proof/helper_invariants/owner_ref.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/145/controller_examples/rabbitmq_controller/proof/liveness/mod.rs is completed
+commenting out line Lines { lines: 46..=48 } in "./rabbitmq-after-brd-tmp/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 219..=252 } in "./rabbitmq-after-brd-tmp/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs"
+verus failed, reverting
+commenting out line Lines { lines: 342..=342 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 559..=608 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 181..=197 } in "./rabbitmq-after-brd-tmp/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/64/kubernetes_cluster/proof/api_server_liveness.rs is completed
+commenting out line Lines { lines: 148..=150 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 126..=126 } in "./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 104..=104 } in "./rabbitmq-after-brd-tmp/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 343..=343 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/143/controller_examples/rabbitmq_controller/proof/helper_invariants/unchangeable.rs is completed
+commenting out line Lines { lines: 381..=385 } in "./rabbitmq-after-brd-tmp/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 558..=609 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 257..=257 } in "./rabbitmq-after-brd-tmp/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 129..=129 } in "./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 102..=106 } in "./rabbitmq-after-brd-tmp/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 155..=155 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 363..=363 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 408..=410 } in "./rabbitmq-after-brd-tmp/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 662..=662 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 248..=259 } in "./rabbitmq-after-brd-tmp/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 132..=132 } in "./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 153..=156 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 100..=107 } in "./rabbitmq-after-brd-tmp/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 696..=696 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 423..=425 } in "./rabbitmq-after-brd-tmp/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 332..=368 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 247..=260 } in "./rabbitmq-after-brd-tmp/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 135..=135 } in "./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed, reverting
+commenting out line Lines { lines: 160..=162 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 149..=157 } in "./rabbitmq-after-brd-tmp/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 435..=437 } in "./rabbitmq-after-brd-tmp/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 452..=481 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 699..=699 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 315..=315 } in "./rabbitmq-after-brd-tmp/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/78/kubernetes_cluster/proof/wf1_assistant.rs is completed
+commenting out line Lines { lines: 137..=139 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 177..=188 } in "./rabbitmq-after-brd-tmp/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 172..=172 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 518..=518 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 442..=444 } in "./rabbitmq-after-brd-tmp/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 654..=703 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 309..=359 } in "./rabbitmq-after-brd-tmp/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 145..=145 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 192..=198 } in "./rabbitmq-after-brd-tmp/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 519..=519 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 165..=173 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 450..=452 } in "./rabbitmq-after-brd-tmp/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 653..=704 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+commenting out line Lines { lines: 306..=360 } in "./rabbitmq-after-brd-tmp/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs"
+verus failed, reverting
+commenting out line Lines { lines: 142..=146 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 239..=247 } in "./rabbitmq-after-brd-tmp/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 529..=529 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 177..=179 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 457..=459 } in "./rabbitmq-after-brd-tmp/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs"
+verus failed, reverting
+commenting out line Lines { lines: 763..=763 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/144/controller_examples/rabbitmq_controller/proof/helper_invariants/validation.rs is completed
+commenting out line Lines { lines: 44..=53 } in "./rabbitmq-after-brd-tmp/150/controller_examples/rabbitmq_controller/proof/liveness/terminate.rs"
+verus failed, reverting
+commenting out line Lines { lines: 158..=160 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/146/controller_examples/rabbitmq_controller/proof/liveness/proof.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/151/controller_examples/rabbitmq_controller/proof/predicate.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/152/controller_examples/rabbitmq_controller/proof/resource.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/153/controller_examples/rabbitmq_controller/proof/safety/mod.rs is completed
+commenting out line Lines { lines: 30..=32 } in "./rabbitmq-after-brd-tmp/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 542..=542 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/148/controller_examples/rabbitmq_controller/proof/liveness/spec.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/155/controller_examples/rabbitmq_controller/trusted/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/156/controller_examples/rabbitmq_controller/trusted/exec_types.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/157/controller_examples/rabbitmq_controller/trusted/liveness_theorem.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/158/controller_examples/rabbitmq_controller/trusted/maker.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/159/controller_examples/rabbitmq_controller/trusted/safety_theorem.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/160/controller_examples/rabbitmq_controller/trusted/spec_types.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/161/controller_examples/rabbitmq_controller/trusted/step.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/162/reconciler/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/163/reconciler/exec/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/164/reconciler/exec/io.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/165/reconciler/exec/reconciler.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/166/reconciler/exec/resource_builder.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 753..=807 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+minimization of ./rabbitmq-after-brd-tmp/167/reconciler/spec/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/168/reconciler/spec/io.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/169/reconciler/spec/reconciler.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/170/reconciler/spec/resource_builder.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/171/shim_layer/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/172/shim_layer/controller_runtime.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/173/shim_layer/fault_injection.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/174/state_machine/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/175/state_machine/state_machine.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/176/state_machine/action.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/177/temporal_logic/mod.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/178/temporal_logic/defs.rs is completed
+commenting out line Lines { lines: 140..=142 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/150/controller_examples/rabbitmq_controller/proof/liveness/terminate.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/180/vstd_ext/mod.rs is completed
+commenting out line Lines { lines: 23..=23 } in "./rabbitmq-after-brd-tmp/181/vstd_ext/map_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 184..=184 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 171..=171 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 139..=157 } in "./rabbitmq-after-brd-tmp/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 510..=547 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 751..=808 } in "./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 150..=152 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+minimization of ./rabbitmq-after-brd-tmp/181/vstd_ext/map_lib.rs is completed
+commenting out line Lines { lines: 15..=15 } in "./rabbitmq-after-brd-tmp/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 163..=172 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 138..=158 } in "./rabbitmq-after-brd-tmp/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/75/kubernetes_cluster/proof/message.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/183/vstd_ext/option_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 649..=657 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+commenting out line Lines { lines: 17..=17 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 203..=205 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 23..=27 } in "./rabbitmq-after-brd-tmp/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 182..=185 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 180..=182 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 252..=252 } in "./rabbitmq-after-brd-tmp/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 726..=726 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 20..=20 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 251..=263 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 33..=33 } in "./rabbitmq-after-brd-tmp/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 230..=258 } in "./rabbitmq-after-brd-tmp/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 188..=188 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 201..=238 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 719..=743 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 22..=22 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 50..=50 } in "./rabbitmq-after-brd-tmp/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 267..=269 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 308..=317 } in "./rabbitmq-after-brd-tmp/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 185..=189 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 249..=249 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 717..=744 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 51..=51 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 65..=65 } in "./rabbitmq-after-brd-tmp/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 246..=271 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 307..=318 } in "./rabbitmq-after-brd-tmp/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 263..=263 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 242..=250 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 785..=787 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 55..=55 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 66..=66 } in "./rabbitmq-after-brd-tmp/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 321..=325 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 343..=343 } in "./rabbitmq-after-brd-tmp/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 264..=264 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 303..=306 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 826..=837 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 53..=56 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 317..=326 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 63..=69 } in "./rabbitmq-after-brd-tmp/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 364..=364 } in "./rabbitmq-after-brd-tmp/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 265..=265 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 57..=57 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 824..=838 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 61..=70 } in "./rabbitmq-after-brd-tmp/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 333..=333 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 394..=394 } in "./rabbitmq-after-brd-tmp/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 268..=273 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 312..=312 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 88..=88 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 870..=872 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 80..=80 } in "./rabbitmq-after-brd-tmp/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 343..=349 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 416..=416 } in "./rabbitmq-after-brd-tmp/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 258..=279 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 93..=93 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 914..=925 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 82..=82 } in "./rabbitmq-after-brd-tmp/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 350..=350 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/154/controller_examples/rabbitmq_controller/proof/safety/proof.rs is completed
+commenting out line Lines { lines: 18..=20 } in "./rabbitmq-after-brd-tmp/185/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 379..=379 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 309..=313 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 91..=94 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 912..=926 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 78..=84 } in "./rabbitmq-after-brd-tmp/182/vstd_ext/multiset_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 360..=362 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 380..=380 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 21..=23 } in "./rabbitmq-after-brd-tmp/185/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 95..=95 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1124..=1124 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/182/vstd_ext/multiset_lib.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/186/vstd_ext/string_map.rs is completed
+minimization of ./rabbitmq-after-brd-tmp/187/vstd_ext/string_view.rs is completed
+commenting out line Lines { lines: 32..=35 } in "./rabbitmq-after-brd-tmp/188/vstd_ext/vec_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 358..=363 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 49..=49 } in "./rabbitmq-after-brd-tmp/185/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 317..=320 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 381..=381 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 104..=106 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1119..=1128 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/188/vstd_ext/vec_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 372..=375 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 373..=385 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 50..=50 } in "./rabbitmq-after-brd-tmp/185/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 113..=119 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1216..=1218 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 331..=331 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 371..=376 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 463..=469 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 410126ms
+commenting out line Lines { lines: 53..=53 } in "./rabbitmq-after-brd-tmp/185/vstd_ext/set_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 120..=125 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1194..=1222 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 323..=332 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 370..=377 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 476..=476 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus succeeded with time: 432616ms
+minimization of ./rabbitmq-after-brd-tmp/185/vstd_ext/set_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 140..=140 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1193..=1223 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 336..=338 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 378..=381 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 477..=477 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 139..=141 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1420..=1420 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 389..=391 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 344..=344 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 471..=482 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 145..=145 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1433..=1433 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 393..=395 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 525..=525 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 144..=146 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 341..=345 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1445..=1445 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 388..=397 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 519..=530 } in "./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 143..=147 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1458..=1458 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 425..=427 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/149/controller_examples/rabbitmq_controller/proof/liveness/stateful_set_match.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 162..=168 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 364..=403 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1470..=1470 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 435..=437 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 159..=169 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 414..=414 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1482..=1482 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 438..=438 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 170..=173 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1508..=1511 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 454..=454 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 407..=415 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 176..=176 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1577..=1577 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 450..=455 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 483..=483 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 177..=177 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1563..=1599 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 473..=473 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 484..=484 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 175..=179 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1562..=1600 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 487..=492 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 471..=475 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 215..=215 } in "./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1628..=1634 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 479..=497 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 470..=476 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/184/vstd_ext/seq_lib.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 1761..=1763 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+verus failed, reverting
+commenting out line Lines { lines: 468..=477 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+commenting out line Lines { lines: 585..=585 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1756..=1765 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 586..=586 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 482..=485 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 581..=590 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1810..=1810 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 481..=486 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 662..=662 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 479..=487 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1811..=1811 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 509..=509 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 659..=675 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1805..=1816 } in "./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs"
+verus failed, reverting
+commenting out line Lines { lines: 507..=510 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 677..=686 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/142/controller_examples/rabbitmq_controller/proof/helper_invariants/proof.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 505..=511 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 746..=746 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 527..=527 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 747..=747 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 526..=528 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 751..=756 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 530..=530 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 741..=762 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 520..=531 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 848..=848 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 561..=561 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 560..=562 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 845..=861 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 556..=564 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 867..=867 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 573..=577 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 868..=868 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 592..=592 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 863..=873 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 586..=594 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 946..=946 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 656..=658 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 947..=947 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 941..=952 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 655..=659 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 999..=999 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 668..=671 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 680..=683 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 994..=1017 } in "./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs"
+verus failed, reverting
+commenting out line Lines { lines: 691..=694 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/147/controller_examples/rabbitmq_controller/proof/liveness/resource_match.rs is completed
+verus failed, reverting
+commenting out line Lines { lines: 704..=707 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 703..=708 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 720..=723 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 738..=741 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 949..=952 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 962..=964 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 961..=965 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 993..=993 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 994..=994 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 991..=998 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 989..=999 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 988..=1000 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1015..=1018 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1089..=1095 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1088..=1096 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1108..=1115 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1129..=1132 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1156..=1158 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1151..=1159 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1199..=1220 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1198..=1221 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1243..=1251 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1242..=1252 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1268..=1271 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1298..=1301 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1297..=1302 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1318..=1321 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1335..=1343 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1334..=1344 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1333..=1345 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1370..=1373 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1363..=1375 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1362..=1376 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1391..=1397 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1414..=1429 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1412..=1430 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1487..=1492 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1486..=1493 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1614..=1616 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1617..=1619 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1626..=1626 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1637..=1637 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1644..=1644 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1645..=1645 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus succeeded with time: 239707ms
+commenting out line Lines { lines: 1647..=1647 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1643..=1651 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1613..=1653 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1612..=1654 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1672..=1691 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1671..=1692 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1726..=1731 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1725..=1733 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1711..=1736 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1710..=1737 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1750..=1762 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1749..=1763 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1797..=1799 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1830..=1832 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1872..=1872 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1867..=1876 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1866..=1877 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1894..=1897 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+commenting out line Lines { lines: 1893..=1898 } in "./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs"
+verus failed, reverting
+minimization of ./rabbitmq-after-brd-tmp/179/temporal_logic/rules.rs is completed
