@@ -319,7 +319,7 @@ proof fn lemma_always_stateful_set_in_create_request_msg_satisfies_unchangeable(
 //                        assert(s_prime.resources()[key].metadata.uid.is_Some());
 //                        assert(s_prime.resources()[key].metadata.uid.get_Some_0() == s.kubernetes_api_state.uid_counter);
                         let owner_refs = msg.content.get_create_request().obj.metadata.owner_references;
-                        assert(owner_refs.is_Some() && owner_refs.get_Some_0().len() == 1);
+//                        assert(owner_refs.is_Some() && owner_refs.get_Some_0().len() == 1);
 //                        assert(owner_refs.get_Some_0()[0].uid != s.kubernetes_api_state.uid_counter);
 //                        assert(owner_refs.get_Some_0()[0] != ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0().controller_owner_ref());
 //                        assert(certain_fields_of_stateful_set_stay_unchanged(msg.content.get_create_request().obj, ZookeeperClusterView::unmarshal(s_prime.resources()[key]).get_Ok_0()));

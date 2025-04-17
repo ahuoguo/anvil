@@ -324,7 +324,7 @@ pub proof fn lemma_eventually_always_object_in_response_at_after_create_resource
                         _ => {
                             assert(s.in_flight().contains(msg));
 //                            assert(s.ongoing_reconciles()[key] == s_prime.ongoing_reconciles()[key]);
-                            assert(!s.in_flight().contains(pending_req));
+//                            assert(!s.in_flight().contains(pending_req));
                         }
                     }
                 }
