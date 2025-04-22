@@ -4,6 +4,10 @@ use crate::external_api::spec::EmptyTypeView;
 use vstd::{prelude::*, view::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // A trait for the external api of a reconciler, whose core is a transition method, and the developer should wrap all
 // possible operations they may need in the function.

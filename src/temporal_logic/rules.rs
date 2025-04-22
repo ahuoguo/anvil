@@ -6,6 +6,10 @@ use vstd::map_lib::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 proof fn later_unfold<T>(ex: Execution<T>, p: TempPred<T>)
     requires later(p).satisfied_by(ex),

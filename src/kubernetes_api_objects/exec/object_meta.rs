@@ -6,6 +6,10 @@ use crate::vstd_ext::{string_map::*, string_view::*};
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // ObjectMeta contains the metadata that all Kubernetes resource objects must have,
 // including name, namespace, uid, and so on.

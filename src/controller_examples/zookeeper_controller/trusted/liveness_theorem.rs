@@ -9,6 +9,10 @@ use crate::zookeeper_controller::trusted::{maker::*, spec_types::*, step::*};
 use vstd::prelude::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub open spec fn liveness_theorem<M: Maker>() -> bool { cluster_spec().entails(tla_forall(|zookeeper: ZookeeperClusterView| liveness::<M>(zookeeper))) }
 

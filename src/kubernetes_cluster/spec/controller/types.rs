@@ -10,6 +10,10 @@ use crate::state_machine::state_machine::*;
 use vstd::{multiset::*, prelude::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub struct ControllerState<K: CustomResourceView, E: ExternalAPI, R: Reconciler<K, E>> {
     pub ongoing_reconciles: Map<ObjectRef, OngoingReconcile<K, E, R>>,

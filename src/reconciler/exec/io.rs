@@ -8,6 +8,10 @@ use vstd::{prelude::*, view::*};
 use vstd::pervasive::unreached;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 // Third-party libraries can also receive requests from reconciler.
 // T: The input type of the third-party library of the reconciler which should also be defined by the developer.

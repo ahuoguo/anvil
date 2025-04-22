@@ -6,6 +6,10 @@ use vstd::set::*;
 use vstd::set_lib::*;
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
 
 pub proof fn finite_set_to_seq_contains_all_set_elements<A>(s: Set<A>)
     requires s.finite(),

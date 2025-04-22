@@ -17,6 +17,10 @@ use crate::vstd_ext::{map_lib::*, set_lib::*, seq_lib::*};
 use vstd::{map::*, map_lib::*, prelude::*};
 
 verus! {
+broadcast use vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties;
    
 pub proof fn lemma_api_request_outside_create_or_delete_loop_maintains_matching_pods(
     s: ClusterState, s_prime: ClusterState, vrs: VReplicaSetView, cluster: Cluster, controller_id: int, 
