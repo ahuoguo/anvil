@@ -1,0 +1,1185 @@
+    Finished `release` profile [optimized] target(s) in 0.98s
+     Running `/local/abai/verus/source/target/release/minimize -d ./tmp /local/abai/anvil/src/anvil.d`
+original verification time: 32378ms
+minimization of ./tmp/1/executable_model/mod.rs is completed
+minimization of ./tmp/0/anvil.rs is completed
+minimization of ./tmp/5/executable_model/object_map.rs is completed
+minimization of ./tmp/6/executable_model/object_ref_set.rs is completed
+minimization of ./tmp/2/executable_model/api_server.rs is completed
+minimization of ./tmp/3/executable_model/api_server_state.rs is completed
+minimization of ./tmp/9/external_api/mod.rs is completed
+minimization of ./tmp/11/external_api/spec.rs is completed
+minimization of ./tmp/8/executable_model/string_set.rs is completed
+minimization of ./tmp/7/executable_model/prelude.rs is completed
+minimization of ./tmp/12/kubernetes_api_objects/mod.rs is completed
+minimization of ./tmp/10/external_api/exec.rs is completed
+minimization of ./tmp/13/kubernetes_api_objects/error.rs is completed
+minimization of ./tmp/15/kubernetes_api_objects/exec/affinity.rs is completed
+minimization of ./tmp/14/kubernetes_api_objects/exec/mod.rs is completed
+minimization of ./tmp/17/kubernetes_api_objects/exec/api_resource.rs is completed
+minimization of ./tmp/16/kubernetes_api_objects/exec/api_method.rs is completed
+minimization of ./tmp/18/kubernetes_api_objects/exec/common.rs is completed
+minimization of ./tmp/19/kubernetes_api_objects/exec/config_map.rs is completed
+minimization of ./tmp/21/kubernetes_api_objects/exec/daemon_set.rs is completed
+minimization of ./tmp/20/kubernetes_api_objects/exec/container.rs is completed
+minimization of ./tmp/22/kubernetes_api_objects/exec/dynamic.rs is completed
+minimization of ./tmp/23/kubernetes_api_objects/exec/label_selector.rs is completed
+minimization of ./tmp/24/kubernetes_api_objects/exec/object_meta.rs is completed
+minimization of ./tmp/25/kubernetes_api_objects/exec/owner_reference.rs is completed
+minimization of ./tmp/26/kubernetes_api_objects/exec/persistent_volume_claim.rs is completed
+minimization of ./tmp/28/kubernetes_api_objects/exec/pod_template_spec.rs is completed
+minimization of ./tmp/29/kubernetes_api_objects/exec/preconditions.rs is completed
+minimization of ./tmp/27/kubernetes_api_objects/exec/pod.rs is completed
+minimization of ./tmp/30/kubernetes_api_objects/exec/prelude.rs is completed
+minimization of ./tmp/31/kubernetes_api_objects/exec/resource.rs is completed
+minimization of ./tmp/32/kubernetes_api_objects/exec/resource_requirements.rs is completed
+minimization of ./tmp/33/kubernetes_api_objects/exec/role.rs is completed
+minimization of ./tmp/35/kubernetes_api_objects/exec/secret.rs is completed
+minimization of ./tmp/34/kubernetes_api_objects/exec/role_binding.rs is completed
+minimization of ./tmp/36/kubernetes_api_objects/exec/service.rs is completed
+minimization of ./tmp/37/kubernetes_api_objects/exec/service_account.rs is completed
+minimization of ./tmp/38/kubernetes_api_objects/exec/stateful_set.rs is completed
+minimization of ./tmp/39/kubernetes_api_objects/exec/toleration.rs is completed
+minimization of ./tmp/40/kubernetes_api_objects/exec/volume.rs is completed
+minimization of ./tmp/41/kubernetes_api_objects/exec/volume_resource_requirements.rs is completed
+minimization of ./tmp/42/kubernetes_api_objects/spec/mod.rs is completed
+commenting out line Lines { lines: 474..=474 } in "./tmp/4/executable_model/common.rs"
+verus succeeded with time: 35839ms, keeping it commented out
+commenting out line Lines { lines: 475..=475 } in "./tmp/4/executable_model/common.rs"
+verus succeeded with time: 34913ms, keeping it commented out
+commenting out line Lines { lines: 490..=490 } in "./tmp/4/executable_model/common.rs"
+verus failed with time: 35165ms, reverting
+minimization of ./tmp/4/executable_model/common.rs is completed
+minimization of ./tmp/43/kubernetes_api_objects/spec/affinity.rs is completed
+minimization of ./tmp/44/kubernetes_api_objects/spec/api_method.rs is completed
+minimization of ./tmp/45/kubernetes_api_objects/spec/api_resource.rs is completed
+minimization of ./tmp/46/kubernetes_api_objects/spec/common.rs is completed
+minimization of ./tmp/47/kubernetes_api_objects/spec/config_map.rs is completed
+minimization of ./tmp/48/kubernetes_api_objects/spec/container.rs is completed
+minimization of ./tmp/49/kubernetes_api_objects/spec/daemon_set.rs is completed
+minimization of ./tmp/50/kubernetes_api_objects/spec/dynamic.rs is completed
+minimization of ./tmp/51/kubernetes_api_objects/spec/label_selector.rs is completed
+minimization of ./tmp/52/kubernetes_api_objects/spec/object_meta.rs is completed
+minimization of ./tmp/53/kubernetes_api_objects/spec/owner_reference.rs is completed
+minimization of ./tmp/54/kubernetes_api_objects/spec/persistent_volume_claim.rs is completed
+minimization of ./tmp/55/kubernetes_api_objects/spec/pod.rs is completed
+minimization of ./tmp/56/kubernetes_api_objects/spec/pod_template_spec.rs is completed
+minimization of ./tmp/57/kubernetes_api_objects/spec/preconditions.rs is completed
+minimization of ./tmp/58/kubernetes_api_objects/spec/prelude.rs is completed
+minimization of ./tmp/59/kubernetes_api_objects/spec/resource.rs is completed
+minimization of ./tmp/60/kubernetes_api_objects/spec/resource_requirements.rs is completed
+minimization of ./tmp/61/kubernetes_api_objects/spec/role.rs is completed
+minimization of ./tmp/62/kubernetes_api_objects/spec/role_binding.rs is completed
+minimization of ./tmp/63/kubernetes_api_objects/spec/secret.rs is completed
+minimization of ./tmp/64/kubernetes_api_objects/spec/service.rs is completed
+minimization of ./tmp/65/kubernetes_api_objects/spec/service_account.rs is completed
+minimization of ./tmp/66/kubernetes_api_objects/spec/stateful_set.rs is completed
+minimization of ./tmp/67/kubernetes_api_objects/spec/toleration.rs is completed
+minimization of ./tmp/68/kubernetes_api_objects/spec/volume.rs is completed
+minimization of ./tmp/69/kubernetes_api_objects/spec/volume_resource_requirements.rs is completed
+minimization of ./tmp/70/kubernetes_cluster/mod.rs is completed
+minimization of ./tmp/71/kubernetes_cluster/proof/mod.rs is completed
+minimization of ./tmp/73/kubernetes_cluster/proof/api_server_safety.rs is completed
+minimization of ./tmp/75/kubernetes_cluster/proof/cluster.rs is completed
+commenting out line Lines { lines: 175..=175 } in "./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed with time: 3473ms, reverting
+commenting out line Lines { lines: 139..=143 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 34523ms, reverting
+commenting out line Lines { lines: 173..=176 } in "./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed with time: 40477ms, reverting
+commenting out line Lines { lines: 78..=107 } in "./tmp/76/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed with time: 36304ms, reverting
+commenting out line Lines { lines: 152..=152 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 38764ms, reverting
+minimization of ./tmp/77/kubernetes_cluster/proof/controller_runtime.rs is completed
+minimization of ./tmp/78/kubernetes_cluster/proof/controller_runtime_eventual_safety.rs is completed
+commenting out line Lines { lines: 76..=108 } in "./tmp/76/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed with time: 37105ms, reverting
+commenting out line Lines { lines: 183..=183 } in "./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 40295ms, keeping it commented out
+commenting out line Lines { lines: 187..=187 } in "./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed with time: 3502ms, reverting
+commenting out line Lines { lines: 149..=153 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 38265ms, reverting
+commenting out line Lines { lines: 171..=171 } in "./tmp/76/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 46258ms, keeping it commented out
+commenting out line Lines { lines: 188..=188 } in "./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 46080ms, keeping it commented out
+minimization of ./tmp/82/kubernetes_cluster/proof/external_api_liveness.rs is completed
+commenting out line Lines { lines: 350..=375 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with time: 45739ms, reverting
+commenting out line Lines { lines: 294..=296 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 46192ms, reverting
+commenting out line Lines { lines: 48..=48 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 48561ms, keeping it commented out
+commenting out line Lines { lines: 119..=139 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed with time: 52609ms, reverting
+commenting out line Lines { lines: 175..=175 } in "./tmp/76/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 51944ms, keeping it commented out
+commenting out line Lines { lines: 189..=189 } in "./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 52284ms, keeping it commented out
+commenting out line Lines { lines: 387..=387 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with time: 55407ms, reverting
+commenting out line Lines { lines: 292..=297 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 56208ms, reverting
+commenting out line Lines { lines: 47..=50 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus failed with time: 55352ms, reverting
+commenting out line Lines { lines: 45..=45 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 56374ms, keeping it commented out
+commenting out line Lines { lines: 173..=179 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed with time: 55096ms, reverting
+commenting out line Lines { lines: 159..=178 } in "./tmp/76/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed with time: 59702ms, reverting
+commenting out line Lines { lines: 191..=191 } in "./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 56910ms, keeping it commented out
+commenting out line Lines { lines: 317..=321 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 54134ms, reverting
+commenting out line Lines { lines: 380..=388 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with time: 59902ms, reverting
+commenting out line Lines { lines: 113..=113 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 57463ms, keeping it commented out
+commenting out line Lines { lines: 50..=50 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 58431ms, keeping it commented out
+commenting out line Lines { lines: 185..=185 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed with time: 58762ms, reverting
+commenting out line Lines { lines: 157..=179 } in "./tmp/76/kubernetes_cluster/proof/cluster_safety.rs"
+verus failed with time: 57269ms, reverting
+commenting out line Lines { lines: 195..=195 } in "./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 57328ms, keeping it commented out
+commenting out line Lines { lines: 331..=331 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 54518ms, reverting
+commenting out line Lines { lines: 122..=122 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 57393ms, keeping it commented out
+commenting out line Lines { lines: 461..=464 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with time: 65544ms, reverting
+commenting out line Lines { lines: 51..=51 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 53786ms, keeping it commented out
+commenting out line Lines { lines: 182..=186 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed with time: 54387ms, reverting
+commenting out line Lines { lines: 328..=332 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 53960ms, reverting
+commenting out line Lines { lines: 178..=198 } in "./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus succeeded with time: 56177ms, keeping it commented out
+commenting out line Lines { lines: 219..=219 } in "./tmp/76/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 57863ms, keeping it commented out
+commenting out line Lines { lines: 125..=125 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 59688ms, keeping it commented out
+commenting out line Lines { lines: 458..=465 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with time: 62006ms, reverting
+commenting out line Lines { lines: 54..=54 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 55983ms, keeping it commented out
+commenting out line Lines { lines: 227..=227 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed with time: 57664ms, reverting
+commenting out line Lines { lines: 359..=359 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 53782ms, reverting
+commenting out line Lines { lines: 214..=221 } in "./tmp/76/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 58981ms, keeping it commented out
+commenting out line Lines { lines: 220..=231 } in "./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed with time: 60432ms, reverting
+commenting out line Lines { lines: 472..=472 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 55320ms, keeping it commented out
+commenting out line Lines { lines: 131..=131 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 60519ms, keeping it commented out
+commenting out line Lines { lines: 55..=55 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 53902ms, keeping it commented out
+commenting out line Lines { lines: 226..=228 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed with time: 55523ms, reverting
+commenting out line Lines { lines: 358..=360 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 56766ms, reverting
+commenting out line Lines { lines: 259..=280 } in "./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed with time: 55466ms, reverting
+commenting out line Lines { lines: 212..=222 } in "./tmp/76/kubernetes_cluster/proof/cluster_safety.rs"
+verus succeeded with time: 57753ms, keeping it commented out
+minimization of ./tmp/76/kubernetes_cluster/proof/cluster_safety.rs is completed
+commenting out line Lines { lines: 133..=133 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 54025ms, keeping it commented out
+commenting out line Lines { lines: 474..=474 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 55412ms, keeping it commented out
+commenting out line Lines { lines: 40..=61 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 54730ms, reverting
+commenting out line Lines { lines: 225..=229 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed with time: 54746ms, reverting
+commenting out line Lines { lines: 357..=361 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 55240ms, reverting
+commenting out line Lines { lines: 291..=291 } in "./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed with time: 57456ms, reverting
+commenting out line Lines { lines: 168..=188 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed with time: 54855ms, reverting
+commenting out line Lines { lines: 477..=477 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 55089ms, keeping it commented out
+commenting out line Lines { lines: 139..=139 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 56945ms, keeping it commented out
+commenting out line Lines { lines: 39..=62 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 57592ms, reverting
+commenting out line Lines { lines: 478..=478 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with time: 5989ms, reverting
+commenting out line Lines { lines: 277..=280 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed with time: 57783ms, reverting
+commenting out line Lines { lines: 387..=392 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 54817ms, reverting
+commenting out line Lines { lines: 223..=229 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed with time: 52998ms, reverting
+commenting out line Lines { lines: 285..=292 } in "./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs"
+verus failed with time: 57594ms, reverting
+minimization of ./tmp/74/kubernetes_cluster/proof/builtin_controllers.rs is completed
+commenting out line Lines { lines: 142..=142 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 58434ms, keeping it commented out
+commenting out line Lines { lines: 127..=127 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 57217ms, keeping it commented out
+commenting out line Lines { lines: 466..=480 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 58381ms, keeping it commented out
+commenting out line Lines { lines: 401..=401 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 54290ms, keeping it commented out
+commenting out line Lines { lines: 286..=286 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 59791ms, keeping it commented out
+commenting out line Lines { lines: 235..=235 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed with time: 56771ms, reverting
+commenting out line Lines { lines: 118..=118 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 53406ms, keeping it commented out
+commenting out line Lines { lines: 128..=128 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 51953ms, keeping it commented out
+commenting out line Lines { lines: 150..=150 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 56755ms, keeping it commented out
+commenting out line Lines { lines: 489..=492 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with time: 55618ms, reverting
+commenting out line Lines { lines: 402..=402 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 56134ms, reverting
+commenting out line Lines { lines: 287..=287 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed with time: 57348ms, reverting
+commenting out line Lines { lines: 232..=236 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed with time: 56250ms, reverting
+commenting out line Lines { lines: 120..=120 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 55002ms, keeping it commented out
+commenting out line Lines { lines: 130..=130 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 57020ms, keeping it commented out
+commenting out line Lines { lines: 152..=152 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 58887ms, keeping it commented out
+commenting out line Lines { lines: 486..=493 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with time: 56988ms, reverting
+commenting out line Lines { lines: 398..=403 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus failed with time: 57089ms, reverting
+commenting out line Lines { lines: 283..=288 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus failed with time: 54246ms, reverting
+commenting out line Lines { lines: 121..=121 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 54942ms, keeping it commented out
+commenting out line Lines { lines: 278..=278 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed with time: 57960ms, reverting
+commenting out line Lines { lines: 132..=132 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 58749ms, keeping it commented out
+commenting out line Lines { lines: 500..=500 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 55364ms, keeping it commented out
+commenting out line Lines { lines: 155..=155 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 58692ms, keeping it commented out
+commenting out line Lines { lines: 461..=461 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 53957ms, keeping it commented out
+commenting out line Lines { lines: 385..=385 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 57578ms, keeping it commented out
+commenting out line Lines { lines: 124..=124 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 55386ms, keeping it commented out
+commenting out line Lines { lines: 277..=279 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed with time: 55933ms, reverting
+commenting out line Lines { lines: 133..=133 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 56728ms, keeping it commented out
+commenting out line Lines { lines: 502..=502 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 58111ms, keeping it commented out
+commenting out line Lines { lines: 160..=160 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 56898ms, keeping it commented out
+commenting out line Lines { lines: 463..=463 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 57164ms, keeping it commented out
+commenting out line Lines { lines: 125..=128 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus failed with time: 55865ms, reverting
+commenting out line Lines { lines: 392..=392 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 57877ms, keeping it commented out
+commenting out line Lines { lines: 276..=280 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed with time: 54041ms, reverting
+commenting out line Lines { lines: 118..=139 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 57664ms, keeping it commented out
+commenting out line Lines { lines: 162..=162 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 52061ms, keeping it commented out
+commenting out line Lines { lines: 505..=505 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 56203ms, keeping it commented out
+commenting out line Lines { lines: 506..=506 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with time: 6095ms, reverting
+commenting out line Lines { lines: 468..=468 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 49834ms, keeping it commented out
+commenting out line Lines { lines: 397..=397 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 54546ms, keeping it commented out
+commenting out line Lines { lines: 334..=337 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed with time: 56008ms, reverting
+commenting out line Lines { lines: 130..=130 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 57089ms, keeping it commented out
+commenting out line Lines { lines: 116..=141 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 56555ms, keeping it commented out
+commenting out line Lines { lines: 168..=168 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 59807ms, keeping it commented out
+commenting out line Lines { lines: 494..=508 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus succeeded with time: 55720ms, keeping it commented out
+commenting out line Lines { lines: 470..=470 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 56212ms, keeping it commented out
+commenting out line Lines { lines: 343..=343 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 54569ms, keeping it commented out
+commenting out line Lines { lines: 399..=399 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 58049ms, keeping it commented out
+commenting out line Lines { lines: 131..=134 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 57499ms, keeping it commented out
+commenting out line Lines { lines: 192..=192 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 58086ms, keeping it commented out
+commenting out line Lines { lines: 171..=171 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 58170ms, keeping it commented out
+commenting out line Lines { lines: 437..=513 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with time: 53493ms, reverting
+commenting out line Lines { lines: 474..=474 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 52810ms, keeping it commented out
+commenting out line Lines { lines: 344..=344 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed with time: 54994ms, reverting
+commenting out line Lines { lines: 403..=403 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 55534ms, keeping it commented out
+commenting out line Lines { lines: 136..=136 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 58149ms, keeping it commented out
+commenting out line Lines { lines: 194..=194 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 55264ms, keeping it commented out
+commenting out line Lines { lines: 176..=176 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 57182ms, keeping it commented out
+commenting out line Lines { lines: 526..=526 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with time: 58193ms, reverting
+commenting out line Lines { lines: 477..=477 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 53935ms, keeping it commented out
+commenting out line Lines { lines: 340..=345 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus failed with time: 59376ms, reverting
+commenting out line Lines { lines: 406..=406 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 59643ms, keeping it commented out
+commenting out line Lines { lines: 137..=137 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 56321ms, keeping it commented out
+commenting out line Lines { lines: 196..=196 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 56936ms, keeping it commented out
+commenting out line Lines { lines: 110..=180 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 55253ms, keeping it commented out
+commenting out line Lines { lines: 523..=527 } in "./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs"
+verus failed with time: 58528ms, reverting
+minimization of ./tmp/79/kubernetes_cluster/proof/controller_runtime_liveness.rs is completed
+commenting out line Lines { lines: 480..=480 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 52639ms, keeping it commented out
+commenting out line Lines { lines: 453..=453 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 54601ms, keeping it commented out
+commenting out line Lines { lines: 409..=409 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 52287ms, keeping it commented out
+commenting out line Lines { lines: 138..=141 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 56313ms, keeping it commented out
+commenting out line Lines { lines: 197..=197 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 52542ms, keeping it commented out
+commenting out line Lines { lines: 199..=199 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 53787ms, keeping it commented out
+commenting out line Lines { lines: 484..=484 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 52321ms, keeping it commented out
+commenting out line Lines { lines: 460..=460 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 55749ms, keeping it commented out
+commenting out line Lines { lines: 412..=412 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 58001ms, keeping it commented out
+commenting out line Lines { lines: 34..=39 } in "./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed with time: 58237ms, reverting
+commenting out line Lines { lines: 146..=146 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 57752ms, keeping it commented out
+commenting out line Lines { lines: 202..=202 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 52965ms, keeping it commented out
+commenting out line Lines { lines: 200..=200 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 56100ms, keeping it commented out
+commenting out line Lines { lines: 486..=486 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 58363ms, keeping it commented out
+commenting out line Lines { lines: 465..=465 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 54897ms, keeping it commented out
+commenting out line Lines { lines: 377..=416 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 53079ms, keeping it commented out
+commenting out line Lines { lines: 48..=48 } in "./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed with time: 60003ms, reverting
+commenting out line Lines { lines: 148..=148 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 56469ms, keeping it commented out
+commenting out line Lines { lines: 204..=204 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 54926ms, keeping it commented out
+commenting out line Lines { lines: 202..=202 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 55102ms, keeping it commented out
+commenting out line Lines { lines: 453..=491 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 55273ms, keeping it commented out
+commenting out line Lines { lines: 467..=467 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 56786ms, keeping it commented out
+commenting out line Lines { lines: 423..=423 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 57883ms, keeping it commented out
+commenting out line Lines { lines: 55..=60 } in "./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed with time: 55595ms, reverting
+commenting out line Lines { lines: 112..=154 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus failed with time: 54666ms, reverting
+commenting out line Lines { lines: 205..=205 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 57361ms, keeping it commented out
+commenting out line Lines { lines: 195..=205 } in "./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs"
+verus succeeded with time: 58424ms, keeping it commented out
+minimization of ./tmp/80/kubernetes_cluster/proof/controller_runtime_safety.rs is completed
+minimization of ./tmp/87/kubernetes_cluster/spec/mod.rs is completed
+minimization of ./tmp/88/kubernetes_cluster/spec/api_server/mod.rs is completed
+commenting out line Lines { lines: 499..=499 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 55117ms, keeping it commented out
+minimization of ./tmp/89/kubernetes_cluster/spec/api_server/state_machine.rs is completed
+minimization of ./tmp/90/kubernetes_cluster/spec/api_server/types.rs is completed
+minimization of ./tmp/91/kubernetes_cluster/spec/builtin_controllers/mod.rs is completed
+minimization of ./tmp/92/kubernetes_cluster/spec/builtin_controllers/daemon_set_controller.rs is completed
+minimization of ./tmp/93/kubernetes_cluster/spec/builtin_controllers/garbage_collector.rs is completed
+minimization of ./tmp/94/kubernetes_cluster/spec/builtin_controllers/stabilizer.rs is completed
+minimization of ./tmp/95/kubernetes_cluster/spec/builtin_controllers/state_machine.rs is completed
+minimization of ./tmp/96/kubernetes_cluster/spec/builtin_controllers/stateful_set_controller.rs is completed
+minimization of ./tmp/97/kubernetes_cluster/spec/builtin_controllers/types.rs is completed
+minimization of ./tmp/98/kubernetes_cluster/spec/client/mod.rs is completed
+minimization of ./tmp/99/kubernetes_cluster/spec/client/types.rs is completed
+minimization of ./tmp/100/kubernetes_cluster/spec/client/state_machine.rs is completed
+minimization of ./tmp/101/kubernetes_cluster/spec/cluster.rs is completed
+minimization of ./tmp/102/kubernetes_cluster/spec/cluster_state_machine.rs is completed
+commenting out line Lines { lines: 471..=471 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 54192ms, keeping it commented out
+minimization of ./tmp/103/kubernetes_cluster/spec/controller/mod.rs is completed
+minimization of ./tmp/104/kubernetes_cluster/spec/controller/controller_runtime.rs is completed
+minimization of ./tmp/105/kubernetes_cluster/spec/controller/state_machine.rs is completed
+minimization of ./tmp/106/kubernetes_cluster/spec/controller/types.rs is completed
+commenting out line Lines { lines: 417..=424 } in "./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs"
+verus succeeded with time: 56533ms, keeping it commented out
+minimization of ./tmp/81/kubernetes_cluster/proof/daemon_set_controller.rs is completed
+minimization of ./tmp/107/kubernetes_cluster/spec/external_api/mod.rs is completed
+minimization of ./tmp/108/kubernetes_cluster/spec/external_api/state_machine.rs is completed
+minimization of ./tmp/109/kubernetes_cluster/spec/external_api/types.rs is completed
+commenting out line Lines { lines: 69..=69 } in "./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed with time: 54735ms, reverting
+minimization of ./tmp/110/kubernetes_cluster/spec/message.rs is completed
+commenting out line Lines { lines: 222..=222 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 54377ms, keeping it commented out
+minimization of ./tmp/111/kubernetes_cluster/spec/network/mod.rs is completed
+minimization of ./tmp/112/kubernetes_cluster/spec/network/types.rs is completed
+minimization of ./tmp/113/kubernetes_cluster/spec/network/state_machine.rs is completed
+minimization of ./tmp/114/kubernetes_cluster/spec/pod_event/mod.rs is completed
+minimization of ./tmp/115/kubernetes_cluster/spec/pod_event/types.rs is completed
+minimization of ./tmp/116/kubernetes_cluster/spec/pod_event/state_machine.rs is completed
+minimization of ./tmp/117/reconciler/mod.rs is completed
+minimization of ./tmp/118/reconciler/exec/mod.rs is completed
+minimization of ./tmp/119/reconciler/exec/io.rs is completed
+minimization of ./tmp/120/reconciler/exec/reconciler.rs is completed
+minimization of ./tmp/122/reconciler/spec/mod.rs is completed
+minimization of ./tmp/121/reconciler/exec/resource_builder.rs is completed
+minimization of ./tmp/123/reconciler/spec/io.rs is completed
+minimization of ./tmp/124/reconciler/spec/reconciler.rs is completed
+minimization of ./tmp/125/reconciler/spec/resource_builder.rs is completed
+minimization of ./tmp/126/shim_layer/mod.rs is completed
+commenting out line Lines { lines: 185..=209 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 52339ms, reverting
+minimization of ./tmp/127/shim_layer/controller_runtime.rs is completed
+minimization of ./tmp/128/shim_layer/fault_injection.rs is completed
+minimization of ./tmp/129/state_machine/mod.rs is completed
+commenting out line Lines { lines: 494..=500 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 50571ms, keeping it commented out
+minimization of ./tmp/130/state_machine/state_machine.rs is completed
+commenting out line Lines { lines: 474..=474 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 47196ms, keeping it commented out
+commenting out line Lines { lines: 76..=83 } in "./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed with time: 45532ms, reverting
+commenting out line Lines { lines: 224..=224 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 46472ms, keeping it commented out
+minimization of ./tmp/131/state_machine/action.rs is completed
+commenting out line Lines { lines: 181..=211 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 46315ms, reverting
+minimization of ./tmp/132/temporal_logic/mod.rs is completed
+commenting out line Lines { lines: 510..=510 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 43981ms, keeping it commented out
+commenting out line Lines { lines: 477..=477 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 44471ms, keeping it commented out
+commenting out line Lines { lines: 94..=94 } in "./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed with time: 45203ms, reverting
+commenting out line Lines { lines: 225..=225 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 43962ms, keeping it commented out
+minimization of ./tmp/133/temporal_logic/defs.rs is completed
+commenting out line Lines { lines: 269..=269 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 46106ms, keeping it commented out
+commenting out line Lines { lines: 505..=511 } in "./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs"
+verus succeeded with time: 45266ms, keeping it commented out
+minimization of ./tmp/72/kubernetes_cluster/proof/api_server_liveness.rs is completed
+commenting out line Lines { lines: 480..=480 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 43954ms, keeping it commented out
+commenting out line Lines { lines: 97..=97 } in "./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed with time: 44343ms, reverting
+commenting out line Lines { lines: 228..=228 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 46663ms, keeping it commented out
+minimization of ./tmp/135/vstd_ext/mod.rs is completed
+commenting out line Lines { lines: 270..=270 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 43318ms, keeping it commented out
+commenting out line Lines { lines: 140..=142 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 46053ms, reverting
+commenting out line Lines { lines: 445..=484 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 45401ms, keeping it commented out
+commenting out line Lines { lines: 100..=100 } in "./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed with time: 48294ms, reverting
+commenting out line Lines { lines: 229..=232 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus failed with time: 46917ms, reverting
+commenting out line Lines { lines: 272..=272 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 51956ms, keeping it commented out
+commenting out line Lines { lines: 150..=152 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 52999ms, reverting
+commenting out line Lines { lines: 23..=23 } in "./tmp/136/vstd_ext/map_lib.rs"
+verus failed with time: 57123ms, reverting
+minimization of ./tmp/136/vstd_ext/map_lib.rs is completed
+minimization of ./tmp/138/vstd_ext/option_lib.rs is completed
+commenting out line Lines { lines: 491..=491 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 57128ms, keeping it commented out
+commenting out line Lines { lines: 15..=15 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus failed with time: 57084ms, reverting
+commenting out line Lines { lines: 108..=115 } in "./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed with time: 53875ms, reverting
+commenting out line Lines { lines: 234..=234 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 54501ms, keeping it commented out
+commenting out line Lines { lines: 273..=273 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 51492ms, keeping it commented out
+commenting out line Lines { lines: 196..=196 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 57058ms, keeping it commented out
+commenting out line Lines { lines: 17..=17 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 57293ms, reverting
+commenting out line Lines { lines: 485..=492 } in "./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs"
+verus succeeded with time: 56739ms, keeping it commented out
+minimization of ./tmp/84/kubernetes_cluster/proof/stateful_set_controller.rs is completed
+commenting out line Lines { lines: 25..=25 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 57061ms, keeping it commented out
+commenting out line Lines { lines: 126..=126 } in "./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed with time: 56757ms, reverting
+commenting out line Lines { lines: 235..=238 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 59003ms, keeping it commented out
+commenting out line Lines { lines: 274..=274 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 56431ms, keeping it commented out
+commenting out line Lines { lines: 195..=197 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 55183ms, keeping it commented out
+commenting out line Lines { lines: 20..=20 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 57021ms, reverting
+commenting out line Lines { lines: 18..=20 } in "./tmp/140/vstd_ext/set_lib.rs"
+verus failed with time: 57372ms, reverting
+commenting out line Lines { lines: 129..=129 } in "./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed with time: 56328ms, reverting
+commenting out line Lines { lines: 240..=240 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 54693ms, keeping it commented out
+commenting out line Lines { lines: 276..=276 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 52774ms, keeping it commented out
+commenting out line Lines { lines: 23..=27 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus failed with time: 56119ms, reverting
+commenting out line Lines { lines: 203..=205 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 43434ms, reverting
+commenting out line Lines { lines: 241..=241 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 57301ms, keeping it commented out
+commenting out line Lines { lines: 132..=132 } in "./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed with time: 57893ms, reverting
+commenting out line Lines { lines: 22..=22 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 57704ms, reverting
+commenting out line Lines { lines: 33..=33 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus failed with time: 58606ms, reverting
+commenting out line Lines { lines: 277..=277 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 58905ms, keeping it commented out
+commenting out line Lines { lines: 21..=23 } in "./tmp/140/vstd_ext/set_lib.rs"
+verus failed with time: 59087ms, reverting
+commenting out line Lines { lines: 218..=218 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 58776ms, keeping it commented out
+commenting out line Lines { lines: 135..=135 } in "./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs"
+verus failed with time: 56420ms, reverting
+commenting out line Lines { lines: 242..=245 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 56781ms, keeping it commented out
+minimization of ./tmp/86/kubernetes_cluster/proof/wf1_assistant.rs is completed
+minimization of ./tmp/141/vstd_ext/string_map.rs is completed
+minimization of ./tmp/142/vstd_ext/string_view.rs is completed
+commenting out line Lines { lines: 36..=36 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 58421ms, keeping it commented out
+commenting out line Lines { lines: 50..=50 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus failed with time: 59166ms, reverting
+commenting out line Lines { lines: 49..=49 } in "./tmp/140/vstd_ext/set_lib.rs"
+verus failed with time: 58481ms, reverting
+commenting out line Lines { lines: 282..=282 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 59539ms, keeping it commented out
+commenting out line Lines { lines: 251..=263 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 59109ms, reverting
+commenting out line Lines { lines: 250..=250 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 58829ms, keeping it commented out
+commenting out line Lines { lines: 50..=50 } in "./tmp/140/vstd_ext/set_lib.rs"
+verus succeeded with time: 56330ms, keeping it commented out
+commenting out line Lines { lines: 32..=35 } in "./tmp/143/vstd_ext/vec_lib.rs"
+verus failed with time: 58788ms, reverting
+commenting out line Lines { lines: 37..=37 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 58959ms, keeping it commented out
+minimization of ./tmp/143/vstd_ext/vec_lib.rs is completed
+commenting out line Lines { lines: 54..=54 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 58842ms, keeping it commented out
+commenting out line Lines { lines: 284..=284 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 60070ms, keeping it commented out
+commenting out line Lines { lines: 267..=269 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 55887ms, reverting
+commenting out line Lines { lines: 252..=252 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 52010ms, keeping it commented out
+commenting out line Lines { lines: 39..=39 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 49494ms, keeping it commented out
+commenting out line Lines { lines: 53..=53 } in "./tmp/140/vstd_ext/set_lib.rs"
+verus succeeded with time: 53915ms, keeping it commented out
+minimization of ./tmp/140/vstd_ext/set_lib.rs is completed
+commenting out line Lines { lines: 57..=57 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus failed with time: 54493ms, reverting
+commenting out line Lines { lines: 285..=285 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 54908ms, keeping it commented out
+commenting out line Lines { lines: 246..=271 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 53122ms, reverting
+commenting out line Lines { lines: 263..=263 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 45164ms, keeping it commented out
+commenting out line Lines { lines: 40..=40 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 45931ms, keeping it commented out
+commenting out line Lines { lines: 58..=58 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 47293ms, keeping it commented out
+commenting out line Lines { lines: 287..=287 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 46666ms, keeping it commented out
+commenting out line Lines { lines: 321..=325 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 49366ms, reverting
+commenting out line Lines { lines: 264..=264 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 45894ms, keeping it commented out
+commenting out line Lines { lines: 34..=42 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 46689ms, keeping it commented out
+commenting out line Lines { lines: 52..=60 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 46049ms, keeping it commented out
+commenting out line Lines { lines: 292..=292 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 47575ms, keeping it commented out
+commenting out line Lines { lines: 317..=326 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 48330ms, reverting
+commenting out line Lines { lines: 266..=266 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 48125ms, keeping it commented out
+commenting out line Lines { lines: 51..=51 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 45877ms, reverting
+commenting out line Lines { lines: 65..=65 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus failed with time: 45263ms, reverting
+commenting out line Lines { lines: 301..=301 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 46687ms, keeping it commented out
+commenting out line Lines { lines: 333..=333 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 46460ms, reverting
+commenting out line Lines { lines: 52..=52 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 46749ms, keeping it commented out
+commenting out line Lines { lines: 269..=269 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus succeeded with time: 50347ms, keeping it commented out
+commenting out line Lines { lines: 66..=66 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus failed with time: 47356ms, reverting
+commenting out line Lines { lines: 303..=303 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 48155ms, keeping it commented out
+commenting out line Lines { lines: 343..=349 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 47229ms, reverting
+commenting out line Lines { lines: 54..=54 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 42652ms, keeping it commented out
+commenting out line Lines { lines: 212..=273 } in "./tmp/85/kubernetes_cluster/proof/validation_rule.rs"
+verus failed with time: 41597ms, reverting
+minimization of ./tmp/85/kubernetes_cluster/proof/validation_rule.rs is completed
+commenting out line Lines { lines: 67..=67 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 46289ms, keeping it commented out
+commenting out line Lines { lines: 298..=311 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 47044ms, reverting
+commenting out line Lines { lines: 350..=350 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 46830ms, reverting
+commenting out line Lines { lines: 55..=55 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 40926ms, reverting
+commenting out line Lines { lines: 63..=69 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus failed with time: 42576ms, reverting
+commenting out line Lines { lines: 259..=312 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 42392ms, reverting
+commenting out line Lines { lines: 360..=362 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 42470ms, reverting
+commenting out line Lines { lines: 53..=56 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 41210ms, reverting
+commenting out line Lines { lines: 61..=70 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus failed with time: 41917ms, reverting
+commenting out line Lines { lines: 258..=313 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 42413ms, reverting
+commenting out line Lines { lines: 358..=363 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 42059ms, reverting
+commenting out line Lines { lines: 57..=57 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 40866ms, reverting
+commenting out line Lines { lines: 80..=80 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus failed with time: 42847ms, reverting
+commenting out line Lines { lines: 335..=335 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 41359ms, keeping it commented out
+commenting out line Lines { lines: 374..=374 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 42099ms, keeping it commented out
+commenting out line Lines { lines: 73..=73 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 41322ms, keeping it commented out
+commenting out line Lines { lines: 82..=82 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus failed with time: 42311ms, reverting
+commenting out line Lines { lines: 336..=336 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 42060ms, keeping it commented out
+commenting out line Lines { lines: 372..=375 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 42490ms, reverting
+commenting out line Lines { lines: 74..=74 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 41741ms, keeping it commented out
+commenting out line Lines { lines: 83..=83 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus succeeded with time: 42858ms, keeping it commented out
+commenting out line Lines { lines: 340..=340 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 43250ms, keeping it commented out
+commenting out line Lines { lines: 371..=376 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 42737ms, reverting
+commenting out line Lines { lines: 76..=76 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 41019ms, keeping it commented out
+commenting out line Lines { lines: 78..=84 } in "./tmp/137/vstd_ext/multiset_lib.rs"
+verus failed with time: 42453ms, reverting
+minimization of ./tmp/137/vstd_ext/multiset_lib.rs is completed
+commenting out line Lines { lines: 341..=341 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 42299ms, keeping it commented out
+commenting out line Lines { lines: 370..=377 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 41542ms, reverting
+commenting out line Lines { lines: 343..=343 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 5007ms, reverting
+commenting out line Lines { lines: 77..=77 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 39199ms, keeping it commented out
+commenting out line Lines { lines: 380..=380 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 39969ms, keeping it commented out
+commenting out line Lines { lines: 350..=350 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 40147ms, keeping it commented out
+commenting out line Lines { lines: 71..=79 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 38386ms, keeping it commented out
+commenting out line Lines { lines: 378..=381 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 38203ms, reverting
+commenting out line Lines { lines: 351..=351 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 44328ms, keeping it commented out
+commenting out line Lines { lines: 353..=353 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 5193ms, reverting
+commenting out line Lines { lines: 88..=88 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 39106ms, reverting
+commenting out line Lines { lines: 389..=391 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39663ms, reverting
+commenting out line Lines { lines: 436..=436 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 46246ms, keeping it commented out
+commenting out line Lines { lines: 89..=89 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 39225ms, keeping it commented out
+commenting out line Lines { lines: 392..=392 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 39089ms, keeping it commented out
+commenting out line Lines { lines: 443..=443 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 46473ms, keeping it commented out
+commenting out line Lines { lines: 393..=395 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39534ms, reverting
+commenting out line Lines { lines: 92..=92 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 39691ms, keeping it commented out
+commenting out line Lines { lines: 444..=444 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 46273ms, keeping it commented out
+commenting out line Lines { lines: 93..=93 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 38209ms, reverting
+commenting out line Lines { lines: 396..=396 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 38781ms, keeping it commented out
+commenting out line Lines { lines: 91..=94 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 38890ms, reverting
+commenting out line Lines { lines: 445..=445 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 46108ms, keeping it commented out
+commenting out line Lines { lines: 388..=397 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39932ms, reverting
+commenting out line Lines { lines: 95..=95 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 39193ms, reverting
+commenting out line Lines { lines: 425..=427 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39690ms, reverting
+commenting out line Lines { lines: 431..=451 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 45408ms, keeping it commented out
+commenting out line Lines { lines: 104..=106 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 38846ms, reverting
+commenting out line Lines { lines: 435..=437 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39840ms, reverting
+commenting out line Lines { lines: 430..=452 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 46350ms, keeping it commented out
+commenting out line Lines { lines: 113..=119 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 38206ms, reverting
+commenting out line Lines { lines: 438..=438 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39301ms, reverting
+commenting out line Lines { lines: 489..=489 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 54536ms, reverting
+commenting out line Lines { lines: 120..=125 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 38220ms, reverting
+commenting out line Lines { lines: 451..=451 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 37992ms, keeping it commented out
+commenting out line Lines { lines: 140..=140 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 38409ms, reverting
+commenting out line Lines { lines: 492..=492 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 47428ms, keeping it commented out
+commenting out line Lines { lines: 452..=452 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 38926ms, keeping it commented out
+commenting out line Lines { lines: 139..=141 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 39074ms, reverting
+commenting out line Lines { lines: 496..=496 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 40290ms, keeping it commented out
+commenting out line Lines { lines: 454..=454 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39815ms, reverting
+commenting out line Lines { lines: 145..=145 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 38748ms, reverting
+commenting out line Lines { lines: 506..=506 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 39757ms, keeping it commented out
+commenting out line Lines { lines: 450..=455 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39568ms, reverting
+commenting out line Lines { lines: 144..=146 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 38691ms, reverting
+commenting out line Lines { lines: 507..=507 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 39562ms, keeping it commented out
+commenting out line Lines { lines: 473..=473 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39580ms, reverting
+commenting out line Lines { lines: 143..=147 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 39278ms, reverting
+commenting out line Lines { lines: 508..=508 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 39304ms, keeping it commented out
+commenting out line Lines { lines: 471..=475 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 38992ms, reverting
+commenting out line Lines { lines: 162..=168 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 40137ms, reverting
+commenting out line Lines { lines: 509..=509 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 39853ms, keeping it commented out
+commenting out line Lines { lines: 470..=476 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39754ms, reverting
+commenting out line Lines { lines: 159..=169 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 39226ms, reverting
+commenting out line Lines { lines: 510..=510 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 39859ms, keeping it commented out
+commenting out line Lines { lines: 468..=477 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 38947ms, reverting
+commenting out line Lines { lines: 172..=172 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus succeeded with time: 39222ms, keeping it commented out
+commenting out line Lines { lines: 482..=485 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 38677ms, reverting
+commenting out line Lines { lines: 511..=511 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 39342ms, keeping it commented out
+commenting out line Lines { lines: 170..=173 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 38770ms, reverting
+commenting out line Lines { lines: 481..=486 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39422ms, reverting
+commenting out line Lines { lines: 487..=513 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 40834ms, reverting
+commenting out line Lines { lines: 176..=176 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 38600ms, reverting
+commenting out line Lines { lines: 479..=487 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39697ms, reverting
+commenting out line Lines { lines: 486..=514 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 40604ms, reverting
+commenting out line Lines { lines: 177..=177 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 38696ms, reverting
+commenting out line Lines { lines: 509..=509 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39088ms, reverting
+commenting out line Lines { lines: 562..=562 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 40151ms, keeping it commented out
+commenting out line Lines { lines: 175..=179 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 39382ms, reverting
+commenting out line Lines { lines: 507..=510 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 39139ms, reverting
+commenting out line Lines { lines: 567..=567 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 48099ms, reverting
+commenting out line Lines { lines: 215..=215 } in "./tmp/139/vstd_ext/seq_lib.rs"
+verus failed with time: 39621ms, reverting
+minimization of ./tmp/139/vstd_ext/seq_lib.rs is completed
+commenting out line Lines { lines: 505..=511 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 38426ms, reverting
+commenting out line Lines { lines: 570..=570 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 38029ms, keeping it commented out
+commenting out line Lines { lines: 527..=527 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36421ms, reverting
+commenting out line Lines { lines: 572..=572 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 35734ms, keeping it commented out
+commenting out line Lines { lines: 526..=528 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36797ms, reverting
+commenting out line Lines { lines: 573..=573 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36836ms, keeping it commented out
+commenting out line Lines { lines: 530..=530 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36814ms, reverting
+commenting out line Lines { lines: 577..=577 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36310ms, keeping it commented out
+commenting out line Lines { lines: 520..=531 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 37270ms, reverting
+commenting out line Lines { lines: 579..=579 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 37913ms, keeping it commented out
+commenting out line Lines { lines: 539..=541 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 36950ms, keeping it commented out
+commenting out line Lines { lines: 580..=580 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 37178ms, keeping it commented out
+commenting out line Lines { lines: 561..=561 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36461ms, reverting
+commenting out line Lines { lines: 581..=582 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 37280ms, keeping it commented out
+commenting out line Lines { lines: 560..=562 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36395ms, reverting
+commenting out line Lines { lines: 584..=584 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36973ms, keeping it commented out
+commenting out line Lines { lines: 556..=564 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36435ms, reverting
+commenting out line Lines { lines: 585..=585 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36321ms, keeping it commented out
+commenting out line Lines { lines: 573..=577 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 35920ms, reverting
+commenting out line Lines { lines: 587..=587 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36390ms, keeping it commented out
+commenting out line Lines { lines: 592..=592 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 37223ms, reverting
+commenting out line Lines { lines: 591..=591 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 35283ms, keeping it commented out
+commenting out line Lines { lines: 586..=594 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36997ms, reverting
+commenting out line Lines { lines: 593..=593 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36742ms, keeping it commented out
+commenting out line Lines { lines: 656..=658 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 37150ms, reverting
+commenting out line Lines { lines: 594..=594 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36323ms, keeping it commented out
+commenting out line Lines { lines: 655..=659 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36204ms, reverting
+commenting out line Lines { lines: 595..=595 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36646ms, keeping it commented out
+commenting out line Lines { lines: 668..=671 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36834ms, reverting
+commenting out line Lines { lines: 597..=597 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 37277ms, keeping it commented out
+commenting out line Lines { lines: 680..=683 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36493ms, reverting
+commenting out line Lines { lines: 600..=600 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36793ms, keeping it commented out
+commenting out line Lines { lines: 693..=693 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 35826ms, keeping it commented out
+commenting out line Lines { lines: 601..=601 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 36978ms, reverting
+commenting out line Lines { lines: 691..=694 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 35536ms, reverting
+commenting out line Lines { lines: 604..=604 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 43209ms, reverting
+commenting out line Lines { lines: 704..=707 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 35153ms, reverting
+commenting out line Lines { lines: 605..=605 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36335ms, keeping it commented out
+commenting out line Lines { lines: 703..=708 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36462ms, reverting
+commenting out line Lines { lines: 559..=608 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 35300ms, reverting
+commenting out line Lines { lines: 720..=723 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36554ms, reverting
+commenting out line Lines { lines: 558..=609 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 35016ms, reverting
+commenting out line Lines { lines: 738..=741 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 35812ms, reverting
+commenting out line Lines { lines: 657..=657 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 35950ms, keeping it commented out
+commenting out line Lines { lines: 949..=952 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36115ms, reverting
+commenting out line Lines { lines: 662..=662 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 47185ms, reverting
+commenting out line Lines { lines: 962..=964 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 35625ms, reverting
+commenting out line Lines { lines: 665..=665 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 35611ms, keeping it commented out
+commenting out line Lines { lines: 961..=965 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36256ms, reverting
+commenting out line Lines { lines: 667..=667 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 35919ms, keeping it commented out
+commenting out line Lines { lines: 993..=993 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 35614ms, reverting
+commenting out line Lines { lines: 668..=668 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36323ms, keeping it commented out
+commenting out line Lines { lines: 994..=994 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 35843ms, reverting
+commenting out line Lines { lines: 672..=672 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36951ms, keeping it commented out
+commenting out line Lines { lines: 996..=996 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 36896ms, keeping it commented out
+commenting out line Lines { lines: 674..=674 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 37265ms, keeping it commented out
+commenting out line Lines { lines: 991..=998 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36434ms, reverting
+commenting out line Lines { lines: 675..=675 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36328ms, keeping it commented out
+commenting out line Lines { lines: 989..=999 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36623ms, reverting
+commenting out line Lines { lines: 676..=677 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36761ms, keeping it commented out
+commenting out line Lines { lines: 988..=1000 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36435ms, reverting
+commenting out line Lines { lines: 679..=679 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36021ms, keeping it commented out
+commenting out line Lines { lines: 1015..=1018 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36444ms, reverting
+commenting out line Lines { lines: 680..=680 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 37356ms, keeping it commented out
+commenting out line Lines { lines: 1089..=1095 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36235ms, reverting
+commenting out line Lines { lines: 682..=682 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 35945ms, keeping it commented out
+commenting out line Lines { lines: 1088..=1096 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36874ms, reverting
+commenting out line Lines { lines: 686..=686 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36692ms, keeping it commented out
+commenting out line Lines { lines: 1111..=1114 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 37760ms, keeping it commented out
+commenting out line Lines { lines: 688..=688 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36413ms, keeping it commented out
+commenting out line Lines { lines: 1108..=1115 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 37052ms, reverting
+commenting out line Lines { lines: 689..=689 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36237ms, keeping it commented out
+commenting out line Lines { lines: 1129..=1132 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 35964ms, reverting
+commenting out line Lines { lines: 690..=690 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 37707ms, keeping it commented out
+commenting out line Lines { lines: 1156..=1158 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36297ms, reverting
+commenting out line Lines { lines: 692..=692 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36619ms, keeping it commented out
+commenting out line Lines { lines: 1151..=1159 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36517ms, reverting
+commenting out line Lines { lines: 695..=695 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36316ms, keeping it commented out
+commenting out line Lines { lines: 1199..=1220 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36306ms, reverting
+commenting out line Lines { lines: 696..=696 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 37128ms, reverting
+commenting out line Lines { lines: 1198..=1221 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36257ms, reverting
+commenting out line Lines { lines: 1244..=1244 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 36927ms, keeping it commented out
+commenting out line Lines { lines: 699..=699 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 39030ms, reverting
+commenting out line Lines { lines: 1243..=1251 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36375ms, reverting
+commenting out line Lines { lines: 700..=700 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36354ms, keeping it commented out
+commenting out line Lines { lines: 654..=703 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 34971ms, reverting
+commenting out line Lines { lines: 1242..=1252 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36970ms, reverting
+commenting out line Lines { lines: 653..=704 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 35226ms, reverting
+commenting out line Lines { lines: 1268..=1271 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36603ms, reverting
+commenting out line Lines { lines: 758..=758 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36508ms, keeping it commented out
+commenting out line Lines { lines: 1298..=1301 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36533ms, reverting
+commenting out line Lines { lines: 763..=763 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 38391ms, reverting
+commenting out line Lines { lines: 1297..=1302 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36757ms, reverting
+commenting out line Lines { lines: 766..=766 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36146ms, keeping it commented out
+commenting out line Lines { lines: 1318..=1321 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36901ms, reverting
+commenting out line Lines { lines: 768..=768 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36736ms, keeping it commented out
+commenting out line Lines { lines: 1335..=1343 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36750ms, reverting
+commenting out line Lines { lines: 771..=771 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 38130ms, keeping it commented out
+commenting out line Lines { lines: 1334..=1344 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36711ms, reverting
+commenting out line Lines { lines: 1333..=1345 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36347ms, reverting
+commenting out line Lines { lines: 775..=775 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 37189ms, keeping it commented out
+commenting out line Lines { lines: 1370..=1373 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 37295ms, reverting
+commenting out line Lines { lines: 777..=777 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 37551ms, keeping it commented out
+commenting out line Lines { lines: 1363..=1375 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36768ms, reverting
+commenting out line Lines { lines: 778..=778 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 35998ms, keeping it commented out
+commenting out line Lines { lines: 1362..=1376 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36500ms, reverting
+commenting out line Lines { lines: 779..=780 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36673ms, keeping it commented out
+commenting out line Lines { lines: 1391..=1397 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36877ms, reverting
+commenting out line Lines { lines: 782..=782 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 37212ms, keeping it commented out
+commenting out line Lines { lines: 1414..=1429 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36820ms, reverting
+commenting out line Lines { lines: 783..=783 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36701ms, keeping it commented out
+commenting out line Lines { lines: 1412..=1430 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 37219ms, reverting
+commenting out line Lines { lines: 785..=785 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36902ms, keeping it commented out
+commenting out line Lines { lines: 1487..=1492 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36896ms, reverting
+commenting out line Lines { lines: 789..=789 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36941ms, keeping it commented out
+commenting out line Lines { lines: 1486..=1493 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36378ms, reverting
+commenting out line Lines { lines: 791..=791 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36256ms, keeping it commented out
+commenting out line Lines { lines: 1614..=1616 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36682ms, reverting
+commenting out line Lines { lines: 792..=792 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36396ms, keeping it commented out
+commenting out line Lines { lines: 1617..=1619 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 37102ms, reverting
+commenting out line Lines { lines: 793..=793 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36942ms, keeping it commented out
+commenting out line Lines { lines: 1625..=1625 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 37024ms, keeping it commented out
+commenting out line Lines { lines: 795..=795 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36408ms, keeping it commented out
+commenting out line Lines { lines: 798..=798 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36417ms, keeping it commented out
+commenting out line Lines { lines: 1626..=1626 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 37318ms, reverting
+commenting out line Lines { lines: 799..=799 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36435ms, keeping it commented out
+commenting out line Lines { lines: 1627..=1627 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 36598ms, keeping it commented out
+commenting out line Lines { lines: 800..=800 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36403ms, keeping it commented out
+commenting out line Lines { lines: 1628..=1628 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 37183ms, keeping it commented out
+commenting out line Lines { lines: 803..=803 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36823ms, keeping it commented out
+commenting out line Lines { lines: 1635..=1635 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 37197ms, keeping it commented out
+commenting out line Lines { lines: 804..=804 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus succeeded with time: 36737ms, keeping it commented out
+commenting out line Lines { lines: 1636..=1636 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 36541ms, keeping it commented out
+commenting out line Lines { lines: 753..=807 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 38214ms, reverting
+commenting out line Lines { lines: 1637..=1637 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 37313ms, reverting
+commenting out line Lines { lines: 1644..=1644 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 36557ms, reverting
+commenting out line Lines { lines: 751..=808 } in "./tmp/83/kubernetes_cluster/proof/message.rs"
+verus failed with time: 37609ms, reverting
+minimization of ./tmp/83/kubernetes_cluster/proof/message.rs is completed
+commenting out line Lines { lines: 1645..=1645 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 33732ms, keeping it commented out
+commenting out line Lines { lines: 1647..=1647 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 32811ms, reverting
+commenting out line Lines { lines: 1648..=1648 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 33741ms, keeping it commented out
+commenting out line Lines { lines: 1643..=1651 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 34637ms, reverting
+commenting out line Lines { lines: 1613..=1653 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 34255ms, reverting
+commenting out line Lines { lines: 1612..=1654 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 34083ms, reverting
+commenting out line Lines { lines: 1672..=1691 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 34331ms, reverting
+commenting out line Lines { lines: 1671..=1692 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 34037ms, reverting
+commenting out line Lines { lines: 1726..=1731 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 33145ms, reverting
+commenting out line Lines { lines: 1725..=1733 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 33665ms, reverting
+commenting out line Lines { lines: 1711..=1736 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 33604ms, reverting
+commenting out line Lines { lines: 1710..=1737 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 33770ms, reverting
+commenting out line Lines { lines: 1750..=1762 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 33989ms, reverting
+commenting out line Lines { lines: 1749..=1763 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 33407ms, reverting
+commenting out line Lines { lines: 1797..=1799 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 33909ms, reverting
+commenting out line Lines { lines: 1830..=1832 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 33348ms, reverting
+commenting out line Lines { lines: 1870..=1870 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 33543ms, keeping it commented out
+commenting out line Lines { lines: 1872..=1872 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 33646ms, reverting
+commenting out line Lines { lines: 1873..=1873 } in "./tmp/134/temporal_logic/rules.rs"
+verus succeeded with time: 34514ms, keeping it commented out
+commenting out line Lines { lines: 1867..=1876 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 34147ms, reverting
+commenting out line Lines { lines: 1866..=1877 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 33831ms, reverting
+commenting out line Lines { lines: 1894..=1897 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 33335ms, reverting
+commenting out line Lines { lines: 1893..=1898 } in "./tmp/134/temporal_logic/rules.rs"
+verus failed with time: 34098ms, reverting
+minimization of ./tmp/134/temporal_logic/rules.rs is completed
