@@ -3,6 +3,7 @@
 
 #![allow(unused_imports)]
 
+#![verifier::exec_allows_no_decreases_clause]
 pub mod executable_model;
 pub mod external_api;
 pub mod kubernetes_api_objects;
