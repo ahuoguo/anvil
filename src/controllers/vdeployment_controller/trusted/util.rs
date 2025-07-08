@@ -8,6 +8,10 @@ use crate::vdeployment_controller::trusted::spec_types::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use {vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties};
 
 // some util spec functions are moved here from model::reconciler
 // so we can share them with high-level specs and proofs for VD

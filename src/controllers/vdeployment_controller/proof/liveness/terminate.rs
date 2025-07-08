@@ -18,6 +18,10 @@ use crate::vdeployment_controller::trusted::step::VDeploymentReconcileStepView::
 use vstd::prelude::*;
 
 verus! {
+broadcast use {vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties};
 
 // serve as trigger to make Verus happy
 pub open spec fn scale_down_old_vrs_rank_n(n: nat) -> spec_fn(ReconcileLocalState) -> bool {

@@ -18,6 +18,10 @@ use crate::vstd_ext::{map_lib::*, seq_lib::*, set_lib::*};
 use vstd::{map::*, map_lib::*, multiset::*, prelude::*, seq_lib::*};
 
 verus! {
+broadcast use {vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties};
 
 pub proof fn lemma_eventually_always_no_other_pending_request_interferes_with_vrs_reconcile(
     spec: TempPred<ClusterState>, vrs: VReplicaSetView, cluster: Cluster, controller_id: int,

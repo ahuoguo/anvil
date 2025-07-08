@@ -18,6 +18,10 @@ use crate::vstd_ext::{map_lib::*, seq_lib::*, set_lib::*};
 use vstd::{assert_seqs_equal, map::*, map_lib::*, math::*, multiset::*, prelude::*};
 
 verus! {
+broadcast use {vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties};
 
 // -------------- Leads-to Chaining Reasoning --------------
 

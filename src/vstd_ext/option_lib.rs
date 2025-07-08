@@ -4,6 +4,10 @@
 use vstd::prelude::*;
 
 verus! {
+broadcast use {vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties};
 
 pub open spec fn option_vec_view<T: View>(o: Option<Vec<T>>) -> Option<Seq<T::V>> {
     match o {

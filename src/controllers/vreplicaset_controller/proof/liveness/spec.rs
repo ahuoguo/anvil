@@ -26,6 +26,10 @@ use crate::reconciler::spec::io::*;
 use vstd::{map::*, map_lib::*, math::*, prelude::*};
 
 verus! {
+broadcast use {vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties};
 
 pub open spec fn assumption_and_invariants_of_all_phases(vrs: VReplicaSetView, cluster: Cluster, controller_id: int) -> TempPred<ClusterState> {
     invariants(vrs, cluster, controller_id)

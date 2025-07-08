@@ -17,6 +17,10 @@ use crate::reconciler::spec::io::*;
 use vstd::prelude::*;
 
 verus! {
+broadcast use {vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties};
 
 #[verifier(external_body)]
 pub proof fn lemma_list_vrs_request_returns_ok_with_objs_matching_vd(

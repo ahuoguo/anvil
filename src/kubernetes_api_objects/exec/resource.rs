@@ -87,6 +87,10 @@ macro_rules! implement_custom_object_wrapper_type {
         implement_object_wrapper_type!($t, $it, $vt);
 
         verus! {
+broadcast use {vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties};
 
         impl $t {
             #[verifier(external_body)]

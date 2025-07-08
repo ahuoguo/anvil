@@ -16,6 +16,10 @@ use vstd::prelude::*;
 implement_object_wrapper_type!(Role, deps_hack::k8s_openapi::api::rbac::v1::Role, RoleView);
 
 verus! {
+broadcast use {vstd::seq_lib::group_seq_properties,
+              vstd::set_lib::group_set_properties,
+              vstd::map_lib::group_map_properties,
+              vstd::multiset::group_multiset_properties};
 
 impl Role {
     #[verifier(external_body)]
