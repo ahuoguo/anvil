@@ -52,17 +52,17 @@ pub proof fn lemma_always_every_in_flight_msg_has_lower_id_than_allocator(self, 
         msg.rpc_id < s_prime.rpc_id_allocator.rpc_id_counter by {
             let step = choose |step| self.next_step(s, s_prime, step);
             if s.in_flight().contains(msg) {
-                assert(s.rpc_id_allocator.rpc_id_counter <= s_prime.rpc_id_allocator.rpc_id_counter);
+//                assert(s.rpc_id_allocator.rpc_id_counter <= s_prime.rpc_id_allocator.rpc_id_counter);
             } else {
                 match step {
                     Step::ControllerStep(_) => {},
                     Step::APIServerStep(input) => {
-                        assert(s.in_flight().contains(input->0));
-                        assert(msg.rpc_id == input->0.rpc_id);
+//                        assert(s.in_flight().contains(input->0));
+//                        assert(msg.rpc_id == input->0.rpc_id);
                     },
                     Step::DropReqStep(input) => {
-                        assert(s.in_flight().contains(input.0));
-                        assert(msg.rpc_id == input.0.rpc_id);
+//                        assert(s.in_flight().contains(input.0));
+//                        assert(msg.rpc_id == input.0.rpc_id);
                     },
                     Step::ExternalStep(_) => {},
                     _ => {},
@@ -135,36 +135,36 @@ pub proof fn lemma_always_pending_req_of_key_is_unique_with_unique_id(self, spec
         spec, lift_action(next),
         lift_action(self.next()), lift_state(Self::every_pending_req_msg_has_lower_id_than_allocator(controller_id)), lift_state(Self::there_is_the_controller_state(controller_id))
     );
-    assert forall |s, s_prime| inv(s) && #[trigger] next(s, s_prime) implies inv(s_prime) by {
-        if s_prime.ongoing_reconciles(controller_id).contains_key(key) && s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg is Some {
-            assert forall |other_key: ObjectRef|
-            #[trigger] s_prime.ongoing_reconciles(controller_id).contains_key(other_key) && s_prime.ongoing_reconciles(controller_id)[other_key].pending_req_msg is Some && key != other_key
-            implies
-                s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0.rpc_id != s_prime.ongoing_reconciles(controller_id)[other_key].pending_req_msg->0.rpc_id
-            by {
-                let step = choose |step| self.next_step(s, s_prime, step);
-                match step {
-                    Step::ControllerStep(input) => {
-                        let input_controller_id = input.0;
-                        let input_key = input.2->0;
-                        if input_controller_id == controller_id {
-                            if input_key == key {
-                                assert(s.ongoing_reconciles(controller_id).contains_key(other_key) && s.ongoing_reconciles(controller_id)[other_key].pending_req_msg is Some);
-                                assert(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0.rpc_id == s.rpc_id_allocator.rpc_id_counter);
-                            } else {
-                                assert(s.ongoing_reconciles(controller_id).contains_key(key) && s.ongoing_reconciles(controller_id)[key].pending_req_msg is Some);
-                                if s_prime.ongoing_reconciles(controller_id).contains_key(input_key) && s_prime.ongoing_reconciles(controller_id)[input_key].pending_req_msg is Some {
-                                    assert(s.ongoing_reconciles(controller_id).contains_key(input_key));
-                                    assert(s_prime.ongoing_reconciles(controller_id)[input_key].pending_req_msg->0.rpc_id == s.rpc_id_allocator.rpc_id_counter);
-                                }
-                            }
-                        }
-                    },
-                    _ => {}
-                }
-            }
-        }
-    }
+//    assert forall |s, s_prime| inv(s) && #[trigger] next(s, s_prime) implies inv(s_prime) by {
+//        if s_prime.ongoing_reconciles(controller_id).contains_key(key) && s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg is Some {
+////            assert forall |other_key: ObjectRef|
+////            #[trigger] s_prime.ongoing_reconciles(controller_id).contains_key(other_key) && s_prime.ongoing_reconciles(controller_id)[other_key].pending_req_msg is Some && key != other_key
+////            implies
+////                s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0.rpc_id != s_prime.ongoing_reconciles(controller_id)[other_key].pending_req_msg->0.rpc_id
+////            by {
+////                let step = choose |step| self.next_step(s, s_prime, step);
+////                match step {
+////                    Step::ControllerStep(input) => {
+////                        let input_controller_id = input.0;
+////                        let input_key = input.2->0;
+////                        if input_controller_id == controller_id {
+////                            if input_key == key {
+//////                                assert(s.ongoing_reconciles(controller_id).contains_key(other_key) && s.ongoing_reconciles(controller_id)[other_key].pending_req_msg is Some);
+//////                                assert(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0.rpc_id == s.rpc_id_allocator.rpc_id_counter);
+////                            } else {
+//////                                assert(s.ongoing_reconciles(controller_id).contains_key(key) && s.ongoing_reconciles(controller_id)[key].pending_req_msg is Some);
+////                                if s_prime.ongoing_reconciles(controller_id).contains_key(input_key) && s_prime.ongoing_reconciles(controller_id)[input_key].pending_req_msg is Some {
+//////                                    assert(s.ongoing_reconciles(controller_id).contains_key(input_key));
+//////                                    assert(s_prime.ongoing_reconciles(controller_id)[input_key].pending_req_msg->0.rpc_id == s.rpc_id_allocator.rpc_id_counter);
+////                                }
+////                            }
+////                        }
+////                    },
+////                    _ => {}
+////                }
+////            }
+//        }
+//    }
     init_invariant(spec, self.init(), next, inv);
 }
 
@@ -223,25 +223,25 @@ pub proof fn lemma_always_every_in_flight_req_msg_has_different_id_from_pending_
                         let input_key = input.2->0;
                         if input_controller_id == controller_id {
                             if input_key == key {
-                                assert(pending_req.rpc_id == s.rpc_id_allocator.rpc_id_counter);
+//                                assert(pending_req.rpc_id == s.rpc_id_allocator.rpc_id_counter);
                                 if s.in_flight().contains(msg) {} else {}
-                                assert(msg.rpc_id < s.rpc_id_allocator.rpc_id_counter);
+//                                assert(msg.rpc_id < s.rpc_id_allocator.rpc_id_counter);
                             } else {
-                                assert(s.ongoing_reconciles(controller_id)[key] == s_prime.ongoing_reconciles(controller_id)[key]);
-                                assert(pending_req.rpc_id < s.rpc_id_allocator.rpc_id_counter);
+//                                assert(s.ongoing_reconciles(controller_id)[key] == s_prime.ongoing_reconciles(controller_id)[key]);
+//                                assert(pending_req.rpc_id < s.rpc_id_allocator.rpc_id_counter);
                                 if s.in_flight().contains(msg) {} else {}
                             }
                         } else {
-                            assert(s.ongoing_reconciles(controller_id)[key] == s_prime.ongoing_reconciles(controller_id)[key]);
-                            assert(pending_req.rpc_id < s.rpc_id_allocator.rpc_id_counter);
+//                            assert(s.ongoing_reconciles(controller_id)[key] == s_prime.ongoing_reconciles(controller_id)[key]);
+//                            assert(pending_req.rpc_id < s.rpc_id_allocator.rpc_id_counter);
                             if s.in_flight().contains(msg) {} else {}
                         }
                     },
                     _ => {
-                        assert(s.ongoing_reconciles(controller_id)[key] == s_prime.ongoing_reconciles(controller_id)[key]);
+//                        assert(s.ongoing_reconciles(controller_id)[key] == s_prime.ongoing_reconciles(controller_id)[key]);
                         if !s.in_flight().contains(msg) {
-                            assert(pending_req.rpc_id < s.rpc_id_allocator.rpc_id_counter);
-                            assert(msg.rpc_id == s.rpc_id_allocator.rpc_id_counter)
+//                            assert(pending_req.rpc_id < s.rpc_id_allocator.rpc_id_counter);
+//                            assert(msg.rpc_id == s.rpc_id_allocator.rpc_id_counter)
                         }
                     }
                 }
@@ -349,14 +349,14 @@ pub proof fn lemma_always_every_in_flight_req_msg_from_controller_has_valid_cont
                             s.controller_and_externals[id].controller
                         );
                         let outgoing_messages = controller_result.get_Enabled_1().send;
-                        assert(outgoing_messages == Multiset::<Message>::empty() || outgoing_messages.len() == 1);
+//                        assert(outgoing_messages == Multiset::<Message>::empty() || outgoing_messages.len() == 1);
                         if outgoing_messages.len() == 1 {
                             let elt = outgoing_messages.choose();
                             if msg == elt {
-                                assert(s_prime.in_flight().contains(elt) 
-                                && elt.content.is_APIRequest()
-                                && elt.src.is_Controller());
-                                assert(elt.src.get_Controller_0() == id);
+//                                assert(s_prime.in_flight().contains(elt) 
+//                                && elt.content.is_APIRequest()
+//                                && elt.src.is_Controller());
+//                                assert(elt.src.get_Controller_0() == id);
                             }
                         }
                     }
@@ -370,7 +370,7 @@ pub proof fn lemma_always_every_in_flight_req_msg_from_controller_has_valid_cont
                     implies self.controller_models.contains_key(msg.src.get_Controller_0()) by {
                     if !s.in_flight().contains(msg) {
                         // TODO: Make an understandable version of this proof.
-                        assert(false);
+//                        assert(false);
                     }
                 }
             }
@@ -424,30 +424,30 @@ pub proof fn lemma_always_every_in_flight_msg_has_no_replicas_and_has_unique_id(
                         Step::APIServerStep(input) => {
                             let req = input->0;
                             let (_, resp) = transition_by_etcd(self.installed_types, req, s.api_server);
-                            assert(resp.rpc_id == req.rpc_id);
-                            assert(s.in_flight().contains(req));
+//                            assert(resp.rpc_id == req.rpc_id);
+//                            assert(s.in_flight().contains(req));
                             if s.in_flight().contains(msg) {
-                                assert(s.in_flight().count(msg) == 1);
-                                assert(msg.rpc_id != resp.rpc_id);
-                                assert(s_prime.in_flight().count(msg) == 1);
+//                                assert(s.in_flight().count(msg) == 1);
+//                                assert(msg.rpc_id != resp.rpc_id);
+//                                assert(s_prime.in_flight().count(msg) == 1);
                             } else {
-                                assert(msg == resp);
-                                assert(s_prime.in_flight().count(resp) == 1);
+//                                assert(msg == resp);
+//                                assert(s_prime.in_flight().count(resp) == 1);
                             }
                         },
                         Step::DropReqStep(input) => {
                             let req = input.0;
-                            assert(s.in_flight().contains(req));
+//                            assert(s.in_flight().contains(req));
                             if s.in_flight().contains(msg) {
-                                assert(s.in_flight().count(msg) == 1);
-                                assert(s_prime.in_flight().count(msg) == 1);
+//                                assert(s.in_flight().count(msg) == 1);
+//                                assert(s_prime.in_flight().count(msg) == 1);
                             } else {
-                                assert(s_prime.in_flight().count(msg) == 1);
+//                                assert(s_prime.in_flight().count(msg) == 1);
                             }
                         },
                         _ => {
                             if s.in_flight().contains(msg) {
-                                assert(s.in_flight().count(msg) == 1);
+//                                assert(s.in_flight().count(msg) == 1);
                             }
                         },
                     }
@@ -456,9 +456,9 @@ pub proof fn lemma_always_every_in_flight_msg_has_no_replicas_and_has_unique_id(
             assert forall |other_msg: Message| #[trigger] s_prime.in_flight().contains(other_msg) && msg != other_msg implies
             msg.rpc_id != other_msg.rpc_id by {
                 // At most one message will be added to the network_state.in_flight for each action.
-                assert(s.in_flight().contains(msg) || s.in_flight().contains(other_msg));
+//                assert(s.in_flight().contains(msg) || s.in_flight().contains(other_msg));
                 if s.in_flight().contains(msg) && s.in_flight().contains(other_msg) {
-                    assert(msg.rpc_id != other_msg.rpc_id);
+//                    assert(msg.rpc_id != other_msg.rpc_id);
                 } else {
                     if (s.in_flight().contains(msg)) {
                         self.newly_added_msg_have_different_id_from_existing_ones(s, s_prime, msg, other_msg);
@@ -488,13 +488,13 @@ proof fn newly_added_msg_have_different_id_from_existing_ones(self, s: ClusterSt
         match next_step {
             Step::APIServerStep(input) => {
                 let req_msg = input->0;
-                assert(s.network.in_flight.count(req_msg) <= 1);
-                assert(msg_1.rpc_id != msg_2.rpc_id);
+//                assert(s.network.in_flight.count(req_msg) <= 1);
+//                assert(msg_1.rpc_id != msg_2.rpc_id);
             }
             Step::DropReqStep(input) => {
                 let req_msg = input.0;
-                assert(s.network.in_flight.count(req_msg) <= 1);
-                assert(msg_1.rpc_id != msg_2.rpc_id);
+//                assert(s.network.in_flight.count(req_msg) <= 1);
+//                assert(msg_1.rpc_id != msg_2.rpc_id);
             }
             _ => assert(false),
         }
@@ -503,8 +503,8 @@ proof fn newly_added_msg_have_different_id_from_existing_ones(self, s: ClusterSt
         match next_step {
             Step::ExternalStep(input) => {
                 let req_msg = input.1->0;
-                assert(s.network.in_flight.count(req_msg) <= 1);
-                assert(msg_1.rpc_id != msg_2.rpc_id);
+//                assert(s.network.in_flight.count(req_msg) <= 1);
+//                assert(msg_1.rpc_id != msg_2.rpc_id);
             }
             _ => assert(false),
         }
@@ -528,10 +528,10 @@ pub proof fn lemma_always_every_in_flight_msg_has_unique_id(self, spec: TempPred
     ensures spec.entails(always(lift_state(Self::every_in_flight_msg_has_unique_id()))),
 {
     self.lemma_always_every_in_flight_msg_has_no_replicas_and_has_unique_id(spec);
-    assert forall |s| #[trigger] Self::every_in_flight_msg_has_no_replicas_and_has_unique_id()(s) implies Self::every_in_flight_msg_has_unique_id()(s) by {
-        assert forall |msg1, msg2| #[trigger] s.in_flight().contains(msg1) && #[trigger] s.in_flight().contains(msg2) && msg1 != msg2
-        implies msg1.rpc_id != msg2.rpc_id by {}
-    };
+//    assert forall |s| #[trigger] Self::every_in_flight_msg_has_no_replicas_and_has_unique_id()(s) implies Self::every_in_flight_msg_has_unique_id()(s) by {
+////        assert forall |msg1, msg2| #[trigger] s.in_flight().contains(msg1) && #[trigger] s.in_flight().contains(msg2) && msg1 != msg2
+////        implies msg1.rpc_id != msg2.rpc_id by {}
+//    };
     always_weaken::<ClusterState>(spec, lift_state(Self::every_in_flight_msg_has_no_replicas_and_has_unique_id()), lift_state(Self::every_in_flight_msg_has_unique_id()));
 }
 

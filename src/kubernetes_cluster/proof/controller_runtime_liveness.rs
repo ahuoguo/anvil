@@ -553,21 +553,21 @@ pub proof fn lemma_from_pending_req_in_flight_at_some_state_to_in_flight_resp_ma
                     &&& resp_msg_matches_req_msg(resp_msg, req_msg)
                 });
             };
-            assert forall |s, s_prime| pre_1(s) && #[trigger] stronger_next(s, s_prime)
-            implies pre_1(s_prime) || post_1(s_prime) by {
-                let step = choose |step| self.next_step(s, s_prime, step);
-                match step {
-                    Step::APIServerStep(input) => {
-                        if input->0 == req_msg {
-                            assert(post_1(s_prime));
-                        } else {
-                            assert(pre_1(s_prime));
-                        }
-                    }
-                    Step::ControllerStep(input) => { assert(pre_1(s_prime)); },
-                    _ => { assert(pre_1(s_prime)); }
-                }
-            };
+//            assert forall |s, s_prime| pre_1(s) && #[trigger] stronger_next(s, s_prime)
+//            implies pre_1(s_prime) || post_1(s_prime) by {
+//                let step = choose |step| self.next_step(s, s_prime, step);
+//                match step {
+//                    Step::APIServerStep(input) => {
+//                        if input->0 == req_msg {
+////                            assert(post_1(s_prime));
+//                        } else {
+////                            assert(pre_1(s_prime));
+//                        }
+//                    }
+////                    Step::ControllerStep(input) => { assert(pre_1(s_prime)); },
+//                    _ => { assert(pre_1(s_prime)); }
+//                }
+//            };
             self.lemma_pre_leads_to_post_by_api_server(spec, input, stronger_next, APIServerStep::HandleRequest, pre_1, post_1);
         } else if req_msg.content.is_ExternalRequest() {
             if self.controller_models[controller_id].external_model is Some {
@@ -589,29 +589,29 @@ pub proof fn lemma_from_pending_req_in_flight_at_some_state_to_in_flight_resp_ma
                         &&& resp_msg_matches_req_msg(resp_msg, req_msg)
                     });
                 };
-                assert forall |s, s_prime| pre_1(s) && #[trigger] stronger_next_for_external(s, s_prime)
-                implies pre_1(s_prime) || post_1(s_prime) by {
-                    let step = choose |step| self.next_step(s, s_prime, step);
-                    match step {
-                        Step::ExternalStep(input) => {
-                            if input.0 == controller_id && input.1->0 == req_msg {
-                                assert(post_1(s_prime));
-                            } else {
-                                assert(pre_1(s_prime));
-                            }
-                        }
-                        Step::ControllerStep(input) => { assert(pre_1(s_prime)); },
-                        _ => { assert(pre_1(s_prime)); }
-                    }
-                };
+//                assert forall |s, s_prime| pre_1(s) && #[trigger] stronger_next_for_external(s, s_prime)
+//                implies pre_1(s_prime) || post_1(s_prime) by {
+//                    let step = choose |step| self.next_step(s, s_prime, step);
+//                    match step {
+//                        Step::ExternalStep(input) => {
+//                            if input.0 == controller_id && input.1->0 == req_msg {
+////                                assert(post_1(s_prime));
+//                            } else {
+////                                assert(pre_1(s_prime));
+//                            }
+//                        }
+////                        Step::ControllerStep(input) => { assert(pre_1(s_prime)); },
+//                        _ => { assert(pre_1(s_prime)); }
+//                    }
+//                };
                 self.lemma_pre_leads_to_post_by_external(spec, controller_id, input, stronger_next_for_external, ExternalStep::HandleExternalRequest, pre_1, post_1);
             } else {
                 temp_pred_equality(lift_state(pre_1).and(lift_state(Self::there_is_no_request_msg_to_external_from_controller(controller_id))), false_pred());
                 vacuous_leads_to(spec, lift_state(pre_1), lift_state(post_1), lift_state(Self::there_is_no_request_msg_to_external_from_controller(controller_id)));
-                assert(spec.entails(lift_state(pre_1).leads_to(lift_state(post_1))));
+//                assert(spec.entails(lift_state(pre_1).leads_to(lift_state(post_1))));
             }
         } else {
-            assert(spec.entails(lift_state(pre_1).leads_to(lift_state(post_1))));
+//            assert(spec.entails(lift_state(pre_1).leads_to(lift_state(post_1))));
         }
     }
     let msg_2_temp = |msg| lift_state(Self::req_msg_is_the_in_flight_pending_req_at_reconcile_state(controller_id, cr.object_ref(), current_state, msg));
@@ -886,7 +886,7 @@ pub proof fn lemma_some_reconcile_id_leads_to_always_every_ongoing_reconcile_sat
         true_pred(),
         |key: ObjectRef| lift_state(|s: ClusterState| !s.ongoing_reconciles(controller_id).contains_key(key)),
     );
-    assert(valid(stable(tla_forall(|key: ObjectRef| true_pred().leads_to(term_closure(key))))));
+//    assert(valid(stable(tla_forall(|key: ObjectRef| true_pred().leads_to(term_closure(key))))));
     assert_by(
         tla_forall(|key: ObjectRef| true_pred().leads_to(term_closure(key)))
         == tla_forall(|key: ObjectRef| true_pred().leads_to(lift_state(|s: ClusterState| !s.ongoing_reconciles(controller_id).contains_key(key)))),
@@ -897,16 +897,16 @@ pub proof fn lemma_some_reconcile_id_leads_to_always_every_ongoing_reconcile_sat
             let rhs_inner = |key: ObjectRef| true_pred().leads_to(lift_state(|s: ClusterState| !s.ongoing_reconciles(controller_id).contains_key(key)));
 
             assert forall |ex| #[trigger] lhs.satisfied_by(ex) implies rhs.satisfied_by(ex) by {
-                assert(tla_forall(lhs_inner).satisfied_by(ex));
-                assert(forall |key: ObjectRef| #[trigger] lhs_inner(key).satisfied_by(ex));
+//                assert(tla_forall(lhs_inner).satisfied_by(ex));
+//                assert(forall |key: ObjectRef| #[trigger] lhs_inner(key).satisfied_by(ex));
                 assert(forall |key: ObjectRef| lhs_inner(key).satisfied_by(ex) ==> #[trigger] rhs_inner(key).satisfied_by(ex));
-                assert(tla_forall(rhs_inner).satisfied_by(ex));
+//                assert(tla_forall(rhs_inner).satisfied_by(ex));
             }
             assert forall |ex| #[trigger] rhs.satisfied_by(ex) implies lhs.satisfied_by(ex) by {
-                assert(tla_forall(rhs_inner).satisfied_by(ex));
-                assert(forall |key: ObjectRef| #[trigger] rhs_inner(key).satisfied_by(ex));
+//                assert(tla_forall(rhs_inner).satisfied_by(ex));
+//                assert(forall |key: ObjectRef| #[trigger] rhs_inner(key).satisfied_by(ex));
                 assert(forall |key: ObjectRef| rhs_inner(key).satisfied_by(ex) ==> #[trigger] lhs_inner(key).satisfied_by(ex));
-                assert(tla_forall(lhs_inner).satisfied_by(ex));
+//                assert(tla_forall(lhs_inner).satisfied_by(ex));
             }
             temp_pred_equality(lhs, rhs);
         }
@@ -1011,7 +1011,7 @@ pub proof fn lemma_some_reconcile_id_leads_to_always_every_ongoing_reconcile_sat
         always(lift_state(Self::every_ongoing_reconcile_satisfies(controller_id, requirements)))
     );
     temp_pred_equality(true_pred().and(lift_state(Self::reconcile_id_counter_is(controller_id, reconcile_id))), lift_state(Self::reconcile_id_counter_is(controller_id, reconcile_id)));
-    assert(spec.entails(stable_spec));
+//    assert(spec.entails(stable_spec));
     entails_trans(
         spec, 
         stable_spec, 
@@ -1135,20 +1135,20 @@ pub proof fn lemma_eventually_no_reconcile_before_reconcile_id_is_ongoing(
                 let rec_num = reconciles_before_id.len();
 
                 // machinery to prove ongoing_reconciles at dom is finite
-                assert(spec.entails(always(lift_state(Self::ongoing_reconciles_is_finite(controller_id)))));
-                assert(forall |ex| #[trigger] spec.implies(always(lift_state(Self::ongoing_reconciles_is_finite(controller_id)))).satisfied_by(ex));
+//                assert(spec.entails(always(lift_state(Self::ongoing_reconciles_is_finite(controller_id)))));
+//                assert(forall |ex| #[trigger] spec.implies(always(lift_state(Self::ongoing_reconciles_is_finite(controller_id)))).satisfied_by(ex));
                 assert(spec.implies(always(lift_state(Self::ongoing_reconciles_is_finite(controller_id)))).satisfied_by(ex));
-                assert(always(lift_state(Self::ongoing_reconciles_is_finite(controller_id))).satisfied_by(ex));
-                assert(forall |i| #[trigger] lift_state(Self::ongoing_reconciles_is_finite(controller_id)).satisfied_by(ex.suffix(i)));
+//                assert(always(lift_state(Self::ongoing_reconciles_is_finite(controller_id))).satisfied_by(ex));
+//                assert(forall |i| #[trigger] lift_state(Self::ongoing_reconciles_is_finite(controller_id)).satisfied_by(ex.suffix(i)));
                 assert(lift_state(Self::ongoing_reconciles_is_finite(controller_id)).satisfied_by(ex.suffix(i)));
-                assert(ongoing_reconciles.dom().finite());
+//                assert(ongoing_reconciles.dom().finite());
 
-                assert(reconciles_before_id.dom().subset_of(ongoing_reconciles.dom()));
+//                assert(reconciles_before_id.dom().subset_of(ongoing_reconciles.dom()));
                 lemma_len_subset(reconciles_before_id.dom(), ongoing_reconciles.dom());
-                assert(reconciles_before_id.dom().finite());
-                assert(lift_state(Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, rec_num)).satisfied_by(ex.suffix(i)));
+//                assert(reconciles_before_id.dom().finite());
+//                assert(lift_state(Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, rec_num)).satisfied_by(ex.suffix(i)));
                 assert((|rec_num| lift_state(Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, rec_num)))(rec_num).satisfied_by(ex.suffix(i)));
-                assert(tla_exists(|rec_num| lift_state(Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, rec_num))).satisfied_by(ex.suffix(i)));
+//                assert(tla_exists(|rec_num| lift_state(Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, rec_num))).satisfied_by(ex.suffix(i)));
             }
         }
     });
@@ -1204,7 +1204,7 @@ pub proof fn lemma_ongoing_reconciles_num_is_n_leads_to_no_ongoing_reconciles(
                         |key| ongoing_reconciles[key]
                     );
                     assert(reconciles_before_id.contains_key(key));
-                    assert(reconciles_before_id.len() > 0);
+//                    assert(reconciles_before_id.len() > 0);
                 }
             }
         });
@@ -1245,8 +1245,8 @@ pub proof fn lemma_ongoing_reconciles_num_is_n_leads_to_no_ongoing_reconciles(
                     );
                     let key = reconciles_before_id.dom().choose();
                     assert(reconciles_before_id.contains_key(key));
-                    assert(lift_state(Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, rec_num)).satisfied_by(ex));
-                    assert(reconcile_ongoing(key).satisfied_by(ex));
+//                    assert(lift_state(Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, rec_num)).satisfied_by(ex));
+//                    assert(reconcile_ongoing(key).satisfied_by(ex));
                     assert((|key| ongoing_reconciles_num_is_n_and_reconcile_ongoing(key))(key).satisfied_by(ex));
                 }
                 temp_pred_equality(tla_exists(ongoing_reconciles_num_is_n_and_reconcile_ongoing), lift_state(Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, rec_num)));
@@ -1271,16 +1271,16 @@ pub proof fn lemma_ongoing_reconciles_num_is_n_leads_to_no_ongoing_reconciles(
                     );
                     let n = reconciles_before_id.len();
 
-                    assert(Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, n)(ex.head()));
-                    assert(n < rec_num);
-                    assert((|s| {
-                        &&& Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, n)(s)
-                        &&& n < rec_num
-                    })(ex.head()));
-                    assert(lift_state(|s| {
-                        &&& Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, n)(s)
-                        &&& n < rec_num
-                    }).satisfied_by(ex));
+//                    assert(Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, n)(ex.head()));
+//                    assert(n < rec_num);
+//                    assert((|s| {
+//                        &&& Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, n)(s)
+//                        &&& n < rec_num
+//                    })(ex.head()));
+//                    assert(lift_state(|s| {
+//                        &&& Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, n)(s)
+//                        &&& n < rec_num
+//                    }).satisfied_by(ex));
                     assert((|n: nat| lift_state(|s| {
                         &&& Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, n)(s)
                         &&& n < rec_num
@@ -1331,8 +1331,8 @@ pub proof fn lemma_ongoing_reconciles_num_is_n_leads_to_no_ongoing_reconciles(
             no_more_ongoing_reconciles
         );
 
-        assert(spec.entails(lift_state(Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, rec_num))
-                .leads_to(lift_state(Self::no_reconcile_before_reconcile_id_is_ongoing(controller_id, reconcile_id)))));
+//        assert(spec.entails(lift_state(Self::ongoing_reconciles_num_is_n(controller_id, reconcile_id, rec_num))
+//                .leads_to(lift_state(Self::no_reconcile_before_reconcile_id_is_ongoing(controller_id, reconcile_id)))));
     }
 }
 
@@ -1423,7 +1423,7 @@ pub proof fn lemma_ongoing_reconciles_num_decreases(
                         |key| ongoing_reconciles[key]
                     );
                     assert(ongoing_reconciles =~= reconciles_before_id);
-                    assert(Self::ongoing_reconciles_num_is_at_most_n(controller_id, reconcile_id, (rec_num - 1) as nat)(s_prime));
+//                    assert(Self::ongoing_reconciles_num_is_at_most_n(controller_id, reconcile_id, (rec_num - 1) as nat)(s_prime));
                 }
             },
             _ => {}

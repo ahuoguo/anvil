@@ -191,29 +191,29 @@ pub proof fn lemma_eventually_objects_owner_references_satisfies(
         assert(s_prime.in_flight().contains(delete_req_msg));
     }
 
-    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || delete_msg_in_flight(s_prime) by {
-        let step = choose |step| self.next_step(s, s_prime, step);
-        match step {
-            Step::BuiltinControllersStep(i) => {
-                if i == input {
-                    assert(Self::garbage_collector_deletion_enabled(key)(s));
-                    let preconditions = PreconditionsView {
-                        uid: s.api_server.resources[key].metadata.uid,
-                        resource_version: None,
-                    };
-                    let delete_req_msg = built_in_controller_req_msg(s.rpc_id_allocator.allocate().1, delete_req_msg_content(key, Some(preconditions)));
-                    assert(s_prime.in_flight().contains(delete_req_msg));
-                    assert(Self::exists_effective_delete_request_msg_for_key(key)(s_prime));
-                    assert(delete_msg_in_flight(s_prime));
-                } else {
-                    assert(pre(s_prime));
-                }
-            },
-            _ => {
-                assert(pre(s_prime) || delete_msg_in_flight(s_prime));
-            }
-        }
-    }
+//    assert forall |s, s_prime| pre(s) && #[trigger] stronger_next(s, s_prime) implies pre(s_prime) || delete_msg_in_flight(s_prime) by {
+//        let step = choose |step| self.next_step(s, s_prime, step);
+//        match step {
+//            Step::BuiltinControllersStep(i) => {
+//                if i == input {
+////                    assert(Self::garbage_collector_deletion_enabled(key)(s));
+//                    let preconditions = PreconditionsView {
+//                        uid: s.api_server.resources[key].metadata.uid,
+//                        resource_version: None,
+//                    };
+//                    let delete_req_msg = built_in_controller_req_msg(s.rpc_id_allocator.allocate().1, delete_req_msg_content(key, Some(preconditions)));
+////                    assert(s_prime.in_flight().contains(delete_req_msg));
+////                    assert(Self::exists_effective_delete_request_msg_for_key(key)(s_prime));
+////                    assert(delete_msg_in_flight(s_prime));
+//                } else {
+////                    assert(pre(s_prime));
+//                }
+//            },
+//            _ => {
+////                assert(pre(s_prime) || delete_msg_in_flight(s_prime));
+//            }
+//        }
+//    }
 
     self.lemma_pre_leads_to_post_by_builtin_controllers(
         spec, input, stronger_next, BuiltinControllersStep::RunGarbageCollector, pre, delete_msg_in_flight
