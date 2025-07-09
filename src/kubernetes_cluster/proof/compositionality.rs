@@ -58,13 +58,13 @@ proof fn compose_horizontally<HC>(spec: TempPred<ClusterState>, cluster: Cluster
                 let j = choose |j| producer_ids.dom().contains(j) && #[trigger] producer_ids[j] == good_citizen_id;
                 HC::producer_does_not_interfere_with_the_producer(spec, cluster, good_citizen_id, j, p_index);
             } else {
-                assert(spec.entails(always(lift_state((producers[p_index].non_interference_condition)(good_citizen_id)))));
+//                assert(spec.entails(always(lift_state((producers[p_index].non_interference_condition)(good_citizen_id)))));
             }
         }
     }
 
     assert forall |p_index| 0 <= p_index < producers.len() implies #[trigger] spec.entails(producers[p_index].property) by {
-        assert(producer_ids.contains_key(p_index));
+//        assert(producer_ids.contains_key(p_index));
         let producer_id = producer_ids[p_index];
         HC::producer_is_correct(spec, cluster, producer_id, p_index);
     }
@@ -108,7 +108,7 @@ pub proof fn compose_vertically<VC>(spec: TempPred<ClusterState>, cluster: Clust
             let j = choose |j| producer_ids.dom().contains(j) && #[trigger] producer_ids[j] == good_citizen_id;
             VC::producer_does_not_interfere_with_the_consumer(spec, cluster, good_citizen_id, j);
         } else {
-            assert(spec.entails(always(lift_state((consumer.non_interference_condition)(good_citizen_id)))));
+//            assert(spec.entails(always(lift_state((consumer.non_interference_condition)(good_citizen_id)))));
         }
     }
     VC::consumer_is_correct(spec, cluster, consumer_id);
@@ -376,12 +376,12 @@ proof fn waiter_and_cooks_are_correct(spec: TempPred<ClusterState>)
             assert forall |controller_id| #[trigger] cluster.controller_models.contains_key(controller_id)
             implies controller_id == waiter_id || cook_ids.values().contains(controller_id) by {
                 if controller_id == cook_controllers().len() as int {
-                    assert(controller_id == waiter_id);
+//                    assert(controller_id == waiter_id);
                 } else {
                     assert(cook_ids.dom().contains(controller_id) && cook_ids[controller_id] == controller_id);
                 }
             }
-            assert(good_citizen_id == waiter_id);
+//            assert(good_citizen_id == waiter_id);
             WaiterCooksComposition::consumer_does_not_interfere_with_the_producer(spec, cluster, good_citizen_id, p_index);
         }
     }
@@ -396,12 +396,12 @@ proof fn waiter_and_cooks_are_correct(spec: TempPred<ClusterState>)
         assert forall |controller_id| #[trigger] cluster.controller_models.contains_key(controller_id)
         implies controller_id == waiter_id || cook_ids.values().contains(controller_id) by {
             if controller_id == cook_controllers().len() as int {
-                assert(controller_id == waiter_id);
+//                assert(controller_id == waiter_id);
             } else {
                 assert(cook_ids.dom().contains(controller_id) && cook_ids[controller_id] == controller_id);
             }
         }
-        assert(!cluster.controller_models.remove(waiter_id).remove_keys(cook_ids.values()).contains_key(good_citizen_id));
+//        assert(!cluster.controller_models.remove(waiter_id).remove_keys(cook_ids.values()).contains_key(good_citizen_id));
     }
     // Compose the waiter and cooks vertically.
     compose_vertically::<WaiterCooksComposition>(spec, cluster, waiter(), cooks(), waiter_id, cook_ids);

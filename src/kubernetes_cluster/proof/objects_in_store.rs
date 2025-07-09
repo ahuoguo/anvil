@@ -42,12 +42,12 @@ pub proof fn lemma_always_each_object_in_etcd_is_weakly_well_formed(self, spec: 
 {
     let invariant = Self::each_object_in_etcd_is_weakly_well_formed();
 
-    assert forall |s, s_prime| invariant(s) && #[trigger] self.next()(s, s_prime) implies invariant(s_prime) by {
-        assert forall |key: ObjectRef| #[trigger] s_prime.resources().contains_key(key)
-        implies Self::etcd_object_is_weakly_well_formed(key)(s_prime) by {
-            if s.resources().contains_key(key) {} else {}
-        }
-    }
+//    assert forall |s, s_prime| invariant(s) && #[trigger] self.next()(s, s_prime) implies invariant(s_prime) by {
+////        assert forall |key: ObjectRef| #[trigger] s_prime.resources().contains_key(key)
+////        implies Self::etcd_object_is_weakly_well_formed(key)(s_prime) by {
+////            if s.resources().contains_key(key) {} else {}
+////        }
+//    }
 
     init_invariant(spec, self.init(), self.next(), invariant);
 }
@@ -83,7 +83,7 @@ pub proof fn lemma_always_each_builtin_object_in_etcd_is_well_formed(self, spec:
         assert forall |key: ObjectRef| #[trigger] s_prime.resources().contains_key(key) && !key.kind.is_CustomResourceKind()
         implies self.etcd_object_is_well_formed(key)(s_prime) by {
             if s.resources().contains_key(key) {
-                assert(self.etcd_object_is_well_formed(key)(s));
+//                assert(self.etcd_object_is_well_formed(key)(s));
                 let step = choose |step| self.next_step(s, s_prime, step);
                 match step {
                     Step::APIServerStep(input) => {
@@ -158,7 +158,7 @@ pub proof fn lemma_always_each_custom_object_in_etcd_is_well_formed<T: CustomRes
         assert forall |key: ObjectRef| #[trigger] s_prime.resources().contains_key(key) && key.kind == T::kind()
         implies self.etcd_object_is_well_formed(key)(s_prime) by {
             if s.resources().contains_key(key) {
-                assert(self.etcd_object_is_well_formed(key)(s));
+//                assert(self.etcd_object_is_well_formed(key)(s));
                 let step = choose |step| self.next_step(s, s_prime, step);
                 match step {
                     Step::APIServerStep(input) => {
@@ -171,8 +171,8 @@ pub proof fn lemma_always_each_custom_object_in_etcd_is_well_formed<T: CustomRes
                                 let t_obj = T::unmarshal(obj)->Ok_0;
                                 T::unmarshal_result_determined_by_unmarshal_spec_and_status();
                                 T::validation_result_determined_by_spec_and_status();
-                                assert(t_obj.state_validation() == T::spec_status_validation(t_obj.spec(), t_obj.status()));
-                                assert(valid_object(obj, self.installed_types));
+//                                assert(t_obj.state_validation() == T::spec_status_validation(t_obj.spec(), t_obj.status()));
+//                                assert(valid_object(obj, self.installed_types));
                             }
                             APIRequest::UpdateRequest(_) => {}
                             APIRequest::UpdateStatusRequest(_) => {}
@@ -181,8 +181,8 @@ pub proof fn lemma_always_each_custom_object_in_etcd_is_well_formed<T: CustomRes
                                 let t_obj = T::unmarshal(obj)->Ok_0;
                                 T::unmarshal_result_determined_by_unmarshal_spec_and_status();
                                 T::validation_result_determined_by_spec_and_status();
-                                assert(t_obj.state_validation() == T::spec_status_validation(t_obj.spec(), t_obj.status()));
-                                assert(valid_object(obj, self.installed_types));
+//                                assert(t_obj.state_validation() == T::spec_status_validation(t_obj.spec(), t_obj.status()));
+//                                assert(valid_object(obj, self.installed_types));
                             }
                             APIRequest::GetThenUpdateRequest(_) => {}
                         }

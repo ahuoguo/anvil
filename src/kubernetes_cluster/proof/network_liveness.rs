@@ -328,7 +328,7 @@ proof fn lemma_pending_requests_number_is_n_leads_to_no_pending_requests(self, s
             assert forall |ex| #[trigger] pending_requests_num_is_msg_num.satisfied_by(ex)
             implies tla_exists(pending_requests_num_is_msg_num_and_pending_req_in_flight).satisfied_by(ex) by {
                 let msg = ex.head().network.in_flight.filter(api_request_msg_before(rpc_id)).choose();
-                assert(ex.head().network.in_flight.filter(api_request_msg_before(rpc_id)).count(msg) > 0);
+//                assert(ex.head().network.in_flight.filter(api_request_msg_before(rpc_id)).count(msg) > 0);
                 assert(pending_requests_num_is_msg_num_and_pending_req_in_flight(msg).satisfied_by(ex));
             }
             temp_pred_equality(

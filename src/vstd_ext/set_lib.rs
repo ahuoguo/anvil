@@ -60,11 +60,11 @@ proof fn element_in_finite_set_exists_in_set_to_seq<A>(s: Set<A>, e: A)
         // need choose() to be not-random
         let x = s.choose();
         if x == e {
-            assert(s.to_seq() == Seq::empty().push(e) + s.remove(e).to_seq());
-            assert(s.to_seq()[0] == e);
+//            assert(s.to_seq() == Seq::empty().push(e) + s.remove(e).to_seq());
+//            assert(s.to_seq()[0] == e);
         } else {
             element_in_finite_set_exists_in_set_to_seq(s.remove(x), e);
-            assert(s.to_seq().subrange(1, s.to_seq().len() as int) == s.remove(x).to_seq());
+//            assert(s.to_seq().subrange(1, s.to_seq().len() as int) == s.remove(x).to_seq());
         }
     }
 }
@@ -86,23 +86,23 @@ proof fn element_in_seq_exists_in_original_finite_set<A>(s: Set<A>, e: A)
 pub proof fn lemma_mk_map_insert_k<A, B>(m: Set<A>, k: A, map: spec_fn(A) -> B)
     ensures m.insert(k).mk_map(map) == m.mk_map(map).insert(k, map(k)),
 {
-    assert(m.insert(k).mk_map(map).contains_pair(k, map(k)));
-    assert(m.insert(k).mk_map(map) =~= m.mk_map(map).insert(k, map(k))) by {
-        assert forall |key: A| #[trigger] m.insert(k).mk_map(map).contains_key(key) implies m.mk_map(map).insert(k, map(k)).contains_key(key) by {
-            if key == k {
-                assert(m.mk_map(map).insert(k, map(k)).contains_key(k));
-            } else {
-                assert(m.mk_map(map).contains_key(key));
-            }
-        }
-        assert forall |key: A| #[trigger] m.mk_map(map).insert(k, map(k)).contains_key(key) implies m.insert(k).mk_map(map).contains_key(key) by {
-            if key == k {
-                assert(m.insert(k).mk_map(map).contains_key(k));
-            } else {
-                assert(m.mk_map(map).contains_key(key));
-            }
-        }
-    }
+//    assert(m.insert(k).mk_map(map).contains_pair(k, map(k)));
+//    assert(m.insert(k).mk_map(map) =~= m.mk_map(map).insert(k, map(k))) by {
+////        assert forall |key: A| #[trigger] m.insert(k).mk_map(map).contains_key(key) implies m.mk_map(map).insert(k, map(k)).contains_key(key) by {
+////            if key == k {
+//////                assert(m.mk_map(map).insert(k, map(k)).contains_key(k));
+////            } else {
+//////                assert(m.mk_map(map).contains_key(key));
+////            }
+////        }
+////        assert forall |key: A| #[trigger] m.mk_map(map).insert(k, map(k)).contains_key(key) implies m.insert(k).mk_map(map).contains_key(key) by {
+////            if key == k {
+//////                assert(m.insert(k).mk_map(map).contains_key(k));
+////            } else {
+//////                assert(m.mk_map(map).contains_key(key));
+////            }
+////        }
+//    }
 }
 
 }

@@ -133,7 +133,7 @@ pub proof fn lemma_always_pending_req_in_flight_or_resp_in_flight_at_reconcile_s
                 }
                 Step::BuiltinControllersStep(input) => {
                     if s.in_flight().contains(pending_req_msg) {
-                        assert(s_prime.in_flight().contains(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0));
+//                        assert(s_prime.in_flight().contains(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0));
                     } else {
                         assert(s_prime.in_flight().contains(resp));
                     }
@@ -153,17 +153,17 @@ pub proof fn lemma_always_pending_req_in_flight_or_resp_in_flight_at_reconcile_s
                     let input_cr_key = input.2->0;
                     if input_controller_id != controller_id || input_cr_key != key {
                         if s.in_flight().contains(pending_req_msg) {
-                            assert(s_prime.in_flight().contains(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0));
+//                            assert(s_prime.in_flight().contains(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0));
                         } else {
                             assert(s_prime.in_flight().contains(resp));
                         }
                     } else {
-                        assert(s_prime.in_flight().contains(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0));
+//                        assert(s_prime.in_flight().contains(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0));
                     }
                 }
                 Step::PodMonkeyStep(input) => {
                     if s.in_flight().contains(pending_req_msg) {
-                        assert(s_prime.in_flight().contains(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0));
+//                        assert(s_prime.in_flight().contains(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0));
                     } else {
                         assert(s_prime.in_flight().contains(resp));
                     }
@@ -174,7 +174,7 @@ pub proof fn lemma_always_pending_req_in_flight_or_resp_in_flight_at_reconcile_s
                         assert(s_prime.in_flight().contains(resp_msg));
                     } else {
                         if !s.in_flight().contains(pending_req_msg) {
-                            assert(s_prime.in_flight().contains(resp));
+//                            assert(s_prime.in_flight().contains(resp));
                         }
                     }
                 }
@@ -277,8 +277,8 @@ pub proof fn lemma_true_leads_to_always_pending_req_in_flight_xor_resp_in_flight
                             } else {
                                 let req_msg = input.unwrap();
                                 let resp_msg = transition_by_etcd(self.installed_types, req_msg, s.api_server).1;
-                                assert(s_prime.in_flight().contains(pending_req_msg));
-                                assert(pending_req_msg != req_msg);
+//                                assert(s_prime.in_flight().contains(pending_req_msg));
+//                                assert(pending_req_msg != req_msg);
                                 assert(!resp_msg_matches_req_msg(resp_msg, pending_req_msg));
                                 assert forall |resp_msg: Message| {
                                     &&& (!s.ongoing_reconciles(controller_id).contains_key(key) || requirements(key, s))
@@ -295,11 +295,11 @@ pub proof fn lemma_true_leads_to_always_pending_req_in_flight_xor_resp_in_flight
                     }
                     Step::BuiltinControllersStep(input) => {
                         if s.in_flight().contains(pending_req_msg) {
-                            assert(s_prime.in_flight().contains(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0));
-                            assert(!exists |resp_msg: Message| {
-                                &&& #[trigger] s.in_flight().contains(resp_msg)
-                                &&& resp_msg_matches_req_msg(resp_msg, pending_req_msg)
-                            });
+//                            assert(s_prime.in_flight().contains(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0));
+//                            assert(!exists |resp_msg: Message| {
+//                                &&& #[trigger] s.in_flight().contains(resp_msg)
+//                                &&& resp_msg_matches_req_msg(resp_msg, pending_req_msg)
+//                            });
                             assert forall |resp_msg: Message| {
                                 &&& (!s.ongoing_reconciles(controller_id).contains_key(key) || requirements(key, s))
                                 &&& s.ongoing_reconciles(controller_id).contains_key(key)
@@ -325,19 +325,19 @@ pub proof fn lemma_true_leads_to_always_pending_req_in_flight_xor_resp_in_flight
                                     &&& #[trigger] s.in_flight().contains(resp_msg)
                                     &&& resp_msg_matches_req_msg(resp_msg, pending_req_msg)
                                 });
-                                assert forall |resp_msg: Message| {
-                                    &&& (!s.ongoing_reconciles(controller_id).contains_key(key) || requirements(key, s))
-                                    &&& s.ongoing_reconciles(controller_id).contains_key(key)
-                                    &&& stronger_next(s, s_prime)
-                                } implies {
-                                    ||| ! #[trigger] s_prime.in_flight().contains(resp_msg)
-                                    ||| !resp_msg_matches_req_msg(resp_msg, pending_req_msg)
-                                } by {
-                                    if s.in_flight().contains(resp_msg) {}
-                                }
+//                                assert forall |resp_msg: Message| {
+//                                    &&& (!s.ongoing_reconciles(controller_id).contains_key(key) || requirements(key, s))
+//                                    &&& s.ongoing_reconciles(controller_id).contains_key(key)
+//                                    &&& stronger_next(s, s_prime)
+//                                } implies {
+//                                    ||| ! #[trigger] s_prime.in_flight().contains(resp_msg)
+//                                    ||| !resp_msg_matches_req_msg(resp_msg, pending_req_msg)
+//                                } by {
+//                                    if s.in_flight().contains(resp_msg) {}
+//                                }
                             } else {
-                                assert(s_prime.in_flight().contains(resp));
-                                assert(!s_prime.in_flight().contains(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0));
+//                                assert(s_prime.in_flight().contains(resp));
+//                                assert(!s_prime.in_flight().contains(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0));
                             }
                         } else {
                             let new_pending_req_msg = s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg->0;
@@ -358,17 +358,17 @@ pub proof fn lemma_true_leads_to_always_pending_req_in_flight_xor_resp_in_flight
                         if input.0 == controller_id && input.1 == Some(pending_req_msg) {
                             let resp_msg = transition_by_external(self.controller_models[controller_id].external_model->0, pending_req_msg, s.api_server.resources, s.controller_and_externals[controller_id].external->0).1;
                             assert(s_prime.in_flight().contains(resp_msg));
-                            assert(!s_prime.in_flight().contains(pending_req_msg));
+//                            assert(!s_prime.in_flight().contains(pending_req_msg));
                         } else if input.0 == controller_id {
                             if !s.in_flight().contains(pending_req_msg) {
-                                assert(s_prime.in_flight().contains(resp));
-                                assert(!s_prime.in_flight().contains(pending_req_msg));
+//                                assert(s_prime.in_flight().contains(resp));
+//                                assert(!s_prime.in_flight().contains(pending_req_msg));
                             } else {
                                 let req_msg = input.1.unwrap();
                                 let resp_msg = transition_by_external(self.controller_models[controller_id].external_model->0, req_msg, s.api_server.resources, s.controller_and_externals[controller_id].external->0).1;
-                                assert(s_prime.in_flight().contains(pending_req_msg));
-                                assert(pending_req_msg != req_msg);
-                                assert(!resp_msg_matches_req_msg(resp_msg, pending_req_msg));
+//                                assert(s_prime.in_flight().contains(pending_req_msg));
+//                                assert(pending_req_msg != req_msg);
+//                                assert(!resp_msg_matches_req_msg(resp_msg, pending_req_msg));
                                 assert forall |resp_msg: Message| {
                                     &&& (!s.ongoing_reconciles(controller_id).contains_key(key) || requirements(key, s))
                                     &&& s.ongoing_reconciles(controller_id).contains_key(key)
@@ -383,7 +383,7 @@ pub proof fn lemma_true_leads_to_always_pending_req_in_flight_xor_resp_in_flight
                         }
                     }
                     _ => {
-                        assert(requirements(ky, s_prime));
+//                        assert(requirements(ky, s_prime));
                     }
                 }
             }
@@ -426,16 +426,16 @@ pub proof fn lemma_always_no_pending_req_msg_at_reconcile_state(self, spec: Temp
         &&& self.next()(s, s_prime)
         &&& Self::there_is_the_controller_state(controller_id)(s)
     };
-    assert forall |s, s_prime| invariant(s) && #[trigger] stronger_next(s, s_prime) implies invariant(s_prime) by {
-        if s_prime.ongoing_reconciles(controller_id).contains_key(key) && state(s_prime.ongoing_reconciles(controller_id)[key].local_state) {
-            if s.controller_and_externals[controller_id] == s_prime.controller_and_externals[controller_id] {
-                assert(s.ongoing_reconciles(controller_id)[key].pending_req_msg is None);
-                assert(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg is None);
-            } else {
-                assert(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg is None);
-            }
-        }
-    }
+//    assert forall |s, s_prime| invariant(s) && #[trigger] stronger_next(s, s_prime) implies invariant(s_prime) by {
+//        if s_prime.ongoing_reconciles(controller_id).contains_key(key) && state(s_prime.ongoing_reconciles(controller_id)[key].local_state) {
+//            if s.controller_and_externals[controller_id] == s_prime.controller_and_externals[controller_id] {
+////                assert(s.ongoing_reconciles(controller_id)[key].pending_req_msg is None);
+////                assert(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg is None);
+//            } else {
+////                assert(s_prime.ongoing_reconciles(controller_id)[key].pending_req_msg is None);
+//            }
+//        }
+//    }
     self.lemma_always_there_is_the_controller_state(spec, controller_id);
     combine_spec_entails_always_n!(
         spec, lift_action(stronger_next), lift_action(self.next()),
@@ -791,15 +791,15 @@ pub proof fn lemma_always_every_ongoing_reconcile_has_lower_id_than_allocator(
         lift_state(Self::there_is_the_controller_state(controller_id))
     );
 
-    assert forall |s, s_prime| invariant(s) && #[trigger] stronger_next(s, s_prime) implies invariant(s_prime) by {
-        assert forall |key: ObjectRef| #[trigger] s_prime.ongoing_reconciles(controller_id).contains_key(key) implies
-        s_prime.ongoing_reconciles(controller_id)[key].reconcile_id < s_prime.reconcile_id_allocator(controller_id).reconcile_id_counter by {
-            let step = choose |step| self.next_step(s, s_prime, step);
-            if s.ongoing_reconciles(controller_id).contains_key(key) {
-                assert(s.reconcile_id_allocator(controller_id).reconcile_id_counter <= s_prime.reconcile_id_allocator(controller_id).reconcile_id_counter);
-            }
-        }
-    };
+//    assert forall |s, s_prime| invariant(s) && #[trigger] stronger_next(s, s_prime) implies invariant(s_prime) by {
+////        assert forall |key: ObjectRef| #[trigger] s_prime.ongoing_reconciles(controller_id).contains_key(key) implies
+////        s_prime.ongoing_reconciles(controller_id)[key].reconcile_id < s_prime.reconcile_id_allocator(controller_id).reconcile_id_counter by {
+////            let step = choose |step| self.next_step(s, s_prime, step);
+////            if s.ongoing_reconciles(controller_id).contains_key(key) {
+//////                assert(s.reconcile_id_allocator(controller_id).reconcile_id_counter <= s_prime.reconcile_id_allocator(controller_id).reconcile_id_counter);
+////            }
+////        }
+//    };
     init_invariant::<ClusterState>(spec, self.init(), stronger_next, invariant);
 }
 
@@ -918,33 +918,33 @@ pub proof fn lemma_true_leads_to_always_every_msg_from_key_is_pending_req_msg_of
             )(s)
     };
 
-    assert forall |s: ClusterState, s_prime: ClusterState| #[trigger]  #[trigger] stronger_next(s, s_prime) implies Self::every_new_req_msg_if_in_flight_then_satisfies(requirements)(s, s_prime) by {
-        assert forall |msg: Message| (!s.in_flight().contains(msg) || requirements(msg, s)) && #[trigger] s_prime.in_flight().contains(msg)
-        implies requirements(msg, s_prime) by {
-            if requirements_antecedent(msg, s_prime) {
-                if s.in_flight().contains(msg) {}
-
-                let next_step = choose |step| self.next_step(s, s_prime, step);
-                match next_step {
-                    Step::ControllerStep((id, resp_msg_opt, cr_key_opt)) => {
-                        let resp_msg = resp_msg_opt.unwrap();
-                        let cr_key = cr_key_opt.unwrap();
-
-                        if id == controller_id
-                            && cr_key_opt is Some && cr_key == key {
-                            // Requires invariant 
-                            // `pending_req_in_flight_xor_resp_in_flight_if_has_pending_req_msg`
-                            // if there's an incoming message, the `no_pending_req_msg_at_reconcile_state`
-                            // family if there's not one (meaning we're done).
-                            // 
-                            // (comment left to provide a hint of the reasoning needed).
-                        }
-                    },
-                    _ => {},
-                }
-            }
-        }
-    }
+//    assert forall |s: ClusterState, s_prime: ClusterState| #[trigger]  #[trigger] stronger_next(s, s_prime) implies Self::every_new_req_msg_if_in_flight_then_satisfies(requirements)(s, s_prime) by {
+////        assert forall |msg: Message| (!s.in_flight().contains(msg) || requirements(msg, s)) && #[trigger] s_prime.in_flight().contains(msg)
+////        implies requirements(msg, s_prime) by {
+////            if requirements_antecedent(msg, s_prime) {
+////                if s.in_flight().contains(msg) {}
+////
+////                let next_step = choose |step| self.next_step(s, s_prime, step);
+////                match next_step {
+////                    Step::ControllerStep((id, resp_msg_opt, cr_key_opt)) => {
+////                        let resp_msg = resp_msg_opt.unwrap();
+////                        let cr_key = cr_key_opt.unwrap();
+////
+////                        if id == controller_id
+////                            && cr_key_opt is Some && cr_key == key {
+////                            // Requires invariant 
+////                            // `pending_req_in_flight_xor_resp_in_flight_if_has_pending_req_msg`
+////                            // if there's an incoming message, the `no_pending_req_msg_at_reconcile_state`
+////                            // family if there's not one (meaning we're done).
+////                            // 
+////                            // (comment left to provide a hint of the reasoning needed).
+////                        }
+////                    },
+////                    _ => {},
+////                }
+////            }
+////        }
+//    }
 
     invariant_n!(
         spec, lift_action(stronger_next),

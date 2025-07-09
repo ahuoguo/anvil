@@ -44,21 +44,21 @@ pub proof fn lemma_always_each_scheduled_object_has_consistent_key_and_valid_met
         lift_state(Self::there_is_the_controller_state(controller_id))
     );
 
-    assert forall |s, s_prime| invariant(s) && #[trigger] stronger_next(s, s_prime) implies invariant(s_prime) by {
-        assert forall |key: ObjectRef| #[trigger] s_prime.scheduled_reconciles(controller_id).contains_key(key)
-        implies
-            s_prime.scheduled_reconciles(controller_id)[key].object_ref() == key
-            && s_prime.scheduled_reconciles(controller_id)[key].metadata.well_formed_for_namespaced()
-        by {
-            let step = choose |step| self.next_step(s, s_prime, step);
-            match step {
-                Step::ScheduleControllerReconcileStep(input) => {},
-                _ => {
-                    assert(s.scheduled_reconciles(controller_id).contains_key(key));
-                }
-            }
-        }
-    }
+//    assert forall |s, s_prime| invariant(s) && #[trigger] stronger_next(s, s_prime) implies invariant(s_prime) by {
+////        assert forall |key: ObjectRef| #[trigger] s_prime.scheduled_reconciles(controller_id).contains_key(key)
+////        implies
+////            s_prime.scheduled_reconciles(controller_id)[key].object_ref() == key
+////            && s_prime.scheduled_reconciles(controller_id)[key].metadata.well_formed_for_namespaced()
+////        by {
+////            let step = choose |step| self.next_step(s, s_prime, step);
+////            match step {
+////                Step::ScheduleControllerReconcileStep(input) => {},
+////                _ => {
+//////                    assert(s.scheduled_reconciles(controller_id).contains_key(key));
+////                }
+////            }
+////        }
+//    }
 
     init_invariant(spec, self.init(), stronger_next, invariant);
 }
@@ -96,18 +96,18 @@ pub proof fn lemma_always_each_object_in_reconcile_has_consistent_key_and_valid_
         lift_state(Self::there_is_the_controller_state(controller_id))
     );
 
-    assert forall |s, s_prime| invariant(s) && #[trigger] stronger_next(s, s_prime) implies invariant(s_prime) by {
-        assert forall |key: ObjectRef| #[trigger] s_prime.ongoing_reconciles(controller_id).contains_key(key)
-        implies
-            s_prime.ongoing_reconciles(controller_id)[key].triggering_cr.object_ref() == key
-            && s_prime.ongoing_reconciles(controller_id)[key].triggering_cr.metadata.well_formed_for_namespaced()
-        by {
-            if s.ongoing_reconciles(controller_id).contains_key(key) {
-            } else {
-                assert(s.scheduled_reconciles(controller_id).contains_key(key));
-            }
-        }
-    }
+//    assert forall |s, s_prime| invariant(s) && #[trigger] stronger_next(s, s_prime) implies invariant(s_prime) by {
+////        assert forall |key: ObjectRef| #[trigger] s_prime.ongoing_reconciles(controller_id).contains_key(key)
+////        implies
+////            s_prime.ongoing_reconciles(controller_id)[key].triggering_cr.object_ref() == key
+////            && s_prime.ongoing_reconciles(controller_id)[key].triggering_cr.metadata.well_formed_for_namespaced()
+////        by {
+////            if s.ongoing_reconciles(controller_id).contains_key(key) {
+////            } else {
+//////                assert(s.scheduled_reconciles(controller_id).contains_key(key));
+////            }
+////        }
+//    }
 
     init_invariant(spec, self.init(), stronger_next, invariant);
 }

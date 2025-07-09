@@ -121,41 +121,41 @@ pub proof fn lemma_pre_leads_to_post_by_external(
 pub proof fn api_server_action_pre_implies_next_pre(self, step: APIServerStep, input: Option<Message>)
     ensures valid(lift_state(self.api_server_action_pre(step, input)).implies(lift_state(self.api_server_next().pre(input)))),
 {
-    assert forall |s| #[trigger] self.api_server_action_pre(step, input)(s) implies self.api_server_next().pre(input)(s) by {
-        let action = (self.api_server().step_to_action)(step);
-        let action_input = APIServerActionInput{recv: input};
-        assert((action.precondition)(action_input, s.api_server));
-    };
+//    assert forall |s| #[trigger] self.api_server_action_pre(step, input)(s) implies self.api_server_next().pre(input)(s) by {
+//        let action = (self.api_server().step_to_action)(step);
+//        let action_input = APIServerActionInput{recv: input};
+////        assert((action.precondition)(action_input, s.api_server));
+//    };
 }
 
 pub proof fn builtin_controllers_action_pre_implies_next_pre(self, step: BuiltinControllersStep, input: (BuiltinControllerChoice, ObjectRef))
     ensures valid(lift_state(self.builtin_controllers_action_pre(step, input)).implies(lift_state(self.builtin_controllers_next().pre(input)))),
 {
-    assert forall |s| #[trigger] self.builtin_controllers_action_pre(step, input)(s) implies self.builtin_controllers_next().pre(input)(s) by {
-        let action = (self.builtin_controllers().step_to_action)(step);
-        let action_input = BuiltinControllersActionInput{choice: input.0, key: input.1, rpc_id_allocator: s.rpc_id_allocator, resources: s.api_server.resources};
-        assert((action.precondition)(action_input, ()));
-    };
+//    assert forall |s| #[trigger] self.builtin_controllers_action_pre(step, input)(s) implies self.builtin_controllers_next().pre(input)(s) by {
+//        let action = (self.builtin_controllers().step_to_action)(step);
+//        let action_input = BuiltinControllersActionInput{choice: input.0, key: input.1, rpc_id_allocator: s.rpc_id_allocator, resources: s.api_server.resources};
+////        assert((action.precondition)(action_input, ()));
+//    };
 }
 
 pub proof fn controller_action_pre_implies_next_pre(self, step: ControllerStep, input: (int, Option<Message>, Option<ObjectRef>))
     ensures valid(lift_state(self.controller_action_pre(step, input)).implies(lift_state(self.controller_next().pre(input)))),
 {
-    assert forall |s| #[trigger] self.controller_action_pre(step, input)(s) implies self.controller_next().pre(input)(s) by {
-        let action = (self.controller(input.0).step_to_action)(step);
-        let action_input = ControllerActionInput{recv: input.1, scheduled_cr_key: input.2, rpc_id_allocator: s.rpc_id_allocator};
-        assert((action.precondition)(action_input, s.controller_and_externals[input.0].controller));
-    };
+//    assert forall |s| #[trigger] self.controller_action_pre(step, input)(s) implies self.controller_next().pre(input)(s) by {
+//        let action = (self.controller(input.0).step_to_action)(step);
+//        let action_input = ControllerActionInput{recv: input.1, scheduled_cr_key: input.2, rpc_id_allocator: s.rpc_id_allocator};
+////        assert((action.precondition)(action_input, s.controller_and_externals[input.0].controller));
+//    };
 }
 
 pub proof fn external_action_pre_implies_next_pre(self, step: ExternalStep, input: (int, Option<Message>))
     ensures valid(lift_state(self.external_action_pre(step, input)).implies(lift_state(self.external_next().pre(input)))),
 {
-    assert forall |s| #[trigger] self.external_action_pre(step, input)(s) implies self.external_next().pre(input)(s) by {
-        let action = (self.external(input.0).step_to_action)(step);
-        let action_input = ExternalActionInput{recv: input.1, resources: s.api_server.resources};
-        assert((action.precondition)(action_input, s.controller_and_externals[input.0].external->0));
-    };
+//    assert forall |s| #[trigger] self.external_action_pre(step, input)(s) implies self.external_next().pre(input)(s) by {
+//        let action = (self.external(input.0).step_to_action)(step);
+//        let action_input = ExternalActionInput{recv: input.1, resources: s.api_server.resources};
+////        assert((action.precondition)(action_input, s.controller_and_externals[input.0].external->0));
+//    };
 }
 
 }
